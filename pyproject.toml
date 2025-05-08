@@ -10,6 +10,7 @@ authors = [
 dependencies = [
   "flet==0.27.6",
   "python-rtmidi>=1.5.8",
+  "mido==1.3.3",
 ]
 
 [tool.flet]
@@ -27,12 +28,16 @@ company = "Flet"
 # copyright text to display in about app dialogs
 copyright = "Copyright (C) 2025 by Flet"
 
+[tool.ruff]
+indent-width = 2
+
 [tool.flet.app]
 path = "src"
 
 [tool.uv]
 dev-dependencies = [
     "flet[all]==0.27.6",
+    "ruff>=0.11.8",
 ]
 
 [tool.poetry]
