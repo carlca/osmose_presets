@@ -4,6 +4,9 @@ import mido
 TEXT_50 = "123456789 123456789 123456789 123456789 123456789 "
 TEXT_26 = "123456789 123456789 123456"
 DEBUG_LAYOUT = False
+DEFAULT_PORT_NAME_LENGTH = 26
+PIXELS_PER_CHAR = 8
+BASE_DIALOG_WIDTH = 250
 
 class PortsDialog(ft.AlertDialog):
   def set_defaults(self):
@@ -122,8 +125,8 @@ def get_longest_port_width():
 def open_ports_dialog(page: ft.Page):
   def show_dialog(e):
     longest = get_longest_port_width()
-    excess = max(0, longest - 26) * 8
-    dlg_width = 250 + excess
+    excess = max(0, longest - DEFAULT_PORT_NAME_LENGTH) * PIXELS_PER_CHAR
+    dlg_width = BASE_DIALOG_WIDTH + excess
     dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port")) # fmt: skip
     dlg.page = page
     page.overlay.append(dlg)
