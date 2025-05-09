@@ -3,41 +3,45 @@ import mido
 
 
 class PortsDialog(ft.AlertDialog):
-  def __init__(
-    self, modal: bool = True, width: int = 400, height: int = 200,
-    title = "",
-  ):
-    super().__init__(modal=modal)
-    self.title = title
-
+  def set_defaults(self):
     self.ports_per_page = 5
-    self.current_page = 0
-    self.input_ports = []
+    self.curr_page = 0
     self.port_texts = []
-    self.radio_group = ft.RadioGroup(
-        content=ft.Column([]),
-        on_change=self.handle_radio_change  # Add on_change handler
-    )
 
-    self.prev_button = ft.IconButton(icon = ft.Icons.ARROW_BACK_IOS, on_click = self.prev_page_handler, disabled = True)
-    self.next_button = ft.IconButton(icon = ft.Icons.ARROW_FORWARD_IOS, on_click = self.next_page_handler, disabled = True)
+  def create_radio_group(self):
+    return ft.RadioGroup(content=ft.Column([]), on_change=self.handle_radio_change)
 
-    self.button_row = ft.Row([self.prev_button, self.next_button])
-    self.ports_row = ft.Row(
-      [
-        self.radio_group,
-      ],
-      alignment=ft.MainAxisAlignment.START,
-    )
+  def create_nav_buttons(self):
+    prev_button = ft.IconButton(icon=ft.Icons.ARROW_BACK_IOS, on_click=self.prev_page_handler, disabled=True)  # fmt: skip
+    next_button = ft.IconButton(icon=ft.Icons.ARROW_FORWARD_IOS, on_click=self.next_page_handler, disabled=True)  # fmt: skip
+    return (prev_button, next_button)
 
-    # Define OK and Cancel buttons
-    self.ok_button = ft.TextButton("OK", on_click=self.ok_handler, disabled=True) # disabled initially
-    self.cancel_button = ft.TextButton("Cancel", on_click=self.close_dlg)
-    self.actions = [self.ok_button, self.cancel_button] # Add both to actions
+  def create_nav_row(self):
+    return ft.Row([self.prev_button, self.next_button])
 
+  def create_ports_row(self):
+    return ft.Row([self.radio_group], alignment=ft.MainAxisAlignment.START)
+
+  def create_action_buttons(self):
+    ok_button = ft.TextButton("OK", on_click=self.ok_handler, disabled=True)
+    cancel_button = ft.TextButton("Cancel", on_click=self.close_dlg)
+    return (ok_button, cancel_button)
+
+  def create_content_container(self, width, height):
+    return ft.Container(width=width, height=height)
+
+  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
+    super().__init__(modal=modal)
     self.input_ports = get_input_ports()
-
-    self.content_container = ft.Container(width=width, height=height)
+    self.title = title
+    self.set_defaults()
+    self.radio_group = self.create_radio_group()
+    self.prev_button, self.next_button = self.create_nav_buttons()
+    self.button_row = self.create_nav_row()
+    self.ports_row = self.create_ports_row()
+    self.ok_button, self.cancel_button = self.create_action_buttons()
+    self.actions = [self.ok_button, self.cancel_button]
+    self.content_container = self.create_content_container(width, height)
 
     if self.input_ports:
       self.port_texts = [ft.Text(port) for port in self.input_ports]
@@ -58,36 +62,33 @@ class PortsDialog(ft.AlertDialog):
     self.ok_button.update()
 
   def ok_handler(self, e):
-    print(f"Selected port: {self.radio_group.value}") # Example
-    self.close_dlg(e) # Then close
+    print(f"Selected port: {self.radio_group.value}")  # Example
+    self.close_dlg(e)  # Then close
 
   def update_ports(self, first_run=False):
-    start_index = self.current_page * self.ports_per_page
-    end_index = min(start_index + self.ports_per_page, len(self.port_texts))
-    current_ports = self.port_texts[start_index:end_index]
+    start = self.curr_page * self.ports_per_page
+    end = min(start + self.ports_per_page, len(self.port_texts))
+    current_ports = self.port_texts[start:end]
     radio_array = []
     for port in current_ports:
       radio_array.append(ft.Radio(value=port.value, label=port.value))
-    self.radio_group.content = ft.Column(
-        controls=radio_array,
-        horizontal_alignment=ft.CrossAxisAlignment.START
-    )
+    self.radio_group.content = ft.Column(controls=radio_array, horizontal_alignment=ft.CrossAxisAlignment.START)  # fmt: skip
     if not first_run:
       self.update()
 
   def prev_page_handler(self, e):
-    if self.current_page > 0:
-      self.current_page -= 1
+    if self.curr_page > 0:
+      self.curr_page -= 1
       self.next_button.disabled = False
-      if self.current_page == 0:
+      if self.curr_page == 0:
         self.prev_button.disabled = True
       self.update_ports()
 
   def next_page_handler(self, e):
-    if self.current_page < self.total_pages - 1:
-      self.current_page += 1
+    if self.curr_page < self.total_pages - 1:
+      self.curr_page += 1
       self.prev_button.disabled = False
-      if self.current_page == self.total_pages - 1:
+      if self.curr_page == self.total_pages - 1:
         self.next_button.disabled = True
       self.update_ports()
 
@@ -95,11 +96,13 @@ class PortsDialog(ft.AlertDialog):
     self.open = False
     self.page.update()
 
+
 def get_input_ports():
   try:
     return mido.get_input_names()
   except Exception as e:
     return [str(e)]
+
 
 def get_longest_port_width():
   ports = get_input_ports()
@@ -109,11 +112,14 @@ def get_longest_port_width():
       max = len(port)
   return max
 
+
 def open_ports_dialog(page: ft.Page):
   def show_dialog(e):
     # dlg_width = max(1076, get_longest_port_width() + 20)
     dlg_width = get_longest_port_width() + 20
-    dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port"))
+    dlg = PortsDialog(
+      width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port")
+    )
     dlg.page = page
     page.overlay.append(dlg)
     dlg.open = True

@@ -31,6 +31,9 @@ copyright = "Copyright (C) 2025 by Flet"
 [tool.ruff]
 indent-width = 2
 
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
 [tool.flet.app]
 path = "src"
 
