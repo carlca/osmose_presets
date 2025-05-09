@@ -1,6 +1,9 @@
 import flet as ft
 import mido
 
+TEXT_50 = "123456789 123456789 123456789 123456789 123456789 "
+TEXT_26 = "123456789 123456789 123456"
+DEBUG_LAYOUT = False
 
 class PortsDialog(ft.AlertDialog):
   def set_defaults(self):
@@ -32,7 +35,10 @@ class PortsDialog(ft.AlertDialog):
 
   def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
     super().__init__(modal=modal)
-    self.input_ports = get_input_ports()
+    self.ports = get_input_ports()
+    if DEBUG_LAYOUT:
+      self.ports.append(TEXT_26)
+      self.ports.append(TEXT_50)
     self.title = title
     self.set_defaults()
     self.radio_group = self.create_radio_group()
@@ -43,11 +49,9 @@ class PortsDialog(ft.AlertDialog):
     self.actions = [self.ok_button, self.cancel_button]
     self.content_container = self.create_content_container(width, height)
 
-    if self.input_ports:
-      self.port_texts = [ft.Text(port) for port in self.input_ports]
-      self.total_pages = (
-        len(self.input_ports) + self.ports_per_page - 1
-      ) // self.ports_per_page
+    if self.ports:
+      self.port_texts = [ft.Text(port) for port in self.ports]
+      self.total_pages = (len(self.ports) + self.ports_per_page - 1) // self.ports_per_page # fmt: skip
       if self.total_pages > 1:
         self.next_button.disabled = False
       self.content_container.content = ft.Column([self.button_row, self.ports_row])
@@ -68,9 +72,9 @@ class PortsDialog(ft.AlertDialog):
   def update_ports(self, first_run=False):
     start = self.curr_page * self.ports_per_page
     end = min(start + self.ports_per_page, len(self.port_texts))
-    current_ports = self.port_texts[start:end]
+    ports = self.port_texts[start:end]
     radio_array = []
-    for port in current_ports:
+    for port in ports:
       radio_array.append(ft.Radio(value=port.value, label=port.value))
     self.radio_group.content = ft.Column(controls=radio_array, horizontal_alignment=ft.CrossAxisAlignment.START)  # fmt: skip
     if not first_run:
@@ -96,7 +100,6 @@ class PortsDialog(ft.AlertDialog):
     self.open = False
     self.page.update()
 
-
 def get_input_ports():
   try:
     return mido.get_input_names()
@@ -106,6 +109,9 @@ def get_input_ports():
 
 def get_longest_port_width():
   ports = get_input_ports()
+  if DEBUG_LAYOUT:
+    ports.append(TEXT_26)
+    ports.append(TEXT_50)
   max = 0
   for port in ports:
     if len(port) > max:
@@ -115,11 +121,10 @@ def get_longest_port_width():
 
 def open_ports_dialog(page: ft.Page):
   def show_dialog(e):
-    # dlg_width = max(1076, get_longest_port_width() + 20)
-    dlg_width = get_longest_port_width() + 20
-    dlg = PortsDialog(
-      width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port")
-    )
+    longest = get_longest_port_width()
+    excess = max(0, longest - 26) * 8
+    dlg_width = 250 + excess
+    dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port")) # fmt: skip
     dlg.page = page
     page.overlay.append(dlg)
     dlg.open = True
