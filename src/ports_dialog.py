@@ -1,12 +1,7 @@
 import flet as ft
 import mido
-
-TEXT_50 = "123456789 123456789 123456789 123456789 123456789 "
-TEXT_26 = "123456789 123456789 123456"
-DEBUG_LAYOUT = False
-DEFAULT_PORT_NAME_LENGTH = 26
-PIXELS_PER_CHAR = 8
-BASE_DIALOG_WIDTH = 250
+from consts import *
+from helper_functions import *
 
 class PortsDialog(ft.AlertDialog):
   def set_defaults(self):
@@ -102,25 +97,6 @@ class PortsDialog(ft.AlertDialog):
   def close_dlg(self, e):
     self.open = False
     self.page.update()
-
-def get_input_ports():
-  try:
-    return mido.get_input_names()
-  except Exception as e:
-    return [str(e)]
-
-
-def get_longest_port_width():
-  ports = get_input_ports()
-  if DEBUG_LAYOUT:
-    ports.append(TEXT_26)
-    ports.append(TEXT_50)
-  max = 0
-  for port in ports:
-    if len(port) > max:
-      max = len(port)
-  return max
-
 
 def open_ports_dialog(page: ft.Page):
   def show_dialog(e):
