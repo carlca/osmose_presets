@@ -1,5 +1,5 @@
 import mido
-from consts import *
+import consts as c
 
 def get_input_ports():
   try:
@@ -10,9 +10,9 @@ def get_input_ports():
 
 def get_longest_port_width():
   ports = get_input_ports()
-  if DEBUG_LAYOUT:
-    ports.append(TEXT_26)
-    ports.append(TEXT_50)
+  if c.DEBUG_LAYOUT:
+    ports.append(c.TEXT_26)
+    ports.append(c.TEXT_50)
   max_len = 0
   for port in ports:
     if len(port) > max_len:

@@ -1,8 +1,6 @@
 import flet as ft
-import mido
-from consts import *
-from helper_functions import *
-
+import consts as c
+import helper_functions
 
 class PortsDialog(ft.AlertDialog):
 
@@ -50,10 +48,10 @@ class PortsDialog(ft.AlertDialog):
 
   def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title = ""):
     super().__init__(modal=modal)
-    self.ports = get_input_ports()
-    if DEBUG_LAYOUT:
-      self.ports.append(TEXT_26)
-      self.ports.append(TEXT_50)
+    self.ports = helper_functions.get_input_ports()
+    if c.DEBUG_LAYOUT:
+      self.ports.append(c.TEXT_26)
+      self.ports.append(c.TEXT_50)
     self.title = title
     self.set_defaults()
     self.radio_group = self.create_radio_group()
@@ -88,10 +86,10 @@ class PortsDialog(ft.AlertDialog):
       self.update()
 
   def prev_page_handler(self, e):
-    self.change_page(BACKWARDS)
+    self.change_page(c.BACKWARDS)
 
   def next_page_handler(self, e):
-    self.change_page(FORWARDS)
+    self.change_page(c.FORWARDS)
 
   def change_page(self, direction: int):
     new_page = self.curr_page + direction
