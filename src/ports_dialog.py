@@ -3,7 +3,9 @@ import mido
 from consts import *
 from helper_functions import *
 
+
 class PortsDialog(ft.AlertDialog):
+
   def set_defaults(self):
     self.ports_per_page = 5
     self.curr_page = 0
@@ -28,10 +30,25 @@ class PortsDialog(ft.AlertDialog):
     cancel_button = ft.TextButton("Cancel", on_click=self.close_dlg)
     return (ok_button, cancel_button)
 
-  def create_content_container(self, width, height):
+  def create_content_container(self, width: int, height: int):
     return ft.Container(width=width, height=height)
 
-  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
+  def get_total_pages(self):
+    return (len(self.ports) + self.ports_per_page - 1) // self.ports_per_page  # fmt: skip
+
+  def display_ports(self):
+    self.port_texts = [ft.Text(port) for port in self.ports]
+    self.total_pages = self.get_total_pages()
+    self.next_button.disabled = self.total_pages == 1
+    self.content_container.content = ft.Column([self.button_row, self.ports_row])
+    self.content = self.content_container
+
+  def display_no_ports_warning(self):
+    no_ports_text = ft.Text("No ports found")
+    self.content_container.content = ft.Column([no_ports_text])
+    self.content = self.content_container
+
+  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title = ""):
     super().__init__(modal=modal)
     self.ports = get_input_ports()
     if DEBUG_LAYOUT:
@@ -46,18 +63,10 @@ class PortsDialog(ft.AlertDialog):
     self.ok_button, self.cancel_button = self.create_action_buttons()
     self.actions = [self.ok_button, self.cancel_button]
     self.content_container = self.create_content_container(width, height)
-
     if self.ports:
-      self.port_texts = [ft.Text(port) for port in self.ports]
-      self.total_pages = (len(self.ports) + self.ports_per_page - 1) // self.ports_per_page # fmt: skip
-      if self.total_pages > 1:
-        self.next_button.disabled = False
-      self.content_container.content = ft.Column([self.button_row, self.ports_row])
-      self.content = self.content_container
+      self.display_ports()
     else:
-      no_ports_text = ft.Text("No ports found")
-      self.content_container.content = ft.Column([no_ports_text])
-      self.content = self.content_container
+      self.display_no_ports_warning()
 
   def handle_radio_change(self, e):
     self.ok_button.disabled = False
@@ -79,36 +88,19 @@ class PortsDialog(ft.AlertDialog):
       self.update()
 
   def prev_page_handler(self, e):
-    if self.curr_page > 0:
-      self.curr_page -= 1
-      self.next_button.disabled = False
-      if self.curr_page == 0:
-        self.prev_button.disabled = True
-      self.update_ports()
+    self.change_page(BACKWARDS)
 
   def next_page_handler(self, e):
-    if self.curr_page < self.total_pages - 1:
-      self.curr_page += 1
-      self.prev_button.disabled = False
-      if self.curr_page == self.total_pages - 1:
-        self.next_button.disabled = True
+    self.change_page(FORWARDS)
+
+  def change_page(self, direction: int):
+    new_page = self.curr_page + direction
+    if 0 <= new_page < self.total_pages:
+      self.curr_page = new_page
+      self.prev_button.disabled = (self.curr_page == 0)
+      self.next_button.disabled = (self.curr_page == self.total_pages - 1)
       self.update_ports()
 
   def close_dlg(self, e):
     self.open = False
     self.page.update()
-
-def open_ports_dialog(page: ft.Page):
-  def show_dialog(e):
-    longest = get_longest_port_width()
-    excess = max(0, longest - DEFAULT_PORT_NAME_LENGTH) * PIXELS_PER_CHAR
-    dlg_width = BASE_DIALOG_WIDTH + excess
-    dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port")) # fmt: skip
-    dlg.page = page
-    page.overlay.append(dlg)
-    dlg.open = True
-    dlg.update_ports(True)
-    page.update()
-
-  button = ft.ElevatedButton("Open Ports Dialog", on_click=show_dialog)
-  return button
