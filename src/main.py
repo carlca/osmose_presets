@@ -2,8 +2,7 @@ import flet as ft
 from ports_dialog import PortsDialog
 import consts as c
 import helper_functions
-
-# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+from preset_data import PresetData
 
 def main(page: ft.Page):
 
@@ -23,6 +22,28 @@ def main(page: ft.Page):
   page.add(ft.ElevatedButton("Open Ports Dialog", on_click=show_dialog))
   page.update()
 
-# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  presets = PresetData.presets()
+  if presets:
+    for preset in presets:
+      print(preset)
+
+  print("")
+  print(PresetData.get_packs())
+
+  print("")
+  pack = "expansion_01"
+  print(pack)
+  print(PresetData.get_types(pack))
+
+  print("")
+  pack = "factory"
+  print(pack)
+  print(PresetData.get_types(pack))
+
+  print("")
+  pack = ""
+  print(pack)
+  print(PresetData.get_types(pack))
+
 
 ft.app(target=main)
