@@ -19,6 +19,8 @@ class Preset:
 
 class PresetData:
   cached_presets = []
+  pack_filters = []
+  type_filters = []
 
   @staticmethod
   def load_from_json(file_path: str) -> List[Preset]:
@@ -40,7 +42,29 @@ class PresetData:
 
   @staticmethod
   def presets():
-    return PresetData.cached_presets
+    result = []
+    for preset in PresetData.cached_presets:
+      pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
+      type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
+      if pack_filtered and type_filtered:
+        result.append(preset)
+    return result
+
+  @staticmethod
+  def clear_pack_filters():
+    PresetData.pack_filters.clear()
+
+  @staticmethod
+  def add_pack_filter(pack_filter):
+    PresetData.pack_filters.append(pack_filter)
+
+  @staticmethod
+  def clear_type_filters():
+    PresetData.type_filters.clear()
+
+  @staticmethod
+  def add_type_filter(pack_filter):
+    PresetData.type_filters.append(pack_filter)
 
   @staticmethod
   def get_packs():

@@ -22,10 +22,8 @@ def main(page: ft.Page):
   page.add(ft.ElevatedButton("Open Ports Dialog", on_click=show_dialog))
   page.update()
 
-  presets = PresetData.presets()
-  if presets:
-    for preset in presets:
-      print(preset)
+  PresetData.add_pack_filter("factory")
+  PresetData.add_type_filter("organ")
 
   print("")
   print(PresetData.get_packs())
@@ -40,10 +38,11 @@ def main(page: ft.Page):
   print(pack)
   print(PresetData.get_types(pack))
 
-  print("")
-  pack = ""
-  print(pack)
-  print(PresetData.get_types(pack))
+  presets = PresetData.presets()
+  if presets:
+    for preset in presets:
+      print(preset)
+
 
 
 ft.app(target=main)
