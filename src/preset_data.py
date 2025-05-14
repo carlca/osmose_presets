@@ -7,6 +7,7 @@ from typing import List
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PRESET_DATA = os.path.join(SCRIPT_DIR, "OsmosePresets.json")
 
+
 @dataclass
 class Preset:
   pack: str
@@ -25,7 +26,7 @@ class PresetData:
   @staticmethod
   def load_from_json(file_path: str) -> List[Preset]:
     loaded_presets = []
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, "r", encoding="utf-8") as f:
       data = json.load(f)
 
       for preset_dict in data:
@@ -35,7 +36,7 @@ class PresetData:
           cc0=preset_dict.get("cc0"),
           pgm=preset_dict.get("pgm"),
           preset=preset_dict.get("preset"),
-          characters=preset_dict.get("characters", [])
+          characters=preset_dict.get("characters", []),
         )
         loaded_presets.append(preset)
     return loaded_presets
@@ -44,8 +45,12 @@ class PresetData:
   def presets():
     result = []
     for preset in PresetData.cached_presets:
-      pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
-      type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
+      pack_filtered = (
+        not PresetData.pack_filters or preset.pack in PresetData.pack_filters
+      )
+      type_filtered = (
+        not PresetData.type_filters or preset.type in PresetData.type_filters
+      )
       if pack_filtered and type_filtered:
         result.append(preset)
     return result
@@ -81,7 +86,7 @@ class PresetData:
     return packs
 
   @staticmethod
-  def get_types(pack = ""):
+  def get_types(pack=""):
     types = []
     for preset in PresetData.cached_presets:
       if pack and preset.pack == pack or not pack:

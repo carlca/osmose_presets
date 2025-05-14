@@ -4,8 +4,6 @@ import flet as ft
 def main(page: ft.Page):
   page.title = "AlertDialog examples"
 
-
-
   dlg = ft.AlertDialog(
     title=ft.Text("Hello"),
     content=ft.Text("You are notified!"),

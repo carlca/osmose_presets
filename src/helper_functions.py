@@ -1,12 +1,14 @@
 import mido
 import consts as c
 
+
 def get_input_ports():
   try:
     return mido.get_input_names()
   except Exception as e:
     print(f"Error getting MIDI input ports: {e}")
-    return[]
+    return []
+
 
 def get_longest_port_width():
   ports = get_input_ports()

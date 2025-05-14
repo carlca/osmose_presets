@@ -2,8 +2,8 @@ import flet as ft
 import consts as c
 import helper_functions
 
-class PortsDialog(ft.AlertDialog):
 
+class PortsDialog(ft.AlertDialog):
   def set_defaults(self):
     self.ports_per_page = 5
     self.curr_page = 0
@@ -46,7 +46,7 @@ class PortsDialog(ft.AlertDialog):
     self.content_container.content = ft.Column([no_ports_text])
     self.content = self.content_container
 
-  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title = ""):
+  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
     super().__init__(modal=modal)
     self.ports = helper_functions.get_input_ports()
     if c.DEBUG_LAYOUT:
@@ -95,8 +95,8 @@ class PortsDialog(ft.AlertDialog):
     new_page = self.curr_page + direction
     if 0 <= new_page < self.total_pages:
       self.curr_page = new_page
-      self.prev_button.disabled = (self.curr_page == 0)
-      self.next_button.disabled = (self.curr_page == self.total_pages - 1)
+      self.prev_button.disabled = self.curr_page == 0
+      self.next_button.disabled = self.curr_page == self.total_pages - 1
       self.update_ports()
 
   def close_dlg(self, e):
