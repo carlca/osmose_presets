@@ -51,20 +51,26 @@ class PresetData:
     return result
 
   @staticmethod
-  def clear_pack_filters():
-    PresetData.pack_filters.clear()
-
-  @staticmethod
   def add_pack_filter(pack_filter):
-    PresetData.pack_filters.append(pack_filter)
+    if isinstance(pack_filter, str):
+      PresetData.pack_filters.append(pack_filter)
+    elif isinstance(pack_filter, list):
+      PresetData.pack_filters.extend(pack_filter)
+    else:
+      raise TypeError("pack_filter must be a string or a list of strings")
 
   @staticmethod
   def clear_type_filters():
     PresetData.type_filters.clear()
 
   @staticmethod
-  def add_type_filter(pack_filter):
-    PresetData.type_filters.append(pack_filter)
+  def add_type_filter(type_filter):
+    if isinstance(type_filter, str):
+      PresetData.type_filters.append(type_filter)
+    elif isinstance(type_filter, list):
+      PresetData.type_filters.extend(type_filter)
+    else:
+      raise TypeError("type_filter must be a string or a list of strings")
 
   @staticmethod
   def get_packs():
