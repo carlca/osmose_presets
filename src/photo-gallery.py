@@ -5,7 +5,7 @@ def main(page: ft.Page):
   page.title = "GridView Example"
   page.theme_mode = ft.ThemeMode.DARK
   page.padding = 50
-  # page.update()
+  page.update()
 
   images = ft.GridView(
     expand=1,
