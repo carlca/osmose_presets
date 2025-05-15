@@ -6,12 +6,15 @@ from preset_data import PresetData
 
 DEBUG_PAGE_SIZE = False
 
+# ----------------------------------------------------------------------------------------------------
+
 def page_resized(e, page):
   page.title = f"Osmose Presets - {page.window.width} x {page.window.height}"
   page.update()
 
-def main(page: ft.Page):
+# ----------------------------------------------------------------------------------------------------
 
+def main(page: ft.Page):
   page.window.width = 1400
   page.window.height = 1000
   page.window.center()
@@ -19,6 +22,10 @@ def main(page: ft.Page):
   page.horizontal_alignment = "center"
   if DEBUG_PAGE_SIZE:
     page.on_resized = page_resized(page)
+
+  page.title = "Osmose Presets"
+
+  # ----------------------------------------------------------------------------------------------------
 
   def show_dialog(e):
     longest = helper_functions.get_longest_port_width()
@@ -31,7 +38,7 @@ def main(page: ft.Page):
     dlg.update_ports(True)
     page.update()
 
-  page.title = "Osmose Presets"
+  # ----------------------------------------------------------------------------------------------------
 
   def create_pack_column():
     pack_names = PresetData.get_packs()
@@ -60,43 +67,68 @@ def main(page: ft.Page):
         ft.Checkbox(label=pack_name, value=False, on_change=update_pack_checkboxes)
       )
 
-    pack_column = ft.Column(
-      controls=pack_checkboxes, width=300, scroll=ft.ScrollMode.AUTO
+    width = helper_functions.get_longest_pack_and_type_length() * 12 + 20
+
+    inner_pack_column = ft.Container(
+      content=ft.Column(controls=pack_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
+      bgcolor="#232323",
+      padding=10,
+      border_radius= ft.border_radius.all(20)
     )
+
+    pack_column = ft.Container(
+      inner_pack_column,
+      padding=10
+    )
+
     return pack_column
 
-  # Type Selection Checkboxes
-  type_names = PresetData.get_types()
-  type_checkboxes = []
+  # ----------------------------------------------------------------------------------------------------
 
+  def create_type_column():
+    type_names = PresetData.get_types()
+    type_checkboxes = []
 
-  def update_type_checkboxes(e):
-    if e.control == type_checkboxes[0]:
-      for checkbox in type_checkboxes[1:]:
-        checkbox.value = type_checkboxes[0].value
-    else:
-      all_checked = True
-      for checkbox in type_checkboxes[1:]:
-        if not checkbox.value:
-          all_checked = False
-          break
-      type_checkboxes[0].value = all_checked
-    page.update()
+    def update_type_checkboxes(e):
+      if e.control == type_checkboxes[0]:
+        for checkbox in type_checkboxes[1:]:
+          checkbox.value = type_checkboxes[0].value
+      else:
+        all_checked = True
+        for checkbox in type_checkboxes[1:]:
+          if not checkbox.value:
+            all_checked = False
+            break
+        type_checkboxes[0].value = all_checked
+      page.update()
 
+    all_types_checkbox = ft.Checkbox(
+      label="all", value=False, on_change=update_type_checkboxes
+    )
+    type_checkboxes.append(all_types_checkbox)
 
-  all_types_checkbox = ft.Checkbox(
-    label="all", value=False, on_change=update_type_checkboxes
-  )
-  type_checkboxes.append(all_types_checkbox)
+    for type_name in type_names:
+      type_checkboxes.append(
+        ft.Checkbox(label=type_name, value=False, on_change=update_type_checkboxes)
+      )
 
-  for type_name in type_names:
-    type_checkboxes.append(
-      ft.Checkbox(label=type_name, value=False, on_change=update_type_checkboxes)
+    width = helper_functions.get_longest_pack_and_type_length() * 12 + 20
+
+    inner_type_column = ft.Container(
+      content=ft.Column(controls=type_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
+      bgcolor="#232323",
+      padding=10,
+      border_radius= ft.border_radius.all(20)
     )
 
-  type_column = ft.Column(
-    controls=type_checkboxes, width=300, scroll=ft.ScrollMode.AUTO
-  )
+    type_column = ft.Container(
+      inner_type_column,
+      padding=10
+    )
+
+    return type_column
+
+  # ----------------------------------------------------------------------------------------------------
 
   # Layout
   page.add(
@@ -104,17 +136,17 @@ def main(page: ft.Page):
       [
         ft.Column(
           [
-            ft.Text("Packs", color="#808080", size=24),
+            ft.Text("   pack", color="#808080", size=24),
             create_pack_column(),
-            ft.Text("Type", color="#808080", size=24),
-            type_column,
+            ft.Text("   type", color="#808080", size=24),
+            create_type_column(),
           ],
-          width=300,
+          width=200,
         ),
         ft.Column(
           [
-            ft.ElevatedButton(
-              "Select MIDI Input Port", color="#808080", on_click=show_dialog
+            ft.FilledButton(
+              " Select MIDI Input Port ", color="#101010", on_click=show_dialog,
             )
           ],
           expand=True,
@@ -145,6 +177,9 @@ def main(page: ft.Page):
     for preset in presets:
       print(preset)
 
+  print(helper_functions.get_longest_pack_and_type_length())
+
   page.update()
+
 
 ft.app(target=main)
