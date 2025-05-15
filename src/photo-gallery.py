@@ -1,5 +1,5 @@
 import flet as ft
-
+from preset_data import PresetData
 
 def main(page: ft.Page):
   page.title = "GridView Example"
@@ -20,13 +20,13 @@ def main(page: ft.Page):
 
   for i in range(0, 60):
     images.controls.append(
-      ft.Image(
-        src=f"https://picsum.photos/150/150?{i}",
-        fit=ft.ImageFit.NONE,
-        repeat=ft.ImageRepeat.NO_REPEAT,
-        border_radius=ft.border_radius.all(10),
-      )
-    )
+      ft.Text(f"pack {i}", color="#808080", size=16),)
+      # ft.Image(
+      #   src=f"https://picsum.photos/150/150?{i}",
+      #   fit=ft.ImageFit.NONE,
+      #   repeat=ft.ImageRepeat.NO_REPEAT,
+      #   border_radius=ft.border_radius.all(10),
+      # )
   page.update()
 
 
