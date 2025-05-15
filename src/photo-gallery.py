@@ -5,11 +5,11 @@ def main(page: ft.Page):
   page.title = "GridView Example"
   page.theme_mode = ft.ThemeMode.DARK
   page.padding = 50
-  page.update()
+  # page.update()
 
   images = ft.GridView(
     expand=1,
-    runs_count=5,
+    runs_count=1,
     max_extent=150,
     child_aspect_ratio=1.0,
     spacing=5,
@@ -18,15 +18,11 @@ def main(page: ft.Page):
 
   page.add(images)
 
-  for i in range(0, 60):
+  for type in PresetData.get_types():
     images.controls.append(
-      ft.Text(f"pack {i}", color="#808080", size=16),)
-      # ft.Image(
-      #   src=f"https://picsum.photos/150/150?{i}",
-      #   fit=ft.ImageFit.NONE,
-      #   repeat=ft.ImageRepeat.NO_REPEAT,
-      #   border_radius=ft.border_radius.all(10),
-      # )
+      ft.Text(type)
+    )
+
   page.update()
 
 
