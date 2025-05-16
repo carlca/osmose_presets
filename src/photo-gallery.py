@@ -4,7 +4,7 @@ from preset_data import PresetData
 
 
 def main(page: ft.Page):
-  page.title = "Scrolling Photo Gallery with Fixed Header"
+  page.title = "Presets"
   page.theme_mode = ft.ThemeMode.DARK
   page.padding = 50
   page.window.width = 1400
@@ -33,17 +33,23 @@ def main(page: ft.Page):
 
   # Data Rows (Scrolling in ListView)
   data_rows = []
-  for preset in presets:
+  for i, preset in enumerate(presets):
+    bg_color = (
+        "#333333" if i % 2 == 0 else None
+    )
     data_rows.append(
-      ft.Row(
-        controls=[
-          ft.Text(preset.pack, width=pack_width),
-          ft.Text(preset.type, width=type_width),
-          ft.Text(preset.preset, width=200),
-          ft.Text(preset.cc0, width=60),
-          ft.Text(preset.pgm, width=60),
-          ft.Text("Other values", width=150),
-        ]
+      ft.Container(
+        content=ft.Row(
+          controls=[
+            ft.Text(preset.pack, width=pack_width),
+            ft.Text(preset.type, width=type_width),
+            ft.Text(preset.preset, width=200),
+            ft.Text(preset.cc0, width=60),
+            ft.Text(preset.pgm, width=60),
+            ft.Text("Other values", width=150),
+          ],
+        ),
+        bgcolor=bg_color,
       )
     )
 
