@@ -3,6 +3,7 @@ from ports_dialog import PortsDialog
 import consts as c
 from helper_functions import Helper
 from preset_data import PresetData
+from preset_grid import PresetGrid
 
 DEBUG_PAGE_SIZE = False
 
@@ -28,7 +29,7 @@ def main(page: ft.Page):
   # ----------------------------------------------------------------------------------------------------
 
   def show_dialog(e):
-    longest = Helper.get_longest_port_width()
+    longest = Helper.get_longest_port_length()
     excess = max(0, longest - c.DEFAULT_PORT_NAME_LENGTH) * c.PIXELS_PER_CHAR
     dlg_width = c.BASE_DIALOG_WIDTH + excess
     dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
@@ -146,7 +147,8 @@ def main(page: ft.Page):
           [
             ft.FilledButton(
               " Select MIDI Input Port ", color="#101010", on_click=show_dialog,
-            )
+            ),
+            PresetGrid()
           ],
           expand=True,
         ),
@@ -155,28 +157,28 @@ def main(page: ft.Page):
     )
   )
 
-  PresetData.add_pack_filter("factory")
-  PresetData.add_type_filter(["organ", "mallets"])
+  # PresetData.add_pack_filter("factory")
+  # PresetData.add_type_filter(["organ", "mallets"])
 
-  print("")
-  print(PresetData.get_packs())
+  # print("")
+  # print(PresetData.get_packs())
 
-  print("")
-  pack = "expansion_01"
-  print(pack)
-  print(PresetData.get_types(pack))
+  # print("")
+  # pack = "expansion_01"
+  # print(pack)
+  # print(PresetData.get_types(pack))
 
-  print("")
-  pack = "factory"
-  print(pack)
-  print(PresetData.get_types(pack))
+  # print("")
+  # pack = "factory"
+  # print(pack)
+  # print(PresetData.get_types(pack))
 
-  presets = PresetData.get_presets()
-  if presets:
-    for preset in presets:
-      print(preset)
+  # presets = PresetData.get_presets()
+  # if presets:
+  #   for preset in presets:
+  #     print(preset)
 
-  print(Helper.get_longest_pack_and_type_length())
+  # print(Helper.get_longest_pack_and_type_length())
 
   page.update()
 

@@ -12,13 +12,14 @@ def main(page: ft.Page):
   page.window.center()
   page.update()
 
-  # PresetData.add_pack_filter("factory")
-  # PresetData.add_type_filter(["organ", "mallets"])
+  PresetData.add_pack_filter("factory")
+  PresetData.add_type_filter(["organ", "mallets"])
+
   presets = PresetData.get_presets()
-  pack_width = Helper.get_longest_pack_width() * 12 + 20
-  type_width = Helper.get_longest_type_width() * 12 + 20
-  preset_width = Helper.get_longest_preset_width() * 12 + 20
-  characters_string_width = Helper.get_longest_characters_width() * 12 + 20
+  pack_width = Helper.get_longest_pack_length() * 12 + 20
+  type_width = Helper.get_longest_type_length() * 12 + 20
+  preset_width = Helper.get_longest_preset_length() * 12 + 20
+  characters_string_width = Helper.get_longest_characters_length() * 12 + 20
 
   column_count = 6
 
@@ -33,7 +34,6 @@ def main(page: ft.Page):
     ]
   )
 
-  # Data Rows (Scrolling in ListView)
   data_rows = []
   for i, preset in enumerate(presets):
     bg_color = (
@@ -67,6 +67,5 @@ def main(page: ft.Page):
   # Combine Header and ListView
   page.add(header_row, list_view)
   page.update()
-
 
 ft.app(main)

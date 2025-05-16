@@ -19,7 +19,7 @@ class Helper:
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_width(strings):
+  def get_longest_length(strings):
     max_len = 0
     for string in strings:
       if len(string) > max_len:
@@ -29,8 +29,8 @@ class Helper:
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_preset_width():
-    return Helper.get_longest_width(PresetData.get_all_preset_names())
+  def get_longest_preset_length():
+    return Helper.get_longest_length(PresetData.get_all_preset_names())
 
   # ----------------------------------------------------------------------------------------------------
 
@@ -41,38 +41,38 @@ class Helper:
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_characters_width():
+  def get_longest_characters_length():
     characters = []
     for preset in PresetData.get_all_presets():
       characters.append(Helper.get_character_list(preset))
-    return Helper.get_longest_width(characters)
+    return Helper.get_longest_length(characters)
 
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_port_width():
+  def get_longest_port_length():
     ports = Helper.get_input_ports()
     if c.DEBUG_LAYOUT:
       ports.append(c.TEXT_26)
       ports.append(c.TEXT_50)
-    return Helper.get_longest_width(ports)
+    return Helper.get_longest_length(ports)
 
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_pack_width():
-    return Helper.get_longest_width(PresetData.get_packs())
+  def get_longest_pack_length():
+    return Helper.get_longest_length(PresetData.get_packs())
 
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def get_longest_type_width():
-    return Helper.get_longest_width(PresetData.get_types())
+  def get_longest_type_length():
+    return Helper.get_longest_length(PresetData.get_types())
 
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
   def get_longest_pack_and_type_length():
-    return max(get_longest_pack_width(), get_longest_type_width())
+    return max(Helper.get_longest_pack_length(), Helper.get_longest_type_length())
 
   # ----------------------------------------------------------------------------------------------------

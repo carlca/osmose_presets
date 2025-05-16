@@ -1,6 +1,6 @@
 import flet as ft
 import consts as c
-import helper_functions
+from helper_functions import Helper
 
 # ----------------------------------------------------------------------------------------------------
 
@@ -8,7 +8,7 @@ class PortsDialog(ft.AlertDialog):
 
   def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
     super().__init__(modal=modal)
-    self.ports = helper_functions.get_input_ports()
+    self.ports = Helper.get_input_ports()
     if c.DEBUG_LAYOUT:
       self.ports.append(c.TEXT_26)
       self.ports.append(c.TEXT_50)
