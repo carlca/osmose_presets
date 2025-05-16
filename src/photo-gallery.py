@@ -27,7 +27,7 @@ def main(page: ft.Page):
       ft.Text("preset", width=200, color="#808080", size=20),
       ft.Text("cc", width=50, color="#808080", size=20),
       ft.Text("pgm", width=50, color="#808080", size=20),
-      ft.Text("  other", width=150, color="#808080", size=20),
+      ft.Text("   characters", width=400, color="#808080", size=20),
     ]
   )
 
@@ -35,8 +35,10 @@ def main(page: ft.Page):
   data_rows = []
   for i, preset in enumerate(presets):
     bg_color = (
-        "#333333" if i % 2 == 0 else None
+        "#232323" if i % 2 == 0 else None
     )
+    characters_string = ", ".join(preset.characters) if preset.characters else ""
+
     data_rows.append(
       ft.Container(
         content=ft.Row(
@@ -46,7 +48,7 @@ def main(page: ft.Page):
             ft.Text(preset.preset, width=200),
             ft.Text(preset.cc0, width=60),
             ft.Text(preset.pgm, width=60),
-            ft.Text("Other values", width=150),
+            ft.Text(characters_string, width=400),
           ],
         ),
         bgcolor=bg_color,
