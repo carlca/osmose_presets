@@ -1,7 +1,7 @@
 import flet as ft
 from ports_dialog import PortsDialog
 import consts as c
-import helper_functions
+from helper_functions import Helper
 from preset_data import PresetData
 
 DEBUG_PAGE_SIZE = False
@@ -28,7 +28,7 @@ def main(page: ft.Page):
   # ----------------------------------------------------------------------------------------------------
 
   def show_dialog(e):
-    longest = helper_functions.get_longest_port_width()
+    longest = Helper.get_longest_port_width()
     excess = max(0, longest - c.DEFAULT_PORT_NAME_LENGTH) * c.PIXELS_PER_CHAR
     dlg_width = c.BASE_DIALOG_WIDTH + excess
     dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
@@ -67,7 +67,7 @@ def main(page: ft.Page):
         ft.Checkbox(label=pack_name, value=False, on_change=update_pack_checkboxes)
       )
 
-    width = helper_functions.get_longest_pack_and_type_length() * 12 + 20
+    width = Helper.get_longest_pack_and_type_length() * 12 + 20
 
     inner_pack_column = ft.Container(
       content=ft.Column(controls=pack_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
@@ -112,7 +112,7 @@ def main(page: ft.Page):
         ft.Checkbox(label=type_name, value=False, on_change=update_type_checkboxes)
       )
 
-    width = helper_functions.get_longest_pack_and_type_length() * 12 + 20
+    width = Helper.get_longest_pack_and_type_length() * 12 + 20
 
     inner_type_column = ft.Container(
       content=ft.Column(controls=type_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
@@ -176,7 +176,7 @@ def main(page: ft.Page):
     for preset in presets:
       print(preset)
 
-  print(helper_functions.get_longest_pack_and_type_length())
+  print(Helper.get_longest_pack_and_type_length())
 
   page.update()
 

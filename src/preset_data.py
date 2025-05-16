@@ -65,6 +65,21 @@ class PresetData:
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
+  def get_all_presets():
+    return PresetData.cached_presets
+
+  # ----------------------------------------------------------------------------------------------------
+
+  @staticmethod
+  def get_all_preset_names():
+    result = []
+    for preset in PresetData.cached_presets:
+      result.append(preset.preset)
+    return result
+
+  # ----------------------------------------------------------------------------------------------------
+
+  @staticmethod
   def add_pack_filter(pack_filter):
     if isinstance(pack_filter, str):
       PresetData.pack_filters.append(pack_filter)
