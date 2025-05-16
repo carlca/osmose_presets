@@ -171,7 +171,7 @@ def main(page: ft.Page):
   print(pack)
   print(PresetData.get_types(pack))
 
-  presets = PresetData.presets()
+  presets = PresetData.get_presets()
   if presets:
     for preset in presets:
       print(preset)

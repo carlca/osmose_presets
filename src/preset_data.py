@@ -49,7 +49,7 @@ class PresetData:
   # ----------------------------------------------------------------------------------------------------
 
   @staticmethod
-  def presets():
+  def get_presets():
     result = []
     for preset in PresetData.cached_presets:
       pack_filtered = (
