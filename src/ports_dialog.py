@@ -6,8 +6,9 @@ from helper_functions import Helper
 
 class PortsDialog(ft.AlertDialog):
 
-  def __init__(self, modal: bool = True, width: int = 400, height: int = 200, title=""):
+  def __init__(self, page, modal: bool = True, width: int = 400, height: int = 200, title=""):
     super().__init__(modal=modal)
+    self.page = page
     self.ports = Helper.get_input_ports()
     if c.DEBUG_LAYOUT:
       self.ports.append(c.TEXT_26)
@@ -25,6 +26,10 @@ class PortsDialog(ft.AlertDialog):
       self.display_ports()
     else:
       self.display_no_ports_warning()
+    self.page.overlay.append(self)
+    self.open = True
+    self.update_ports(True)
+    self.page.update()
 
   # ----------------------------------------------------------------------------------------------------
 

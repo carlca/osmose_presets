@@ -1,6 +1,7 @@
 import flet as ft
 from preset_data import PresetData
 from helper_functions import Helper
+from spacer import Spacer
 
 # ----------------------------------------------------------------------------------------------------
 
@@ -21,13 +22,13 @@ class PresetGrid(ft.Container):
 
     header_row = ft.Row(
       controls=[
-        ft.Text("bank", width=pack_width, color="#808080", size=20),
-        ft.Text("type", width=type_width, color="#808080", size=20),
-        ft.Text("preset", width=preset_width, color="#808080", size=20),
-        ft.Text("cc", width=50, color="#808080", size=20),
-        ft.Text("pgm", width=50, color="#808080", size=20),
-        ft.Text("   characters", width=characters_string_width, color="#808080", size=20),
-      ]
+        ft.Text("bank", width=pack_width, color="#808080", size=24),
+        ft.Text("type", width=type_width, color="#808080", size=24),
+        ft.Text("preset", width=preset_width, color="#808080", size=24),
+        ft.Text("cc", width=60, color="#808080", size=24),
+        ft.Text("pgm", width=60, color="#808080", size=24),
+        ft.Text("   characters", width=characters_string_width, color="#808080", size=24),
+      ],
     )
 
     header_column = ft.Column(height=40)

@@ -16,6 +16,13 @@ class Helper:
       print(f"Error getting MIDI input ports: {e}")
       return []
 
+
+  @staticmethod
+  def get_ports_dialog_width():
+    longest = Helper.get_longest_port_length()
+    excess = max(0, longest - c.DEFAULT_PORT_NAME_LENGTH) * c.PIXELS_PER_CHAR
+    return c.BASE_DIALOG_WIDTH + excess
+
   # -----------------------------------------------------------------------------------------------
 
   @staticmethod

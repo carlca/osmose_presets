@@ -33,38 +33,32 @@ def main(page: ft.Page):
   # ----------------------------------------------------------------------------------------------------
 
   def show_dialog(e):
-    longest = Helper.get_longest_port_length()
-    excess = max(0, longest - c.DEFAULT_PORT_NAME_LENGTH) * c.PIXELS_PER_CHAR
-    dlg_width = c.BASE_DIALOG_WIDTH + excess
-    dlg = PortsDialog(width=dlg_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
-    dlg.page = page
-    page.overlay.append(dlg)
-    dlg.open = True
-    dlg.update_ports(True)
-    page.update()
+    PortsDialog(page, width=Helper.get_ports_dialog_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
 
   # ----------------------------------------------------------------------------------------------------
 
   page.add(
     ft.Row(
       [
+        ft.Container(
+          content=ft.FilledButton(
+            " MIDI Input Port ", color="#101010", on_click=show_dialog,
+          ),
+          padding=5,
+        )
+      ]
+    ),
+    ft.Row(
+      [
         ft.Column(
           [
-            ft.Text("   pack", color="#808080", size=24),
-            FilterSelector(page, Filters.PACK),
-            ft.Text("   type", color="#808080", size=24),
-            FilterSelector(page, Filters.TYPE),
+            FilterSelector(page, Filters.PACK, height=240),
+            FilterSelector(page, Filters.TYPE, expand=True),
           ],
           width=200,
         ),
         ft.Column(
           [
-            ft.Container(
-              content=ft.FilledButton(
-                " Select MIDI Input Port ", color="#101010", on_click=show_dialog,
-              ),
-              padding=5,
-            ),
             PresetGrid()
           ],
         ),

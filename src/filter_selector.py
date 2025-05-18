@@ -2,15 +2,17 @@ import flet as ft
 from preset_data import PresetData
 from helper_functions import Helper
 from filters import Filters
+from spacer import Spacer
 
 # -------------------------------------------------------------------------------------------------
 
 class FilterSelector(ft.Container):
 
-  def __init__(self, page, filter):
+  def __init__(self, page, filter, height=None, expand=False):
     super().__init__()
     self.controls = []
-    self.expand = True
+    self.height = height
+    self.expand = expand
     self.filter = filter
     self.build_content()
 
@@ -54,17 +56,26 @@ class FilterSelector(ft.Container):
       )
 
     width = Helper.get_longest_pack_and_type_length() * 12 + 20
+    filter_text = "pack" if self.filter == Filters.PACK else "type"
+    inner_filter_header = ft.Container(
+      content=ft.Text(f" {filter_text}", color="#808080", size=24),
+    )
 
     inner_filter_column = ft.Container(
       content=ft.Column(controls=filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
-      bgcolor="#232323",
-      padding=10,
-      border_radius= ft.border_radius.all(20)
     )
 
     filter_column = ft.Container(
-      inner_filter_column,
-      padding=10
+      ft.Column(
+        [
+          inner_filter_header,
+          Spacer(1),
+          inner_filter_column,
+        ]
+      ),
+      padding=10,
+      bgcolor="#232323",
+      border_radius= ft.border_radius.all(20)
     )
 
     return filter_column
