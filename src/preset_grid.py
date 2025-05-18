@@ -64,6 +64,7 @@ class PresetGrid(ft.Container):
       content=ft.Column(
         [
           header_column,
+          # Spacer(0.1),
           items_column,
         ]
       ),
