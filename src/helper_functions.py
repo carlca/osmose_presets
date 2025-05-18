@@ -16,6 +16,7 @@ class Helper:
       print(f"Error getting MIDI input ports: {e}")
       return []
 
+  # -----------------------------------------------------------------------------------------------
 
   @staticmethod
   def get_ports_dialog_width():
