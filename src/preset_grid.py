@@ -25,13 +25,13 @@ class PresetGrid(ft.Container):
         ft.Text("bank", width=pack_width, color="#808080", size=24),
         ft.Text("type", width=type_width, color="#808080", size=24),
         ft.Text("preset", width=preset_width, color="#808080", size=24),
-        ft.Text("cc", width=60, color="#808080", size=24),
-        ft.Text("pgm", width=60, color="#808080", size=24),
-        ft.Text("   characters", width=characters_string_width, color="#808080", size=24),
+        ft.Text("cc", width=50, color="#808080", size=24),
+        ft.Text("pgm", width=70, color="#808080", size=24),
+        ft.Text("characters", width=characters_string_width, color="#808080", size=24),
       ],
     )
 
-    header_column = ft.Column(height=40)
+    header_column = ft.Column(height=45)
     header_column.controls.append(header_row)
 
     items_column = ft.Column(scroll=ft.ScrollMode.ALWAYS, height=800)
@@ -46,12 +46,14 @@ class PresetGrid(ft.Container):
               ft.Text(preset.pack, width=pack_width),
               ft.Text(preset.type, width=type_width),
               ft.Text(preset.preset, width=preset_width),
-              ft.Text(str(preset.cc0), width=50),
-              ft.Text(str(preset.pgm), width=50),
+              ft.Text(str(preset.cc0), width=20, text_align=ft.TextAlign.RIGHT),
+              ft.Text(str(preset.pgm), width=64, text_align=ft.TextAlign.RIGHT),
+              ft.Text("      "),
               ft.Text(",".join(preset.characters), width=characters_string_width),
             ]
           ),
-          width=1700,
+          height=31,
+          # width=1700,
           padding=5,
           border_radius=5,
           bgcolor=bg_color,
@@ -68,7 +70,7 @@ class PresetGrid(ft.Container):
       bgcolor="#232323",
       padding=10,
       border_radius= ft.border_radius.all(20),
-      width=1160,
+      width=1200,
     )
 
     self.content = grid_container

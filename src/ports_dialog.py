@@ -10,9 +10,6 @@ class PortsDialog(ft.AlertDialog):
     super().__init__(modal=modal)
     self.page = page
     self.ports = Helper.get_input_ports()
-    if c.DEBUG_LAYOUT:
-      self.ports.append(c.TEXT_26)
-      self.ports.append(c.TEXT_50)
     self.title = title
     self.set_defaults()
     self.radio_group = self.create_radio_group()

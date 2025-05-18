@@ -69,7 +69,7 @@ class FilterSelector(ft.Container):
       ft.Column(
         [
           inner_filter_header,
-          Spacer(1),
+          Spacer(0),
           inner_filter_column,
         ]
       ),

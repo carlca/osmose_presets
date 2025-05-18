@@ -9,25 +9,14 @@ from filters import Filters
 # from type_selector import TypeSelector
 from filter_selector import FilterSelector
 
-DEBUG_PAGE_SIZE = False
-
-# ----------------------------------------------------------------------------------------------------
-
-def page_resized(e, page):
-  page.title = f"Osmose Presets - {page.window.width} x {page.window.height}"
-  page.update()
-
 # ----------------------------------------------------------------------------------------------------
 
 def main(page: ft.Page):
-  page.window.width = 1400
-  page.window.height = 960
+  page.window.width = 1430
+  page.window.height = 975
   page.window.center()
   page.vertical_alignment = "center"
   page.horizontal_alignment = "center"
-  if DEBUG_PAGE_SIZE:
-    page.on_resized = page_resized(page)
-
   page.title = "Osmose Presets"
 
   # ----------------------------------------------------------------------------------------------------
@@ -52,7 +41,7 @@ def main(page: ft.Page):
       [
         ft.Column(
           [
-            FilterSelector(page, Filters.PACK, height=240),
+            FilterSelector(page, Filters.PACK, height=200),
             FilterSelector(page, Filters.TYPE, expand=True),
           ],
           width=200,

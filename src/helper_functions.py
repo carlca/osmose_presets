@@ -59,9 +59,6 @@ class Helper:
   @staticmethod
   def get_longest_port_length():
     ports = Helper.get_input_ports()
-    if c.DEBUG_LAYOUT:
-      ports.append(c.TEXT_26)
-      ports.append(c.TEXT_50)
     return Helper.get_longest_length(ports)
 
   # -----------------------------------------------------------------------------------------------
