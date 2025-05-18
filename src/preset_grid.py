@@ -9,7 +9,6 @@ class PresetGrid(ft.Container):
     super().__init__()
     self.controls = []
     self.expand = True
-    print("about to build_content")
     self.build_content()
 
   def build_content(self):
@@ -31,15 +30,14 @@ class PresetGrid(ft.Container):
       ]
     )
 
-    # self.header = ft.Column(width=1700, height=40)
-    # self.header.controls.append(header_row)
-    header_column = ft.Column(width=1700, height=40)
+    header_column = ft.Column(height=40)
     header_column.controls.append(header_row)
 
-    # self.items = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=300)
-    # self.items = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=850)
-    items_column = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=850)
-    for preset in self.presets:
+    items_column = ft.Column(scroll=ft.ScrollMode.ALWAYS, height=800)
+    for row, preset in enumerate(self.presets):
+      bg_color = (
+          "#333333" if row % 2 == 0 else None
+      )
       items_column.controls.append(
         ft.Container(
           content=ft.Row(
@@ -55,6 +53,7 @@ class PresetGrid(ft.Container):
           width=1700,
           padding=5,
           border_radius=5,
+          bgcolor=bg_color,
         )
       )
 
@@ -68,6 +67,7 @@ class PresetGrid(ft.Container):
       bgcolor="#232323",
       padding=10,
       border_radius= ft.border_radius.all(20),
+      width=1160,
     )
 
     self.content = grid_container

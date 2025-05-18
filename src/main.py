@@ -17,7 +17,7 @@ def page_resized(e, page):
 
 def main(page: ft.Page):
   page.window.width = 1400
-  page.window.height = 1000
+  page.window.height = 960
   page.window.center()
   page.vertical_alignment = "center"
   page.horizontal_alignment = "center"
@@ -145,12 +145,14 @@ def main(page: ft.Page):
         ),
         ft.Column(
           [
-            ft.FilledButton(
-              " Select MIDI Input Port ", color="#101010", on_click=show_dialog,
+            ft.Container(
+              content=ft.FilledButton(
+                " Select MIDI Input Port ", color="#101010", on_click=show_dialog,
+              ),
+              padding=5,
             ),
             PresetGrid()
           ],
-          expand=True,
         ),
       ],
       expand=True,
