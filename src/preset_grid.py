@@ -31,13 +31,16 @@ class PresetGrid(ft.Container):
       ]
     )
 
-    self.header = ft.Column(width=1700, height=40)
-    self.header.controls.append(header_row)
+    # self.header = ft.Column(width=1700, height=40)
+    # self.header.controls.append(header_row)
+    header_column = ft.Column(width=1700, height=40)
+    header_column.controls.append(header_row)
 
     # self.items = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=300)
-    self.items = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=850)
+    # self.items = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=850)
+    items_column = ft.Column(width=1700, scroll=ft.ScrollMode.ALWAYS, height=850)
     for preset in self.presets:
-      self.items.controls.append(
+      items_column.controls.append(
         ft.Container(
           content=ft.Row(
             [
@@ -58,8 +61,8 @@ class PresetGrid(ft.Container):
     grid_container = ft.Container(
       content=ft.Column(
         [
-          self.header,
-          self.items,
+          header_column,
+          items_column,
         ]
       ),
       bgcolor="#232323",
