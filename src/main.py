@@ -1,8 +1,8 @@
 import flet as ft
 from ports_dialog import PortsDialog
-import consts as c
+# import consts as c
 from helper_functions import Helper
-from preset_data import PresetData
+# from preset_data import PresetData
 from preset_grid import PresetGrid
 from filters import Filters
 # from pack_selector import PackSelector
@@ -55,30 +55,6 @@ def main(page: ft.Page):
       expand=True,
     )
   )
-
-  # PresetData.add_pack_filter("factory")
-  # PresetData.add_type_filter(["organ", "mallets"])
-
-  # print("")
-  # print(PresetData.get_packs())
-
-  print("")
-  pack = "expansion_01"
-  print(pack)
-  print(PresetData.get_types(pack))
-
-  # print("")
-  # pack = "factory"
-  # print(pack)
-  # print(PresetData.get_types(pack))
-
-  # presets = PresetData.get_presets()
-  # if presets:
-  #   for preset in presets:
-  #     print(preset)
-
-  # print(Helper.get_longest_pack_and_type_length())
-
   page.update()
 
 
