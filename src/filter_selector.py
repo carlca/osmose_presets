@@ -59,11 +59,12 @@ class FilterSelector(ft.Container):
     filter_text = "pack" if self.filter == Filters.PACK else "type"
     inner_filter_header = ft.Container(
       content=ft.Text(f" {filter_text}", color="#808080", size=24),
+      height=35 if self.filter == Filters.PACK else 30
     )
 
     inner_filter_column = ft.Container(
       content=ft.Column(
-        spacing=10,
+        spacing=9,
         controls=filter_checkboxes,
         width=width,
         scroll=ft.ScrollMode.AUTO),
@@ -73,7 +74,7 @@ class FilterSelector(ft.Container):
       ft.Column(
         [
           inner_filter_header,
-          Spacer(0),
+          Spacer(-1.0),
           inner_filter_column,
         ]
       ),
