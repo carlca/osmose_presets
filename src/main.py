@@ -1,19 +1,15 @@
 import flet as ft
 from ports_dialog import PortsDialog
-# import consts as c
 from helper_functions import Helper
-# from preset_data import PresetData
 from preset_grid import PresetGrid
 from filters import Filters
-# from pack_selector import PackSelector
-# from type_selector import TypeSelector
 from filter_selector import FilterSelector
 
 # ----------------------------------------------------------------------------------------------------
 
 def main(page: ft.Page):
   page.window.width = 1430
-  page.window.height = 975
+  page.window.height = 982
   page.window.center()
   page.vertical_alignment = "center"
   page.horizontal_alignment = "center"

@@ -1,7 +1,6 @@
 import flet as ft
 from preset_data import PresetData
 from helper_functions import Helper
-# from spacer import Spacer
 
 # ----------------------------------------------------------------------------------------------------
 
@@ -31,13 +30,19 @@ class PresetGrid(ft.Container):
       ],
     )
 
-    header_column = ft.Column(height=45)
+    header_column = ft.Column(
+      height=45,
+      spacing=9,
+    )
     header_column.controls.append(header_row)
 
-    items_column = ft.Column(scroll=ft.ScrollMode.ALWAYS, height=800)
+    items_column = ft.Column(
+      scroll=ft.ScrollMode.ALWAYS,
+      height=810
+    )
     for row, preset in enumerate(self.presets):
       bg_color = (
-          "#333333" if row % 2 == 0 else None
+        "#555555" if row % 2 == 0 else "#333333"
       )
       items_column.controls.append(
         ft.Container(
@@ -53,24 +58,22 @@ class PresetGrid(ft.Container):
             ]
           ),
           height=31,
-          # width=1700,
           padding=5,
           border_radius=5,
           bgcolor=bg_color,
-        )
+        ),
       )
 
     grid_container = ft.Container(
       content=ft.Column(
         [
           header_column,
-          # Spacer(0.1),
           items_column,
         ]
       ),
       bgcolor="#232323",
       padding=10,
-      border_radius= ft.border_radius.all(20),
+      border_radius= ft.border_radius.all(16),
       width=1200,
     )
 

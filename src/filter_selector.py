@@ -62,7 +62,11 @@ class FilterSelector(ft.Container):
     )
 
     inner_filter_column = ft.Container(
-      content=ft.Column(controls=filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO),
+      content=ft.Column(
+        spacing=10,
+        controls=filter_checkboxes,
+        width=width,
+        scroll=ft.ScrollMode.AUTO),
     )
 
     filter_column = ft.Container(
@@ -75,7 +79,7 @@ class FilterSelector(ft.Container):
       ),
       padding=10,
       bgcolor="#232323",
-      border_radius= ft.border_radius.all(20)
+      border_radius= ft.border_radius.all(16)
     )
 
     return filter_column
