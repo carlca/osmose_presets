@@ -8,6 +8,7 @@ from filter_selector import FilterSelector
 # ----------------------------------------------------------------------------------------------------
 
 def main(page: ft.Page):
+  page.theme_mode = ft.ThemeMode.DARK
   page.window.width = 1430
   page.window.height = 982
   page.window.center()
