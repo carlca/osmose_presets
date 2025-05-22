@@ -5,7 +5,7 @@ from preset_grid import PresetGrid
 from filters import Filters
 from filter_selector import FilterSelector
 
-# ----------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
 
 def main(page: ft.Page):
   page.theme_mode = ft.ThemeMode.DARK
@@ -16,16 +16,18 @@ def main(page: ft.Page):
   page.horizontal_alignment = "center"
   page.title = "Osmose Presets"
 
-  # ----------------------------------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------------------------
 
   def show_dialog(e):
     PortsDialog(page, width=Helper.get_ports_dialog_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
 
-  # ----------------------------------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------------------------
 
-  def handle_filter_changed(filter_type):
-    print(f"Filter changed event received {filter_type}")
+  def handle_filter_changed(filter_type, selected_filters):
+    print(f"Filter changed event received for {filter_type} with selected filters: {selected_filters}")
     page.update()
+
+  # -----------------------------------------------------------------------------------------------
 
   pack_filter = FilterSelector(page, Filters.PACK, height=200)
   type_filter = FilterSelector(page, Filters.TYPE, expand=True)
