@@ -23,6 +23,16 @@ def main(page: ft.Page):
 
   # ----------------------------------------------------------------------------------------------------
 
+  def handle_filter_changed(filter_type):
+    print(f"Filter changed event received {filter_type}")
+    page.update()
+
+  pack_filter = FilterSelector(page, Filters.PACK, height=200)
+  type_filter = FilterSelector(page, Filters.TYPE, expand=True)
+
+  pack_filter.set_on_filter_changed(handle_filter_changed)
+  type_filter.set_on_filter_changed(handle_filter_changed)
+
   page.add(
     ft.Row(
       [
@@ -38,8 +48,8 @@ def main(page: ft.Page):
       [
         ft.Column(
           [
-            FilterSelector(page, Filters.PACK, height=200),
-            FilterSelector(page, Filters.TYPE, expand=True),
+            pack_filter,
+            type_filter,
           ],
           width=200,
         ),
@@ -52,6 +62,7 @@ def main(page: ft.Page):
       expand=True,
     )
   )
+  page.on_event = handle_filter_changed
   page.update()
 
 

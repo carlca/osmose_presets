@@ -1,0 +1,9 @@
+[
+  {
+    "label": "Python: Debug Active File",
+    "adapter": "python",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  }
+]

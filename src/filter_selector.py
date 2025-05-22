@@ -15,6 +15,12 @@ class FilterSelector(ft.Container):
     self.expand = expand
     self.filter = filter
     self.build_content()
+    self.on_filter_changed_callback = None
+
+  # -----------------------------------------------------------------------------------------------
+
+  def set_on_filter_changed(self, callback):
+    self.on_filter_changed_callback = callback
 
   # -----------------------------------------------------------------------------------------------
 
@@ -42,6 +48,8 @@ class FilterSelector(ft.Container):
             break
         filter_checkboxes[0].value = all_checked
       self.page.update()
+      if self.on_filter_changed_callback:
+          self.on_filter_changed_callback(self.filter)
 
       # ---------------------------------------------------------------------------------------------
 
