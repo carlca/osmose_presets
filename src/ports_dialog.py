@@ -7,11 +7,12 @@ from helper_functions import Helper
 
 class PortsDialog(ft.AlertDialog):
 
-  def __init__(self, page, modal: bool = True, width: int = 400, height: int = 200, title=""):
+  def __init__(self, page, selected_port="", modal: bool = True, width: int = 400, height: int = 200, title=""):
     super().__init__(modal=modal)
     self.page = page
     self.ports = Helper.get_input_ports()
     self.title = title
+    self.selected_port = selected_port
     self.set_defaults()
     self.radio_group = self.create_radio_group()
     self.prev_button, self.next_button = self.create_nav_buttons()
@@ -119,7 +120,14 @@ class PortsDialog(ft.AlertDialog):
     ports = self.port_texts[start:end]
     radio_array = []
     for port in ports:
-      radio_array.append(ft.Radio(value=port.value, label=port.value))
+      radio = ft.Radio(value=port.value, label=port.value)
+      if port.value == self.selected_port:
+        radio.value = self.selected_port
+        self.radio_group.value = self.selected_port
+        self.ok_button.disabled = False
+      radio_array.append(radio)
+      # radio_array.append(ft.Radio(value=port.value, label=port.value))
+
     self.radio_group.content = ft.Column(controls=radio_array, horizontal_alignment=ft.CrossAxisAlignment.START)  # fmt: skip
     if not first_run:
       self.update()

@@ -12,7 +12,6 @@ class PresetGrid(ft.Container):
     self.build_content()
 
   def build_content(self):
-    print("build_content called")
     self.presets = PresetData.get_presets()
 
     pack_width = Helper.get_longest_pack_length() * 12

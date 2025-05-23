@@ -31,12 +31,18 @@ def main(page: ft.Page):
   page.title = "Osmose Presets"
   PresetData.clear_pack_filters()
   PresetData.clear_type_filters()
-  page.selected_midi_port = read_selected_midi_port()
 
   # -----------------------------------------------------------------------------------------------
 
   def show_dialog(e):
-    ports_dialog = PortsDialog(page, width=Helper.get_ports_dialog_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
+    page.selected_midi_port = read_selected_midi_port()
+    ports_dialog = PortsDialog(
+      page,
+      selected_port=page.selected_midi_port,
+      width=Helper.get_ports_dialog_width,
+      height=250,
+      title=ft.Text("Select MIDI Input Port")
+    )  # fmt: skip
     ports_dialog.set_on_port_selected(port_selected)
     ports_dialog
 
@@ -102,5 +108,8 @@ def main(page: ft.Page):
   page.on_event = handle_filter_changed
   page.update()
 
+  # -----------------------------------------------------------------------------------------------
 
 ft.app(target=main)
+
+# -------------------------------------------------------------------------------------------------
