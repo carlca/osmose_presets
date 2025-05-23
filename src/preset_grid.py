@@ -12,6 +12,7 @@ class PresetGrid(ft.Container):
     self.build_content()
 
   def build_content(self):
+    print("build_content called")
     self.presets = PresetData.get_presets()
 
     pack_width = Helper.get_longest_pack_length() * 12
@@ -40,6 +41,7 @@ class PresetGrid(ft.Container):
       scroll=ft.ScrollMode.ALWAYS,
       height=810
     )
+    # items_column.controls.clear() # Clear existing items!
     for row, preset in enumerate(self.presets):
       bg_color = (
         "#555555" if row % 2 == 0 else "#333333"

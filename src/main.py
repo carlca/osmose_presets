@@ -1,4 +1,5 @@
 import flet as ft
+from preset_data import PresetData
 from ports_dialog import PortsDialog
 from helper_functions import Helper
 from preset_grid import PresetGrid
@@ -15,6 +16,8 @@ def main(page: ft.Page):
   page.vertical_alignment = "center"
   page.horizontal_alignment = "center"
   page.title = "Osmose Presets"
+  PresetData.clear_pack_filters()
+  PresetData.clear_type_filters()
 
   # -----------------------------------------------------------------------------------------------
 
@@ -24,13 +27,25 @@ def main(page: ft.Page):
   # -----------------------------------------------------------------------------------------------
 
   def handle_filter_changed(filter_type, selected_filters):
-    print(f"Filter changed event received for {filter_type} with selected filters: {selected_filters}")
+    # print(f"Filter changed event received for {filter_type} with selected filters: {selected_filters}")
+    match filter_type:
+      case Filters.PACK:
+        PresetData.clear_pack_filters()
+        if selected_filters:
+          PresetData.add_pack_filter(selected_filters)
+      case Filters.TYPE:
+        PresetData.clear_type_filters()
+        if selected_filters:
+          PresetData.add_type_filter(selected_filters)
+    preset_grid.build_content()
+    preset_grid.update()
     page.update()
 
   # -----------------------------------------------------------------------------------------------
 
   pack_filter = FilterSelector(page, Filters.PACK, height=200)
   type_filter = FilterSelector(page, Filters.TYPE, expand=True)
+  preset_grid = PresetGrid()
 
   pack_filter.set_on_filter_changed(handle_filter_changed)
   type_filter.set_on_filter_changed(handle_filter_changed)
@@ -57,7 +72,7 @@ def main(page: ft.Page):
         ),
         ft.Column(
           [
-            PresetGrid()
+            preset_grid,
           ],
         ),
       ],

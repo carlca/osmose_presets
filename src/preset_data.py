@@ -51,6 +51,10 @@ class PresetData:
   @staticmethod
   def get_presets():
     result = []
+
+    if not PresetData.pack_filters or not PresetData.type_filters:
+      return result
+
     for preset in PresetData.cached_presets:
       pack_filtered = (
         not PresetData.pack_filters or preset.pack in PresetData.pack_filters
@@ -76,6 +80,12 @@ class PresetData:
     for preset in PresetData.cached_presets:
       result.append(preset.preset)
     return result
+
+  # ----------------------------------------------------------------------------------------------------
+
+  @staticmethod
+  def clear_pack_filters():
+    PresetData.pack_filters.clear()
 
   # ----------------------------------------------------------------------------------------------------
 
