@@ -29,9 +29,10 @@ company = "Flet"
 copyright = "Copyright (C) 2025 by Flet"
 
 [tool.ruff]
-indent-width = 2
+indent-width = 3
 
 [tool.ruff.format]
+indent-style = "space"
 skip-magic-trailing-comma = true
 
 [tool.flet.app]

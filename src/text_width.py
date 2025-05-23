@@ -5,34 +5,34 @@ import string
 
 
 def get_random_string(length: int) -> str:
-  all_chars = string.ascii_letters  # + string.digits
-  rand_chars = random.choices(all_chars, k=length)
-  # Join the chosen characters into a string
-  return "".join(rand_chars)
+   all_chars = string.ascii_letters  # + string.digits
+   rand_chars = random.choices(all_chars, k=length)
+   # Join the chosen characters into a string
+   return "".join(rand_chars)
 
 
 def main(page: ft.Page):
-  page.title = "AlertDialog examples"
+   page.title = "AlertDialog examples"
 
-  text_array = []
+   text_array = []
 
-  for i in range(10):
-    s = get_random_string(30).capitalize()
+   for i in range(10):
+      s = get_random_string(30).capitalize()
 
-    text = ft.Text(s)
-    text_array.append(text)
+      text = ft.Text(s)
+      text_array.append(text)
 
-  page.add(ft.Column(text_array))
+   page.add(ft.Column(text_array))
 
-  page.update()
+   page.update()
 
-  # width = text.actual_width
-  # count = len(text)
-  # avg_width = width / count
-  # print(f"avg_width: {avg_width}")
+   # width = text.actual_width
+   # count = len(text)
+   # avg_width = width / count
+   # print(f"avg_width: {avg_width}")
 
-  # page.overlay.remove(text)
-  # page.update()
+   # page.overlay.remove(text)
+   # page.update()
 
 
 ft.app(main)
