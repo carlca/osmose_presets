@@ -66,8 +66,17 @@ def main(page: ft.Page):
 
    def port_selected(port):
       save_selected_midi_port(port)
+      selected_midi_port_text.value = f"{port}"
+      page.update()
 
    # -----------------------------------------------------------------------------------------------
+
+   page.selected_midi_port = read_selected_midi_port()
+   selected_midi_port_text = ft.Text(
+      value=f"{page.selected_midi_port}",
+      color="#808080",
+      size=24,
+   )
 
    pack_filter = FilterSelector(page, Filters.PACK, height=200)
    type_filter = FilterSelector(page, Filters.TYPE, expand=True)
@@ -84,7 +93,8 @@ def main(page: ft.Page):
                   " MIDI Input Port ", color="#101010", on_click=show_dialog
                ),
                padding=5,
-            )
+            ),
+            selected_midi_port_text,
          ]
       ),
       ft.Row(
