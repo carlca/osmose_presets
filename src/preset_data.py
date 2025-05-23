@@ -10,6 +10,7 @@ PRESET_DATA = os.path.join(SCRIPT_DIR, "OsmosePresets.json")
 
 # ----------------------------------------------------------------------------------------------------
 
+
 @dataclass
 class Preset:
    pack: str
@@ -19,7 +20,9 @@ class Preset:
    preset: str
    characters: List[str] = field(default_factory=list)
 
+
 # ----------------------------------------------------------------------------------------------------
+
 
 class PresetData:
    cached_presets = []
@@ -137,6 +140,7 @@ class PresetData:
       return types
 
    # ----------------------------------------------------------------------------------------------------
+
 
 if not PresetData.cached_presets:
    PresetData.cached_presets = PresetData.load_from_json(PRESET_DATA)

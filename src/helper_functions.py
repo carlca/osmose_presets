@@ -6,6 +6,7 @@ from preset_data import PresetData
 
 # -------------------------------------------------------------------------------------------------
 
+
 class Helper:
    @staticmethod
    def read_config():

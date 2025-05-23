@@ -71,16 +71,19 @@ def main(page: ft.Page):
 
    # -----------------------------------------------------------------------------------------------
 
+   def handle_preset_clicked(preset, cc, pgm):
+      print(f"Preset clicked! Preset: {preset}, CC: {cc}, PGM: {pgm}")
+
+   # -----------------------------------------------------------------------------------------------
+
    page.selected_midi_port = read_selected_midi_port()
    selected_midi_port_text = ft.Text(
-      value=f"{page.selected_midi_port}",
-      color="#808080",
-      size=24,
+      value=f"{page.selected_midi_port}", color="#808080", size=24
    )
 
    pack_filter = FilterSelector(page, Filters.PACK, height=200)
    type_filter = FilterSelector(page, Filters.TYPE, expand=True)
-   preset_grid = PresetGrid()
+   preset_grid = PresetGrid(on_preset_clicked=handle_preset_clicked)
 
    pack_filter.set_on_filter_changed(handle_filter_changed)
    type_filter.set_on_filter_changed(handle_filter_changed)
