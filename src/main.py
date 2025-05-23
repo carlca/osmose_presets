@@ -8,23 +8,18 @@ from filter_selector import FilterSelector
 
 # -------------------------------------------------------------------------------------------------
 
-
 def read_selected_midi_port():
    config = Helper.read_config()
    return config.get("selected_midi_port", "")
 
-
 # -------------------------------------------------------------------------------------------------
-
 
 def save_selected_midi_port(port):
    config = Helper.read_config()
    config["selected_midi_port"] = port
    Helper.write_config(config)
 
-
 # -------------------------------------------------------------------------------------------------
-
 
 def main(page: ft.Page):
    page.theme_mode = ft.ThemeMode.DARK
@@ -101,7 +96,6 @@ def main(page: ft.Page):
    page.update()
 
    # -----------------------------------------------------------------------------------------------
-
 
 ft.app(target=main)
 

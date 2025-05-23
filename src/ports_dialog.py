@@ -4,7 +4,6 @@ from helper_functions import Helper
 
 # ----------------------------------------------------------------------------------------------------
 
-
 class PortsDialog(ft.AlertDialog):
    def __init__(
       self,

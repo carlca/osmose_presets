@@ -39,7 +39,6 @@ class PresetGrid(ft.Container):
       header_column.controls.append(header_row)
 
       items_column = ft.Column(scroll=ft.ScrollMode.ALWAYS, height=810)
-      # items_column.controls.clear() # Clear existing items!
       for row, preset in enumerate(self.presets):
          bg_color = "#555555" if row % 2 == 0 else "#333333"
          items_column.controls.append(

@@ -6,7 +6,6 @@ from spacer import Spacer
 
 # -------------------------------------------------------------------------------------------------
 
-
 class FilterSelector(ft.Container):
    def __init__(self, page, filter, height=None, expand=False):
       super().__init__()
