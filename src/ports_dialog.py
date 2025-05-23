@@ -27,6 +27,7 @@ class PortsDialog(ft.AlertDialog):
     self.page.overlay.append(self)
     self.open = True
     self.update_ports(True)
+    self.on_port_selected_callback = None
     self.page.update()
 
   # ----------------------------------------------------------------------------------------------------
@@ -35,6 +36,12 @@ class PortsDialog(ft.AlertDialog):
     self.ports_per_page = 5
     self.curr_page = 0
     self.port_texts = []
+    self.on_port_selected_callback = None
+
+  # ----------------------------------------------------------------------------------------------------
+
+  def set_on_port_selected(self, callback):
+    self.on_port_selected_callback = callback
 
   # ----------------------------------------------------------------------------------------------------
 
@@ -100,7 +107,8 @@ class PortsDialog(ft.AlertDialog):
   # ----------------------------------------------------------------------------------------------------
 
   def ok_handler(self, e):
-    print(f"Selected port: {self.radio_group.value}")  # Example
+    if self.on_port_selected_callback:
+      self.on_port_selected_callback(self.radio_group.value)
     self.close_dlg(e)  # Then close
 
   # ----------------------------------------------------------------------------------------------------

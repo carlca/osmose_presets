@@ -22,7 +22,9 @@ def main(page: ft.Page):
   # -----------------------------------------------------------------------------------------------
 
   def show_dialog(e):
-    PortsDialog(page, width=Helper.get_ports_dialog_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
+    ports_dialog = PortsDialog(page, width=Helper.get_ports_dialog_width, height=250, title=ft.Text("Select MIDI Input Port"))  # fmt: skip
+    ports_dialog.set_on_port_selected(port_selected)
+    ports_dialog
 
   # -----------------------------------------------------------------------------------------------
 
@@ -40,6 +42,11 @@ def main(page: ft.Page):
     preset_grid.build_content()
     preset_grid.update()
     page.update()
+
+  # -----------------------------------------------------------------------------------------------
+
+  def port_selected(port):
+    print(f"port: {port} - selected!")
 
   # -----------------------------------------------------------------------------------------------
 

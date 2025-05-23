@@ -40,8 +40,6 @@ class FilterSelector(ft.Container):
 
   def create_filter_column(self):
     filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
-    # filter_checkboxes = [] # No longer initialize here
-    # self.filter_checkboxes = filter_checkboxes  # Store for later access
 
     # ---------------------------------------------------------------------------------------------
 
