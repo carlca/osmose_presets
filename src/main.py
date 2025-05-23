@@ -8,6 +8,19 @@ from filter_selector import FilterSelector
 
 # -------------------------------------------------------------------------------------------------
 
+def read_selected_midi_port():
+  config = Helper.read_config()
+  return config.get("selected_midi_port", "")
+
+# -------------------------------------------------------------------------------------------------
+
+def save_selected_midi_port(port):
+  config = Helper.read_config()
+  config["selected_midi_port"] = port
+  Helper.write_config(config)
+
+# -------------------------------------------------------------------------------------------------
+
 def main(page: ft.Page):
   page.theme_mode = ft.ThemeMode.DARK
   page.window.width = 1430
@@ -18,6 +31,7 @@ def main(page: ft.Page):
   page.title = "Osmose Presets"
   PresetData.clear_pack_filters()
   PresetData.clear_type_filters()
+  page.selected_midi_port = read_selected_midi_port()
 
   # -----------------------------------------------------------------------------------------------
 
@@ -29,7 +43,6 @@ def main(page: ft.Page):
   # -----------------------------------------------------------------------------------------------
 
   def handle_filter_changed(filter_type, selected_filters):
-    # print(f"Filter changed event received for {filter_type} with selected filters: {selected_filters}")
     match filter_type:
       case Filters.PACK:
         PresetData.clear_pack_filters()
@@ -46,7 +59,7 @@ def main(page: ft.Page):
   # -----------------------------------------------------------------------------------------------
 
   def port_selected(port):
-    print(f"port: {port} - selected!")
+    save_selected_midi_port(port)
 
   # -----------------------------------------------------------------------------------------------
 
