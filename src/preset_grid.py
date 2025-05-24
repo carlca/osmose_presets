@@ -49,7 +49,7 @@ class PresetGrid(ft.Container):
 
          def hover_color(e):
             e.control.content.color = (
-               ft.Colors.YELLOW if e.data == "true" else ft.Colors.WHITE
+               ft.Colors.GREEN if e.data == "true" else ft.Colors.WHITE
             )
             e.control.content.update()
 

@@ -1,10 +1,12 @@
 import flet as ft
+
 from preset_data import PresetData
 from ports_dialog import PortsDialog
 from helper_functions import Helper
 from preset_grid import PresetGrid
 from filters import Filters
 from filter_selector import FilterSelector
+from midi_controller import MidiController
 
 # -------------------------------------------------------------------------------------------------
 
@@ -31,18 +33,19 @@ def main(page: ft.Page):
    page.title = "Osmose Presets"
    PresetData.clear_pack_filters()
    PresetData.clear_type_filters()
+   page.selected_midi_port = read_selected_midi_port()
 
    # -----------------------------------------------------------------------------------------------
 
    def show_dialog(e):
       page.selected_midi_port = read_selected_midi_port()
       ports_dialog = PortsDialog(
-      page,
-      selected_port=page.selected_midi_port,
-      width=Helper.get_ports_dialog_width,
-      height=250,
-      title=ft.Text("Select MIDI Input Port")
-    )  # fmt: skip
+         page,
+         selected_port=page.selected_midi_port,
+         width=Helper.get_ports_dialog_width,
+         height=250,
+         title=ft.Text("Select MIDI Input Port")
+      )  # fmt: skip
       ports_dialog.set_on_port_selected(port_selected)
       ports_dialog
 
@@ -67,16 +70,17 @@ def main(page: ft.Page):
    def port_selected(port):
       save_selected_midi_port(port)
       selected_midi_port_text.value = f"{port}"
+      page.selected_midi_port = port
       page.update()
 
    # -----------------------------------------------------------------------------------------------
 
    def handle_preset_clicked(preset, cc, pgm):
+      MidiController.send_preset_change(page.selected_midi_port, cc, pgm)
       print(f"Preset clicked! Preset: {preset}, CC: {cc}, PGM: {pgm}")
 
    # -----------------------------------------------------------------------------------------------
 
-   page.selected_midi_port = read_selected_midi_port()
    selected_midi_port_text = ft.Text(
       value=f"{page.selected_midi_port}", color="#808080", size=24
    )
