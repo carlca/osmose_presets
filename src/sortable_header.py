@@ -1,34 +1,19 @@
 import flet as ft
+from enum import Enum, auto
 
+class SortState(Enum):
+    NONE = auto()
+    UP = auto()
+    DOWN = auto()
 
 class SortableHeader(ft.TextButton):
-   """
-   A sortable header cell for a Flet DataTable or similar layout.
-   It displays a column name and an optional sort direction icon.
-   """
-
-   def __init__(
-      self,
-      column_name: str,
-      width: int,
-      on_click_handler,
-      height: int = 40,  # Slightly increased default height for better spacing
-   ):
-      """
-      Initializes the SortableHeader.
-
-      Args:
-          column_name (str): The name of the column to display.
-          width (int): The width of the header button.
-          on_click_handler (callable): A function to call when the header is clicked.
-                                       It receives the SortableHeader instance as an argument.
-          height (int, optional): The height of the header button. Defaults to 40.
-      """
+   state: SortState
+   def __init__(self, column_name: str, width: int, on_click_handler, height: int = 40):
       super().__init__()
 
       self.column_name_actual = str(column_name)
       self.on_click_handler = on_click_handler
-      self.state = None
+      self.state = SortState.NONE
 
       self.column_name_display = ft.Text(
          value=self.column_name_actual,
@@ -62,39 +47,33 @@ class SortableHeader(ft.TextButton):
       # No need to call update_text() at init if icon is initially empty and text is set
 
    def _internal_clicked(self, e):
-      """Handles the click event, updates state, and calls the external handler."""
-      if self.state is None:
-         self.state = "up"
-      elif self.state == "up":
-         self.state = "down"
-      else:  # self.state == "down"
-         self.state = None
-
+      match self.state:
+         case SortState.NONE:
+            self.state = SortState.UP
+         case SortState.UP:
+            self.state = SortState.DOWN
+         case SortState.DOWN:
+            self.state = SortState.NONE
       self.update_text()
-
       if self.on_click_handler:
          self.on_click_handler(self)
 
    def update_text(self):
-      """Updates the sort icon based on the current state."""
-      icon_char = ""  # Default to no icon
-      if self.state == "up":
-         icon_char = "▲"  # More common Unicode arrow for 'up'
-      elif self.state == "down":
-         icon_char = "▼"  # More common Unicode arrow for 'down'
-
+      match self.state:
+         case SortState.NONE:
+            icon_char = ""
+         case SortState.UP:
+            icon_char = "▲"
+         case SortState.DOWN:
+            icon_char = "▼"
       self.sort_icon_display.value = icon_char
-
-      # It's crucial to update the control to reflect changes in its children
-      if self.page:  # Check if the control is added to a page
-         self.update()  # Update the whole TextButton
+      if self.page:
+         self.update()
 
    def get_state(self):
-      """Returns the current sort state ('up', 'down', or None)."""
       return self.state
 
    def reset_state(self):
-      """Resets the sort state to None and updates the icon."""
       self.state = None
       self.update_text()
 

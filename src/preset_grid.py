@@ -13,7 +13,7 @@ class PresetGrid(ft.Container):
       self.build_content()
 
    def header_clicked(self, header_instance: SortableHeader): # Add 'header_instance'
-      print(f"Header '{header_instance.column_name_actual}' was clicked.")
+      print(f"Header '{header_instance.column_name_actual} {header_instance.state}' was clicked.")
       pass
 
    def build_content(self):
