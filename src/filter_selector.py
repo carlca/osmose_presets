@@ -4,8 +4,6 @@ from helper_functions import Helper
 from filters import Filters
 from spacer import Spacer
 
-# -------------------------------------------------------------------------------------------------
-
 
 class FilterSelector(ft.Container):
    def __init__(self, page, filter, height=None, expand=False):
@@ -19,12 +17,8 @@ class FilterSelector(ft.Container):
       self.build_content()
       self.on_filter_changed_callback = None
 
-   # -----------------------------------------------------------------------------------------------
-
    def set_on_filter_changed(self, callback):
       self.on_filter_changed_callback = callback
-
-   # -----------------------------------------------------------------------------------------------
 
    def get_selected_filters(self):
       selected_filters = []
@@ -34,13 +28,9 @@ class FilterSelector(ft.Container):
             selected_filters.append(checkbox.label)
       return selected_filters
 
-   # -----------------------------------------------------------------------------------------------
-
    def build_content(self):
       filter_selector_container = self.create_filter_column()
       self.content = filter_selector_container
-
-   # -----------------------------------------------------------------------------------------------
 
    def create_filter_column(self):
       filter_names = (
@@ -48,8 +38,6 @@ class FilterSelector(ft.Container):
          if self.filter == Filters.PACK
          else PresetData.get_types()
       )
-
-      # ---------------------------------------------------------------------------------------------
 
       def update_filter_checkboxes(e):
          if e.control == self.filter_checkboxes[0]:
@@ -66,8 +54,6 @@ class FilterSelector(ft.Container):
          if self.on_filter_changed_callback:
             selected_filters = self.get_selected_filters()
             self.on_filter_changed_callback(self.filter, selected_filters)
-
-         # ---------------------------------------------------------------------------------------------
 
       all_filters_checkbox = ft.Checkbox(
          label="all", value=False, on_change=update_filter_checkboxes

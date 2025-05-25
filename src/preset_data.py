@@ -3,12 +3,9 @@ import json
 from dataclasses import dataclass, field
 from typing import List
 
-# ----------------------------------------------------------------------------------------------------
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PRESET_DATA = os.path.join(SCRIPT_DIR, "OsmosePresets.json")
-
-# ----------------------------------------------------------------------------------------------------
 
 
 @dataclass
@@ -21,15 +18,10 @@ class Preset:
    characters: List[str] = field(default_factory=list)
 
 
-# ----------------------------------------------------------------------------------------------------
-
-
 class PresetData:
    cached_presets = []
    pack_filters = []
    type_filters = []
-
-   # ----------------------------------------------------------------------------------------------------
 
    @staticmethod
    def load_from_json(file_path: str) -> List[Preset]:
@@ -49,8 +41,6 @@ class PresetData:
             loaded_presets.append(preset)
       return loaded_presets
 
-   # ----------------------------------------------------------------------------------------------------
-
    @staticmethod
    def get_presets():
       result = []
@@ -69,13 +59,9 @@ class PresetData:
             result.append(preset)
       return result
 
-   # ----------------------------------------------------------------------------------------------------
-
    @staticmethod
    def get_all_presets():
       return PresetData.cached_presets
-
-   # ----------------------------------------------------------------------------------------------------
 
    @staticmethod
    def get_all_preset_names():
@@ -84,13 +70,9 @@ class PresetData:
          result.append(preset.preset)
       return result
 
-   # ----------------------------------------------------------------------------------------------------
-
    @staticmethod
    def clear_pack_filters():
       PresetData.pack_filters.clear()
-
-   # ----------------------------------------------------------------------------------------------------
 
    @staticmethod
    def add_pack_filter(pack_filter):
@@ -101,13 +83,9 @@ class PresetData:
       else:
          raise TypeError("pack_filter must be a string or a list of strings")
 
-   # ----------------------------------------------------------------------------------------------------
-
    @staticmethod
    def clear_type_filters():
       PresetData.type_filters.clear()
-
-   # ----------------------------------------------------------------------------------------------------
 
    @staticmethod
    def add_type_filter(type_filter):
@@ -118,8 +96,6 @@ class PresetData:
       else:
          raise TypeError("type_filter must be a string or a list of strings")
 
-   # ----------------------------------------------------------------------------------------------------
-
    @staticmethod
    def get_packs():
       packs = []
@@ -127,8 +103,6 @@ class PresetData:
          if preset.pack not in packs:
             packs.append(preset.pack)
       return packs
-
-   # ----------------------------------------------------------------------------------------------------
 
    @staticmethod
    def get_types(pack=""):
@@ -138,8 +112,6 @@ class PresetData:
             if preset.type not in types:
                types.append(preset.type)
       return types
-
-   # ----------------------------------------------------------------------------------------------------
 
 
 if not PresetData.cached_presets:

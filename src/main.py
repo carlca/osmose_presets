@@ -8,24 +8,21 @@ from filters import Filters
 from filter_selector import FilterSelector
 from midi_controller import MidiController
 
-# -------------------------------------------------------------------------------------------------
 
 def read_selected_midi_port():
    config = Helper.read_config()
    return config.get("selected_midi_port", "")
 
-# -------------------------------------------------------------------------------------------------
 
 def save_selected_midi_port(port):
    config = Helper.read_config()
    config["selected_midi_port"] = port
    Helper.write_config(config)
 
-# -------------------------------------------------------------------------------------------------
 
 def main(page: ft.Page):
    page.theme_mode = ft.ThemeMode.DARK
-   page.window.width = 1430
+   page.window.width = 1530
    page.window.height = 982
    page.window.center()
    page.vertical_alignment = "center"
@@ -34,8 +31,6 @@ def main(page: ft.Page):
    PresetData.clear_pack_filters()
    PresetData.clear_type_filters()
    page.selected_midi_port = read_selected_midi_port()
-
-   # -----------------------------------------------------------------------------------------------
 
    def show_dialog(e):
       page.selected_midi_port = read_selected_midi_port()
@@ -48,8 +43,6 @@ def main(page: ft.Page):
       )  # fmt: skip
       ports_dialog.set_on_port_selected(port_selected)
       ports_dialog
-
-   # -----------------------------------------------------------------------------------------------
 
    def handle_filter_changed(filter_type, selected_filters):
       match filter_type:
@@ -65,21 +58,15 @@ def main(page: ft.Page):
       preset_grid.update()
       page.update()
 
-   # -----------------------------------------------------------------------------------------------
-
    def port_selected(port):
       save_selected_midi_port(port)
       selected_midi_port_text.value = f"{port}"
       page.selected_midi_port = port
       page.update()
 
-   # -----------------------------------------------------------------------------------------------
-
    def handle_preset_clicked(preset, cc, pgm):
       MidiController.send_preset_change(page.selected_midi_port, cc, pgm)
       print(f"Preset clicked! Preset: {preset}, CC: {cc}, PGM: {pgm}")
-
-   # -----------------------------------------------------------------------------------------------
 
    selected_midi_port_text = ft.Text(
       value=f"{page.selected_midi_port}", color="#808080", size=24
@@ -112,8 +99,5 @@ def main(page: ft.Page):
    page.on_event = handle_filter_changed
    page.update()
 
-   # -----------------------------------------------------------------------------------------------
 
 ft.app(target=main)
-
-# -------------------------------------------------------------------------------------------------
