@@ -4,15 +4,7 @@ from helper_functions import Helper
 
 
 class PortsDialog(ft.AlertDialog):
-   def __init__(
-      self,
-      page,
-      selected_port="",
-      modal: bool = True,
-      width: int = 400,
-      height: int = 200,
-      title="",
-   ):
+   def __init__(self, page, selected_port="", modal: bool = True, width: int = 400, height: int = 200, title=""):
       super().__init__(modal=modal)
       self.page = page
       self.ports = Helper.get_input_ports()

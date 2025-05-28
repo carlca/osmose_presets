@@ -30,6 +30,7 @@ copyright = "Copyright (C) 2025 by Flet"
 
 [tool.ruff]
 indent-width = 3
+line-length = 160
 
 [tool.ruff.format]
 indent-style = "space"

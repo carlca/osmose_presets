@@ -12,7 +12,7 @@ class PresetGrid(ft.Container):
       self.on_preset_clicked = on_preset_clicked
       self.build_content()
 
-   def header_clicked(self, header_instance: SortableHeader): # Add 'header_instance'
+   def header_clicked(self, header_instance: SortableHeader):  # Add 'header_instance'
       print(f"Header '{header_instance.column_name_actual} {header_instance.state}' was clicked.")
       pass
 
@@ -29,20 +29,9 @@ class PresetGrid(ft.Container):
       self.preset_header = SortableHeader("preset", preset_width, self.header_clicked)
       self.cc_header = SortableHeader("cc", 70, self.header_clicked)
       self.pgm_header = SortableHeader("pgm", 90, self.header_clicked)
-      self.characters_header = SortableHeader(
-         "characters", characters_width, self.header_clicked
-      )
+      self.characters_header = SortableHeader("characters", characters_width, self.header_clicked)
 
-      header_row = ft.Row(
-         controls=[
-            self.bank_header,
-            self.type_header,
-            self.preset_header,
-            self.cc_header,
-            self.pgm_header,
-            self.characters_header,
-         ]
-      )
+      header_row = ft.Row(controls=[self.bank_header, self.type_header, self.preset_header, self.cc_header, self.pgm_header, self.characters_header])
 
       header_column = ft.Column(height=45, spacing=9)
       header_column.controls.append(header_row)
@@ -56,9 +45,7 @@ class PresetGrid(ft.Container):
                self.on_preset_clicked(preset, cc, pgm)
 
          def hover_color(e):
-            e.control.content.color = (
-               ft.Colors.GREEN if e.data == "true" else ft.Colors.WHITE
-            )
+            e.control.content.color = ft.Colors.GREEN if e.data == "true" else ft.Colors.WHITE
             e.control.content.update()
 
          def spacer(n):
@@ -71,35 +58,17 @@ class PresetGrid(ft.Container):
                      ft.Text(spacer(1) + preset.pack, width=pack_width),
                      ft.Text(spacer(1) + preset.type, width=type_width),
                      ft.TextButton(
-                        content=ft.Text(
-                           spacer(1) + preset.preset,
-                           width=preset_width,
-                           color=ft.Colors.WHITE,
-                        ),
+                        content=ft.Text(spacer(1) + preset.preset, width=preset_width, color=ft.Colors.WHITE),
                         data=preset,
                         on_click=preset_clicked,
                         on_hover=hover_color,
-                        style=ft.ButtonStyle(
-                           mouse_cursor={ft.ControlState.HOVERED: ft.MouseCursor.CLICK},
-                           padding=0,
-                           overlay_color=ft.Colors.TRANSPARENT,
-                        ),
+                        style=ft.ButtonStyle(mouse_cursor={ft.ControlState.HOVERED: ft.MouseCursor.CLICK}, padding=0, overlay_color=ft.Colors.TRANSPARENT),
                         disabled=False,
                      ),
-                     ft.Text(
-                        spacer(2) + str(preset.cc0),
-                        width=28,
-                        text_align=ft.TextAlign.RIGHT,
-                     ),
-                     ft.Text(
-                        spacer(5) + str(preset.pgm),
-                        width=80,
-                        text_align=ft.TextAlign.RIGHT,
-                     ),
+                     ft.Text(spacer(2) + str(preset.cc0), width=28, text_align=ft.TextAlign.RIGHT),
+                     ft.Text(spacer(5) + str(preset.pgm), width=80, text_align=ft.TextAlign.RIGHT),
                      ft.Text("      "),
-                     ft.Text(
-                        spacer(5) + ",".join(preset.characters), width=characters_width
-                     ),
+                     ft.Text(spacer(5) + ",".join(preset.characters), width=characters_width),
                   ]
                ),
                height=31,
@@ -110,11 +79,7 @@ class PresetGrid(ft.Container):
          )
 
       grid_container = ft.Container(
-         content=ft.Column([header_column, items_column]),
-         bgcolor="#232323",
-         padding=10,
-         border_radius=ft.border_radius.all(16),
-         width=1300,
+         content=ft.Column([header_column, items_column]), bgcolor="#232323", padding=10, border_radius=ft.border_radius.all(16), width=1300
       )
 
       self.content = grid_container

@@ -68,9 +68,7 @@ def main(page: ft.Page):
       MidiController.send_preset_change(page.selected_midi_port, cc, pgm)
       print(f"Preset clicked! Preset: {preset}, CC: {cc}, PGM: {pgm}")
 
-   selected_midi_port_text = ft.Text(
-      value=f"{page.selected_midi_port}", color="#808080", size=24
-   )
+   selected_midi_port_text = ft.Text(value=f"{page.selected_midi_port}", color="#808080", size=24)
 
    pack_filter = FilterSelector(page, Filters.PACK, height=200)
    type_filter = FilterSelector(page, Filters.TYPE, expand=True)
@@ -80,21 +78,8 @@ def main(page: ft.Page):
    type_filter.set_on_filter_changed(handle_filter_changed)
 
    page.add(
-      ft.Row(
-         [
-            ft.Container(
-               content=ft.FilledButton(
-                  " MIDI Input Port ", color="#101010", on_click=show_dialog
-               ),
-               padding=5,
-            ),
-            selected_midi_port_text,
-         ]
-      ),
-      ft.Row(
-         [ft.Column([pack_filter, type_filter], width=200), ft.Column([preset_grid])],
-         expand=True,
-      ),
+      ft.Row([ft.Container(content=ft.FilledButton(" MIDI Input Port ", color="#101010", on_click=show_dialog), padding=5), selected_midi_port_text]),
+      ft.Row([ft.Column([pack_filter, type_filter], width=200), ft.Column([preset_grid])], expand=True),
    )
    page.on_event = handle_filter_changed
    page.update()

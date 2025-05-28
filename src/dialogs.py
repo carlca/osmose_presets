@@ -16,10 +16,7 @@ def main(page: ft.Page):
       modal=True,
       title=ft.Text("Please confirm"),
       content=ft.Text("Do you really want to delete all those files?"),
-      actions=[
-         ft.TextButton("Yes", on_click=lambda e: page.close(dlg_modal)),
-         ft.TextButton("No", on_click=lambda e: page.close(dlg_modal)),
-      ],
+      actions=[ft.TextButton("Yes", on_click=lambda e: page.close(dlg_modal)), ft.TextButton("No", on_click=lambda e: page.close(dlg_modal))],
       actions_alignment=ft.MainAxisAlignment.END,
       on_dismiss=lambda e: print("Modal dialog dismissed!"),
    )
@@ -27,8 +24,7 @@ def main(page: ft.Page):
    dlg.title = ft.Text("Yo!")
 
    page.add(
-      ft.ElevatedButton("Open dialog", on_click=lambda e: page.open(dlg)),
-      ft.ElevatedButton("Open modal dialog", on_click=lambda e: page.open(dlg_modal)),
+      ft.ElevatedButton("Open dialog", on_click=lambda e: page.open(dlg)), ft.ElevatedButton("Open modal dialog", on_click=lambda e: page.open(dlg_modal))
    )
 
 

@@ -49,12 +49,8 @@ class PresetData:
          return result
 
       for preset in PresetData.cached_presets:
-         pack_filtered = (
-            not PresetData.pack_filters or preset.pack in PresetData.pack_filters
-         )
-         type_filtered = (
-            not PresetData.type_filters or preset.type in PresetData.type_filters
-         )
+         pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
+         type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
          if pack_filtered and type_filtered:
             result.append(preset)
       return result

@@ -10,21 +10,10 @@ INPUT_FILE = os.path.join(SCRIPT_DIR, "OsmosePresetsResources.txt")
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "OsmosePresetsResources.json")
 
 # Content of lines to skip (after stripping whitespace from the line in the file)
-SKIP_LINES_CONTENT = [
-   "nada",
-   '31, 15, "empty", "UNASSIGNED"',
-   '33, 88, "testbench", "UNASSIGNED"',
-]
+SKIP_LINES_CONTENT = ["nada", '31, 15, "empty", "UNASSIGNED"', '33, 88, "testbench", "UNASSIGNED"']
 
 # Mapping from internal descriptive names to final JSON key names
-JSON_KEYS = {
-   "pack": "pack",
-   "type": "type",
-   "cc0": "cc0",
-   "pgm": "pgm",
-   "preset_name": "preset name",
-   "characters": "characters",
-}
+JSON_KEYS = {"pack": "pack", "type": "type", "cc0": "cc0", "pgm": "pgm", "preset_name": "preset name", "characters": "characters"}
 
 
 def parse_characters_list(char_string):
@@ -32,9 +21,7 @@ def parse_characters_list(char_string):
    Parses the character string (e.g., "tag1 + tag2 + tag3") into a list of strings.
    Handles "UNASSIGNED" and empty strings.
    """
-   char_string = (
-      char_string.strip()
-   )  # Ensure no leading/trailing whitespace on the whole string
+   char_string = char_string.strip()  # Ensure no leading/trailing whitespace on the whole string
    if not char_string:  # Handles empty string from CSV like ""
       return []
    if char_string == "UNASSIGNED":
@@ -64,9 +51,7 @@ def main():
                skipped_for_content += 1
                continue
 
-            lines_for_csv_processing.append(
-               {"content": stripped_line, "original_line": original_line_number}
-            )
+            lines_for_csv_processing.append({"content": stripped_line, "original_line": original_line_number})
 
    except FileNotFoundError:
       print(f"Error: Input file '{INPUT_FILE}' not found.")
@@ -85,9 +70,7 @@ def main():
    csv_file_like_object = io.StringIO(csv_text_input)
 
    # skipinitialspace=True handles potential spaces after delimiters, e.g., "field1", "field2"
-   csv_reader = csv.reader(
-      csv_file_like_object, delimiter=",", quotechar='"', skipinitialspace=True
-   )
+   csv_reader = csv.reader(csv_file_like_object, delimiter=",", quotechar='"', skipinitialspace=True)
 
    for idx, raw_fields in enumerate(csv_reader):
       # Get original line number for accurate error reporting
@@ -144,20 +127,14 @@ def main():
          processed_items += 1
 
       except ValueError as e:  # For int() conversion errors
-         print(
-            f"Warning (L{line_num_for_reporting}): Type conversion error. Line: '{original_content_for_reporting}'. Fields: {fields}. Error: {e}"
-         )
+         print(f"Warning (L{line_num_for_reporting}): Type conversion error. Line: '{original_content_for_reporting}'. Fields: {fields}. Error: {e}")
          warning_count += 1
          continue
       except IndexError as e:  # If a field is unexpectedly missing
-         print(
-            f"Warning (L{line_num_for_reporting}): Index error (missing field). Line: '{original_content_for_reporting}'. Fields: {fields}. Error: {e}"
-         )
+         print(f"Warning (L{line_num_for_reporting}): Index error (missing field). Line: '{original_content_for_reporting}'. Fields: {fields}. Error: {e}")
          warning_count += 1
          continue
-      except (
-         Exception
-      ) as e:  # Catch any other unexpected errors during field processing
+      except Exception as e:  # Catch any other unexpected errors during field processing
          print(
             f"Warning (L{line_num_for_reporting}): Unexpected error processing fields. Line: '{original_content_for_reporting}'. Fields: {fields}. Error: {e}"
          )
@@ -173,13 +150,9 @@ def main():
 
       print(f"Successfully converted {processed_items} presets to '{OUTPUT_FILE}'.")
       if skipped_for_content > 0:
-         print(
-            f"Skipped {skipped_for_content} lines based on content (blank or in skip list)."
-         )
+         print(f"Skipped {skipped_for_content} lines based on content (blank or in skip list).")
       if warning_count > 0:
-         print(
-            f"Encountered {warning_count} warnings during processing. Please check console output for details."
-         )
+         print(f"Encountered {warning_count} warnings during processing. Please check console output for details.")
 
    except Exception as e:
       print(f"An error occurred while writing JSON file '{OUTPUT_FILE}': {e}")
