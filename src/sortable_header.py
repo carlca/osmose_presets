@@ -45,10 +45,10 @@ class SortableHeader(ft.TextButton):
    def _internal_clicked(self, e):
       match self.state:
          case SortState.NONE:
-            self.state = SortState.UP
-         case SortState.UP:
             self.state = SortState.DOWN
          case SortState.DOWN:
+            self.state = SortState.UP
+         case SortState.UP:
             self.state = SortState.NONE
       self.update_text()
       if self.on_click_handler:
