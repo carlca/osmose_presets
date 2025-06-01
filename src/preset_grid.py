@@ -48,7 +48,6 @@ class PresetGrid(ft.Container):
       PresetData.set_sort_criteria(sort_criteria)
       self.update_preset_items_display()
 
-      # self.build_content()
       self.update()
       if self.page:
          self.page.update()
