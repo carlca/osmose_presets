@@ -4,8 +4,8 @@ from enum import Enum, auto
 
 class SortState(Enum):
    NONE = auto()
-   UP = auto()
-   DOWN = auto()
+   DESCENDING = auto()
+   ASCENDING = auto()
 
 
 class SortableHeader(ft.TextButton):
@@ -45,10 +45,10 @@ class SortableHeader(ft.TextButton):
    def _internal_clicked(self, e):
       match self.state:
          case SortState.NONE:
-            self.state = SortState.DOWN
-         case SortState.DOWN:
-            self.state = SortState.UP
-         case SortState.UP:
+            self.state = SortState.ASCENDING
+         case SortState.ASCENDING:
+            self.state = SortState.DESCENDING
+         case SortState.DESCENDING:
             self.state = SortState.NONE
       self.update_text()
       if self.on_click_handler:
@@ -58,9 +58,9 @@ class SortableHeader(ft.TextButton):
       match self.state:
          case SortState.NONE:
             icon_char = ""
-         case SortState.UP:
+         case SortState.DESCENDING:
             icon_char = "▲"
-         case SortState.DOWN:
+         case SortState.ASCENDING:
             icon_char = "▼"
       self.sort_icon_display.value = icon_char
       if self.page:
