@@ -54,7 +54,7 @@ def main(page: ft.Page):
             PresetData.clear_type_filters()
             if selected_filters:
                PresetData.add_type_filter(selected_filters)
-      preset_grid.build_content()
+      preset_grid.update_preset_items_display()
       preset_grid.update()
       page.update()
 
