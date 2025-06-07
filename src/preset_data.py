@@ -26,18 +26,14 @@ class PresetData:
 
    @staticmethod
    def add_sort_criterion(field_name: str, ascending: bool = True):
-      """Adds a sort criterion. Call this in order of sort precedence."""
-      # Optionally, prevent duplicate field_names or manage updates if a field is added again
       PresetData.sort_criteria.append((field_name, ascending))
 
    @staticmethod
    def set_sort_criteria(criteria: List[tuple[str, bool]]):
-      """Sets the entire list of sort criteria directly."""
       PresetData.sort_criteria = list(criteria)
 
    @staticmethod
    def clear_sort_criteria():
-      """Clears all current sort criteria."""
       PresetData.sort_criteria.clear()
 
    @staticmethod
@@ -60,67 +56,32 @@ class PresetData:
 
    @staticmethod
    def get_presets():
-      result = [] # Initialized empty
+      result = []
 
-      # YOUR INTENDED FILTERING LOGIC:
-      # If either pack_filters or type_filters is empty (no selections made in one or both categories),
-      # an empty list is returned.
       if not PresetData.pack_filters or not PresetData.type_filters:
          return result
 
-      # If we reach here, it means PresetData.pack_filters is NOT empty
-      # AND PresetData.type_filters is NOT empty.
-      # Now, filter the presets based on these selections.
       for preset in PresetData.cached_presets:
-         # Because pack_filters is not empty, `not PresetData.pack_filters` is False.
-         # So, pack_filtered simplifies to `preset.pack in PresetData.pack_filters`.
          pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
-
-         # Because type_filters is not empty, `not PresetData.type_filters` is False.
-         # So, type_filtered simplifies to `preset.type in PresetData.type_filters`.
          type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
 
          if pack_filtered and type_filtered:
             result.append(preset)
 
-      # --- START: SORTING LOGIC (applied to the filtered 'result' list) ---
-      if PresetData.sort_criteria and result: # Only sort if there are criteria and results
-         # Define the comparison function for multi-level sorting
+      if PresetData.sort_criteria and result:
          def compare_presets(p1: Preset, p2: Preset):
             for field_name, ascending in PresetData.sort_criteria:
                v1 = getattr(p1, field_name)
                v2 = getattr(p2, field_name)
-
-               # Add handling for None or different types if necessary, e.g.:
-               # if v1 is None and v2 is not None: return -1 if ascending else 1 (None comes first/last)
-               # if v2 is None and v1 is not None: return 1 if ascending else -1
-               # if v1 is None and v2 is None: continue (or return 0 if it's the last criterion)
-               # For now, assuming direct comparable types:
                if v1 < v2:
                   return -1 if ascending else 1
                if v1 > v2:
                   return 1 if ascending else -1
             return 0 # Items are equal according to all sort criteria
 
-         # Apply the sort using the comparison function
          result.sort(key=functools.cmp_to_key(compare_presets))
-      # --- END: SORTING LOGIC ---
 
       return result
-
-   # @staticmethod
-   # def get_presets():
-   #    result = []
-
-   #    if not PresetData.pack_filters or not PresetData.type_filters:
-   #       return result
-
-   #    for preset in PresetData.cached_presets:
-   #       pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
-   #       type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
-   #       if pack_filtered and type_filtered:
-   #          result.append(preset)
-   #    return result
 
    @staticmethod
    def get_all_presets():

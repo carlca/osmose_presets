@@ -57,11 +57,11 @@ class PresetGrid(ft.Container):
       """
       Fetches (filtered and sorted) presets and updates only the items_column.
       """
-      self.presets = PresetData.get_presets() # Gets currently filtered and sorted presets
+      self.presets = PresetData.get_presets()
 
-      self.items_column.controls.clear() # Clear only the preset items
+      self.items_column.controls.clear()
 
-      pack_width = self.pack_header.width # Get width from persistent header
+      pack_width = self.pack_header.width
       type_width = self.type_header.width
       preset_width = self.preset_header.width
       cc_width = 28
