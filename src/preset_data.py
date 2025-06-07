@@ -77,7 +77,7 @@ class PresetData:
                   return -1 if ascending else 1
                if v1 > v2:
                   return 1 if ascending else -1
-            return 0 # Items are equal according to all sort criteria
+            return 0
 
          result.sort(key=functools.cmp_to_key(compare_presets))
 
