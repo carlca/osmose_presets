@@ -70,8 +70,10 @@ def main(page: ft.Page):
 
    selected_midi_port_text = ft.Text(value=f"{page.selected_midi_port}", color="#808080", size=24)
 
-   pack_filter = FilterSelector(Filters.PACK, expand=1)
-   type_filter = FilterSelector(Filters.TYPE, expand=3)
+   # pack_filter = FilterSelector(Filters.PACK, expand=1)
+   # type_filter = FilterSelector(Filters.TYPE, expand=3)
+   pack_filter = FilterSelector(Filters.PACK)
+   type_filter = FilterSelector(Filters.TYPE)
 
    preset_grid = PresetGrid(on_preset_clicked=handle_preset_clicked)
 
