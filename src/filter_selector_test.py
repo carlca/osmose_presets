@@ -1,12 +1,8 @@
 import flet as ft
-from preset_data import PresetData
-from helper_functions import Helper
-from filters import Filters
-from spacer import Spacer
 
 
 class FilterSelector(ft.Container):
-   def __init__(self, filter, height=None, expand=False):
+   def __init__(self, filter = "lol", height=None, expand=False):
       super().__init__()
       self.height = height
       self.expand = expand
@@ -29,13 +25,14 @@ class FilterSelector(ft.Container):
       filter_selector_container = self.create_filter_column()
       return filter_selector_container
 
+
    def create_filter_column(self):
       self.filter_checkboxes.clear()
 
-      filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
+      filter_names = ["filter1", "filter2", "filter3"]  # Example filter names, replace with actual data
 
       def update_filter_checkboxes(e):
-         if e.control == self.filter_checkboxes[0]:
+         if e.control == self.filter_checkboxes[0]:  # "all" checkbox
             # Set all other checkboxes to match the "all" state
             for checkbox in self.filter_checkboxes[1:]:
                checkbox.value = self.filter_checkboxes[0].value
@@ -56,14 +53,33 @@ class FilterSelector(ft.Container):
       for filter_name in filter_names:
          self.filter_checkboxes.append(ft.Checkbox(label=filter_name, value=False, on_change=update_filter_checkboxes))
 
-      width = Helper.get_longest_pack_and_type_length() * 12 + 20
-      filter_text = "pack" if self.filter == Filters.PACK else "type"
-      inner_filter_header = ft.Container(content=ft.Text(f" {filter_text}", color="#808080", size=24), height=35 if self.filter == Filters.PACK else 30)
+      width = 100
+      filter_text = "pack"
+      inner_filter_header = ft.Container(content=ft.Text(f" {filter_text}", color="#808080", size=24), height=35)
 
       inner_filter_column = ft.Container(content=ft.Column(spacing=9, controls=self.filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO))
 
       filter_column = ft.Container(
-         ft.Column([inner_filter_header, Spacer(-1.0), inner_filter_column]), padding=10, bgcolor="#232323", border_radius=ft.BorderRadius.all(16)
+         ft.Column([inner_filter_header, ft.Container(content="some stuff"), inner_filter_column]), padding=10, bgcolor="#232323", border_radius=ft.border_radius.all(16)
       )
 
       return filter_column
+
+
+
+class somestuff(ft.Container):
+   def __init__(self):
+      super().__init__()
+      self.content = self.__content()
+      self.alignment = ft.Alignment.center()
+      self.expand = True
+
+   def __content(self):
+      return FilterSelector()
+
+def main(page: ft.Page):
+   page.title = "Flet Example"
+   page.add(somestuff())
+
+
+ft.run(main)
