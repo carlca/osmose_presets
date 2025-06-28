@@ -45,6 +45,7 @@ class FilterSelector(ft.Container):
             self.filter_checkboxes[0].value = all_checked
 
          # Use self.update() for UserControl, which is more efficient than page.update()
+         self.page.update()
          self.update()
          if self.on_filter_changed_callback:
             selected_filters = self.get_selected_filters()
@@ -60,7 +61,7 @@ class FilterSelector(ft.Container):
       filter_text = "pack" if self.filter == Filters.PACK else "type"
       inner_filter_header = ft.Container(content=ft.Text(f" {filter_text}", color="#808080", size=24), height=35 if self.filter == Filters.PACK else 30)
 
-      inner_filter_column = ft.Container(content=ft.Column(spacing=9, controls=self.filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO))
+      inner_filter_column = ft.Container(content=ft.Column(spacing=6, controls=self.filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO))
 
       filter_column = ft.Container(
          ft.Column([inner_filter_header, Spacer(-1.0), inner_filter_column]), padding=10, bgcolor="#232323", border_radius=ft.BorderRadius.all(16)
