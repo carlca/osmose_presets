@@ -26,11 +26,11 @@ class SortableHeader(ft.TextButton):
 
       self.width = width
       self.height = height
-      self.on_click = self._internal_clicked  # Use a prefixed internal handler
+      self.on_click = self._internal_clicked
       self.style = ft.ButtonStyle(
-         overlay_color=ft.Colors.with_opacity(0.05, ft.Colors.ON_SURFACE),  # Subtle hover
+         overlay_color=ft.Colors.with_opacity(0.05, ft.Colors.ON_SURFACE),
          mouse_cursor={ft.ControlState.HOVERED: ft.MouseCursor.CLICK},
-         padding=ft.padding.symmetric(horizontal=8),  # Add some horizontal padding
+         padding=ft.Padding.symmetric(horizontal=8),
          shape=ft.RoundedRectangleBorder(radius=8),
       )
       self.content = ft.Row(

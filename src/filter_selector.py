@@ -6,46 +6,45 @@ from spacer import Spacer
 
 
 class FilterSelector(ft.Container):
-   def __init__(self, page, filter, height=None, expand=False):
+   def __init__(self, filter, height=None, expand=False):
       super().__init__()
-      self.controls = []
       self.height = height
       self.expand = expand
       self.filter = filter
-      self.page = page
-      self.filter_checkboxes = []  # Initialize here
-      self.build_content()
+      # self._page = page
+      self.filter_checkboxes = []
       self.on_filter_changed_callback = None
+      self.content = self.__content()
 
    def set_on_filter_changed(self, callback):
       self.on_filter_changed_callback = callback
 
    def get_selected_filters(self):
       selected_filters = []
-      # Skip the "all" checkbox (index 0)
       for checkbox in self.filter_checkboxes[1:]:
          if checkbox.value:
             selected_filters.append(checkbox.label)
       return selected_filters
 
-   def build_content(self):
+   def __content(self):
       filter_selector_container = self.create_filter_column()
-      self.content = filter_selector_container
+      return filter_selector_container
 
    def create_filter_column(self):
+      self.filter_checkboxes.clear()
+
       filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
 
       def update_filter_checkboxes(e):
          if e.control == self.filter_checkboxes[0]:
+            # Set all other checkboxes to match the "all" state
             for checkbox in self.filter_checkboxes[1:]:
                checkbox.value = self.filter_checkboxes[0].value
          else:
-            all_checked = True
-            for checkbox in self.filter_checkboxes[1:]:
-               if not checkbox.value:
-                  all_checked = False
-                  break
+            # Check if all individual boxes are checked to update "all"
+            all_checked = all(checkbox.value for checkbox in self.filter_checkboxes[1:])
             self.filter_checkboxes[0].value = all_checked
+
          self.page.update()
          if self.on_filter_changed_callback:
             selected_filters = self.get_selected_filters()
@@ -64,7 +63,7 @@ class FilterSelector(ft.Container):
       inner_filter_column = ft.Container(content=ft.Column(spacing=9, controls=self.filter_checkboxes, width=width, scroll=ft.ScrollMode.AUTO))
 
       filter_column = ft.Container(
-         ft.Column([inner_filter_header, Spacer(-1.0), inner_filter_column]), padding=10, bgcolor="#232323", border_radius=ft.border_radius.all(16)
+         ft.Column([inner_filter_header, Spacer(-1.0), inner_filter_column]), padding=10, bgcolor="#232323", border_radius=ft.BorderRadius.all(16)
       )
 
       return filter_column

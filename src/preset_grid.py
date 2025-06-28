@@ -35,7 +35,7 @@ class PresetGrid(ft.Container):
          content=ft.Column([self.header_column, self.items_column]),
          bgcolor="#232323",
          padding=10,
-         border_radius=ft.border_radius.all(16),
+         border_radius=ft.BorderRadius.all(16),
          width=1300
       )
       self.content = self.grid_container
