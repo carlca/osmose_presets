@@ -22,7 +22,7 @@ class FilterSelector(ft.Container):
 
    def get_selected_filters(self):
       selected_filters = []
-      # Skip the "all" checkbox (index 0)
+
       for checkbox in self.filter_checkboxes[1:]:
          if checkbox.value:
             selected_filters.append(checkbox.label)
