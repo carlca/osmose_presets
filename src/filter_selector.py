@@ -13,7 +13,7 @@ class FilterSelector(ft.Container):
       self.expand = expand
       self.filter = filter
       self.page = page
-      self.filter_checkboxes = []  # Initialize here
+      self.filter_checkboxes = []
       self.build_content()
       self.on_filter_changed_callback = None
 
