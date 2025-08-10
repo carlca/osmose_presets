@@ -1,0 +1,7023 @@
+[
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 1,
+        "preset": "acid bass",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 2,
+        "preset": "acouskop",
+        "characters": [
+            "acoustic",
+            "distorted",
+            "fm",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 31,
+        "preset": "bass distosine",
+        "characters": [
+            "acoustic",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 32,
+        "preset": "bass monster",
+        "characters": [
+            "analog",
+            "distorted",
+            "portamento",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 74,
+        "preset": "chordead",
+        "characters": [
+            "analog",
+            "chords"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 108,
+        "preset": "deep corners",
+        "characters": [
+            "analog",
+            "chords"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 112,
+        "preset": "dirt acid",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 119,
+        "preset": "doubleslap",
+        "characters": [
+            "acoustic",
+            "shaking",
+            "warm",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 30,
+        "pgm": 127,
+        "preset": "edgy fm",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 3,
+        "preset": "eighty neon",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 5,
+        "preset": "electric bass 1",
+        "characters": [
+            "acoustic",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 6,
+        "preset": "electric bass 2",
+        "characters": [
+            "acoustic",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 29,
+        "preset": "fat model d",
+        "characters": [
+            "analog",
+            "big",
+            "noise",
+            "portamento",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 36,
+        "preset": "flunkly",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 43,
+        "preset": "fm darkness",
+        "characters": [
+            "aggressive",
+            "big",
+            "dark",
+            "digital",
+            "dry",
+            "ensemble",
+            "fm",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 44,
+        "preset": "fm doublebass",
+        "characters": [
+            "clean",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 50,
+        "preset": "fm slapman",
+        "characters": [
+            "bright",
+            "digital",
+            "fm",
+            "metallic",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 54,
+        "preset": "forgotten animal",
+        "characters": [
+            "analog",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 55,
+        "preset": "forty eight db",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 56,
+        "preset": "fourad",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 57,
+        "preset": "fretless bass",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 76,
+        "preset": "grittysaw",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 86,
+        "preset": "hollowrez",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 107,
+        "preset": "juknow that bass",
+        "characters": [
+            "analog",
+            "big",
+            "clean",
+            "simple",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 31,
+        "pgm": 121,
+        "preset": "kinespeech",
+        "characters": [
+            "analog",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 5,
+        "preset": "lacous bass",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 7,
+        "preset": "ladder bass",
+        "characters": [
+            "analog",
+            "lfo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 58,
+        "preset": "night bass",
+        "characters": [
+            "analog",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 92,
+        "preset": "outspoken",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 109,
+        "preset": "piercing bass",
+        "characters": [
+            "aggressive",
+            "big",
+            "dark",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 114,
+        "preset": "pl-bass",
+        "characters": [
+            "analog",
+            "dry",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 32,
+        "pgm": 126,
+        "preset": "pulzz",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 5,
+        "preset": "reesotto",
+        "characters": [
+            "aggressive",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 6,
+        "preset": "reesy rider",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 19,
+        "preset": "rusty bass",
+        "characters": [
+            "dark",
+            "digital",
+            "fm",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 20,
+        "preset": "rusty square",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 39,
+        "preset": "simpledecay",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 41,
+        "preset": "simplerez",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 48,
+        "preset": "smooth operator",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 49,
+        "preset": "solid square",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 68,
+        "preset": "steroids",
+        "characters": [
+            "analog",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 74,
+        "preset": "sub bass 1",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 75,
+        "preset": "subway",
+        "characters": [
+            "analog",
+            "clean",
+            "dark",
+            "fm",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 77,
+        "preset": "syncat",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 95,
+        "preset": "thrilla bass",
+        "characters": [
+            "analog",
+            "dry"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 114,
+        "preset": "velsquare",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 119,
+        "preset": "vintage wide bass",
+        "characters": [
+            "analog",
+            "big",
+            "dark",
+            "portamento",
+            "soft",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 125,
+        "preset": "walking blues",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bass",
+        "cc0": 33,
+        "pgm": 127,
+        "preset": "wallface",
+        "characters": [
+            "digital",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 20,
+        "preset": "archer",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 51,
+        "preset": "bowreal lights",
+        "characters": [
+            "acoustic",
+            "layered",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 66,
+        "preset": "cellove",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 67,
+        "preset": "cellovir",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 68,
+        "preset": "chamber mellobow",
+        "characters": [
+            "acoustic",
+            "ensemble",
+            "lofi",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 69,
+        "preset": "chamber strings",
+        "characters": [
+            "acoustic",
+            "clean",
+            "ensemble"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 30,
+        "pgm": 120,
+        "preset": "duocello",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 31,
+        "pgm": 22,
+        "preset": "erumi",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 31,
+        "pgm": 82,
+        "preset": "harmod",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 31,
+        "pgm": 92,
+        "preset": "hybrid strings 1",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 31,
+        "pgm": 93,
+        "preset": "hybrid strings 2",
+        "characters": [
+            "analog",
+            "lofi",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 31,
+        "pgm": 94,
+        "preset": "hybrid strings 3",
+        "characters": [
+            "acoustic",
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 27,
+        "preset": "lost ensemble",
+        "characters": [
+            "acoustic",
+            "analog",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 61,
+        "preset": "noisyman",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 62,
+        "preset": "noisypad",
+        "characters": [
+            "acoustic",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 67,
+        "preset": "numens strings",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 98,
+        "preset": "pajestric",
+        "characters": [
+            "layered"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 104,
+        "preset": "pcs dandelion",
+        "characters": [
+            "bright",
+            "echo",
+            "evolving",
+            "icy",
+            "portamento",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 32,
+        "pgm": 123,
+        "preset": "pressow",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 18,
+        "preset": "roto string",
+        "characters": [
+            "acoustic",
+            "airy",
+            "lfo",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 24,
+        "preset": "scie tard",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 73,
+        "preset": "stringtroen",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 101,
+        "preset": "trepizcato",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 120,
+        "preset": "viollaggio",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 121,
+        "preset": "violloiv",
+        "characters": [
+            "acoustic",
+            "echo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "bowed",
+        "cc0": 33,
+        "pgm": 122,
+        "preset": "vln vla cel bass 2",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 23,
+        "preset": "babrass",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 52,
+        "preset": "brass fm",
+        "characters": [
+            "acoustic",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 53,
+        "preset": "brass fm2",
+        "characters": [
+            "acoustic",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 54,
+        "preset": "brass fm3",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 55,
+        "preset": "brassimple",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 57,
+        "preset": "brassy",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 92,
+        "preset": "cosmic blues",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 102,
+        "preset": "cvc 1 voice",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 103,
+        "preset": "cvc 2 voices",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 30,
+        "pgm": 104,
+        "preset": "cvc 4 voices",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 23,
+        "preset": "essendar",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 28,
+        "preset": "fancy brass",
+        "characters": [
+            "bright",
+            "chords",
+            "ensemble",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 41,
+        "preset": "fm brassypoly",
+        "characters": [
+            "clean",
+            "digital",
+            "ensemble",
+            "fm",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 61,
+        "preset": "futazz",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 69,
+        "preset": "gimmirez",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 81,
+        "preset": "harmbrass",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 88,
+        "preset": "horn ytorink",
+        "characters": [
+            "acoustic",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 31,
+        "pgm": 105,
+        "preset": "jennybrass",
+        "characters": [
+            "acoustic",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 32,
+        "pgm": 91,
+        "preset": "osc five",
+        "characters": [
+            "analog",
+            "simple",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 47,
+        "preset": "smooth mouth",
+        "characters": [
+            "acoustic",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 102,
+        "preset": "trumpey",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 113,
+        "preset": "vbrass 1",
+        "characters": [
+            "acoustic",
+            "bright",
+            "clean",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 116,
+        "preset": "versailles brass",
+        "characters": [
+            "analog",
+            "big",
+            "ensemble",
+            "simple",
+            "soft",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 123,
+        "preset": "vocalise",
+        "characters": [
+            "clean",
+            "synthetic",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 33,
+        "pgm": 126,
+        "preset": "walking elephants",
+        "characters": [
+            "acoustic",
+            "warm",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 10,
+        "preset": "wow soul chords",
+        "characters": [
+            "analog",
+            "simple",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 35,
+        "preset": "bazikey",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 39,
+        "preset": "beyond felt",
+        "characters": [
+            "acoustic",
+            "shaking",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 81,
+        "preset": "clavi 1",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 84,
+        "preset": "clawha",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 88,
+        "preset": "copey",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 93,
+        "preset": "cp eight",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 30,
+        "pgm": 110,
+        "preset": "deven",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 7,
+        "preset": "electric keys 1",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 8,
+        "preset": "electric keys 5",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 9,
+        "preset": "electric keys 6",
+        "characters": [
+            "clean",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 20,
+        "preset": "epiano1",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 21,
+        "preset": "epiarom",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 26,
+        "preset": "etines mk1",
+        "characters": [
+            "acoustic",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 42,
+        "preset": "fm clav 1",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 48,
+        "preset": "fm piano1",
+        "characters": [
+            "bright",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 79,
+        "preset": "hammers brushed",
+        "characters": [
+            "acoustic",
+            "shaking",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 100,
+        "preset": "iziki",
+        "characters": [
+            "analog",
+            "clean",
+            "fm",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 31,
+        "pgm": 115,
+        "preset": "kakey",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 32,
+        "pgm": 2,
+        "preset": "klavunk",
+        "characters": [
+            "clean",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 32,
+        "pgm": 15,
+        "preset": "legacy dx ep",
+        "characters": [
+            "clean",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 32,
+        "pgm": 37,
+        "preset": "martine",
+        "characters": [
+            "acoustic",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 32,
+        "pgm": 81,
+        "preset": "opikey",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 33,
+        "pgm": 97,
+        "preset": "tine",
+        "characters": [
+            "acoustic",
+            "clean",
+            "dry",
+            "electric",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 33,
+        "pgm": 98,
+        "preset": "tinolin",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "elec piano",
+        "cc0": 33,
+        "pgm": 111,
+        "preset": "upibanks",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 13,
+        "preset": "anareed",
+        "characters": [
+            "acoustic",
+            "analog",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 19,
+        "preset": "arcadia pan",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 30,
+        "preset": "bansuri",
+        "characters": [
+            "acoustic",
+            "soft",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 56,
+        "preset": "brasswind",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 76,
+        "preset": "claribreath",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "noise",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 77,
+        "preset": "clarinet",
+        "characters": [
+            "acoustic",
+            "clean",
+            "warm",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 30,
+        "pgm": 117,
+        "preset": "double reed",
+        "characters": [
+            "acoustic",
+            "bright",
+            "clean",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 16,
+        "preset": "empyrean",
+        "characters": [
+            "acoustic",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 34,
+        "preset": "flip tube",
+        "characters": [
+            "acoustic",
+            "airy",
+            "echo",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 37,
+        "preset": "flute transverse",
+        "characters": [
+            "acoustic",
+            "airy",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 38,
+        "preset": "flutimut",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 49,
+        "preset": "fm reed",
+        "characters": [
+            "acoustic",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 31,
+        "pgm": 70,
+        "preset": "gowind",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 32,
+        "pgm": 41,
+        "preset": "microdelay pipewg",
+        "characters": [
+            "acoustic",
+            "airy",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 32,
+        "pgm": 45,
+        "preset": "model string wind",
+        "characters": [
+            "acoustic",
+            "airy",
+            "morphing"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 32,
+        "pgm": 70,
+        "preset": "oboreed",
+        "characters": [
+            "acoustic",
+            "fm",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 32,
+        "pgm": 100,
+        "preset": "panpipe solo",
+        "characters": [
+            "airy",
+            "clean",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 32,
+        "pgm": 112,
+        "preset": "pipopi",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 15,
+        "preset": "ringmod harmonica",
+        "characters": [
+            "acoustic",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 22,
+        "preset": "saxoon",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "noise",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 26,
+        "preset": "sentimental mood",
+        "characters": [
+            "acoustic",
+            "airy",
+            "clean",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 52,
+        "preset": "soprano recorder",
+        "characters": [
+            "acoustic",
+            "airy",
+            "clean",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 79,
+        "preset": "tabec",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 33,
+        "pgm": 96,
+        "preset": "tin whistle",
+        "characters": [
+            "clean",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 34,
+        "pgm": 4,
+        "preset": "windotron",
+        "characters": [
+            "acoustic",
+            "fm",
+            "soft",
+            "stereo",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 34,
+        "pgm": 5,
+        "preset": "windtube double reed",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 34,
+        "pgm": 7,
+        "preset": "woodwind",
+        "characters": [
+            "acoustic",
+            "airy",
+            "clean",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "flute reeds",
+        "cc0": 34,
+        "pgm": 13,
+        "preset": "yokobue",
+        "characters": [
+            "acoustic",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 4,
+        "preset": "aerials",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 10,
+        "preset": "ambiant analog 1",
+        "characters": [
+            "analog",
+            "big",
+            "echo",
+            "reverberant",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 11,
+        "preset": "analog adsr",
+        "characters": [
+            "analog",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 12,
+        "preset": "analog scream",
+        "characters": [
+            "aggressive",
+            "analog",
+            "big",
+            "distorted",
+            "noise",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 18,
+        "preset": "aqueous feel",
+        "characters": [
+            "airy",
+            "bright",
+            "clean",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 22,
+        "preset": "azure key",
+        "characters": [
+            "bright",
+            "clean",
+            "digital",
+            "simple",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 50,
+        "preset": "bowedsymphfm",
+        "characters": [
+            "acoustic",
+            "clean",
+            "fm",
+            "shaking",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 78,
+        "preset": "classicana key",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 83,
+        "preset": "clavicorda",
+        "characters": [
+            "digital",
+            "fm",
+            "shaking",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 107,
+        "preset": "declanche",
+        "characters": [
+            "fm",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 111,
+        "preset": "dfm",
+        "characters": [
+            "fm",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 114,
+        "preset": "disco dawn",
+        "characters": [
+            "analog",
+            "dry",
+            "intimate",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 118,
+        "preset": "double saw",
+        "characters": [
+            "analog",
+            "chords",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 121,
+        "preset": "dx1",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 122,
+        "preset": "dx2",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 123,
+        "preset": "dx3",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 124,
+        "preset": "dx4",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 30,
+        "pgm": 125,
+        "preset": "dxim",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 0,
+        "preset": "efferie",
+        "characters": [
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 1,
+        "preset": "efmope",
+        "characters": [
+            "bright",
+            "fm",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 2,
+        "preset": "eightiki",
+        "characters": [
+            "analog",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 4,
+        "preset": "ekeynox",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 13,
+        "preset": "elsynkey",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 14,
+        "preset": "emancikey",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 18,
+        "preset": "envinkin",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 19,
+        "preset": "envinkon",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 31,
+        "preset": "feleaz",
+        "characters": [
+            "fm",
+            "simple",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 33,
+        "preset": "fleme",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 40,
+        "preset": "fm basic 4-ops",
+        "characters": [
+            "bright",
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 45,
+        "preset": "fm dreampiano",
+        "characters": [
+            "airy",
+            "fm",
+            "strumming",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 51,
+        "preset": "fmwood&strings",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 52,
+        "preset": "fof variabler res",
+        "characters": [
+            "synthetic",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 53,
+        "preset": "foming",
+        "characters": [
+            "bright",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 64,
+        "preset": "game invader",
+        "characters": [
+            "digital",
+            "lofi",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 71,
+        "preset": "graceful integrated",
+        "characters": [
+            "analog",
+            "fm",
+            "simple",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 85,
+        "preset": "harpsytron",
+        "characters": [
+            "dry",
+            "electric",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 90,
+        "preset": "hp tales",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 96,
+        "preset": "ikia",
+        "characters": [
+            "fm",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 109,
+        "preset": "jumpare",
+        "characters": [
+            "analog",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 110,
+        "preset": "june sunset",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 111,
+        "preset": "jupinard",
+        "characters": [
+            "analog",
+            "dry",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 113,
+        "preset": "jx10 1b",
+        "characters": [
+            "analog",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 119,
+        "preset": "kinaflap",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 120,
+        "preset": "kinafun",
+        "characters": [
+            "analog",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 122,
+        "preset": "kinetic analog",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 31,
+        "pgm": 123,
+        "preset": "kinetic anaseq",
+        "characters": [
+            "aggressive",
+            "analog",
+            "echo",
+            "lfo",
+            "stereo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 0,
+        "preset": "kinetic satpad",
+        "characters": [
+            "aggressive",
+            "analog",
+            "big",
+            "distorted",
+            "ensemble",
+            "evolving",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 6,
+        "preset": "ladagcer",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 13,
+        "preset": "lavaya",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 19,
+        "preset": "lilly",
+        "characters": [
+            "acoustic",
+            "fm",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 20,
+        "preset": "lino",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 25,
+        "preset": "lost beacon",
+        "characters": [
+            "airy",
+            "analog",
+            "intimate",
+            "lfo",
+            "reverberant",
+            "synthetic",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 48,
+        "preset": "montine",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 54,
+        "preset": "nband",
+        "characters": [
+            "airy",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 55,
+        "preset": "neon key",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 56,
+        "preset": "neon key dreams",
+        "characters": [
+            "analog",
+            "chords",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 65,
+        "preset": "notenstrum",
+        "characters": [
+            "analog",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 74,
+        "preset": "octecho",
+        "characters": [
+            "analog",
+            "echo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 77,
+        "preset": "op repeat",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 89,
+        "preset": "os2dx",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 90,
+        "preset": "osc dcf",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 99,
+        "preset": "paliakey",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 101,
+        "preset": "paperheart",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 113,
+        "preset": "pitchoune",
+        "characters": [
+            "analog",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 118,
+        "preset": "pluckeon",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 120,
+        "preset": "polys20",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 121,
+        "preset": "polysynthetix",
+        "characters": [
+            "analog",
+            "big",
+            "chords",
+            "ensemble",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 32,
+        "pgm": 125,
+        "preset": "pulse pluck",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 0,
+        "preset": "pxlize",
+        "characters": [
+            "bright",
+            "digital",
+            "fm",
+            "layered",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 16,
+        "preset": "riseandbe",
+        "characters": [
+            "analog",
+            "bright",
+            "digital",
+            "simple",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 21,
+        "preset": "saw vi",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 23,
+        "preset": "scarlet",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 30,
+        "preset": "simple anakey1",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 31,
+        "preset": "simple anakey2",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 32,
+        "preset": "simple anakey4",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 33,
+        "preset": "simple fm 2 ops",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 34,
+        "preset": "simple fmkey",
+        "characters": [
+            "fm",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 40,
+        "preset": "simplephasemod",
+        "characters": [
+            "fm",
+            "shaking",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 53,
+        "preset": "soulfm",
+        "characters": [
+            "fm",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 57,
+        "preset": "spracher",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 59,
+        "preset": "squaluk",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 60,
+        "preset": "squarynights",
+        "characters": [
+            "acoustic",
+            "clean",
+            "fm",
+            "shaking",
+            "soft",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 61,
+        "preset": "squazodia",
+        "characters": [
+            "analog",
+            "lfo",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 62,
+        "preset": "squeakysine",
+        "characters": [
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 63,
+        "preset": "st-rum dx",
+        "characters": [
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 64,
+        "preset": "stadium candy",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 70,
+        "preset": "street pluck",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 82,
+        "preset": "talking kine",
+        "characters": [
+            "analog",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 84,
+        "preset": "tape melody",
+        "characters": [
+            "airy",
+            "analog",
+            "clean",
+            "lofi",
+            "simple",
+            "soft",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 87,
+        "preset": "terjintro",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 112,
+        "preset": "utopia",
+        "characters": [
+            "noise",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 115,
+        "preset": "versaille",
+        "characters": [
+            "acoustic",
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 33,
+        "pgm": 118,
+        "preset": "vinkeilyd",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 3,
+        "preset": "whorus",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 12,
+        "preset": "yfm",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 9,
+        "preset": "altersaw",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 28,
+        "preset": "bandrive paradise",
+        "characters": [
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 46,
+        "preset": "blasiz",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 70,
+        "preset": "cherie fm",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 71,
+        "preset": "chick s lead",
+        "characters": [
+            "analog",
+            "clean",
+            "portamento",
+            "soft",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 79,
+        "preset": "classicana lead",
+        "characters": [
+            "analog",
+            "echo",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 86,
+        "preset": "cold lead",
+        "characters": [
+            "analog",
+            "noise",
+            "simple",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 89,
+        "preset": "copper club",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 106,
+        "preset": "dabka 2022",
+        "characters": [
+            "acoustic",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 30,
+        "pgm": 109,
+        "preset": "delight lead",
+        "characters": [
+            "analog",
+            "echo",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 60,
+        "preset": "funky lead",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 63,
+        "preset": "gabber 21",
+        "characters": [
+            "aggressive",
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 68,
+        "preset": "ghost voice",
+        "characters": [
+            "lofi",
+            "portamento",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 77,
+        "preset": "grubbead",
+        "characters": [
+            "aggressive",
+            "distorted",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 87,
+        "preset": "hoovasquare",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 97,
+        "preset": "insert coins",
+        "characters": [
+            "bright",
+            "echo",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 106,
+        "preset": "jentenot",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 31,
+        "pgm": 108,
+        "preset": "julia",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 8,
+        "preset": "lalalead",
+        "characters": [
+            "analog",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 14,
+        "preset": "leadio",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 17,
+        "preset": "lighthouse",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 18,
+        "preset": "lililead",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 24,
+        "preset": "lonely square",
+        "characters": [
+            "analog",
+            "reverberant",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 31,
+        "preset": "main square",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 44,
+        "preset": "minor de fond",
+        "characters": [
+            "analog",
+            "chords"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 64,
+        "preset": "nostalgia",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 79,
+        "preset": "opead",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 80,
+        "preset": "opeal",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 108,
+        "preset": "pickope",
+        "characters": [
+            "analog",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 32,
+        "pgm": 117,
+        "preset": "pluckead",
+        "characters": [
+            "analog",
+            "clean",
+            "portamento",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 27,
+        "preset": "seventies lead",
+        "characters": [
+            "analog",
+            "echo",
+            "portamento",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 35,
+        "preset": "simple lead even",
+        "characters": [
+            "analog",
+            "portamento",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 36,
+        "preset": "simple lead odd",
+        "characters": [
+            "analog",
+            "portamento",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 46,
+        "preset": "smeeb",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 65,
+        "preset": "stadoor",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 67,
+        "preset": "sterelead",
+        "characters": [
+            "analog",
+            "lfo",
+            "simple",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 78,
+        "preset": "synclit",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 33,
+        "pgm": 99,
+        "preset": "tiny wish",
+        "characters": [
+            "analog",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 11,
+        "preset": "xpressive saw",
+        "characters": [
+            "airy",
+            "clean",
+            "intimate",
+            "portamento",
+            "reverberant",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 6,
+        "preset": "alacloud",
+        "characters": [
+            "acoustic",
+            "echo",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 26,
+        "preset": "balafun",
+        "characters": [
+            "acoustic",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 36,
+        "preset": "bella fm",
+        "characters": [
+            "bright",
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 37,
+        "preset": "bells of digul",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 40,
+        "preset": "biquide hang",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 42,
+        "preset": "biquide steel",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 43,
+        "preset": "biquige bell",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 49,
+        "preset": "bouncing spray",
+        "characters": [
+            "acoustic",
+            "echo",
+            "lfo",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 60,
+        "preset": "brightbank",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 62,
+        "preset": "carbon marimba",
+        "characters": [
+            "acoustic",
+            "lfo",
+            "warm",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 64,
+        "preset": "celestial",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 82,
+        "preset": "clavichord",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 85,
+        "preset": "clings",
+        "characters": [
+            "acoustic",
+            "intimate",
+            "metallic",
+            "shaking",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 98,
+        "preset": "crystal harmonics",
+        "characters": [
+            "acoustic",
+            "airy",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 101,
+        "preset": "cumulus",
+        "characters": [
+            "acoustic",
+            "bright",
+            "echo",
+            "lfo",
+            "metallic",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 30,
+        "pgm": 116,
+        "preset": "dolce cristallo",
+        "characters": [
+            "acoustic",
+            "icy",
+            "intimate",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 11,
+        "preset": "electrical bacher",
+        "characters": [
+            "acoustic",
+            "dark",
+            "metallic",
+            "reverberant",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 24,
+        "preset": "etalophone",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 25,
+        "preset": "etherry",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 32,
+        "preset": "feltgrains",
+        "characters": [
+            "acoustic",
+            "airy",
+            "noise",
+            "shaking",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 46,
+        "preset": "fm glacier",
+        "characters": [
+            "bright",
+            "clean",
+            "digital",
+            "echo",
+            "fm",
+            "icy",
+            "metallic",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 47,
+        "preset": "fm hang perc",
+        "characters": [
+            "digital",
+            "fm",
+            "noise",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 59,
+        "preset": "fukuel",
+        "characters": [
+            "acoustic",
+            "metallic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 65,
+        "preset": "gamelan spinner",
+        "characters": [
+            "clean",
+            "lfo",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 73,
+        "preset": "grandfather clock",
+        "characters": [
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 84,
+        "preset": "harpsichord",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 101,
+        "preset": "jaymar toy piano",
+        "characters": [
+            "acoustic",
+            "clean",
+            "dry",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 31,
+        "pgm": 104,
+        "preset": "jenny pulse",
+        "characters": [
+            "analog",
+            "echo",
+            "lfo",
+            "reverberant",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 4,
+        "preset": "labello",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 9,
+        "preset": "lamellas",
+        "characters": [
+            "acoustic",
+            "metallic",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 16,
+        "preset": "libellule",
+        "characters": [
+            "acoustic",
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 29,
+        "preset": "lytiny",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 30,
+        "preset": "magic pluck",
+        "characters": [
+            "acoustic",
+            "airy",
+            "bright",
+            "layered",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 32,
+        "preset": "malabel",
+        "characters": [
+            "acoustic",
+            "shaking",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 36,
+        "preset": "marombox",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 38,
+        "preset": "mattalo",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 39,
+        "preset": "mbiraski",
+        "characters": [
+            "clean",
+            "intimate",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 51,
+        "preset": "music box bells",
+        "characters": [
+            "acoustic",
+            "dry",
+            "intimate",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 59,
+        "preset": "nimbus",
+        "characters": [
+            "acoustic",
+            "airy",
+            "echo",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 63,
+        "preset": "noisything",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 71,
+        "preset": "ocean triggs",
+        "characters": [
+            "acoustic",
+            "echo",
+            "lfo",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 78,
+        "preset": "op2bell",
+        "characters": [
+            "fm",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 106,
+        "preset": "petit carillon",
+        "characters": [
+            "acoustic",
+            "metallic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 111,
+        "preset": "pinkphone",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 32,
+        "pgm": 116,
+        "preset": "plinklies",
+        "characters": [
+            "acoustic",
+            "intimate",
+            "lfo",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 7,
+        "preset": "releasy",
+        "characters": [
+            "acoustic",
+            "fm",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 8,
+        "preset": "ren keyboard",
+        "characters": [
+            "acoustic",
+            "echo",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 28,
+        "preset": "shakepad",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 42,
+        "preset": "sinefeel",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 58,
+        "preset": "spring shimming bell",
+        "characters": [
+            "intimate",
+            "lfo",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 86,
+        "preset": "tender stuck",
+        "characters": [
+            "acoustic",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 93,
+        "preset": "thoria",
+        "characters": [
+            "acoustic",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 100,
+        "preset": "tinytine",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 103,
+        "preset": "tubular bell",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 109,
+        "preset": "underwater",
+        "characters": [
+            "acoustic",
+            "dark"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 33,
+        "pgm": 117,
+        "preset": "vibrim",
+        "characters": [
+            "acoustic",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 8,
+        "preset": "woodybox",
+        "characters": [
+            "acoustic",
+            "strumming",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 16,
+        "preset": "zenpercs",
+        "characters": [
+            "acoustic",
+            "intimate",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 30,
+        "pgm": 16,
+        "preset": "anthophila organ",
+        "characters": [
+            "acoustic",
+            "ensemble"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 30,
+        "pgm": 45,
+        "preset": "bits organ",
+        "characters": [
+            "analog",
+            "bright",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 30,
+        "pgm": 47,
+        "preset": "bleached organ",
+        "characters": [
+            "fm",
+            "simple",
+            "stereo",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 30,
+        "pgm": 59,
+        "preset": "bright organ",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 30,
+        "pgm": 75,
+        "preset": "churchorgan",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 75,
+        "preset": "old pad machine",
+        "characters": [
+            "analog",
+            "ensemble",
+            "evolving",
+            "lofi",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 82,
+        "preset": "organ 1",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 83,
+        "preset": "organ 2",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 84,
+        "preset": "organ 3",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 85,
+        "preset": "organ 4",
+        "characters": [
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 86,
+        "preset": "organ barbar",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 87,
+        "preset": "organ voxy",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 88,
+        "preset": "organo WereYouThere",
+        "characters": [
+            "electric",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 32,
+        "pgm": 97,
+        "preset": "padorgan",
+        "characters": [
+            "lofi",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 33,
+        "pgm": 92,
+        "preset": "thick organ",
+        "characters": [
+            "digital",
+            "dry",
+            "simple",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 33,
+        "pgm": 124,
+        "preset": "vorgaphone",
+        "characters": [
+            "UNASSIGNED"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "organ",
+        "cc0": 34,
+        "pgm": 6,
+        "preset": "woodorgan",
+        "characters": [
+            "soft",
+            "warm",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 0,
+        "preset": "abyss lands",
+        "characters": [
+            "dark",
+            "echo",
+            "evolving",
+            "layered",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 5,
+        "preset": "after the rain",
+        "characters": [
+            "acoustic",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 7,
+        "preset": "alenvers",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 8,
+        "preset": "algo call",
+        "characters": [
+            "fm",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 14,
+        "preset": "anatolianpad",
+        "characters": [
+            "analog",
+            "chords"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 15,
+        "preset": "another big one",
+        "characters": [
+            "aggressive",
+            "big",
+            "reverberant",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 21,
+        "preset": "astral titans",
+        "characters": [
+            "analog",
+            "distorted",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 33,
+        "preset": "bass pad",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 38,
+        "preset": "beny's territory",
+        "characters": [
+            "acoustic",
+            "layered"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 58,
+        "preset": "brave fields",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 63,
+        "preset": "carifem",
+        "characters": [
+            "fm",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 72,
+        "preset": "choir",
+        "characters": [
+            "synthetic",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 73,
+        "preset": "choir additive",
+        "characters": [
+            "clean",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 80,
+        "preset": "classipad",
+        "characters": [
+            "analog",
+            "ensemble",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 87,
+        "preset": "column of eternity",
+        "characters": [
+            "clean",
+            "fm",
+            "simple",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 90,
+        "preset": "coridor",
+        "characters": [
+            "fm",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 96,
+        "preset": "crossmod",
+        "characters": [
+            "fm",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 99,
+        "preset": "cs80+ladder",
+        "characters": [
+            "analog",
+            "big",
+            "reverberant",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 100,
+        "preset": "cs80+ladder II",
+        "characters": [
+            "analog",
+            "chords"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 105,
+        "preset": "cycle and duty",
+        "characters": [
+            "analog",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 113,
+        "preset": "dirty osc pad",
+        "characters": [
+            "airy",
+            "echo",
+            "evolving",
+            "lofi",
+            "random",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 30,
+        "pgm": 126,
+        "preset": "ebosin",
+        "characters": [
+            "acoustic",
+            "ensemble",
+            "layered"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 35,
+        "preset": "floppy disk lands",
+        "characters": [
+            "fm",
+            "lofi",
+            "noise",
+            "random",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 39,
+        "preset": "fm 2612",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 74,
+        "preset": "grandma's garden",
+        "characters": [
+            "evolving",
+            "layered",
+            "lofi",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 75,
+        "preset": "granu osc",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 80,
+        "preset": "hantpad",
+        "characters": [
+            "dark"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 98,
+        "preset": "interkin",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 102,
+        "preset": "jenny choir",
+        "characters": [
+            "ensemble",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 103,
+        "preset": "jenny fm",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 31,
+        "pgm": 112,
+        "preset": "jupipad",
+        "characters": [
+            "analog",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 10,
+        "preset": "lampadaire",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 11,
+        "preset": "larekin",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 12,
+        "preset": "larekin 2",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 22,
+        "preset": "living pad",
+        "characters": [
+            "analog",
+            "evolving",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 26,
+        "preset": "lost choir",
+        "characters": [
+            "airy",
+            "ensemble",
+            "evolving",
+            "synthetic",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 28,
+        "preset": "lost operator",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 33,
+        "preset": "malgo",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 46,
+        "preset": "modowel",
+        "characters": [
+            "soft",
+            "stereo",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 49,
+        "preset": "moving slate",
+        "characters": [
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 50,
+        "preset": "munsplen",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 60,
+        "preset": "nofiad",
+        "characters": [
+            "evolving",
+            "layered",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 66,
+        "preset": "notiseq",
+        "characters": [
+            "chords",
+            "fm",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 68,
+        "preset": "nynx",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 69,
+        "preset": "oblivion",
+        "characters": [
+            "ensemble",
+            "evolving",
+            "layered",
+            "lofi",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 76,
+        "preset": "op offset",
+        "characters": [
+            "fm",
+            "lfo",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 93,
+        "preset": "pad 101",
+        "characters": [
+            "airy",
+            "bright",
+            "chords",
+            "clean",
+            "echo",
+            "icy",
+            "noise",
+            "simple",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 94,
+        "preset": "pad awan",
+        "characters": [
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 95,
+        "preset": "padding time",
+        "characters": [
+            "analog",
+            "clean",
+            "ensemble",
+            "soft",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 96,
+        "preset": "padorama",
+        "characters": [
+            "layered"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 105,
+        "preset": "perseus supernova",
+        "characters": [
+            "analog",
+            "big",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 107,
+        "preset": "phase machine",
+        "characters": [
+            "bright",
+            "ensemble",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 32,
+        "pgm": 115,
+        "preset": "plastigorien",
+        "characters": [
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 1,
+        "preset": "quiet carriers",
+        "characters": [
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 4,
+        "preset": "rateanis",
+        "characters": [
+            "analog",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 9,
+        "preset": "replicants dreams",
+        "characters": [
+            "analog",
+            "fm",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 11,
+        "preset": "reso nable",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 13,
+        "preset": "rewind time",
+        "characters": [
+            "chords",
+            "echo",
+            "evolving",
+            "lfo",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 14,
+        "preset": "ringad",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 17,
+        "preset": "rising pad",
+        "characters": [
+            "analog",
+            "chords",
+            "evolving",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 29,
+        "preset": "shpad1",
+        "characters": [
+            "analog",
+            "fm",
+            "lfo",
+            "random",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 37,
+        "preset": "simple saw pad",
+        "characters": [
+            "analog",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 38,
+        "preset": "simple square pad",
+        "characters": [
+            "analog",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 43,
+        "preset": "sinespray pad",
+        "characters": [
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 50,
+        "preset": "solima",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 55,
+        "preset": "souvenirs",
+        "characters": [
+            "evolving",
+            "layered",
+            "lofi",
+            "noise",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 66,
+        "preset": "stellaris",
+        "characters": [
+            "analog",
+            "distorted",
+            "echo",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 71,
+        "preset": "strings machine",
+        "characters": [
+            "analog",
+            "ensemble",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 72,
+        "preset": "strings machine 2",
+        "characters": [
+            "analog",
+            "ensemble",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 85,
+        "preset": "taste of june",
+        "characters": [
+            "analog",
+            "chords",
+            "ensemble",
+            "soft",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 94,
+        "preset": "three waves",
+        "characters": [
+            "big",
+            "ensemble",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 105,
+        "preset": "twobanks",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 108,
+        "preset": "under the weather",
+        "characters": [
+            "dark",
+            "distorted",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 33,
+        "pgm": 110,
+        "preset": "unstable sum",
+        "characters": [
+            "analog",
+            "lofi",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 15,
+        "preset": "zazipad",
+        "characters": [
+            "airy",
+            "echo",
+            "ensemble",
+            "noise",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 31,
+        "pgm": 67,
+        "preset": "ghabla",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 31,
+        "pgm": 95,
+        "preset": "hyoshigi",
+        "characters": [
+            "acoustic",
+            "atonal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 31,
+        "pgm": 99,
+        "preset": "ishango bone",
+        "characters": [
+            "atonal",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 31,
+        "pgm": 114,
+        "preset": "kaitof",
+        "characters": [
+            "acoustic",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 31,
+        "pgm": 118,
+        "preset": "kick bass slide",
+        "characters": [
+            "analog",
+            "distorted",
+            "portamento",
+            "simple"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 32,
+        "pgm": 35,
+        "preset": "marlin perkins 1",
+        "characters": [
+            "clean",
+            "intimate",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 32,
+        "pgm": 40,
+        "preset": "metarmonix",
+        "characters": [
+            "acoustic",
+            "analog",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 32,
+        "pgm": 73,
+        "preset": "octalive drum",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "layered",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 32,
+        "pgm": 103,
+        "preset": "patacalbas",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 32,
+        "pgm": 122,
+        "preset": "potendu",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 33,
+        "pgm": 12,
+        "preset": "resonant drum 1",
+        "characters": [
+            "airy",
+            "atonal",
+            "noise",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 33,
+        "pgm": 45,
+        "preset": "slappinperc",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "woody"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 33,
+        "pgm": 80,
+        "preset": "tablast",
+        "characters": [
+            "acoustic",
+            "atonal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 33,
+        "pgm": 106,
+        "preset": "twozing",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "perc",
+        "cc0": 34,
+        "pgm": 0,
+        "preset": "wardrum",
+        "characters": [
+            "acoustic",
+            "analog",
+            "big"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 3,
+        "preset": "acuitar",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 17,
+        "preset": "aplassian",
+        "characters": [
+            "acoustic",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 27,
+        "preset": "balloon from hanoi",
+        "characters": [
+            "acoustic",
+            "clean",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 29,
+        "preset": "banjoy",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 34,
+        "preset": "bazambar",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 41,
+        "preset": "biquide harp",
+        "characters": [
+            "acoustic",
+            "clean",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 61,
+        "preset": "canyon steel",
+        "characters": [
+            "acoustic",
+            "echo",
+            "portamento",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 97,
+        "preset": "crossynthar",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 30,
+        "pgm": 115,
+        "preset": "distortion guitar",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 12,
+        "preset": "ellis guitar",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 27,
+        "preset": "expluck",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 58,
+        "preset": "fruku",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 72,
+        "preset": "grains pluck",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 78,
+        "preset": "gypsy kinetar",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 83,
+        "preset": "harmolick",
+        "characters": [
+            "acoustic",
+            "metallic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 91,
+        "preset": "hybrid harp",
+        "characters": [
+            "acoustic",
+            "fm",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 116,
+        "preset": "karkup",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 31,
+        "pgm": 117,
+        "preset": "karplus & modMan",
+        "characters": [
+            "clean",
+            "strumming",
+            "warm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 1,
+        "preset": "kinetic soundboard",
+        "characters": [
+            "acoustic",
+            "metallic",
+            "reverberant",
+            "shaking",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 3,
+        "preset": "koto",
+        "characters": [
+            "acoustic",
+            "clean",
+            "intimate",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 21,
+        "preset": "lips steel",
+        "characters": [
+            "acoustic",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 42,
+        "preset": "mild kisses",
+        "characters": [
+            "acoustic",
+            "portamento",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 43,
+        "preset": "minimando",
+        "characters": [
+            "acoustic",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 57,
+        "preset": "ngoni",
+        "characters": [
+            "acoustic",
+            "clean",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 72,
+        "preset": "ocherry",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 102,
+        "preset": "paris texas",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 110,
+        "preset": "pine strummer",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 32,
+        "pgm": 127,
+        "preset": "pusher",
+        "characters": [
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 10,
+        "preset": "resizable guitar",
+        "characters": [
+            "acoustic",
+            "echo",
+            "portamento",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 44,
+        "preset": "skoto",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 56,
+        "preset": "space flammenco",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 76,
+        "preset": "sweethrice",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 81,
+        "preset": "tales of feathers",
+        "characters": [
+            "acoustic",
+            "airy",
+            "bright",
+            "clean",
+            "soft"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 83,
+        "preset": "tap sitar",
+        "characters": [
+            "acoustic",
+            "clean",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 90,
+        "preset": "the touch guitar",
+        "characters": [
+            "acoustic",
+            "echo",
+            "intimate",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 104,
+        "preset": "twelve strings",
+        "characters": [
+            "acoustic",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 33,
+        "pgm": 107,
+        "preset": "uki pizz 1",
+        "characters": [
+            "acoustic",
+            "clean",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 9,
+        "preset": "wopluk",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 24,
+        "preset": "bacteria",
+        "characters": [
+            "airy",
+            "atonal",
+            "metallic",
+            "noise",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 25,
+        "preset": "badratios bell",
+        "characters": [
+            "atonal",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 44,
+        "preset": "bird whistler",
+        "characters": [
+            "nature"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 48,
+        "preset": "blipkrieg",
+        "characters": [
+            "atonal",
+            "digital",
+            "fm",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 65,
+        "preset": "celestial basin",
+        "characters": [
+            "airy",
+            "atonal",
+            "metallic",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 91,
+        "preset": "cork the bottle",
+        "characters": [
+            "atonal",
+            "dry",
+            "electric"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 94,
+        "preset": "crackling things",
+        "characters": [
+            "atonal"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 30,
+        "pgm": 95,
+        "preset": "creaker",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "intimate",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 10,
+        "preset": "electric wazoo",
+        "characters": [
+            "atonal",
+            "dry",
+            "electric",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 17,
+        "preset": "entanglement",
+        "characters": [
+            "aggressive",
+            "atonal",
+            "big",
+            "echo",
+            "evolving",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 30,
+        "preset": "fdn crazyness",
+        "characters": [
+            "aggressive",
+            "atonal",
+            "big",
+            "electric",
+            "evolving",
+            "portamento",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 62,
+        "preset": "futur engine",
+        "characters": [
+            "digital"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 66,
+        "preset": "geiger insects",
+        "characters": [
+            "atonal",
+            "intimate",
+            "lfo",
+            "nature",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 89,
+        "preset": "howling sines",
+        "characters": [
+            "atonal",
+            "dark"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 124,
+        "preset": "kinetic bowed fdn",
+        "characters": [
+            "atonal",
+            "dark",
+            "evolving",
+            "reverberant",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 125,
+        "preset": "kinetic dragon",
+        "characters": [
+            "aggressive",
+            "atonal",
+            "distorted",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 126,
+        "preset": "kinetic micromotor",
+        "characters": [
+            "atonal",
+            "echo",
+            "lfo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 31,
+        "pgm": 127,
+        "preset": "kinetic overtones",
+        "characters": [
+            "aggressive",
+            "atonal",
+            "digital",
+            "distorted",
+            "reverberant",
+            "stereo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 23,
+        "preset": "lonely data",
+        "characters": [
+            "atonal",
+            "digital",
+            "intimate",
+            "lfo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 34,
+        "preset": "marie s birds",
+        "characters": [
+            "acoustic",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 47,
+        "preset": "mojo of fdn",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "echo",
+            "reverberant",
+            "strumming"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 52,
+        "preset": "mystaring",
+        "characters": [
+            "atonal",
+            "dark",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 53,
+        "preset": "nails on metal",
+        "characters": [
+            "acoustic",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 119,
+        "preset": "podracer",
+        "characters": [
+            "digital",
+            "portamento"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 32,
+        "pgm": 124,
+        "preset": "psy squelches",
+        "characters": [
+            "aggressive",
+            "atonal",
+            "fm"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 2,
+        "preset": "radioactive zone",
+        "characters": [
+            "analog",
+            "dark",
+            "fm",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 3,
+        "preset": "random trigger",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "echo",
+            "random",
+            "reverberant",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 25,
+        "preset": "scratching fdn",
+        "characters": [
+            "acoustic",
+            "atonal",
+            "reverberant",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 51,
+        "preset": "sonogram",
+        "characters": [
+            "atonal",
+            "lfo",
+            "noise",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 54,
+        "preset": "soundboard",
+        "characters": [
+            "acoustic",
+            "aggressive",
+            "atonal",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 69,
+        "preset": "stormy weather",
+        "characters": [
+            "atonal",
+            "noise"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 89,
+        "preset": "th x",
+        "characters": [
+            "ensemble",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 33,
+        "pgm": 91,
+        "preset": "theo s bicycles",
+        "characters": [
+            "metallic"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 1,
+        "preset": "waterphonie",
+        "characters": [
+            "atonal",
+            "bright",
+            "metallic",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 2,
+        "preset": "wet feeling",
+        "characters": [
+            "atonal",
+            "echo",
+            "reverberant",
+            "shaking"
+        ]
+    },
+    {
+        "pack": "factory",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 14,
+        "preset": "zapzap",
+        "characters": [
+            "analog",
+            "atonal",
+            "lfo",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 43,
+        "preset": "justik",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 59,
+        "preset": "rock robot",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 79,
+        "preset": "transistor pwm",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 85,
+        "preset": "va bass 1",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 86,
+        "preset": "va bass 2",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bass",
+        "cc0": 34,
+        "pgm": 92,
+        "preset": "va pads 1",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bowed",
+        "cc0": 34,
+        "pgm": 21,
+        "preset": "bow tenor",
+        "characters": [
+            "acoustic",
+            "clean"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "bowed",
+        "cc0": 34,
+        "pgm": 95,
+        "preset": "violens",
+        "characters": [
+            "acoustic",
+            "clean",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 22,
+        "preset": "brassick",
+        "characters": [
+            "acoustic",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 53,
+        "preset": "onereed alto",
+        "characters": [
+            "acoustic",
+            "bright",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 54,
+        "preset": "onereed tenor",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 61,
+        "preset": "saxalam",
+        "characters": [
+            "acoustic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 62,
+        "preset": "saxman",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "brass",
+        "cc0": 34,
+        "pgm": 87,
+        "preset": "va brass 1",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "elec piano",
+        "cc0": 34,
+        "pgm": 29,
+        "preset": "dx magic",
+        "characters": [
+            "digital",
+            "electric",
+            "fm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "elec piano",
+        "cc0": 34,
+        "pgm": 30,
+        "preset": "eleclaf",
+        "characters": [
+            "bright",
+            "digital",
+            "electric"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "elec piano",
+        "cc0": 34,
+        "pgm": 68,
+        "preset": "strikey",
+        "characters": [
+            "bright",
+            "electric"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "flute reeds",
+        "cc0": 34,
+        "pgm": 28,
+        "preset": "dubby reeds",
+        "characters": [
+            "acoustic",
+            "clean",
+            "echo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 17,
+        "preset": "bitcrush keys",
+        "characters": [
+            "lofi",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 18,
+        "preset": "bitcrush mod",
+        "characters": [
+            "echo",
+            "lofi",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 41,
+        "preset": "jenny sync",
+        "characters": [
+            "aggressive",
+            "lfo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 44,
+        "preset": "kaladia",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 45,
+        "preset": "kawaship",
+        "characters": [
+            "analog",
+            "bright",
+            "clean",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 55,
+        "preset": "op clav",
+        "characters": [
+            "bright",
+            "clean",
+            "digital"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 69,
+        "preset": "synky",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 71,
+        "preset": "tb keys",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 72,
+        "preset": "tb seq-2os",
+        "characters": [
+            "aggressive",
+            "analog",
+            "distorted"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 73,
+        "preset": "tb seq-3os",
+        "characters": [
+            "analog",
+            "distorted",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 78,
+        "preset": "tinette",
+        "characters": [
+            "distorted",
+            "electric"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 80,
+        "preset": "transitor shimmer keys",
+        "characters": [
+            "analog",
+            "clean",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 83,
+        "preset": "udon",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 84,
+        "preset": "udon v2",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 88,
+        "preset": "va keys 1",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 89,
+        "preset": "va keys 2",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "keys",
+        "cc0": 34,
+        "pgm": 90,
+        "preset": "va keys 3",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 26,
+        "preset": "diode pwm lead",
+        "characters": [
+            "analog",
+            "portamento",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 40,
+        "preset": "hide overload",
+        "characters": [
+            "analog",
+            "echo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 47,
+        "preset": "kobolid",
+        "characters": [
+            "analog",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 67,
+        "preset": "stacked osc",
+        "characters": [
+            "aggressive",
+            "analog",
+            "ensemble"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "lead",
+        "cc0": 34,
+        "pgm": 91,
+        "preset": "va leads 1",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 34,
+        "preset": "fragilkey",
+        "characters": [
+            "lofi"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 36,
+        "preset": "glassilia",
+        "characters": [
+            "acoustic",
+            "airy",
+            "bright",
+            "clean",
+            "soft"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 46,
+        "preset": "kinell",
+        "characters": [
+            "acoustic",
+            "bright"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 48,
+        "preset": "mafrila",
+        "characters": [
+            "acoustic",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 51,
+        "preset": "metallet",
+        "characters": [
+            "acoustic",
+            "bright",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 64,
+        "preset": "snowflakes",
+        "characters": [
+            "acoustic",
+            "airy",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "mallets",
+        "cc0": 34,
+        "pgm": 82,
+        "preset": "tribol",
+        "characters": [
+            "acoustic",
+            "bright",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "organ",
+        "cc0": 34,
+        "pgm": 24,
+        "preset": "crush organ",
+        "characters": [
+            "distorted",
+            "lofi",
+            "noise"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 19,
+        "preset": "blide",
+        "characters": [
+            "analog",
+            "lofi"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 20,
+        "preset": "bouncing pad",
+        "characters": [
+            "lofi",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 23,
+        "preset": "crush 2op",
+        "characters": [
+            "lofi"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 25,
+        "preset": "dakota sunset",
+        "characters": [
+            "analog",
+            "distorted",
+            "lofi",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 27,
+        "preset": "diode pwm pad",
+        "characters": [
+            "analog",
+            "clean",
+            "simple"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 31,
+        "preset": "emilia",
+        "characters": [
+            "analog",
+            "bright",
+            "simple"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 32,
+        "preset": "epica",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 33,
+        "preset": "fabulia",
+        "characters": [
+            "lfo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 42,
+        "preset": "jueno pad",
+        "characters": [
+            "analog",
+            "clean"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 50,
+        "preset": "mascade",
+        "characters": [
+            "analog",
+            "lfo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 52,
+        "preset": "numana",
+        "characters": [
+            "analog",
+            "ensemble"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 56,
+        "preset": "paladia",
+        "characters": [
+            "analog",
+            "stereo",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 57,
+        "preset": "photalia",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 65,
+        "preset": "solistrings",
+        "characters": [
+            "analog",
+            "ensemble",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 66,
+        "preset": "soustitre",
+        "characters": [
+            "analog"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 70,
+        "preset": "tabernak",
+        "characters": [
+            "distorted",
+            "lofi",
+            "stereo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 76,
+        "preset": "the analog",
+        "characters": [
+            "analog",
+            "ensemble"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 93,
+        "preset": "va pads 2",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 94,
+        "preset": "va pads 3",
+        "characters": [
+            "analog",
+            "warm"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "pads",
+        "cc0": 34,
+        "pgm": 96,
+        "preset": "vorelso",
+        "characters": [
+            "airy",
+            "layered",
+            "vocal"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 34,
+        "preset": "feelgood resonator",
+        "characters": [
+            "clean",
+            "intimate"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 37,
+        "preset": "guitararium",
+        "characters": [
+            "aggressive",
+            "distorted",
+            "echo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 38,
+        "preset": "harplitude",
+        "characters": [
+            "acoustic",
+            "lofi",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 39,
+        "preset": "harpoke",
+        "characters": [
+            "acoustic",
+            "clean",
+            "lfo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 49,
+        "preset": "marxophone",
+        "characters": [
+            "acoustic",
+            "lfo",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 74,
+        "preset": "telecasta",
+        "characters": [
+            "acoustic",
+            "electric"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "plucked",
+        "cc0": 34,
+        "pgm": 77,
+        "preset": "the touch satur",
+        "characters": [
+            "acoustic",
+            "echo",
+            "intimate",
+            "reverberant"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 58,
+        "preset": "pitchy place",
+        "characters": [
+            "atonal",
+            "echo"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 60,
+        "preset": "rusty dissonance",
+        "characters": [
+            "atonal",
+            "metallic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 63,
+        "preset": "shifted wg",
+        "characters": [
+            "acoustic",
+            "aggressive",
+            "distorted",
+            "lofi",
+            "reverberant"
+        ]
+    },
+    {
+      "pack": "expansion_01",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 75,
+        "preset": "tesla pad",
+        "characters": [
+            "noise",
+            "stereo",
+            "synthetic"
+        ]
+    },
+    {
+        "pack": "expansion_01",
+        "type": "sfx",
+        "cc0": 34,
+        "pgm": 81,
+        "preset": "transmission",
+        "characters": [
+            "atonal",
+            "lofi",
+            "noise"
+        ]
+    }
+]

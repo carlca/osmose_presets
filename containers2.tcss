@@ -1,0 +1,25 @@
+#port-selector {
+   height: auto;
+   margin-bottom: 1;
+   border: round gray;
+}
+
+#main-content {
+   height: 1fr;
+}
+
+#pack-container {
+   height: auto;
+   margin-bottom: 1;
+   border: round gray;
+}
+
+#type-container {
+   height: 1fr;
+   border: round gray;
+}
+
+.compact {
+   height: 1;
+   border: none;
+}
