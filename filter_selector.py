@@ -1,6 +1,7 @@
 from textual.app import ComposeResult
 from textual.containers import Vertical
 from textual.widgets import Checkbox
+from textual.events import Key
 from preset_data import PresetData
 from filters import Filters
 
@@ -43,3 +44,26 @@ class FilterSelector(Vertical):
          self.all_checkbox_changed(event)
       else:
          self.other_checkbox_changed(event)
+
+   def on_key(self, event: Key) -> None:
+      """Handle up and down arrow key presses to navigate checkboxes."""
+      if event.key not in ("up", "down"):
+         return
+      all_checkboxes = list(self.query(Checkbox))
+      if not all_checkboxes:
+         return
+      try:
+         focused_widget = self.app.focused
+         current_index = all_checkboxes.index(focused_widget)
+      except ValueError:
+         # If focus is not on a known checkbox, default to the first one.
+         all_checkboxes[0].focus()
+         event.stop()
+         return
+      if event.key == "down":
+         next_index = (current_index + 1) % len(all_checkboxes)
+      else:  # event.key == "up"
+         next_index = (current_index - 1 + len(all_checkboxes)) % len(all_checkboxes)
+      all_checkboxes[next_index].focus()
+      # Stop the event from propagating further (e.g., to scroll the container).
+      event.stop()
