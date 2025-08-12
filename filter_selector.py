@@ -27,7 +27,6 @@ class FilterSelector(Vertical):
       new_value = event.value
       try:
          self._updating = True
-         # other_checkboxes = [cb for cb in self.query(Checkbox) if cb.id != "check_all"]
          other_checkboxes = self.get_other_checkboxes()
          for checkbox in other_checkboxes:
             checkbox.value = new_value
@@ -43,8 +42,6 @@ class FilterSelector(Vertical):
          finally:
             self._updating = False
       else:
-         # CORRECTED LINE: Query all checkboxes and filter in Python.
-         # other_checkboxes = [cb for cb in self.query(Checkbox) if cb.id != "check_all"]
          other_checkboxes = self.get_other_checkboxes()
          all_checked = all(cb.value for cb in other_checkboxes)
          try:
