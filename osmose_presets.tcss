@@ -3,7 +3,8 @@
     background: #1e1e1e;
     align: left middle; /* Align the group of widgets */
     padding-left: 1;  /* Add space on the left */
-    margin-bottom: 1;
+    margin-bottom: 0;
+    border: round;
 }
 
 .plain-text {
@@ -30,6 +31,7 @@
 
 .header-button {
     width: 3;
+    min-width: 3;
     height: 1;
     text-align: center; /* This centers the < and > inside their 3-char box */
     margin: 0 1;
@@ -38,7 +40,7 @@
 /* Optional: Add a hover effect for feedback */
 .header-button:hover {
     background: #606060;
-    mouse-cursor: pointer;
+    /*mouse-cursor: pointer;*/
 }
 
 #main-container {
@@ -53,16 +55,18 @@
 
 #pack-container {
    height: auto;
-   margin-bottom: 1;
+   margin-bottom: 0;
+   border: round;
 }
 
 #type-container {
    height: 1fr;
+   border: round;
 }
 
 #data-viewer {
-   width: 1fr; /* This makes it fill the remaining horizontal space */
-   /* For debugging, you can add a border: round lime; */
+   width: 1fr;
+   border: round;
 }
 
 .compact {
