@@ -1,18 +1,44 @@
 from textual.app import App, ComposeResult  # , RenderResult
-from textual.containers import Horizontal, Vertical, HorizontalGroup, VerticalScroll
-from textual.widgets import Button, Static, Checkbox, Placeholder, Header, Footer
+from textual.containers import Horizontal, Vertical, VerticalScroll
+from textual.widgets import Static, Header, Footer
+from textual.message import Message  # <-- Import Message
+from textual import on  # <-- Import on decorator
 from preset_data import PresetData
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
+from messages import FocusNextContainer, FocusPreviousContainer  # <-- Import messages
+
+
+class Sidebar(Vertical):
+   def get_filter_selectors(self) -> list[FilterSelector]:
+      """Returns a list of the FilterSelector children."""
+      return list(self.query(FilterSelector))
+
+   @on(FocusNextContainer)
+   def handle_focus_next(self, message: FocusNextContainer) -> None:
+      """Handle request to focus the next container."""
+      selectors = self.get_filter_selectors()
+      try:
+         current_index = selectors.index(message.sender)
+         next_index = (current_index + 1) % len(selectors)
+         selectors[next_index].focus_first()
+      except ValueError:
+         pass  # Sender not found in this container
+
+   @on(FocusPreviousContainer)
+   def handle_focus_previous(self, message: FocusPreviousContainer) -> None:
+      """Handle request to focus the previous container."""
+      selectors = self.get_filter_selectors()
+      try:
+         current_index = selectors.index(message.sender)
+         next_index = (current_index - 1 + len(selectors)) % len(selectors)
+         selectors[next_index].focus_last()
+      except ValueError:
+         pass  # Sender not found in this container
 
 
 class OsmosePresetsApp(App):
-   """
-   A Textual app demonstrating a two-column layout with a fixed sidebar
-   and a flexible content area.
-   """
-
    # Link to the CSS file
    CSS_PATH = "osmose_presets.tcss"
    BINDINGS = [
@@ -30,7 +56,7 @@ class OsmosePresetsApp(App):
          # The main container holds the two columns side-by-side
          with Horizontal(id="main-container"):
             # The left sidebar, which contains two sections
-            with Vertical(id="left-sidebar"):
+            with Sidebar(id="left-sidebar"):
                yield FilterSelector(Filters.PACK, id="pack-container")
                yield FilterSelector(Filters.TYPE, id="type-container")
             # The right-hand data viewer (scrollable and fills remaining horizontal space)
