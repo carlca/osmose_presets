@@ -1,24 +1,18 @@
-from textual.app import ComposeResult
+from textual.app import App, ComposeResult
 from textual.containers import Vertical
 from textual.widgets import Checkbox
-from textual.events import Key
 from textual import log
-from preset_data import PresetData
-from filters import Filters
-from messages import FocusNextContainer, FocusPreviousContainer  # <-- Import messages
 
 
 class FilterSelector(Vertical):
-   def __init__(self, filter, **kwargs):
-      super().__init__(**kwargs)
-      self.filter = filter
+   def __init__(self):
+      super().__init__()
       self.all_updating = False
 
    def compose(self) -> ComposeResult:
-      filter_name = "pack" if self.filter == Filters.PACK else "type"
-      self.border_title = filter_name
+      self.border_title = "pack"
       yield Checkbox("all", id="check_all", classes="compact bold-text")
-      filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
+      filter_names = ["factory", "expansion_01"]
       for f_name in filter_names:
          safe_id = f"check_{f_name.lower().replace(' ', '_')}"
          yield Checkbox(f_name, id=safe_id, classes="compact bold-text")
@@ -64,36 +58,29 @@ class FilterSelector(Vertical):
       if checkboxes:
          checkboxes[-1].focus()
 
-   # --- MODIFIED on_key method ---
-   def on_key(self, event: Key) -> None:
-      """Handle up/down arrow keys, posting messages at boundaries."""
-      if event.key not in ("up", "down"):
-         return
 
-      all_checkboxes = list(self.query(Checkbox))
-      if not all_checkboxes:
-         return
+class FilterSelectorApp(App):
+   # Link to the CSS file
+   # CSS_PATH = "osmose_presets.tcss"
+   BINDINGS = [
+      ("d", "toggle_dark", "Toggle dark mode"),
+      ("q", "quit_app", "Quit"),
+   ]
 
-      try:
-         focused_widget = self.app.focused
-         current_index = all_checkboxes.index(focused_widget)
-      except ValueError:
-         all_checkboxes[0].focus()
-         event.stop()
-         return
+   def compose(self) -> ComposeResult:
+      """create the layout and widgets for the app"""
+      yield FilterSelector()
 
-      if event.key == "down":
-         if current_index == len(all_checkboxes) - 1:
-            # At the last item, post message to focus the next container
-            self.post_message(FocusNextContainer(self))
-         else:
-            all_checkboxes[current_index + 1].focus()
+   def action_toggle_dark(self) -> None:
+      ### an action to toggle dark mode ###
+      self.theme = "textual-dark" if self.theme == "textual-light" else "textual-light"
 
-      else:  # event.key == "up"
-         if current_index == 0:
-            # At the first item, post message to focus the previous container
-            self.post_message(FocusPreviousContainer(self))
-         else:
-            all_checkboxes[current_index - 1].focus()
+   def action_quit_app(self) -> None:
+      ### An action to quit the app.###
+      print("q pressed")
+      self.exit()
 
-      event.stop()
+
+if __name__ == "__main__":
+   app = FilterSelectorApp()
+   app.run()
