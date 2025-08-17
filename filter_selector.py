@@ -14,9 +14,11 @@ class FilterSelector(Vertical):
       self.filter = filter
       self.all_updating = False
 
+   def get_filter(self) -> str:
+      return "pack" if self.filter == Filters.PACK else "type"
+
    def compose(self) -> ComposeResult:
-      filter_name = "pack" if self.filter == Filters.PACK else "type"
-      self.border_title = filter_name
+      self.border_title = self.get_filter()
       yield Checkbox("all", id="check_all", classes="compact bold-text")
       filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
       for f_name in filter_names:
@@ -44,7 +46,7 @@ class FilterSelector(Vertical):
       self.filter_changed(event.checkbox)
 
    def filter_changed(self, checkbox) -> None:
-      log(f"{checkbox.label} - {checkbox.value}")
+      log(f"{self.get_filter()} - {checkbox.label} - {checkbox.value}")
 
    def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
       if event.checkbox.id == "check_all":
