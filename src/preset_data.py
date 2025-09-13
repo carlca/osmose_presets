@@ -1,6 +1,6 @@
 import json
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields
 from typing import List
 import functools
 
@@ -83,6 +83,19 @@ class PresetData:
          result.sort(key=functools.cmp_to_key(compare_presets))
 
       return result
+
+   @staticmethod
+   def preset_to_tuple(preset: Preset) -> tuple:
+      return tuple(getattr(preset, f.name) for f in fields(preset))
+
+   @staticmethod
+   def flatten_presets_to_tuples(preset_list: List[Preset]) -> List[tuple]:
+      """Convert a list of Preset objects to a list of tuples containing their field values."""
+      return [PresetData.preset_to_tuple(preset) for preset in preset_list]
+
+   @staticmethod
+   def get_presets_as_tuples():
+      return PresetData.flatten_presets_to_tuples(PresetData.get_presets())
 
    @staticmethod
    def get_all_presets():

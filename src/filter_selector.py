@@ -5,7 +5,7 @@ from textual.events import Key
 from textual import log
 from preset_data import PresetData
 from filters import Filters
-from messages import FocusNextContainer, FocusPreviousContainer  # <-- Import messages
+from messages import FocusNextContainer, FocusPreviousContainer
 
 
 class FilterSelector(Vertical):
