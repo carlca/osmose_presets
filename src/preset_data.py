@@ -57,19 +57,18 @@ class PresetData:
    @staticmethod
    def get_presets():
       result = []
-
+      # only apply filters if both filters are active
       if not PresetData.pack_filters or not PresetData.type_filters:
          return result
-
+      # build filtered list from cached list
       for preset in PresetData.cached_presets:
          pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
          type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
-
          if pack_filtered and type_filtered:
             result.append(preset)
-
+      # if sort_criteria active and an non-empty results
       if PresetData.sort_criteria and result:
-
+         # nested compare function used by sort
          def compare_presets(p1: Preset, p2: Preset):
             for field_name, ascending in PresetData.sort_criteria:
                v1 = getattr(p1, field_name)
@@ -80,17 +79,17 @@ class PresetData:
                   return 1 if ascending else -1
             return 0
 
+         # apply the sort function
          result.sort(key=functools.cmp_to_key(compare_presets))
-
+      # return fileterd and optionally sorted presets
       return result
 
    @staticmethod
    def preset_to_tuple(preset: Preset) -> tuple:
-      return tuple(getattr(preset, f.name) for f in fields(preset))
+      return tuple(", ".join(value) if isinstance(value, list) else value for f in fields(preset) for value in [getattr(preset, f.name)])
 
    @staticmethod
    def flatten_presets_to_tuples(preset_list: List[Preset]) -> List[tuple]:
-      """Convert a list of Preset objects to a list of tuples containing their field values."""
       return [PresetData.preset_to_tuple(preset) for preset in preset_list]
 
    @staticmethod
