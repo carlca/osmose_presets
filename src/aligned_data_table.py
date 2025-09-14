@@ -1,11 +1,9 @@
 from textual.widgets import DataTable
 from textual.widgets._data_table import RowRenderables, default_cell_formatter, _EMPTY_TEXT
+from rich.console import RenderableType
 from rich.text import Text
 from typing import Literal
-from rich.segment import SegmentLines
-from rich.style import Style
 from itertools import zip_longest
-from typing import Any
 
 
 class AlignedDataTable(DataTable):

@@ -1,7 +1,5 @@
 from textual.app import App, ComposeResult
 from aligned_data_table import AlignedDataTable
-from textual import log
-# from rich.align import Align
 from preset_data import PresetData, Preset
 from dataclasses import fields
 
