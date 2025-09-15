@@ -3,11 +3,12 @@ from textual.containers import Horizontal, Vertical, VerticalScroll
 from textual.widgets import Static, Header, Footer
 from textual.message import Message  # <-- Import Message
 from textual import on  # <-- Import on decorator
+from textual import log
 from preset_data import PresetData
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
-from messages import FocusNextContainer, FocusPreviousContainer  # <-- Import messages
+from messages import FilterSelectionChanged, FocusNextContainer, FocusPreviousContainer
 
 
 class Sidebar(Vertical):
@@ -15,9 +16,15 @@ class Sidebar(Vertical):
       """Returns a list of the FilterSelector children."""
       return list(self.query(FilterSelector))
 
+   @on(FilterSelectionChanged)
+   def handle_filter_changed(self, message: FilterSelectionChanged) -> None:
+      """ handle a change in the filter selection  """
+      log(message.filter_type)
+      log(message.selected_filters)
+
    @on(FocusNextContainer)
    def handle_focus_next(self, message: FocusNextContainer) -> None:
-      """Handle request to focus the next container."""
+      """ handle request to focus the next container """
       selectors = self.get_filter_selectors()
       try:
          current_index = selectors.index(message.sender)
@@ -28,7 +35,7 @@ class Sidebar(Vertical):
 
    @on(FocusPreviousContainer)
    def handle_focus_previous(self, message: FocusPreviousContainer) -> None:
-      """Handle request to focus the previous container."""
+      """ handle request to focus the previous container """
       selectors = self.get_filter_selectors()
       try:
          current_index = selectors.index(message.sender)

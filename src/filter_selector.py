@@ -5,7 +5,7 @@ from textual.events import Key
 from textual import log
 from preset_data import PresetData
 from filters import Filters
-from messages import FocusNextContainer, FocusPreviousContainer
+from messages import FilterSelectionChanged, FocusNextContainer, FocusPreviousContainer
 
 
 class FilterSelector(Vertical):
@@ -36,23 +36,31 @@ class FilterSelector(Vertical):
          if all_box_value != all(cb.value for cb in other_checkboxes):
             for checkbox in other_checkboxes:
                checkbox.value = all_box_value
-               self.filter_changed(checkbox)
 
    def other_checkbox_changed(self, event: Checkbox.Changed) -> None:
       all_box = self.query_one("#check_all", Checkbox)
       all_are_checked = all(cb.value for cb in self.get_other_checkboxes())
       if all_box.value != all_are_checked:
-         all_box.value = all_are_checked
-      self.filter_changed(event.checkbox)
+         with all_box.prevent(Checkbox.Changed):
+            all_box.value = all_are_checked
 
-   def filter_changed(self, checkbox) -> None:
-      log(f"{self.get_filter()} - {checkbox.label} - {checkbox.value}")
+   def get_selected_filters(self) -> list[str]:
+      """ return a list of labels for all checked checkboxes except 'all' """
+      selected = []
+      for checkbox in self.query(Checkbox):
+         if checkbox.id != "check_all" and checkbox.value:
+            selected.append(str(checkbox.label))
+      return selected
+
+   def filter_selection_changed(self, filter_type: str, selected_filters: list[str]) -> None:
+      self.post_message(FilterSelectionChanged(filter_type, selected_filters))
 
    def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
       if event.checkbox.id == "check_all":
          self.all_checkbox_changed(event)
       else:
          self.other_checkbox_changed(event)
+      self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
 
    def focus_first(self) -> None:
       """Sets focus on the first checkbox in this container."""
@@ -66,7 +74,6 @@ class FilterSelector(Vertical):
       if checkboxes:
          checkboxes[-1].focus()
 
-   # --- MODIFIED on_key method ---
    def on_key(self, event: Key) -> None:
       """Handle up/down arrow keys, posting messages at boundaries."""
       if event.key not in ("up", "down"):
