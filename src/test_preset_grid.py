@@ -16,19 +16,14 @@ class TableApp(App):
       PresetData.add_type_filter("keys")
       PresetData.add_type_filter("pads")
       PresetData.add_type_filter("perc")
-      # presets = PresetData.get_presets()
-      # log(presets)
 
       table = self.query_one(AlignedDataTable)
       table.zebra_stripes = True
       table.cursor_type = "row"
 
-      # ff = fields(Preset)
       for f in fields(Preset):
-         # just = "left" if f.type not in [int, float] else "right"
          table.add_column(f.name, justify="left" if f.type not in [int, float] else "right")
 
-      # table.add_columns(*[f.name for f in fields(Preset)])
       table.add_rows(PresetData.get_presets_as_tuples())
 
 
