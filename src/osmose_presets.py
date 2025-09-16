@@ -4,7 +4,8 @@ from textual.widgets import Static, Header, Footer
 from textual.message import Message  # <-- Import Message
 from textual import on  # <-- Import on decorator
 from textual import log
-from preset_data import PresetData
+from preset_data import PresetData, Preset
+from preset_grid import PresetGrid
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
@@ -19,8 +20,8 @@ class Sidebar(Vertical):
    @on(FilterSelectionChanged)
    def handle_filter_changed(self, message: FilterSelectionChanged) -> None:
       """ handle a change in the filter selection  """
-      log(message.filter_type)
-      log(message.selected_filters)
+      preset_grid = self.app.query_one("#preset-grid", PresetGrid)
+      preset_grid.set_filter(message.filter_type, message.selected_filters)
 
    @on(FocusNextContainer)
    def handle_focus_next(self, message: FocusNextContainer) -> None:
@@ -68,8 +69,7 @@ class OsmosePresetsApp(App):
                yield FilterSelector(Filters.TYPE, id="type-container")
             # The right-hand data viewer (scrollable and fills remaining horizontal space)
             with VerticalScroll(id="data-viewer"):
-               for i in range(30):
-                  yield Static(f"Data Item #{i + 1}")
+               yield PresetGrid(id="preset-grid")
 
    def action_toggle_dark(self) -> None:
       ### an action to toggle dark mode ###

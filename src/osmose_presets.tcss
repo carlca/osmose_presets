@@ -64,7 +64,12 @@
    border: round;
 }
 
-#data-viewer {
+/* #data-viewer {
+   width: 1fr;
+   border: round;
+} */
+
+#preset-grid {
    width: 1fr;
    border: round;
 }
