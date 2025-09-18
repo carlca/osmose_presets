@@ -11,9 +11,10 @@ class PresetGrid(Vertical):
       self.table = self.query_one(AlignedDataTable)
       self.table.zebra_stripes = True
       self.table.cursor_type = "row"
-      for f in fields(Preset):
-         self.table.add_column(f.name, justify="left" if f.type not in [int, float] else "right")
-
+      widths = PresetData.get_preset_max_widths()
+      for i, f in enumerate(fields(Preset)):
+         width = widths[i] if i < len(widths) else None
+         self.table.add_column(f.name, justify="left" if f.type not in [int, float] else "right", width=width)
 
    def compose(self) -> ComposeResult:
       self.border_title = "presets"
@@ -29,3 +30,4 @@ class PresetGrid(Vertical):
             PresetData.clear_type_filters()
             PresetData.add_type_filter(selected_filters)
       self.table.add_rows(PresetData.get_presets_as_tuples())
+      log(PresetData.get_preset_max_widths())

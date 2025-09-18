@@ -17,6 +17,18 @@ class Preset:
    preset: str
    characters: List[str] = field(default_factory=list)
 
+   def get_field_widths(self) -> list[int]:
+      result = []
+      for f in fields(self):
+         value = getattr(self, f.name)
+         if isinstance(value, int):
+            result.append(len(str(value)))
+         elif isinstance(value, list):
+            result.append(len(", ".join(str(item) for item in value)))
+         else:
+            result.append(len(value))
+      return result
+
 
 class PresetData:
    cached_presets = []
@@ -99,6 +111,19 @@ class PresetData:
    @staticmethod
    def get_all_presets():
       return PresetData.cached_presets
+
+   @staticmethod
+   def get_preset_max_widths() -> list[int]:
+      if not PresetData.cached_presets:
+         return []
+      num_fields = len(PresetData.cached_presets[0].get_field_widths())
+      result = [0] * num_fields
+      for preset in PresetData.cached_presets:
+         widths = preset.get_field_widths()
+         for i, width in enumerate(widths):
+            if width > result[i]:
+               result[i] = width
+      return result
 
    @staticmethod
    def get_all_preset_names():
