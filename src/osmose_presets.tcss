@@ -21,7 +21,7 @@
 
 #header-panel Button {
     /* Set the exact size you requested */
-    width: 3;
+    width: 5;
     height: 1;
     border: hidden;
     /* Add a small margin to create space between the buttons */
