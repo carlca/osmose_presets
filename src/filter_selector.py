@@ -65,32 +65,37 @@ class FilterSelector(Vertical):
 
    def set_focus(self) -> None:
       checkboxes = self.query(Checkbox)
-      checkboxes[self.current_index].focus()
+      if checkboxes and 0 <= self.current_index < len(checkboxes):
+         checkboxes[self.current_index].focus()
+      else:
+         # If current_index is invalid, focus the first checkbox and reset current_index
+         if checkboxes:
+            checkboxes[0].focus()
+            self.current_index = 0
 
    def on_key(self, event: Key) -> None:
 
       def process_down_key(checkboxes):
          if self.current_index == len(checkboxes) - 1:
             checkboxes[0].focus()
+            self.current_index = 0
          else:
             checkboxes[self.current_index + 1].focus()
+            self.current_index = self.current_index + 1
 
       def process_up_key(checkboxes):
          if self.current_index == 0:
-            checkboxes[len(checkboxes) - 1].focus()
+            last_index = len(checkboxes) - 1
+            checkboxes[last_index].focus()
+            self.current_index = last_index
          else:
             checkboxes[self.current_index - 1].focus()
-
-      def update_current_index(all_checkboxes):
-         focused_widget = self.app.focused
-         self.current_index = all_checkboxes.index(focused_widget)
+            self.current_index = self.current_index - 1
 
       checkboxes = list(self.query(Checkbox))
       if event.key in ("up", "down"):
-         update_current_index(checkboxes)
          if event.key == "down":
             process_down_key(checkboxes)
          else:
             process_up_key(checkboxes)
-         update_current_index(checkboxes)
          event.stop()
