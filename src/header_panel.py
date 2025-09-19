@@ -38,7 +38,7 @@ class HeaderPanel(HorizontalGroup):
          return self.ports[self.current_port_index]
       return "No ports loaded"
 
-   def focus_first_button(self) -> None:
+   def set_focus(self) -> None:
       """Focus the first button (prev port button)."""
       prev_button = self.query_one("#prev_port_button", Button)
       prev_button.focus()

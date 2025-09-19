@@ -37,9 +37,15 @@
     height: 1;
     text-align: center;
     margin: 0 1;
+    color: #a0a0a0;  /* light grey when not focused */
+    background: transparent;
 }
 
-.header-button:hover {
+#header-panel.focused .header-button {
+    color: white;  /* bright white when HeaderPanel is focused */
+}
+
+#header-panel.focused .header-button:hover {
     background: #606060;
 }
 
