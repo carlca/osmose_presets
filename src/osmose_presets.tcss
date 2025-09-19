@@ -20,27 +20,23 @@
 }
 
 #header-panel Button {
-    /* Set the exact size you requested */
     width: 5;
     height: 1;
     border: hidden;
-    /* Add a small margin to create space between the buttons */
     margin: 0 1;
     padding: 0;
 }
 
 .header-button {
-    width: 3;
+    width: 5;
     min-width: 3;
     height: 1;
-    text-align: center; /* This centers the < and > inside their 3-char box */
+    text-align: center;
     margin: 0 1;
 }
 
-/* Optional: Add a hover effect for feedback */
 .header-button:hover {
     background: #606060;
-    /*mouse-cursor: pointer;*/
 }
 
 #main-container {

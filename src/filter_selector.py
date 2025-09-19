@@ -5,7 +5,7 @@ from textual.events import Key
 from textual import log
 from preset_data import PresetData
 from filters import Filters
-from messages import FilterSelectionChanged, FocusNextContainer, FocusPreviousContainer
+from messages import FilterSelectionChanged
 
 
 class FilterSelector(Vertical):
@@ -93,15 +93,13 @@ class FilterSelector(Vertical):
 
       if event.key == "down":
          if current_index == len(all_checkboxes) - 1:
-            # At the last item, post message to focus the next container
-            self.post_message(FocusNextContainer(self))
+            all_checkboxes[0].focus()
          else:
             all_checkboxes[current_index + 1].focus()
 
-      else:  # event.key == "up"
+      else:
          if current_index == 0:
-            # At the first item, post message to focus the previous container
-            self.post_message(FocusPreviousContainer(self))
+            all_checkboxes[len(all_checkboxes) - 1].focus()
          else:
             all_checkboxes[current_index - 1].focus()
 

@@ -9,49 +9,27 @@ from preset_grid import PresetGrid
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
-from messages import FilterSelectionChanged, FocusNextContainer, FocusPreviousContainer
+from messages import FilterSelectionChanged
 
 
 class Sidebar(Vertical):
    def get_filter_selectors(self) -> list[FilterSelector]:
-      """Returns a list of the FilterSelector children."""
       return list(self.query(FilterSelector))
 
    @on(FilterSelectionChanged)
    def handle_filter_changed(self, message: FilterSelectionChanged) -> None:
-      """ handle a change in the filter selection  """
       preset_grid = self.app.query_one("#preset-grid", PresetGrid)
       preset_grid.set_filter(message.filter_type, message.selected_filters)
-
-   @on(FocusNextContainer)
-   def handle_focus_next(self, message: FocusNextContainer) -> None:
-      """ handle request to focus the next container """
-      selectors = self.get_filter_selectors()
-      try:
-         current_index = selectors.index(message.sender)
-         next_index = (current_index + 1) % len(selectors)
-         selectors[next_index].focus_first()
-      except ValueError:
-         pass  # Sender not found in this container
-
-   @on(FocusPreviousContainer)
-   def handle_focus_previous(self, message: FocusPreviousContainer) -> None:
-      """ handle request to focus the previous container """
-      selectors = self.get_filter_selectors()
-      try:
-         current_index = selectors.index(message.sender)
-         next_index = (current_index - 1 + len(selectors)) % len(selectors)
-         selectors[next_index].focus_last()
-      except ValueError:
-         pass  # Sender not found in this container
-
 
 class OsmosePresetsApp(App):
    # Link to the CSS file
    CSS_PATH = "osmose_presets.tcss"
    BINDINGS = [
-      ("d", "toggle_dark", "Toggle dark mode"),
       ("q", "quit_app", "Quit"),
+      ("1", "focus_midi_input_port", "MIDI input port"),
+      ("2", "focus_pack_filter_selector", "pack"),
+      ("3", "focus_type_filter_selector", "type"),
+      ("4", "focus_preset_grid", "presets")
    ]
 
    def compose(self) -> ComposeResult:
@@ -70,10 +48,6 @@ class OsmosePresetsApp(App):
             # The right-hand data viewer (scrollable and fills remaining horizontal space)
             with VerticalScroll(id="data-viewer"):
                yield PresetGrid(id="preset-grid")
-
-   def action_toggle_dark(self) -> None:
-      ### an action to toggle dark mode ###
-      self.theme = "textual-dark" if self.theme == "textual-light" else "textual-light"
 
    def action_quit_app(self) -> None:
       ### An action to quit the app.###

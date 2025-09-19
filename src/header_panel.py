@@ -2,7 +2,6 @@ from textual.app import ComposeResult
 from textual.containers import HorizontalGroup
 from textual.widgets import Button, Static
 from textual import events
-from messages import FocusNextContainer, FocusPreviousContainer
 from textual.events import Focus as FocusEvent
 
 
@@ -17,10 +16,3 @@ class HeaderPanel(HorizontalGroup):
       """Focus the first button (prev port button)."""
       prev_button = self.query_one("#prev_port_button", Button)
       prev_button.focus()
-
-   def on_button_pressed(self, event: Button.Pressed) -> None:
-      """Handle button presses for navigation."""
-      if event.button.id == "prev_port_button":
-         self.post_message(FocusPreviousContainer(self))
-      elif event.button.id == "next_port_button":
-         self.post_message(FocusNextContainer(self))
