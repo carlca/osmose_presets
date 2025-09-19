@@ -1,8 +1,8 @@
 #header-panel {
     height: 3;
     background: #1e1e1e;
-    align: left middle; /* Align the group of widgets */
-    padding-left: 1;  /* Add space on the left */
+    align: left middle;
+    padding-left: 1;
     margin-bottom: 0;
     border: round;
 }
@@ -44,9 +44,8 @@
 }
 
 #left-sidebar {
-   width: 30; /* Give the sidebar a fixed width */
+   width: 23;
    margin-right: 1;
-   /* For debugging, you can add a border: round dodgerblue; */
 }
 
 #pack-container {
@@ -59,11 +58,6 @@
    height: 1fr;
    border: round;
 }
-
-/* #data-viewer {
-   width: 1fr;
-   border: round;
-} */
 
 #preset-grid {
    width: 1fr;

@@ -31,3 +31,7 @@ class PresetGrid(Vertical):
             PresetData.add_type_filter(selected_filters)
       self.table.add_rows(PresetData.get_presets_as_tuples())
       log(PresetData.get_preset_max_widths())
+
+   def set_focus(self) -> None:
+      log("self.table.focus()")
+      self.table.focus()

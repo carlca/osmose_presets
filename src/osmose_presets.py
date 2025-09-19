@@ -65,6 +65,11 @@ class OsmosePresetsApp(App):
       if filter:
          filter.focus_first()
 
+   def action_focus_preset_grid(self) -> None:
+      grid = self.app.query_one("#preset-grid")
+      if grid:
+         log("grid.set_focus()")
+         grid.set_focus()
 
 if __name__ == "__main__":
    app = OsmosePresetsApp()
