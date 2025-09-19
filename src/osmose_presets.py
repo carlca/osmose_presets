@@ -58,8 +58,8 @@ class OsmosePresetsApp(App):
       self.exit()
 
    def remove_all_focused_border_titles(self) -> None:
-      for container in self.query(".focused"):
-         container.remove_class("focused")
+      for widget in self.query(".focused"):
+         widget.remove_class("focused")
 
    def set_focus_to_one_border_title(self, id: str) -> None:
       widget = self.app.query_one(id)
