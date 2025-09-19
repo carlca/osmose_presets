@@ -29,9 +29,10 @@ class PresetGrid(Vertical):
          case "type":
             PresetData.clear_type_filters()
             PresetData.add_type_filter(selected_filters)
+         case _:
+            log("set_filter case not matched")
       self.table.add_rows(PresetData.get_presets_as_tuples())
       log(PresetData.get_preset_max_widths())
 
    def set_focus(self) -> None:
-      log("self.table.focus()")
       self.table.focus()

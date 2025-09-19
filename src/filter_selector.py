@@ -13,6 +13,7 @@ class FilterSelector(Vertical):
       super().__init__(**kwargs)
       self.filter = filter
       self.all_updating = False
+      self.current_index = 0
 
    def get_filter(self) -> str:
       return "pack" if self.filter == Filters.PACK else "type"
@@ -62,45 +63,34 @@ class FilterSelector(Vertical):
          self.other_checkbox_changed(event)
       self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
 
-   def focus_first(self) -> None:
-      """Sets focus on the first checkbox in this container."""
+   def set_focus(self) -> None:
       checkboxes = self.query(Checkbox)
-      if checkboxes:
-         checkboxes[0].focus()
-
-   def focus_last(self) -> None:
-      """Sets focus on the last checkbox in this container."""
-      checkboxes = self.query(Checkbox)
-      if checkboxes:
-         checkboxes[-1].focus()
+      checkboxes[self.current_index].focus()
 
    def on_key(self, event: Key) -> None:
-      """Handle up/down arrow keys, posting messages at boundaries."""
-      if event.key not in ("up", "down"):
-         return
 
-      all_checkboxes = list(self.query(Checkbox))
-      if not all_checkboxes:
-         return
+      def process_down_key(checkboxes):
+         if self.current_index == len(checkboxes) - 1:
+            checkboxes[0].focus()
+         else:
+            checkboxes[self.current_index + 1].focus()
 
-      try:
+      def process_up_key(checkboxes):
+         if self.current_index == 0:
+            checkboxes[len(checkboxes) - 1].focus()
+         else:
+            checkboxes[self.current_index - 1].focus()
+
+      def update_current_index(all_checkboxes):
          focused_widget = self.app.focused
-         current_index = all_checkboxes.index(focused_widget)
-      except ValueError:
-         all_checkboxes[0].focus()
+         self.current_index = all_checkboxes.index(focused_widget)
+
+      checkboxes = list(self.query(Checkbox))
+      if event.key in ("up", "down"):
+         update_current_index(checkboxes)
+         if event.key == "down":
+            process_down_key(checkboxes)
+         else:
+            process_up_key(checkboxes)
+         update_current_index(checkboxes)
          event.stop()
-         return
-
-      if event.key == "down":
-         if current_index == len(all_checkboxes) - 1:
-            all_checkboxes[0].focus()
-         else:
-            all_checkboxes[current_index + 1].focus()
-
-      else:
-         if current_index == 0:
-            all_checkboxes[len(all_checkboxes) - 1].focus()
-         else:
-            all_checkboxes[current_index - 1].focus()
-
-      event.stop()

@@ -170,7 +170,7 @@ class PresetData:
    def get_types(pack=""):
       types = []
       for preset in PresetData.cached_presets:
-         if pack and preset.pack == pack or not pack:
+         if (pack and preset.pack == pack) or not pack:
             if preset.type not in types:
                types.append(preset.type)
       return types
