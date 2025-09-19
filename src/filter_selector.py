@@ -46,7 +46,7 @@ class FilterSelector(Vertical):
             all_box.value = all_are_checked
 
    def get_selected_filters(self) -> list[str]:
-      """ return a list of labels for all checked checkboxes except 'all' """
+      """return a list of labels for all checked checkboxes except 'all'"""
       selected = []
       for checkbox in self.query(Checkbox):
          if checkbox.id != "check_all" and checkbox.value:
@@ -74,7 +74,6 @@ class FilterSelector(Vertical):
             self.current_index = 0
 
    def on_key(self, event: Key) -> None:
-
       def process_down_key(checkboxes):
          if self.current_index == len(checkboxes) - 1:
             checkboxes[0].focus()

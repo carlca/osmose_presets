@@ -19,8 +19,8 @@ class Sidebar(Vertical):
       preset_grid = self.app.query_one("#preset-grid", PresetGrid)
       preset_grid.set_filter(message.filter_type, message.selected_filters)
 
-class OsmosePresetsApp(App):
 
+class OsmosePresetsApp(App):
    TITLE = "Osmose Presets"
 
    CSS_PATH = "osmose_presets.tcss"
@@ -30,8 +30,9 @@ class OsmosePresetsApp(App):
       ("1", "focus_midi_input_port", "MIDI input port"),
       ("2", "focus_pack_filter_selector", "pack"),
       ("3", "focus_type_filter_selector", "type"),
-      ("4", "focus_preset_grid", "presets")
+      ("4", "focus_preset_grid", "presets"),
    ]
+
    def on_mount(self) -> None:
       self.focus_filter_selector("#pack-container")
 
@@ -83,6 +84,7 @@ class OsmosePresetsApp(App):
    def action_focus_preset_grid(self) -> None:
       self.remove_all_focused_border_titles()
       self.set_focus_to_one_border_title("#preset-grid")
+
 
 if __name__ == "__main__":
    app = OsmosePresetsApp()

@@ -5,8 +5,8 @@ from aligned_data_table import AlignedDataTable
 from preset_data import PresetData, Preset
 from dataclasses import fields
 
-class PresetGrid(Vertical):
 
+class PresetGrid(Vertical):
    def on_mount(self) -> None:
       self.table = self.query_one(AlignedDataTable)
       self.table.zebra_stripes = True

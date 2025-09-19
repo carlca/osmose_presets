@@ -5,6 +5,9 @@ from textual import events
 from textual import log
 from textual.events import Focus as FocusEvent
 import mido
+import os
+import json
+from helper_functions import Helper
 
 
 class HeaderPanel(HorizontalGroup):
@@ -21,14 +24,24 @@ class HeaderPanel(HorizontalGroup):
          if not self.ports:
             self.ports = ["No MIDI ports available"]
          log(self.ports)
+
+         # Load saved MIDI port selection
+         config = self.read_config()
+         saved_port = config.get("selected_midi_port", "")
+
+         # If there's a saved port and it exists in the current list of ports
+         if saved_port and saved_port in self.ports:
+            self.current_port_index = self.ports.index(saved_port)
+            if self.port_display:
+               self.port_display.update(self.get_current_port_name())
       except Exception as e:
          print(f"Error getting MIDI input ports: {e}")
          self.ports = ["Error loading MIDI ports"]
 
    def compose(self) -> ComposeResult:
       self.border_title = "MIDI input port"
-      yield Button(" < ", classes="header-button bold-text", id="prev_port_button", flat=True)
-      yield Button(" > ", classes="header-button bold-text", id="next_port_button", flat=True)
+      yield Button(" < ", classes="header-button bold-text", id="prev_port_button")
+      yield Button(" > ", classes="header-button bold-text", id="next_port_button")
       self.port_display = Static(self.get_current_port_name(), classes="bold-text")
       yield self.port_display
 
@@ -37,6 +50,16 @@ class HeaderPanel(HorizontalGroup):
       if self.ports:
          return self.ports[self.current_port_index]
       return "No ports loaded"
+
+   def read_config(self):
+      """Read the config file."""
+      return Helper.read_config()
+
+   def save_selected_midi_port(self, port_name: str) -> None:
+      """Save the selected MIDI port to the config file."""
+      config = self.read_config()
+      config["selected_midi_port"] = port_name
+      Helper.write_config(config)
 
    def set_focus(self) -> None:
       """Focus the first button (prev port button)."""
@@ -58,6 +81,7 @@ class HeaderPanel(HorizontalGroup):
          self.current_port_index = (self.current_port_index + 1) % len(self.ports)
          if self.port_display:
             self.port_display.update(self.get_current_port_name())
+            self.save_selected_midi_port(self.get_current_port_name())
 
    def prev_port(self) -> None:
       """Select the previous MIDI port."""
@@ -65,3 +89,4 @@ class HeaderPanel(HorizontalGroup):
          self.current_port_index = (self.current_port_index - 1) % len(self.ports)
          if self.port_display:
             self.port_display.update(self.get_current_port_name())
+            self.save_selected_midi_port(self.get_current_port_name())

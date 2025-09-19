@@ -45,9 +45,7 @@ class AlignedDataTable(DataTable):
       ordered_columns = self.ordered_columns
       if row_index == -1:
          # Header row
-         header_row: list[RenderableType] = [
-            column.label for column in ordered_columns
-         ]
+         header_row: list[RenderableType] = [column.label for column in ordered_columns]
          return RowRenderables(None, header_row)
 
       ordered_row = self.get_row_at(row_index)
@@ -74,15 +72,7 @@ class AlignedDataTable(DataTable):
          for datum, column_key in zip_longest(ordered_row, self.columns)
       ]
 
-      label = (
-         default_cell_formatter(
-            row_metadata.label,
-            wrap=False,
-            height=1
-         )
-         if row_metadata.label is not None
-         else None
-      )
+      label = default_cell_formatter(row_metadata.label, wrap=False, height=1) if row_metadata.label is not None else None
 
       return RowRenderables(label, formatted_row_cells)
 
