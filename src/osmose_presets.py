@@ -54,6 +54,17 @@ class OsmosePresetsApp(App):
       print("q pressed")
       self.exit()
 
+   def action_focus_pack_filter_selector(self) -> None:
+      self.focus_filter_selector("#pack-container")
+
+   def action_focus_type_filter_selector(self) -> None:
+      self.focus_filter_selector("#type-container")
+
+   def focus_filter_selector(self, id: str) -> None:
+      filter = self.app.query_one(id)
+      if filter:
+         filter.focus_first()
+
 
 if __name__ == "__main__":
    app = OsmosePresetsApp()

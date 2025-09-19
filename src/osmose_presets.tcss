@@ -22,7 +22,7 @@
 #header-panel Button {
     width: 5;
     height: 1;
-    border: hidden;
+    border: none;
     margin: 0 1;
     padding: 0;
 }
