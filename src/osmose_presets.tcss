@@ -7,6 +7,10 @@
     border: round;
 }
 
+#header-panel.focused {
+    border-title-color: yellow;
+}
+
 .plain-text {
    text-style: not bold;
 }
@@ -54,14 +58,26 @@
    border: round;
 }
 
+#pack-container.focused {
+   border-title-color: yellow;
+}
+
 #type-container {
    height: 1fr;
    border: round;
 }
 
+#type-container.focused {
+   border-title-color: yellow;
+}
+
 #preset-grid {
    width: 1fr;
    border: round;
+}
+
+#preset-grid.focused {
+   border-title-color: yellow;
 }
 
 .compact {

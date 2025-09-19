@@ -54,6 +54,17 @@ class OsmosePresetsApp(App):
       print("q pressed")
       self.exit()
 
+   def action_focus_midi_input_port(self) -> None:
+      # Remove focused class from all containers
+      for container in self.query(".focused"):
+         container.remove_class("focused")
+      
+      # Add focused class to the header panel
+      header_panel = self.app.query_one("#header-panel")
+      if header_panel:
+         header_panel.add_class("focused")
+         header_panel.focus_first_button()
+
    def action_focus_pack_filter_selector(self) -> None:
       self.focus_filter_selector("#pack-container")
 
@@ -61,13 +72,24 @@ class OsmosePresetsApp(App):
       self.focus_filter_selector("#type-container")
 
    def focus_filter_selector(self, id: str) -> None:
+      # Remove focused class from all containers
+      for container in self.query(".focused"):
+         container.remove_class("focused")
+      
+      # Add focused class to the target container
       filter = self.app.query_one(id)
       if filter:
+         filter.add_class("focused")
          filter.set_focus()
 
    def action_focus_preset_grid(self) -> None:
+      # Remove focused class from all containers
+      for container in self.query(".focused"):
+         container.remove_class("focused")
+      
       grid = self.app.query_one("#preset-grid")
       if grid:
+         grid.add_class("focused")
          log("grid.set_focus()")
          grid.set_focus()
 
