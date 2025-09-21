@@ -9,6 +9,7 @@
 
 #header-panel.focused {
     border-title-color: yellow;
+    border-title-style: bold;
 }
 
 .plain-text {
@@ -66,6 +67,7 @@
 
 #pack-container.focused {
    border-title-color: yellow;
+   border-title-style: bold;
 }
 
 #type-container {
@@ -75,6 +77,7 @@
 
 #type-container.focused {
    border-title-color: yellow;
+   border-title-style: bold;
 }
 
 #preset-grid {
@@ -84,6 +87,7 @@
 
 #preset-grid.focused {
    border-title-color: yellow;
+   border-title-style: bold;
 }
 
 .compact {

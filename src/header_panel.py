@@ -1,12 +1,9 @@
 from textual.app import ComposeResult
 from textual.containers import HorizontalGroup
 from textual.widgets import Button, Static
-from textual import events
+from textual.events import Key
 from textual import log
-from textual.events import Focus as FocusEvent
 import mido
-import os
-import json
 from helper_functions import Helper
 
 
@@ -90,3 +87,11 @@ class HeaderPanel(HorizontalGroup):
          if self.port_display:
             self.port_display.update(self.get_current_port_name())
             self.save_selected_midi_port(self.get_current_port_name())
+
+   def on_key(self, event: Key) -> None:
+      if event.character in ("<",",", ">","."):
+         if event.character in ("<",","):
+            self.prev_port()
+         elif event.character in (">","."):
+            self.next_port()
+         event.stop()
