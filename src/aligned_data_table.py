@@ -1,9 +1,17 @@
 from textual.widgets import DataTable
 from textual.widgets._data_table import RowRenderables, default_cell_formatter, _EMPTY_TEXT
+from textual.message import Message
+from textual.widgets import DataTable
+from textual.events import Click
 from rich.console import RenderableType
 from rich.text import Text
 from typing import Literal
 from itertools import zip_longest
+
+
+class AlignedDataTableClicked(Message):
+    """Posted when the AlignedDataTable is clicked."""
+    pass
 
 
 class AlignedDataTable(DataTable):
@@ -90,3 +98,9 @@ class AlignedDataTable(DataTable):
       else:
          content = str(obj)
       return Text(content, justify=justify, no_wrap=not wrap)
+
+   def on_click(self, event: Click) -> None:
+       # Post a custom message when the table is clicked
+       self.post_message(AlignedDataTableClicked())
+       # Continue normal DataTable click processing
+       # super().on_click(event)

@@ -1,6 +1,7 @@
 from textual.app import ComposeResult
 from textual.containers import Vertical
 from textual import log
+from textual import events
 from aligned_data_table import AlignedDataTable
 from preset_data import PresetData, Preset
 from dataclasses import fields
@@ -33,6 +34,11 @@ class PresetGrid(Vertical):
             log("set_filter case not matched")
       self.table.add_rows(PresetData.get_presets_as_tuples())
       log(PresetData.get_preset_max_widths())
+
+   def on_aligned_data_table_clicked(self, event: events.Event) -> None:
+       # Visually indicate this container is active when table is clicked
+       self.app.remove_all_focused_border_titles()
+       self.add_class("focused")
 
    def set_focus(self) -> None:
       self.table.focus()

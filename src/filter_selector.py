@@ -1,6 +1,7 @@
 from textual.app import ComposeResult
 from textual.containers import Vertical
 from textual.widgets import Checkbox
+from textual import events
 from textual.events import Key
 from textual import log
 from preset_data import PresetData
@@ -56,13 +57,6 @@ class FilterSelector(Vertical):
    def filter_selection_changed(self, filter_type: str, selected_filters: list[str]) -> None:
       self.post_message(FilterSelectionChanged(filter_type, selected_filters))
 
-   def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
-      if event.checkbox.id == "check_all":
-         self.all_checkbox_changed(event)
-      else:
-         self.other_checkbox_changed(event)
-      self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
-
    def set_focus(self) -> None:
       checkboxes = self.query(Checkbox)
       if checkboxes and 0 <= self.current_index < len(checkboxes):
@@ -72,6 +66,18 @@ class FilterSelector(Vertical):
          if checkboxes:
             checkboxes[0].focus()
             self.current_index = 0
+
+   def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
+      if event.checkbox.id == "check_all":
+         self.all_checkbox_changed(event)
+      else:
+         self.other_checkbox_changed(event)
+      self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
+
+   def on_click(self, event: events.Click) -> None:
+      self.app.remove_all_focused_border_titles()
+      self.add_class("focused")
+      # Don't stop the event, so child widgets can still process it
 
    def on_key(self, event: Key) -> None:
       def process_down_key(checkboxes):
@@ -92,6 +98,7 @@ class FilterSelector(Vertical):
             self.current_index = self.current_index - 1
 
       checkboxes = list(self.query(Checkbox))
+
       if event.key in ("up", "down"):
          if event.key == "down":
             process_down_key(checkboxes)
