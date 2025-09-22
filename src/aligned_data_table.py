@@ -100,10 +100,7 @@ class AlignedDataTable(DataTable):
       return Text(content, justify=justify, no_wrap=not wrap)
 
    def on_click(self, event: Click) -> None:
-       # Post a custom message when the table is clicked
        self.post_message(AlignedDataTableClicked())
-       # Continue normal DataTable click processing
-       # super().on_click(event)
 
    async def on_mouse_down(self, event: MouseDown) -> None:
       await self._on_click(event)  # type: ignore
