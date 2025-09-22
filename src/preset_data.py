@@ -126,6 +126,17 @@ class PresetData:
       return result
 
    @staticmethod
+   def get_characters() -> list[str]:
+      result = []
+      if not PresetData.cached_presets:
+         return result
+      for preset in PresetData.cached_presets:
+         for character in preset.characters:
+            if character not in result:
+               result.append(character)
+      return result
+
+   @staticmethod
    def get_all_preset_names():
       result = []
       for preset in PresetData.cached_presets:

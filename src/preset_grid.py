@@ -48,5 +48,5 @@ class PresetGrid(Vertical):
    def set_focus(self) -> None:
       self.table.focus()
 
-   def on_aligned_data_table_mouse_down(self, event) -> None:
-      log("Mouse down")
+   # def on_aligned_data_table_mouse_down(self, event) -> None:
+   #    log("Mouse down")
