@@ -2,6 +2,7 @@ from textual.app import App, ComposeResult
 from textual.containers import Horizontal, Vertical, VerticalScroll
 from textual.widgets import Header, Footer
 from textual import on
+from textual.widgets import DataTable
 from textual import log
 from preset_grid import PresetGrid
 from header_panel import HeaderPanel

@@ -3,6 +3,7 @@ from textual.widgets import DataTable
 from textual.containers import Vertical
 from textual import log
 from textual import events
+from textual.events import MouseDown
 from aligned_data_table import AlignedDataTable
 from preset_data import PresetData, Preset
 from dataclasses import fields
@@ -47,6 +48,5 @@ class PresetGrid(Vertical):
    def set_focus(self) -> None:
       self.table.focus()
 
-   def on_data_table_row_highlighted(self, event: DataTable.RowHighlighted) -> None:
-      # Ensure focus is properly set when a row is highlighted
-      self.set_focus(event.data_table)
+   def on_aligned_data_table_mouse_down(self, event) -> None:
+      log("Mouse down")

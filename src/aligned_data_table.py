@@ -2,6 +2,7 @@ from textual.widgets import DataTable
 from textual.widgets._data_table import RowRenderables, default_cell_formatter, _EMPTY_TEXT
 from textual.message import Message
 from textual.events import Click
+from textual.events import MouseDown
 from rich.console import RenderableType
 from rich.text import Text
 from typing import Literal
@@ -103,3 +104,6 @@ class AlignedDataTable(DataTable):
        self.post_message(AlignedDataTableClicked())
        # Continue normal DataTable click processing
        # super().on_click(event)
+
+   async def on_mouse_down(self, event: MouseDown) -> None:
+      await self._on_click(event)  # type: ignore
