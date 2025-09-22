@@ -1,4 +1,5 @@
 from textual.app import ComposeResult
+from textual.widgets import DataTable
 from textual.containers import Vertical
 from textual import log
 from textual import events
@@ -12,6 +13,8 @@ class PresetGrid(Vertical):
       self.table = self.query_one(AlignedDataTable)
       self.table.zebra_stripes = True
       self.table.cursor_type = "row"
+      self.table.show_cursor = True
+      self.table.cursor_blink = False
       widths = PresetData.get_preset_max_widths()
       for i, f in enumerate(fields(Preset)):
          width = widths[i] if i < len(widths) else None
@@ -39,6 +42,11 @@ class PresetGrid(Vertical):
        # Visually indicate this container is active when table is clicked
        self.app.remove_all_focused_border_titles()
        self.add_class("focused")
+       event.stop()
 
    def set_focus(self) -> None:
       self.table.focus()
+
+   def on_data_table_row_highlighted(self, event: DataTable.RowHighlighted) -> None:
+      # Ensure focus is properly set when a row is highlighted
+      self.set_focus(event.data_table)
