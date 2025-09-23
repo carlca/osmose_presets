@@ -10,8 +10,9 @@ from itertools import zip_longest
 
 
 class AlignedDataTableClicked(Message):
-    """Posted when the AlignedDataTable is clicked."""
-    pass
+   """Posted when the AlignedDataTable is clicked."""
+
+   pass
 
 
 class AlignedDataTable(DataTable):
@@ -100,7 +101,7 @@ class AlignedDataTable(DataTable):
       return Text(content, justify=justify, no_wrap=not wrap)
 
    def on_click(self, event: Click) -> None:
-       self.post_message(AlignedDataTableClicked())
+      self.post_message(AlignedDataTableClicked())
 
    async def on_mouse_down(self, event: MouseDown) -> None:
       await self._on_click(event)  # type: ignore

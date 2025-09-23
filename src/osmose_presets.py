@@ -48,9 +48,9 @@ class OsmosePresetsApp(App):
          with Horizontal(id="main-container"):
             # The left sidebar, which contains two sections
             with Sidebar(id="left-sidebar"):
-               yield FilterSelector(Filters.PACK, id="pack-container")
-               yield FilterSelector(Filters.TYPE, id="type-container")
-               yield FilterSelector(Filters.CHARACTER, id="character-container")
+               yield FilterSelector(Filters.PACK, True, id="pack-container")
+               yield FilterSelector(Filters.TYPE, True, id="type-container")
+               yield FilterSelector(Filters.CHARACTER, True, id="character-container")
             # The right-hand data viewer (scrollable and fills remaining horizontal space)
             with VerticalScroll(id="data-viewer"):
                yield PresetGrid(id="preset-grid")

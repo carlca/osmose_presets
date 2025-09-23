@@ -1,4 +1,3 @@
-
 from textual.app import ComposeResult
 from textual.containers import HorizontalGroup
 from textual.widgets import Button, Static
@@ -90,9 +89,9 @@ class HeaderPanel(HorizontalGroup):
             self.save_selected_midi_port(self.get_current_port_name())
 
    def on_key(self, event: Key) -> None:
-      if event.character in ("<",",", ">","."):
-         if event.character in ("<",","):
+      if event.character in ("<", ",", ">", "."):
+         if event.character in ("<", ","):
             self.prev_port()
-         elif event.character in (">","."):
+         elif event.character in (">", "."):
             self.next_port()
          event.stop()

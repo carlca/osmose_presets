@@ -40,10 +40,10 @@ class PresetGrid(Vertical):
       log(PresetData.get_preset_max_widths())
 
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
-       # Visually indicate this container is active when table is clicked
-       self.app.remove_all_focused_border_titles()
-       self.add_class("focused")
-       event.stop()
+      # Visually indicate this container is active when table is clicked
+      self.app.remove_all_focused_border_titles()
+      self.add_class("focused")
+      event.stop()
 
    def set_focus(self) -> None:
       self.table.focus()

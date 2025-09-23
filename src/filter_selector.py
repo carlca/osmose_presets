@@ -9,10 +9,26 @@ from filters import Filters
 from messages import FilterSelectionChanged
 
 
+class MockCheckboxChanged:
+   def __init__(self, checkbox, value):
+      self.checkbox = checkbox
+      self.value = value
+
+
 class FilterSelector(VerticalScroll):
-   def __init__(self, filter, **kwargs):
+   def on_mount(self) -> None:
+      # If select_all is True, simulate user checking all boxes
+      if self.select_all:
+         # Create a mock event for the "all" checkbox
+         all_box = self.query_one("#check_all", Checkbox)
+         # Manually trigger the change behavior
+         self.all_checkbox_changed(MockCheckboxChanged(all_box, True))
+         self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
+
+   def __init__(self, filter, select_all=False, **kwargs):
       super().__init__(**kwargs)
       self.filter = filter
+      self.select_all = select_all
       self.all_updating = False
       self.current_index = 0
 
@@ -40,11 +56,11 @@ class FilterSelector(VerticalScroll):
 
    def compose(self) -> ComposeResult:
       self.border_title = self.get_filter()
-      yield Checkbox("all", id="check_all", classes="compact bold-text")
+      yield Checkbox("all", id="check_all", classes="compact bold-text", value=self.select_all)
       filter_names = self.get_filter_names()
       for f_name in filter_names:
          safe_id = f"check_{f_name.lower().replace(' ', '_')}"
-         yield Checkbox(f_name, id=safe_id, classes="compact bold-text")
+         yield Checkbox(f_name, id=safe_id, classes="compact bold-text", value=self.select_all)
 
    def get_other_checkboxes(self) -> list[Checkbox]:
       return [cb for cb in self.query(Checkbox) if cb.id != "check_all"]
