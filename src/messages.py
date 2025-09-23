@@ -1,5 +1,4 @@
 from textual.message import Message
-from textual.widget import Widget
 
 
 class FilterSelectionChanged(Message):

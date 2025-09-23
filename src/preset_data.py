@@ -34,6 +34,7 @@ class PresetData:
    cached_presets = []
    pack_filters = []
    type_filters = []
+   char_filters = []
    sort_criteria = []  # e.g., [('pack', True), ('preset', False)]
 
    @staticmethod
@@ -70,12 +71,13 @@ class PresetData:
    def get_presets():
       result = []
       # only apply filters if both filters are active
-      if not PresetData.pack_filters or not PresetData.type_filters:
+      if not PresetData.pack_filters or not PresetData.type_filters or not PresetData.char_filters:
          return result
       # build filtered list from cached list
       for preset in PresetData.cached_presets:
          pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
          type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
+
          if pack_filtered and type_filtered:
             result.append(preset)
       # if sort_criteria active and an non-empty results
@@ -126,17 +128,17 @@ class PresetData:
       return result
 
    @staticmethod
-   def get_characters() -> list[str]:
+   def get_chars() -> list[str]:
       result = []
       if not PresetData.cached_presets:
          return result
       unassigned_found = False
       for preset in PresetData.cached_presets:
-         for character in preset.characters:
-            if character not in result:
-               if character != "UNASSIGNED":
-                  result.append(character)
-            if character == "UNASSIGNED":
+         for char in preset.characters:
+            if char not in result:
+               if char != "UNASSIGNED":
+                  result.append(char)
+            if char == "UNASSIGNED":
                unassigned_found = True
       result.sort()
       if unassigned_found:
@@ -175,6 +177,19 @@ class PresetData:
          PresetData.type_filters.extend(type_filter)
       else:
          raise TypeError("type_filter must be a string or a list of strings")
+
+   @staticmethod
+   def clear_char_filters():
+      PresetData.char_filters.clear()
+
+   @staticmethod
+   def add_char_filter(char_filter):
+      if isinstance(char_filter, str):
+         PresetData.char_filters.append(char_filter)
+      elif isinstance(char_filter, list):
+         PresetData.char_filters.extend(char_filter)
+      else:
+         raise TypeError("char_filter must be a string or a list of strings")
 
    @staticmethod
    def get_packs():

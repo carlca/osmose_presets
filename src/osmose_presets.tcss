@@ -80,12 +80,12 @@
    border-title-style: bold;
 }
 
-#character-container {
+#char-container {
    height: 1fr;
    border: round;
 }
 
-#character-container.focused {
+#char-container.focused {
    border-title-color: yellow;
    border-title-style: bold;
 }

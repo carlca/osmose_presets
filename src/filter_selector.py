@@ -38,8 +38,8 @@ class FilterSelector(VerticalScroll):
             return "pack"
          case Filters.TYPE:
             return "type"
-         case Filters.CHARACTER:
-            return "character"
+         case Filters.CHAR:
+            return "char"
          case _:
             return "undefined"
 
@@ -49,8 +49,8 @@ class FilterSelector(VerticalScroll):
             return PresetData.get_packs()
          case Filters.TYPE:
             return PresetData.get_types()
-         case Filters.CHARACTER:
-            return PresetData.get_characters()
+         case Filters.CHAR:
+            return PresetData.get_chars()
          case _:
             return []
 
