@@ -71,11 +71,21 @@
 }
 
 #type-container {
-   height: 1fr;
+   height: auto;
    border: round;
 }
 
 #type-container.focused {
+   border-title-color: yellow;
+   border-title-style: bold;
+}
+
+#character-container {
+   height: 1fr;
+   border: round;
+}
+
+#character-container.focused {
    border-title-color: yellow;
    border-title-style: bold;
 }

@@ -11,7 +11,7 @@ from filters import Filters
 from messages import FilterSelectionChanged
 
 
-class Sidebar(Vertical):
+class Sidebar(VerticalScroll):
    def get_filter_selectors(self) -> list[FilterSelector]:
       return list(self.query(FilterSelector))
 
@@ -31,7 +31,8 @@ class OsmosePresetsApp(App):
       ("1", "focus_midi_input_port", "MIDI input port"),
       ("2", "focus_pack_filter_selector", "pack"),
       ("3", "focus_type_filter_selector", "type"),
-      ("4", "focus_preset_grid", "presets"),
+      ("4", "focus_character_filter_selector", "character"),
+      ("5", "focus_preset_grid", "presets"),
    ]
 
    def on_mount(self) -> None:
@@ -49,6 +50,7 @@ class OsmosePresetsApp(App):
             with Sidebar(id="left-sidebar"):
                yield FilterSelector(Filters.PACK, id="pack-container")
                yield FilterSelector(Filters.TYPE, id="type-container")
+               yield FilterSelector(Filters.CHARACTER, id="character-container")
             # The right-hand data viewer (scrollable and fills remaining horizontal space)
             with VerticalScroll(id="data-viewer"):
                yield PresetGrid(id="preset-grid")
@@ -77,6 +79,9 @@ class OsmosePresetsApp(App):
 
    def action_focus_type_filter_selector(self) -> None:
       self.focus_filter_selector("#type-container")
+
+   def action_focus_character_filter_selector(self) -> None:
+      self.focus_filter_selector("#character-container")
 
    def focus_filter_selector(self, id: str) -> None:
       self.remove_all_focused_border_titles()

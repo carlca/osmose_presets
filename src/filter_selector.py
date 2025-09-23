@@ -1,5 +1,5 @@
 from textual.app import ComposeResult
-from textual.containers import Vertical
+from textual.containers import VerticalScroll
 from textual.widgets import Checkbox
 from textual import events
 from textual.events import Key
@@ -9,7 +9,7 @@ from filters import Filters
 from messages import FilterSelectionChanged
 
 
-class FilterSelector(Vertical):
+class FilterSelector(VerticalScroll):
    def __init__(self, filter, **kwargs):
       super().__init__(**kwargs)
       self.filter = filter
@@ -17,12 +17,31 @@ class FilterSelector(Vertical):
       self.current_index = 0
 
    def get_filter(self) -> str:
-      return "pack" if self.filter == Filters.PACK else "type"
+      match self.filter:
+         case Filters.PACK:
+            return "pack"
+         case Filters.TYPE:
+            return "type"
+         case Filters.CHARACTER:
+            return "character"
+         case _:
+            return "undefined"
+
+   def get_filter_names(self) -> list[str]:
+      match self.filter:
+         case Filters.PACK:
+            return PresetData.get_packs()
+         case Filters.TYPE:
+            return PresetData.get_types()
+         case Filters.CHARACTER:
+            return PresetData.get_characters()
+         case _:
+            return []
 
    def compose(self) -> ComposeResult:
       self.border_title = self.get_filter()
       yield Checkbox("all", id="check_all", classes="compact bold-text")
-      filter_names = PresetData.get_packs() if self.filter == Filters.PACK else PresetData.get_types()
+      filter_names = self.get_filter_names()
       for f_name in filter_names:
          safe_id = f"check_{f_name.lower().replace(' ', '_')}"
          yield Checkbox(f_name, id=safe_id, classes="compact bold-text")

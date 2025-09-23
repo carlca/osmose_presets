@@ -130,10 +130,17 @@ class PresetData:
       result = []
       if not PresetData.cached_presets:
          return result
+      unassigned_found = False
       for preset in PresetData.cached_presets:
          for character in preset.characters:
             if character not in result:
-               result.append(character)
+               if character != "UNASSIGNED":
+                  result.append(character)
+            if character == "UNASSIGNED":
+               unassigned_found = True
+      result.sort()
+      if unassigned_found:
+         result.append("UNASSIGNED")
       return result
 
    @staticmethod
