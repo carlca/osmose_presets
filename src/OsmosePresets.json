@@ -5,7 +5,7 @@
         "cc0": 30,
         "pgm": 1,
         "preset": "acid bass",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted",
@@ -18,7 +18,7 @@
         "cc0": 30,
         "pgm": 2,
         "preset": "acouskop",
-        "characters": [
+        "chars": [
             "acoustic",
             "distorted",
             "fm",
@@ -31,7 +31,7 @@
         "cc0": 30,
         "pgm": 31,
         "preset": "bass distosine",
-        "characters": [
+        "chars": [
             "acoustic",
             "synthetic"
         ]
@@ -42,7 +42,7 @@
         "cc0": 30,
         "pgm": 32,
         "preset": "bass monster",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "portamento",
@@ -55,7 +55,7 @@
         "cc0": 30,
         "pgm": 74,
         "preset": "chordead",
-        "characters": [
+        "chars": [
             "analog",
             "chords"
         ]
@@ -66,7 +66,7 @@
         "cc0": 30,
         "pgm": 108,
         "preset": "deep corners",
-        "characters": [
+        "chars": [
             "analog",
             "chords"
         ]
@@ -77,7 +77,7 @@
         "cc0": 30,
         "pgm": 112,
         "preset": "dirt acid",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -88,7 +88,7 @@
         "cc0": 30,
         "pgm": 119,
         "preset": "doubleslap",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking",
             "warm",
@@ -101,7 +101,7 @@
         "cc0": 30,
         "pgm": 127,
         "preset": "edgy fm",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -111,7 +111,7 @@
         "cc0": 31,
         "pgm": 3,
         "preset": "eighty neon",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -121,7 +121,7 @@
         "cc0": 31,
         "pgm": 5,
         "preset": "electric bass 1",
-        "characters": [
+        "chars": [
             "acoustic",
             "electric"
         ]
@@ -132,7 +132,7 @@
         "cc0": 31,
         "pgm": 6,
         "preset": "electric bass 2",
-        "characters": [
+        "chars": [
             "acoustic",
             "electric"
         ]
@@ -143,7 +143,7 @@
         "cc0": 31,
         "pgm": 29,
         "preset": "fat model d",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "noise",
@@ -157,7 +157,7 @@
         "cc0": 31,
         "pgm": 36,
         "preset": "flunkly",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -167,7 +167,7 @@
         "cc0": 31,
         "pgm": 43,
         "preset": "fm darkness",
-        "characters": [
+        "chars": [
             "aggressive",
             "big",
             "dark",
@@ -184,7 +184,7 @@
         "cc0": 31,
         "pgm": 44,
         "preset": "fm doublebass",
-        "characters": [
+        "chars": [
             "clean",
             "fm",
             "portamento"
@@ -196,7 +196,7 @@
         "cc0": 31,
         "pgm": 50,
         "preset": "fm slapman",
-        "characters": [
+        "chars": [
             "bright",
             "digital",
             "fm",
@@ -210,7 +210,7 @@
         "cc0": 31,
         "pgm": 54,
         "preset": "forgotten animal",
-        "characters": [
+        "chars": [
             "analog",
             "fm",
             "portamento"
@@ -222,7 +222,7 @@
         "cc0": 31,
         "pgm": 55,
         "preset": "forty eight db",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -233,7 +233,7 @@
         "cc0": 31,
         "pgm": 56,
         "preset": "fourad",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -244,7 +244,7 @@
         "cc0": 31,
         "pgm": 57,
         "preset": "fretless bass",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -255,7 +255,7 @@
         "cc0": 31,
         "pgm": 76,
         "preset": "grittysaw",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -266,7 +266,7 @@
         "cc0": 31,
         "pgm": 86,
         "preset": "hollowrez",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -276,7 +276,7 @@
         "cc0": 31,
         "pgm": 107,
         "preset": "juknow that bass",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "clean",
@@ -291,7 +291,7 @@
         "cc0": 31,
         "pgm": 121,
         "preset": "kinespeech",
-        "characters": [
+        "chars": [
             "analog",
             "vocal"
         ]
@@ -302,7 +302,7 @@
         "cc0": 32,
         "pgm": 5,
         "preset": "lacous bass",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -313,7 +313,7 @@
         "cc0": 32,
         "pgm": 7,
         "preset": "ladder bass",
-        "characters": [
+        "chars": [
             "analog",
             "lfo",
             "synthetic"
@@ -325,7 +325,7 @@
         "cc0": 32,
         "pgm": 58,
         "preset": "night bass",
-        "characters": [
+        "chars": [
             "analog",
             "portamento"
         ]
@@ -336,7 +336,7 @@
         "cc0": 32,
         "pgm": 92,
         "preset": "outspoken",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -346,7 +346,7 @@
         "cc0": 32,
         "pgm": 109,
         "preset": "piercing bass",
-        "characters": [
+        "chars": [
             "aggressive",
             "big",
             "dark",
@@ -359,7 +359,7 @@
         "cc0": 32,
         "pgm": 114,
         "preset": "pl-bass",
-        "characters": [
+        "chars": [
             "analog",
             "dry",
             "warm"
@@ -371,7 +371,7 @@
         "cc0": 32,
         "pgm": 126,
         "preset": "pulzz",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -381,7 +381,7 @@
         "cc0": 33,
         "pgm": 5,
         "preset": "reesotto",
-        "characters": [
+        "chars": [
             "aggressive",
             "digital"
         ]
@@ -392,7 +392,7 @@
         "cc0": 33,
         "pgm": 6,
         "preset": "reesy rider",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted",
@@ -405,7 +405,7 @@
         "cc0": 33,
         "pgm": 19,
         "preset": "rusty bass",
-        "characters": [
+        "chars": [
             "dark",
             "digital",
             "fm",
@@ -418,7 +418,7 @@
         "cc0": 33,
         "pgm": 20,
         "preset": "rusty square",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -429,7 +429,7 @@
         "cc0": 33,
         "pgm": 39,
         "preset": "simpledecay",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -440,7 +440,7 @@
         "cc0": 33,
         "pgm": 41,
         "preset": "simplerez",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -450,7 +450,7 @@
         "cc0": 33,
         "pgm": 48,
         "preset": "smooth operator",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -461,7 +461,7 @@
         "cc0": 33,
         "pgm": 49,
         "preset": "solid square",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -471,7 +471,7 @@
         "cc0": 33,
         "pgm": 68,
         "preset": "steroids",
-        "characters": [
+        "chars": [
             "analog",
             "noise"
         ]
@@ -482,7 +482,7 @@
         "cc0": 33,
         "pgm": 74,
         "preset": "sub bass 1",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -492,7 +492,7 @@
         "cc0": 33,
         "pgm": 75,
         "preset": "subway",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "dark",
@@ -506,7 +506,7 @@
         "cc0": 33,
         "pgm": 77,
         "preset": "syncat",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -516,7 +516,7 @@
         "cc0": 33,
         "pgm": 95,
         "preset": "thrilla bass",
-        "characters": [
+        "chars": [
             "analog",
             "dry"
         ]
@@ -527,7 +527,7 @@
         "cc0": 33,
         "pgm": 114,
         "preset": "velsquare",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -537,7 +537,7 @@
         "cc0": 33,
         "pgm": 119,
         "preset": "vintage wide bass",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "dark",
@@ -553,7 +553,7 @@
         "cc0": 33,
         "pgm": 125,
         "preset": "walking blues",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -563,7 +563,7 @@
         "cc0": 33,
         "pgm": 127,
         "preset": "wallface",
-        "characters": [
+        "chars": [
             "digital",
             "fm",
             "portamento"
@@ -575,7 +575,7 @@
         "cc0": 30,
         "pgm": 20,
         "preset": "archer",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -585,7 +585,7 @@
         "cc0": 30,
         "pgm": 51,
         "preset": "bowreal lights",
-        "characters": [
+        "chars": [
             "acoustic",
             "layered",
             "reverberant"
@@ -597,7 +597,7 @@
         "cc0": 30,
         "pgm": 66,
         "preset": "cellove",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -608,7 +608,7 @@
         "cc0": 30,
         "pgm": 67,
         "preset": "cellovir",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -618,7 +618,7 @@
         "cc0": 30,
         "pgm": 68,
         "preset": "chamber mellobow",
-        "characters": [
+        "chars": [
             "acoustic",
             "ensemble",
             "lofi",
@@ -631,7 +631,7 @@
         "cc0": 30,
         "pgm": 69,
         "preset": "chamber strings",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "ensemble"
@@ -643,7 +643,7 @@
         "cc0": 30,
         "pgm": 120,
         "preset": "duocello",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -654,7 +654,7 @@
         "cc0": 31,
         "pgm": 22,
         "preset": "erumi",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -664,7 +664,7 @@
         "cc0": 31,
         "pgm": 82,
         "preset": "harmod",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -675,7 +675,7 @@
         "cc0": 31,
         "pgm": 92,
         "preset": "hybrid strings 1",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -685,7 +685,7 @@
         "cc0": 31,
         "pgm": 93,
         "preset": "hybrid strings 2",
-        "characters": [
+        "chars": [
             "analog",
             "lofi",
             "noise"
@@ -697,7 +697,7 @@
         "cc0": 31,
         "pgm": 94,
         "preset": "hybrid strings 3",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog"
         ]
@@ -708,7 +708,7 @@
         "cc0": 32,
         "pgm": 27,
         "preset": "lost ensemble",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog",
             "reverberant"
@@ -720,7 +720,7 @@
         "cc0": 32,
         "pgm": 61,
         "preset": "noisyman",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -730,7 +730,7 @@
         "cc0": 32,
         "pgm": 62,
         "preset": "noisypad",
-        "characters": [
+        "chars": [
             "acoustic",
             "noise"
         ]
@@ -741,7 +741,7 @@
         "cc0": 32,
         "pgm": 67,
         "preset": "numens strings",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -751,7 +751,7 @@
         "cc0": 32,
         "pgm": 98,
         "preset": "pajestric",
-        "characters": [
+        "chars": [
             "layered"
         ]
     },
@@ -761,7 +761,7 @@
         "cc0": 32,
         "pgm": 104,
         "preset": "pcs dandelion",
-        "characters": [
+        "chars": [
             "bright",
             "echo",
             "evolving",
@@ -776,7 +776,7 @@
         "cc0": 32,
         "pgm": 123,
         "preset": "pressow",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -786,7 +786,7 @@
         "cc0": 33,
         "pgm": 18,
         "preset": "roto string",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "lfo",
@@ -799,7 +799,7 @@
         "cc0": 33,
         "pgm": 24,
         "preset": "scie tard",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -810,7 +810,7 @@
         "cc0": 33,
         "pgm": 73,
         "preset": "stringtroen",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -820,7 +820,7 @@
         "cc0": 33,
         "pgm": 101,
         "preset": "trepizcato",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -830,7 +830,7 @@
         "cc0": 33,
         "pgm": 120,
         "preset": "viollaggio",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -840,7 +840,7 @@
         "cc0": 33,
         "pgm": 121,
         "preset": "violloiv",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo"
         ]
@@ -851,7 +851,7 @@
         "cc0": 33,
         "pgm": 122,
         "preset": "vln vla cel bass 2",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -862,7 +862,7 @@
         "cc0": 30,
         "pgm": 23,
         "preset": "babrass",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -872,7 +872,7 @@
         "cc0": 30,
         "pgm": 52,
         "preset": "brass fm",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "portamento"
@@ -884,7 +884,7 @@
         "cc0": 30,
         "pgm": 53,
         "preset": "brass fm2",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "portamento"
@@ -896,7 +896,7 @@
         "cc0": 30,
         "pgm": 54,
         "preset": "brass fm3",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -907,7 +907,7 @@
         "cc0": 30,
         "pgm": 55,
         "preset": "brassimple",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -917,7 +917,7 @@
         "cc0": 30,
         "pgm": 57,
         "preset": "brassy",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -927,7 +927,7 @@
         "cc0": 30,
         "pgm": 92,
         "preset": "cosmic blues",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -938,7 +938,7 @@
         "cc0": 30,
         "pgm": 102,
         "preset": "cvc 1 voice",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -948,7 +948,7 @@
         "cc0": 30,
         "pgm": 103,
         "preset": "cvc 2 voices",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -958,7 +958,7 @@
         "cc0": 30,
         "pgm": 104,
         "preset": "cvc 4 voices",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -968,7 +968,7 @@
         "cc0": 31,
         "pgm": 23,
         "preset": "essendar",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -978,7 +978,7 @@
         "cc0": 31,
         "pgm": 28,
         "preset": "fancy brass",
-        "characters": [
+        "chars": [
             "bright",
             "chords",
             "ensemble",
@@ -992,7 +992,7 @@
         "cc0": 31,
         "pgm": 41,
         "preset": "fm brassypoly",
-        "characters": [
+        "chars": [
             "clean",
             "digital",
             "ensemble",
@@ -1007,7 +1007,7 @@
         "cc0": 31,
         "pgm": 61,
         "preset": "futazz",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -1017,7 +1017,7 @@
         "cc0": 31,
         "pgm": 69,
         "preset": "gimmirez",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -1027,7 +1027,7 @@
         "cc0": 31,
         "pgm": 81,
         "preset": "harmbrass",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -1038,7 +1038,7 @@
         "cc0": 31,
         "pgm": 88,
         "preset": "horn ytorink",
-        "characters": [
+        "chars": [
             "acoustic",
             "warm"
         ]
@@ -1049,7 +1049,7 @@
         "cc0": 31,
         "pgm": 105,
         "preset": "jennybrass",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "portamento"
@@ -1061,7 +1061,7 @@
         "cc0": 32,
         "pgm": 91,
         "preset": "osc five",
-        "characters": [
+        "chars": [
             "analog",
             "simple",
             "stereo"
@@ -1073,7 +1073,7 @@
         "cc0": 33,
         "pgm": 47,
         "preset": "smooth mouth",
-        "characters": [
+        "chars": [
             "acoustic",
             "vocal"
         ]
@@ -1084,7 +1084,7 @@
         "cc0": 33,
         "pgm": 102,
         "preset": "trumpey",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -1094,7 +1094,7 @@
         "cc0": 33,
         "pgm": 113,
         "preset": "vbrass 1",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "clean",
@@ -1107,7 +1107,7 @@
         "cc0": 33,
         "pgm": 116,
         "preset": "versailles brass",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "ensemble",
@@ -1122,7 +1122,7 @@
         "cc0": 33,
         "pgm": 123,
         "preset": "vocalise",
-        "characters": [
+        "chars": [
             "clean",
             "synthetic",
             "vocal"
@@ -1134,7 +1134,7 @@
         "cc0": 33,
         "pgm": 126,
         "preset": "walking elephants",
-        "characters": [
+        "chars": [
             "acoustic",
             "warm",
             "woody"
@@ -1146,7 +1146,7 @@
         "cc0": 34,
         "pgm": 10,
         "preset": "wow soul chords",
-        "characters": [
+        "chars": [
             "analog",
             "simple",
             "soft"
@@ -1158,7 +1158,7 @@
         "cc0": 30,
         "pgm": 35,
         "preset": "bazikey",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -1169,7 +1169,7 @@
         "cc0": 30,
         "pgm": 39,
         "preset": "beyond felt",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking",
             "strumming"
@@ -1181,7 +1181,7 @@
         "cc0": 30,
         "pgm": 81,
         "preset": "clavi 1",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1191,7 +1191,7 @@
         "cc0": 30,
         "pgm": 84,
         "preset": "clawha",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1201,7 +1201,7 @@
         "cc0": 30,
         "pgm": 88,
         "preset": "copey",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1211,7 +1211,7 @@
         "cc0": 30,
         "pgm": 93,
         "preset": "cp eight",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1221,7 +1221,7 @@
         "cc0": 30,
         "pgm": 110,
         "preset": "deven",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1231,7 +1231,7 @@
         "cc0": 31,
         "pgm": 7,
         "preset": "electric keys 1",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1241,7 +1241,7 @@
         "cc0": 31,
         "pgm": 8,
         "preset": "electric keys 5",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1251,7 +1251,7 @@
         "cc0": 31,
         "pgm": 9,
         "preset": "electric keys 6",
-        "characters": [
+        "chars": [
             "clean",
             "electric"
         ]
@@ -1262,7 +1262,7 @@
         "cc0": 31,
         "pgm": 20,
         "preset": "epiano1",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1272,7 +1272,7 @@
         "cc0": 31,
         "pgm": 21,
         "preset": "epiarom",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1282,7 +1282,7 @@
         "cc0": 31,
         "pgm": 26,
         "preset": "etines mk1",
-        "characters": [
+        "chars": [
             "acoustic",
             "electric"
         ]
@@ -1293,7 +1293,7 @@
         "cc0": 31,
         "pgm": 42,
         "preset": "fm clav 1",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1303,7 +1303,7 @@
         "cc0": 31,
         "pgm": 48,
         "preset": "fm piano1",
-        "characters": [
+        "chars": [
             "bright",
             "fm"
         ]
@@ -1314,7 +1314,7 @@
         "cc0": 31,
         "pgm": 79,
         "preset": "hammers brushed",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking",
             "soft"
@@ -1326,7 +1326,7 @@
         "cc0": 31,
         "pgm": 100,
         "preset": "iziki",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "fm",
@@ -1339,7 +1339,7 @@
         "cc0": 31,
         "pgm": 115,
         "preset": "kakey",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -1349,7 +1349,7 @@
         "cc0": 32,
         "pgm": 2,
         "preset": "klavunk",
-        "characters": [
+        "chars": [
             "clean",
             "electric"
         ]
@@ -1360,7 +1360,7 @@
         "cc0": 32,
         "pgm": 15,
         "preset": "legacy dx ep",
-        "characters": [
+        "chars": [
             "clean",
             "digital"
         ]
@@ -1371,7 +1371,7 @@
         "cc0": 32,
         "pgm": 37,
         "preset": "martine",
-        "characters": [
+        "chars": [
             "acoustic",
             "strumming"
         ]
@@ -1382,7 +1382,7 @@
         "cc0": 32,
         "pgm": 81,
         "preset": "opikey",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1392,7 +1392,7 @@
         "cc0": 33,
         "pgm": 97,
         "preset": "tine",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "dry",
@@ -1406,7 +1406,7 @@
         "cc0": 33,
         "pgm": 98,
         "preset": "tinolin",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -1417,7 +1417,7 @@
         "cc0": 33,
         "pgm": 111,
         "preset": "upibanks",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -1427,7 +1427,7 @@
         "cc0": 30,
         "pgm": 13,
         "preset": "anareed",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog",
             "portamento"
@@ -1439,7 +1439,7 @@
         "cc0": 30,
         "pgm": 19,
         "preset": "arcadia pan",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -1449,7 +1449,7 @@
         "cc0": 30,
         "pgm": 30,
         "preset": "bansuri",
-        "characters": [
+        "chars": [
             "acoustic",
             "soft",
             "woody"
@@ -1461,7 +1461,7 @@
         "cc0": 30,
         "pgm": 56,
         "preset": "brasswind",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -1472,7 +1472,7 @@
         "cc0": 30,
         "pgm": 76,
         "preset": "claribreath",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "noise",
@@ -1485,7 +1485,7 @@
         "cc0": 30,
         "pgm": 77,
         "preset": "clarinet",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "warm",
@@ -1498,7 +1498,7 @@
         "cc0": 30,
         "pgm": 117,
         "preset": "double reed",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "clean",
@@ -1511,7 +1511,7 @@
         "cc0": 31,
         "pgm": 16,
         "preset": "empyrean",
-        "characters": [
+        "chars": [
             "acoustic",
             "warm"
         ]
@@ -1522,7 +1522,7 @@
         "cc0": 31,
         "pgm": 34,
         "preset": "flip tube",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "echo",
@@ -1535,7 +1535,7 @@
         "cc0": 31,
         "pgm": 37,
         "preset": "flute transverse",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "clean"
@@ -1547,7 +1547,7 @@
         "cc0": 31,
         "pgm": 38,
         "preset": "flutimut",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -1558,7 +1558,7 @@
         "cc0": 31,
         "pgm": 49,
         "preset": "fm reed",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "portamento"
@@ -1570,7 +1570,7 @@
         "cc0": 31,
         "pgm": 70,
         "preset": "gowind",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -1581,7 +1581,7 @@
         "cc0": 32,
         "pgm": 41,
         "preset": "microdelay pipewg",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "clean"
@@ -1593,7 +1593,7 @@
         "cc0": 32,
         "pgm": 45,
         "preset": "model string wind",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "morphing"
@@ -1605,7 +1605,7 @@
         "cc0": 32,
         "pgm": 70,
         "preset": "oboreed",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "portamento"
@@ -1617,7 +1617,7 @@
         "cc0": 32,
         "pgm": 100,
         "preset": "panpipe solo",
-        "characters": [
+        "chars": [
             "airy",
             "clean",
             "noise"
@@ -1629,7 +1629,7 @@
         "cc0": 32,
         "pgm": 112,
         "preset": "pipopi",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -1640,7 +1640,7 @@
         "cc0": 33,
         "pgm": 15,
         "preset": "ringmod harmonica",
-        "characters": [
+        "chars": [
             "acoustic",
             "distorted"
         ]
@@ -1651,7 +1651,7 @@
         "cc0": 33,
         "pgm": 22,
         "preset": "saxoon",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "noise",
@@ -1664,7 +1664,7 @@
         "cc0": 33,
         "pgm": 26,
         "preset": "sentimental mood",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "clean",
@@ -1677,7 +1677,7 @@
         "cc0": 33,
         "pgm": 52,
         "preset": "soprano recorder",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "clean",
@@ -1690,7 +1690,7 @@
         "cc0": 33,
         "pgm": 79,
         "preset": "tabec",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -1701,7 +1701,7 @@
         "cc0": 33,
         "pgm": 96,
         "preset": "tin whistle",
-        "characters": [
+        "chars": [
             "clean",
             "portamento"
         ]
@@ -1712,7 +1712,7 @@
         "cc0": 34,
         "pgm": 4,
         "preset": "windotron",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "soft",
@@ -1726,7 +1726,7 @@
         "cc0": 34,
         "pgm": 5,
         "preset": "windtube double reed",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -1737,7 +1737,7 @@
         "cc0": 34,
         "pgm": 7,
         "preset": "woodwind",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "clean",
@@ -1750,7 +1750,7 @@
         "cc0": 34,
         "pgm": 13,
         "preset": "yokobue",
-        "characters": [
+        "chars": [
             "acoustic",
             "woody"
         ]
@@ -1761,7 +1761,7 @@
         "cc0": 30,
         "pgm": 4,
         "preset": "aerials",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -1771,7 +1771,7 @@
         "cc0": 30,
         "pgm": 10,
         "preset": "ambiant analog 1",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "echo",
@@ -1785,7 +1785,7 @@
         "cc0": 30,
         "pgm": 11,
         "preset": "analog adsr",
-        "characters": [
+        "chars": [
             "analog",
             "synthetic"
         ]
@@ -1796,7 +1796,7 @@
         "cc0": 30,
         "pgm": 12,
         "preset": "analog scream",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "big",
@@ -1812,7 +1812,7 @@
         "cc0": 30,
         "pgm": 18,
         "preset": "aqueous feel",
-        "characters": [
+        "chars": [
             "airy",
             "bright",
             "clean",
@@ -1825,7 +1825,7 @@
         "cc0": 30,
         "pgm": 22,
         "preset": "azure key",
-        "characters": [
+        "chars": [
             "bright",
             "clean",
             "digital",
@@ -1839,7 +1839,7 @@
         "cc0": 30,
         "pgm": 50,
         "preset": "bowedsymphfm",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "fm",
@@ -1854,7 +1854,7 @@
         "cc0": 30,
         "pgm": 78,
         "preset": "classicana key",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -1865,7 +1865,7 @@
         "cc0": 30,
         "pgm": 83,
         "preset": "clavicorda",
-        "characters": [
+        "chars": [
             "digital",
             "fm",
             "shaking",
@@ -1878,7 +1878,7 @@
         "cc0": 30,
         "pgm": 107,
         "preset": "declanche",
-        "characters": [
+        "chars": [
             "fm",
             "lfo"
         ]
@@ -1889,7 +1889,7 @@
         "cc0": 30,
         "pgm": 111,
         "preset": "dfm",
-        "characters": [
+        "chars": [
             "fm",
             "stereo"
         ]
@@ -1900,7 +1900,7 @@
         "cc0": 30,
         "pgm": 114,
         "preset": "disco dawn",
-        "characters": [
+        "chars": [
             "analog",
             "dry",
             "intimate",
@@ -1913,7 +1913,7 @@
         "cc0": 30,
         "pgm": 118,
         "preset": "double saw",
-        "characters": [
+        "chars": [
             "analog",
             "chords",
             "simple"
@@ -1925,7 +1925,7 @@
         "cc0": 30,
         "pgm": 121,
         "preset": "dx1",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1935,7 +1935,7 @@
         "cc0": 30,
         "pgm": 122,
         "preset": "dx2",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1945,7 +1945,7 @@
         "cc0": 30,
         "pgm": 123,
         "preset": "dx3",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1955,7 +1955,7 @@
         "cc0": 30,
         "pgm": 124,
         "preset": "dx4",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1965,7 +1965,7 @@
         "cc0": 30,
         "pgm": 125,
         "preset": "dxim",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -1975,7 +1975,7 @@
         "cc0": 31,
         "pgm": 0,
         "preset": "efferie",
-        "characters": [
+        "chars": [
             "fm",
             "strumming"
         ]
@@ -1986,7 +1986,7 @@
         "cc0": 31,
         "pgm": 1,
         "preset": "efmope",
-        "characters": [
+        "chars": [
             "bright",
             "fm",
             "simple"
@@ -1998,7 +1998,7 @@
         "cc0": 31,
         "pgm": 2,
         "preset": "eightiki",
-        "characters": [
+        "chars": [
             "analog",
             "fm"
         ]
@@ -2009,7 +2009,7 @@
         "cc0": 31,
         "pgm": 4,
         "preset": "ekeynox",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2019,7 +2019,7 @@
         "cc0": 31,
         "pgm": 13,
         "preset": "elsynkey",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2029,7 +2029,7 @@
         "cc0": 31,
         "pgm": 14,
         "preset": "emancikey",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2039,7 +2039,7 @@
         "cc0": 31,
         "pgm": 18,
         "preset": "envinkin",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2049,7 +2049,7 @@
         "cc0": 31,
         "pgm": 19,
         "preset": "envinkon",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2059,7 +2059,7 @@
         "cc0": 31,
         "pgm": 31,
         "preset": "feleaz",
-        "characters": [
+        "chars": [
             "fm",
             "simple",
             "stereo"
@@ -2071,7 +2071,7 @@
         "cc0": 31,
         "pgm": 33,
         "preset": "fleme",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2081,7 +2081,7 @@
         "cc0": 31,
         "pgm": 40,
         "preset": "fm basic 4-ops",
-        "characters": [
+        "chars": [
             "bright",
             "fm",
             "strumming"
@@ -2093,7 +2093,7 @@
         "cc0": 31,
         "pgm": 45,
         "preset": "fm dreampiano",
-        "characters": [
+        "chars": [
             "airy",
             "fm",
             "strumming",
@@ -2106,7 +2106,7 @@
         "cc0": 31,
         "pgm": 51,
         "preset": "fmwood&strings",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -2117,7 +2117,7 @@
         "cc0": 31,
         "pgm": 52,
         "preset": "fof variabler res",
-        "characters": [
+        "chars": [
             "synthetic",
             "vocal"
         ]
@@ -2128,7 +2128,7 @@
         "cc0": 31,
         "pgm": 53,
         "preset": "foming",
-        "characters": [
+        "chars": [
             "bright",
             "fm"
         ]
@@ -2139,7 +2139,7 @@
         "cc0": 31,
         "pgm": 64,
         "preset": "game invader",
-        "characters": [
+        "chars": [
             "digital",
             "lofi",
             "shaking"
@@ -2151,7 +2151,7 @@
         "cc0": 31,
         "pgm": 71,
         "preset": "graceful integrated",
-        "characters": [
+        "chars": [
             "analog",
             "fm",
             "simple",
@@ -2164,7 +2164,7 @@
         "cc0": 31,
         "pgm": 85,
         "preset": "harpsytron",
-        "characters": [
+        "chars": [
             "dry",
             "electric",
             "fm"
@@ -2176,7 +2176,7 @@
         "cc0": 31,
         "pgm": 90,
         "preset": "hp tales",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2186,7 +2186,7 @@
         "cc0": 31,
         "pgm": 96,
         "preset": "ikia",
-        "characters": [
+        "chars": [
             "fm",
             "lfo"
         ]
@@ -2197,7 +2197,7 @@
         "cc0": 31,
         "pgm": 109,
         "preset": "jumpare",
-        "characters": [
+        "chars": [
             "analog",
             "lfo"
         ]
@@ -2208,7 +2208,7 @@
         "cc0": 31,
         "pgm": 110,
         "preset": "june sunset",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2218,7 +2218,7 @@
         "cc0": 31,
         "pgm": 111,
         "preset": "jupinard",
-        "characters": [
+        "chars": [
             "analog",
             "dry",
             "simple"
@@ -2230,7 +2230,7 @@
         "cc0": 31,
         "pgm": 113,
         "preset": "jx10 1b",
-        "characters": [
+        "chars": [
             "analog",
             "soft"
         ]
@@ -2241,7 +2241,7 @@
         "cc0": 31,
         "pgm": 119,
         "preset": "kinaflap",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2251,7 +2251,7 @@
         "cc0": 31,
         "pgm": 120,
         "preset": "kinafun",
-        "characters": [
+        "chars": [
             "analog",
             "lfo"
         ]
@@ -2262,7 +2262,7 @@
         "cc0": 31,
         "pgm": 122,
         "preset": "kinetic analog",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2272,7 +2272,7 @@
         "cc0": 31,
         "pgm": 123,
         "preset": "kinetic anaseq",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "echo",
@@ -2287,7 +2287,7 @@
         "cc0": 32,
         "pgm": 0,
         "preset": "kinetic satpad",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "big",
@@ -2303,7 +2303,7 @@
         "cc0": 32,
         "pgm": 6,
         "preset": "ladagcer",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2313,7 +2313,7 @@
         "cc0": 32,
         "pgm": 13,
         "preset": "lavaya",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2323,7 +2323,7 @@
         "cc0": 32,
         "pgm": 19,
         "preset": "lilly",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "soft",
@@ -2336,7 +2336,7 @@
         "cc0": 32,
         "pgm": 20,
         "preset": "lino",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2346,7 +2346,7 @@
         "cc0": 32,
         "pgm": 25,
         "preset": "lost beacon",
-        "characters": [
+        "chars": [
             "airy",
             "analog",
             "intimate",
@@ -2362,7 +2362,7 @@
         "cc0": 32,
         "pgm": 48,
         "preset": "montine",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -2372,7 +2372,7 @@
         "cc0": 32,
         "pgm": 54,
         "preset": "nband",
-        "characters": [
+        "chars": [
             "airy",
             "noise"
         ]
@@ -2383,7 +2383,7 @@
         "cc0": 32,
         "pgm": 55,
         "preset": "neon key",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2393,7 +2393,7 @@
         "cc0": 32,
         "pgm": 56,
         "preset": "neon key dreams",
-        "characters": [
+        "chars": [
             "analog",
             "chords",
             "lofi"
@@ -2405,7 +2405,7 @@
         "cc0": 32,
         "pgm": 65,
         "preset": "notenstrum",
-        "characters": [
+        "chars": [
             "analog",
             "strumming"
         ]
@@ -2416,7 +2416,7 @@
         "cc0": 32,
         "pgm": 74,
         "preset": "octecho",
-        "characters": [
+        "chars": [
             "analog",
             "echo"
         ]
@@ -2427,7 +2427,7 @@
         "cc0": 32,
         "pgm": 77,
         "preset": "op repeat",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -2439,7 +2439,7 @@
         "cc0": 32,
         "pgm": 89,
         "preset": "os2dx",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2449,7 +2449,7 @@
         "cc0": 32,
         "pgm": 90,
         "preset": "osc dcf",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2460,7 +2460,7 @@
         "cc0": 32,
         "pgm": 99,
         "preset": "paliakey",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2470,7 +2470,7 @@
         "cc0": 32,
         "pgm": 101,
         "preset": "paperheart",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -2481,7 +2481,7 @@
         "cc0": 32,
         "pgm": 113,
         "preset": "pitchoune",
-        "characters": [
+        "chars": [
             "analog",
             "lfo"
         ]
@@ -2492,7 +2492,7 @@
         "cc0": 32,
         "pgm": 118,
         "preset": "pluckeon",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -2503,7 +2503,7 @@
         "cc0": 32,
         "pgm": 120,
         "preset": "polys20",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -2514,7 +2514,7 @@
         "cc0": 32,
         "pgm": 121,
         "preset": "polysynthetix",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "chords",
@@ -2528,7 +2528,7 @@
         "cc0": 32,
         "pgm": 125,
         "preset": "pulse pluck",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2538,7 +2538,7 @@
         "cc0": 33,
         "pgm": 0,
         "preset": "pxlize",
-        "characters": [
+        "chars": [
             "bright",
             "digital",
             "fm",
@@ -2552,7 +2552,7 @@
         "cc0": 33,
         "pgm": 16,
         "preset": "riseandbe",
-        "characters": [
+        "chars": [
             "analog",
             "bright",
             "digital",
@@ -2567,7 +2567,7 @@
         "cc0": 33,
         "pgm": 21,
         "preset": "saw vi",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2578,7 +2578,7 @@
         "cc0": 33,
         "pgm": 23,
         "preset": "scarlet",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -2589,7 +2589,7 @@
         "cc0": 33,
         "pgm": 30,
         "preset": "simple anakey1",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2600,7 +2600,7 @@
         "cc0": 33,
         "pgm": 31,
         "preset": "simple anakey2",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2611,7 +2611,7 @@
         "cc0": 33,
         "pgm": 32,
         "preset": "simple anakey4",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2622,7 +2622,7 @@
         "cc0": 33,
         "pgm": 33,
         "preset": "simple fm 2 ops",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2632,7 +2632,7 @@
         "cc0": 33,
         "pgm": 34,
         "preset": "simple fmkey",
-        "characters": [
+        "chars": [
             "fm",
             "simple"
         ]
@@ -2643,7 +2643,7 @@
         "cc0": 33,
         "pgm": 40,
         "preset": "simplephasemod",
-        "characters": [
+        "chars": [
             "fm",
             "shaking",
             "simple"
@@ -2655,7 +2655,7 @@
         "cc0": 33,
         "pgm": 53,
         "preset": "soulfm",
-        "characters": [
+        "chars": [
             "fm",
             "simple"
         ]
@@ -2666,7 +2666,7 @@
         "cc0": 33,
         "pgm": 57,
         "preset": "spracher",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2676,7 +2676,7 @@
         "cc0": 33,
         "pgm": 59,
         "preset": "squaluk",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2686,7 +2686,7 @@
         "cc0": 33,
         "pgm": 60,
         "preset": "squarynights",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "fm",
@@ -2701,7 +2701,7 @@
         "cc0": 33,
         "pgm": 61,
         "preset": "squazodia",
-        "characters": [
+        "chars": [
             "analog",
             "lfo",
             "lofi"
@@ -2713,7 +2713,7 @@
         "cc0": 33,
         "pgm": 62,
         "preset": "squeakysine",
-        "characters": [
+        "chars": [
             "strumming"
         ]
     },
@@ -2723,7 +2723,7 @@
         "cc0": 33,
         "pgm": 63,
         "preset": "st-rum dx",
-        "characters": [
+        "chars": [
             "fm",
             "strumming"
         ]
@@ -2734,7 +2734,7 @@
         "cc0": 33,
         "pgm": 64,
         "preset": "stadium candy",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2744,7 +2744,7 @@
         "cc0": 33,
         "pgm": 70,
         "preset": "street pluck",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2754,7 +2754,7 @@
         "cc0": 33,
         "pgm": 82,
         "preset": "talking kine",
-        "characters": [
+        "chars": [
             "analog",
             "vocal"
         ]
@@ -2765,7 +2765,7 @@
         "cc0": 33,
         "pgm": 84,
         "preset": "tape melody",
-        "characters": [
+        "chars": [
             "airy",
             "analog",
             "clean",
@@ -2781,7 +2781,7 @@
         "cc0": 33,
         "pgm": 87,
         "preset": "terjintro",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2791,7 +2791,7 @@
         "cc0": 33,
         "pgm": 112,
         "preset": "utopia",
-        "characters": [
+        "chars": [
             "noise",
             "strumming"
         ]
@@ -2802,7 +2802,7 @@
         "cc0": 33,
         "pgm": 115,
         "preset": "versaille",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog"
         ]
@@ -2813,7 +2813,7 @@
         "cc0": 33,
         "pgm": 118,
         "preset": "vinkeilyd",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -2824,7 +2824,7 @@
         "cc0": 34,
         "pgm": 3,
         "preset": "whorus",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2834,7 +2834,7 @@
         "cc0": 34,
         "pgm": 12,
         "preset": "yfm",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -2846,7 +2846,7 @@
         "cc0": 30,
         "pgm": 9,
         "preset": "altersaw",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2856,7 +2856,7 @@
         "cc0": 30,
         "pgm": 28,
         "preset": "bandrive paradise",
-        "characters": [
+        "chars": [
             "analog",
             "distorted"
         ]
@@ -2867,7 +2867,7 @@
         "cc0": 30,
         "pgm": 46,
         "preset": "blasiz",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2877,7 +2877,7 @@
         "cc0": 30,
         "pgm": 70,
         "preset": "cherie fm",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -2887,7 +2887,7 @@
         "cc0": 30,
         "pgm": 71,
         "preset": "chick s lead",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "portamento",
@@ -2901,7 +2901,7 @@
         "cc0": 30,
         "pgm": 79,
         "preset": "classicana lead",
-        "characters": [
+        "chars": [
             "analog",
             "echo",
             "simple"
@@ -2913,7 +2913,7 @@
         "cc0": 30,
         "pgm": 86,
         "preset": "cold lead",
-        "characters": [
+        "chars": [
             "analog",
             "noise",
             "simple",
@@ -2927,7 +2927,7 @@
         "cc0": 30,
         "pgm": 89,
         "preset": "copper club",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -2937,7 +2937,7 @@
         "cc0": 30,
         "pgm": 106,
         "preset": "dabka 2022",
-        "characters": [
+        "chars": [
             "acoustic",
             "digital"
         ]
@@ -2948,7 +2948,7 @@
         "cc0": 30,
         "pgm": 109,
         "preset": "delight lead",
-        "characters": [
+        "chars": [
             "analog",
             "echo",
             "simple"
@@ -2960,7 +2960,7 @@
         "cc0": 31,
         "pgm": 60,
         "preset": "funky lead",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -2971,7 +2971,7 @@
         "cc0": 31,
         "pgm": 63,
         "preset": "gabber 21",
-        "characters": [
+        "chars": [
             "aggressive",
             "digital"
         ]
@@ -2982,7 +2982,7 @@
         "cc0": 31,
         "pgm": 68,
         "preset": "ghost voice",
-        "characters": [
+        "chars": [
             "lofi",
             "portamento",
             "vocal"
@@ -2994,7 +2994,7 @@
         "cc0": 31,
         "pgm": 77,
         "preset": "grubbead",
-        "characters": [
+        "chars": [
             "aggressive",
             "distorted",
             "fm"
@@ -3006,7 +3006,7 @@
         "cc0": 31,
         "pgm": 87,
         "preset": "hoovasquare",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -3017,7 +3017,7 @@
         "cc0": 31,
         "pgm": 97,
         "preset": "insert coins",
-        "characters": [
+        "chars": [
             "bright",
             "echo",
             "lfo"
@@ -3029,7 +3029,7 @@
         "cc0": 31,
         "pgm": 106,
         "preset": "jentenot",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -3039,7 +3039,7 @@
         "cc0": 31,
         "pgm": 108,
         "preset": "julia",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -3050,7 +3050,7 @@
         "cc0": 32,
         "pgm": 8,
         "preset": "lalalead",
-        "characters": [
+        "chars": [
             "analog",
             "portamento"
         ]
@@ -3061,7 +3061,7 @@
         "cc0": 32,
         "pgm": 14,
         "preset": "leadio",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3071,7 +3071,7 @@
         "cc0": 32,
         "pgm": 17,
         "preset": "lighthouse",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3081,7 +3081,7 @@
         "cc0": 32,
         "pgm": 18,
         "preset": "lililead",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3091,7 +3091,7 @@
         "cc0": 32,
         "pgm": 24,
         "preset": "lonely square",
-        "characters": [
+        "chars": [
             "analog",
             "reverberant",
             "simple"
@@ -3103,7 +3103,7 @@
         "cc0": 32,
         "pgm": 31,
         "preset": "main square",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3113,7 +3113,7 @@
         "cc0": 32,
         "pgm": 44,
         "preset": "minor de fond",
-        "characters": [
+        "chars": [
             "analog",
             "chords"
         ]
@@ -3124,7 +3124,7 @@
         "cc0": 32,
         "pgm": 64,
         "preset": "nostalgia",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -3135,7 +3135,7 @@
         "cc0": 32,
         "pgm": 79,
         "preset": "opead",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3145,7 +3145,7 @@
         "cc0": 32,
         "pgm": 80,
         "preset": "opeal",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -3155,7 +3155,7 @@
         "cc0": 32,
         "pgm": 108,
         "preset": "pickope",
-        "characters": [
+        "chars": [
             "analog",
             "portamento"
         ]
@@ -3166,7 +3166,7 @@
         "cc0": 32,
         "pgm": 117,
         "preset": "pluckead",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "portamento",
@@ -3179,7 +3179,7 @@
         "cc0": 33,
         "pgm": 27,
         "preset": "seventies lead",
-        "characters": [
+        "chars": [
             "analog",
             "echo",
             "portamento",
@@ -3192,7 +3192,7 @@
         "cc0": 33,
         "pgm": 35,
         "preset": "simple lead even",
-        "characters": [
+        "chars": [
             "analog",
             "portamento",
             "simple"
@@ -3204,7 +3204,7 @@
         "cc0": 33,
         "pgm": 36,
         "preset": "simple lead odd",
-        "characters": [
+        "chars": [
             "analog",
             "portamento",
             "simple"
@@ -3216,7 +3216,7 @@
         "cc0": 33,
         "pgm": 46,
         "preset": "smeeb",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3226,7 +3226,7 @@
         "cc0": 33,
         "pgm": 65,
         "preset": "stadoor",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3236,7 +3236,7 @@
         "cc0": 33,
         "pgm": 67,
         "preset": "sterelead",
-        "characters": [
+        "chars": [
             "analog",
             "lfo",
             "simple",
@@ -3249,7 +3249,7 @@
         "cc0": 33,
         "pgm": 78,
         "preset": "synclit",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -3259,7 +3259,7 @@
         "cc0": 33,
         "pgm": 99,
         "preset": "tiny wish",
-        "characters": [
+        "chars": [
             "analog",
             "portamento"
         ]
@@ -3270,7 +3270,7 @@
         "cc0": 34,
         "pgm": 11,
         "preset": "xpressive saw",
-        "characters": [
+        "chars": [
             "airy",
             "clean",
             "intimate",
@@ -3285,7 +3285,7 @@
         "cc0": 30,
         "pgm": 6,
         "preset": "alacloud",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "lfo"
@@ -3297,7 +3297,7 @@
         "cc0": 30,
         "pgm": 26,
         "preset": "balafun",
-        "characters": [
+        "chars": [
             "acoustic",
             "woody"
         ]
@@ -3308,7 +3308,7 @@
         "cc0": 30,
         "pgm": 36,
         "preset": "bella fm",
-        "characters": [
+        "chars": [
             "bright",
             "fm",
             "strumming"
@@ -3320,7 +3320,7 @@
         "cc0": 30,
         "pgm": 37,
         "preset": "bells of digul",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -3331,7 +3331,7 @@
         "cc0": 30,
         "pgm": 40,
         "preset": "biquide hang",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -3342,7 +3342,7 @@
         "cc0": 30,
         "pgm": 42,
         "preset": "biquide steel",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -3353,7 +3353,7 @@
         "cc0": 30,
         "pgm": 43,
         "preset": "biquige bell",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -3364,7 +3364,7 @@
         "cc0": 30,
         "pgm": 49,
         "preset": "bouncing spray",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "lfo",
@@ -3377,7 +3377,7 @@
         "cc0": 30,
         "pgm": 60,
         "preset": "brightbank",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -3388,7 +3388,7 @@
         "cc0": 30,
         "pgm": 62,
         "preset": "carbon marimba",
-        "characters": [
+        "chars": [
             "acoustic",
             "lfo",
             "warm",
@@ -3401,7 +3401,7 @@
         "cc0": 30,
         "pgm": 64,
         "preset": "celestial",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -3411,7 +3411,7 @@
         "cc0": 30,
         "pgm": 82,
         "preset": "clavichord",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -3422,7 +3422,7 @@
         "cc0": 30,
         "pgm": 85,
         "preset": "clings",
-        "characters": [
+        "chars": [
             "acoustic",
             "intimate",
             "metallic",
@@ -3436,7 +3436,7 @@
         "cc0": 30,
         "pgm": 98,
         "preset": "crystal harmonics",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "shaking"
@@ -3448,7 +3448,7 @@
         "cc0": 30,
         "pgm": 101,
         "preset": "cumulus",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "echo",
@@ -3463,7 +3463,7 @@
         "cc0": 30,
         "pgm": 116,
         "preset": "dolce cristallo",
-        "characters": [
+        "chars": [
             "acoustic",
             "icy",
             "intimate",
@@ -3476,7 +3476,7 @@
         "cc0": 31,
         "pgm": 11,
         "preset": "electrical bacher",
-        "characters": [
+        "chars": [
             "acoustic",
             "dark",
             "metallic",
@@ -3490,7 +3490,7 @@
         "cc0": 31,
         "pgm": 24,
         "preset": "etalophone",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -3500,7 +3500,7 @@
         "cc0": 31,
         "pgm": 25,
         "preset": "etherry",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -3510,7 +3510,7 @@
         "cc0": 31,
         "pgm": 32,
         "preset": "feltgrains",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "noise",
@@ -3524,7 +3524,7 @@
         "cc0": 31,
         "pgm": 46,
         "preset": "fm glacier",
-        "characters": [
+        "chars": [
             "bright",
             "clean",
             "digital",
@@ -3541,7 +3541,7 @@
         "cc0": 31,
         "pgm": 47,
         "preset": "fm hang perc",
-        "characters": [
+        "chars": [
             "digital",
             "fm",
             "noise",
@@ -3554,7 +3554,7 @@
         "cc0": 31,
         "pgm": 59,
         "preset": "fukuel",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic",
             "shaking"
@@ -3566,7 +3566,7 @@
         "cc0": 31,
         "pgm": 65,
         "preset": "gamelan spinner",
-        "characters": [
+        "chars": [
             "clean",
             "lfo",
             "metallic"
@@ -3578,7 +3578,7 @@
         "cc0": 31,
         "pgm": 73,
         "preset": "grandfather clock",
-        "characters": [
+        "chars": [
             "metallic"
         ]
     },
@@ -3588,7 +3588,7 @@
         "cc0": 31,
         "pgm": 84,
         "preset": "harpsichord",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -3599,7 +3599,7 @@
         "cc0": 31,
         "pgm": 101,
         "preset": "jaymar toy piano",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "dry",
@@ -3612,7 +3612,7 @@
         "cc0": 31,
         "pgm": 104,
         "preset": "jenny pulse",
-        "characters": [
+        "chars": [
             "analog",
             "echo",
             "lfo",
@@ -3626,7 +3626,7 @@
         "cc0": 32,
         "pgm": 4,
         "preset": "labello",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -3637,7 +3637,7 @@
         "cc0": 32,
         "pgm": 9,
         "preset": "lamellas",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic",
             "strumming"
@@ -3649,7 +3649,7 @@
         "cc0": 32,
         "pgm": 16,
         "preset": "libellule",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "strumming"
@@ -3661,7 +3661,7 @@
         "cc0": 32,
         "pgm": 29,
         "preset": "lytiny",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -3672,7 +3672,7 @@
         "cc0": 32,
         "pgm": 30,
         "preset": "magic pluck",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "bright",
@@ -3686,7 +3686,7 @@
         "cc0": 32,
         "pgm": 32,
         "preset": "malabel",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking",
             "strumming"
@@ -3698,7 +3698,7 @@
         "cc0": 32,
         "pgm": 36,
         "preset": "marombox",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -3709,7 +3709,7 @@
         "cc0": 32,
         "pgm": 38,
         "preset": "mattalo",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -3720,7 +3720,7 @@
         "cc0": 32,
         "pgm": 39,
         "preset": "mbiraski",
-        "characters": [
+        "chars": [
             "clean",
             "intimate",
             "metallic"
@@ -3732,7 +3732,7 @@
         "cc0": 32,
         "pgm": 51,
         "preset": "music box bells",
-        "characters": [
+        "chars": [
             "acoustic",
             "dry",
             "intimate",
@@ -3745,7 +3745,7 @@
         "cc0": 32,
         "pgm": 59,
         "preset": "nimbus",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "echo",
@@ -3758,7 +3758,7 @@
         "cc0": 32,
         "pgm": 63,
         "preset": "noisything",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -3768,7 +3768,7 @@
         "cc0": 32,
         "pgm": 71,
         "preset": "ocean triggs",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "lfo",
@@ -3781,7 +3781,7 @@
         "cc0": 32,
         "pgm": 78,
         "preset": "op2bell",
-        "characters": [
+        "chars": [
             "fm",
             "strumming"
         ]
@@ -3792,7 +3792,7 @@
         "cc0": 32,
         "pgm": 106,
         "preset": "petit carillon",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic",
             "shaking"
@@ -3804,7 +3804,7 @@
         "cc0": 32,
         "pgm": 111,
         "preset": "pinkphone",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -3814,7 +3814,7 @@
         "cc0": 32,
         "pgm": 116,
         "preset": "plinklies",
-        "characters": [
+        "chars": [
             "acoustic",
             "intimate",
             "lfo",
@@ -3827,7 +3827,7 @@
         "cc0": 33,
         "pgm": 7,
         "preset": "releasy",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "shaking"
@@ -3839,7 +3839,7 @@
         "cc0": 33,
         "pgm": 8,
         "preset": "ren keyboard",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "intimate"
@@ -3851,7 +3851,7 @@
         "cc0": 33,
         "pgm": 28,
         "preset": "shakepad",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -3862,7 +3862,7 @@
         "cc0": 33,
         "pgm": 42,
         "preset": "sinefeel",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -3872,7 +3872,7 @@
         "cc0": 33,
         "pgm": 58,
         "preset": "spring shimming bell",
-        "characters": [
+        "chars": [
             "intimate",
             "lfo",
             "soft"
@@ -3884,7 +3884,7 @@
         "cc0": 33,
         "pgm": 86,
         "preset": "tender stuck",
-        "characters": [
+        "chars": [
             "acoustic",
             "soft"
         ]
@@ -3895,7 +3895,7 @@
         "cc0": 33,
         "pgm": 93,
         "preset": "thoria",
-        "characters": [
+        "chars": [
             "acoustic",
             "noise"
         ]
@@ -3906,7 +3906,7 @@
         "cc0": 33,
         "pgm": 100,
         "preset": "tinytine",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -3916,7 +3916,7 @@
         "cc0": 33,
         "pgm": 103,
         "preset": "tubular bell",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -3926,7 +3926,7 @@
         "cc0": 33,
         "pgm": 109,
         "preset": "underwater",
-        "characters": [
+        "chars": [
             "acoustic",
             "dark"
         ]
@@ -3937,7 +3937,7 @@
         "cc0": 33,
         "pgm": 117,
         "preset": "vibrim",
-        "characters": [
+        "chars": [
             "acoustic",
             "simple"
         ]
@@ -3948,7 +3948,7 @@
         "cc0": 34,
         "pgm": 8,
         "preset": "woodybox",
-        "characters": [
+        "chars": [
             "acoustic",
             "strumming",
             "woody"
@@ -3960,7 +3960,7 @@
         "cc0": 34,
         "pgm": 16,
         "preset": "zenpercs",
-        "characters": [
+        "chars": [
             "acoustic",
             "intimate",
             "soft"
@@ -3972,7 +3972,7 @@
         "cc0": 30,
         "pgm": 16,
         "preset": "anthophila organ",
-        "characters": [
+        "chars": [
             "acoustic",
             "ensemble"
         ]
@@ -3983,7 +3983,7 @@
         "cc0": 30,
         "pgm": 45,
         "preset": "bits organ",
-        "characters": [
+        "chars": [
             "analog",
             "bright",
             "strumming"
@@ -3995,7 +3995,7 @@
         "cc0": 30,
         "pgm": 47,
         "preset": "bleached organ",
-        "characters": [
+        "chars": [
             "fm",
             "simple",
             "stereo",
@@ -4008,7 +4008,7 @@
         "cc0": 30,
         "pgm": 59,
         "preset": "bright organ",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -4019,7 +4019,7 @@
         "cc0": 30,
         "pgm": 75,
         "preset": "churchorgan",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -4029,7 +4029,7 @@
         "cc0": 32,
         "pgm": 75,
         "preset": "old pad machine",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble",
             "evolving",
@@ -4043,7 +4043,7 @@
         "cc0": 32,
         "pgm": 82,
         "preset": "organ 1",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4053,7 +4053,7 @@
         "cc0": 32,
         "pgm": 83,
         "preset": "organ 2",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4063,7 +4063,7 @@
         "cc0": 32,
         "pgm": 84,
         "preset": "organ 3",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4073,7 +4073,7 @@
         "cc0": 32,
         "pgm": 85,
         "preset": "organ 4",
-        "characters": [
+        "chars": [
             "electric"
         ]
     },
@@ -4083,7 +4083,7 @@
         "cc0": 32,
         "pgm": 86,
         "preset": "organ barbar",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4093,7 +4093,7 @@
         "cc0": 32,
         "pgm": 87,
         "preset": "organ voxy",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4103,7 +4103,7 @@
         "cc0": 32,
         "pgm": 88,
         "preset": "organo WereYouThere",
-        "characters": [
+        "chars": [
             "electric",
             "reverberant"
         ]
@@ -4114,7 +4114,7 @@
         "cc0": 32,
         "pgm": 97,
         "preset": "padorgan",
-        "characters": [
+        "chars": [
             "lofi",
             "stereo"
         ]
@@ -4125,7 +4125,7 @@
         "cc0": 33,
         "pgm": 92,
         "preset": "thick organ",
-        "characters": [
+        "chars": [
             "digital",
             "dry",
             "simple",
@@ -4138,7 +4138,7 @@
         "cc0": 33,
         "pgm": 124,
         "preset": "vorgaphone",
-        "characters": [
+        "chars": [
             "UNASSIGNED"
         ]
     },
@@ -4148,7 +4148,7 @@
         "cc0": 34,
         "pgm": 6,
         "preset": "woodorgan",
-        "characters": [
+        "chars": [
             "soft",
             "warm",
             "woody"
@@ -4160,7 +4160,7 @@
         "cc0": 30,
         "pgm": 0,
         "preset": "abyss lands",
-        "characters": [
+        "chars": [
             "dark",
             "echo",
             "evolving",
@@ -4174,7 +4174,7 @@
         "cc0": 30,
         "pgm": 5,
         "preset": "after the rain",
-        "characters": [
+        "chars": [
             "acoustic",
             "noise"
         ]
@@ -4185,7 +4185,7 @@
         "cc0": 30,
         "pgm": 7,
         "preset": "alenvers",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -4197,7 +4197,7 @@
         "cc0": 30,
         "pgm": 8,
         "preset": "algo call",
-        "characters": [
+        "chars": [
             "fm",
             "stereo"
         ]
@@ -4208,7 +4208,7 @@
         "cc0": 30,
         "pgm": 14,
         "preset": "anatolianpad",
-        "characters": [
+        "chars": [
             "analog",
             "chords"
         ]
@@ -4219,7 +4219,7 @@
         "cc0": 30,
         "pgm": 15,
         "preset": "another big one",
-        "characters": [
+        "chars": [
             "aggressive",
             "big",
             "reverberant",
@@ -4232,7 +4232,7 @@
         "cc0": 30,
         "pgm": 21,
         "preset": "astral titans",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "fm"
@@ -4244,7 +4244,7 @@
         "cc0": 30,
         "pgm": 33,
         "preset": "bass pad",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted"
@@ -4256,7 +4256,7 @@
         "cc0": 30,
         "pgm": 38,
         "preset": "beny's territory",
-        "characters": [
+        "chars": [
             "acoustic",
             "layered"
         ]
@@ -4267,7 +4267,7 @@
         "cc0": 30,
         "pgm": 58,
         "preset": "brave fields",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4277,7 +4277,7 @@
         "cc0": 30,
         "pgm": 63,
         "preset": "carifem",
-        "characters": [
+        "chars": [
             "fm",
             "lfo"
         ]
@@ -4288,7 +4288,7 @@
         "cc0": 30,
         "pgm": 72,
         "preset": "choir",
-        "characters": [
+        "chars": [
             "synthetic",
             "vocal"
         ]
@@ -4299,7 +4299,7 @@
         "cc0": 30,
         "pgm": 73,
         "preset": "choir additive",
-        "characters": [
+        "chars": [
             "clean",
             "vocal"
         ]
@@ -4310,7 +4310,7 @@
         "cc0": 30,
         "pgm": 80,
         "preset": "classipad",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble",
             "simple"
@@ -4322,7 +4322,7 @@
         "cc0": 30,
         "pgm": 87,
         "preset": "column of eternity",
-        "characters": [
+        "chars": [
             "clean",
             "fm",
             "simple",
@@ -4335,7 +4335,7 @@
         "cc0": 30,
         "pgm": 90,
         "preset": "coridor",
-        "characters": [
+        "chars": [
             "fm",
             "reverberant"
         ]
@@ -4346,7 +4346,7 @@
         "cc0": 30,
         "pgm": 96,
         "preset": "crossmod",
-        "characters": [
+        "chars": [
             "fm",
             "stereo"
         ]
@@ -4357,7 +4357,7 @@
         "cc0": 30,
         "pgm": 99,
         "preset": "cs80+ladder",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "reverberant",
@@ -4370,7 +4370,7 @@
         "cc0": 30,
         "pgm": 100,
         "preset": "cs80+ladder II",
-        "characters": [
+        "chars": [
             "analog",
             "chords"
         ]
@@ -4381,7 +4381,7 @@
         "cc0": 30,
         "pgm": 105,
         "preset": "cycle and duty",
-        "characters": [
+        "chars": [
             "analog",
             "stereo"
         ]
@@ -4392,7 +4392,7 @@
         "cc0": 30,
         "pgm": 113,
         "preset": "dirty osc pad",
-        "characters": [
+        "chars": [
             "airy",
             "echo",
             "evolving",
@@ -4407,7 +4407,7 @@
         "cc0": 30,
         "pgm": 126,
         "preset": "ebosin",
-        "characters": [
+        "chars": [
             "acoustic",
             "ensemble",
             "layered"
@@ -4419,7 +4419,7 @@
         "cc0": 31,
         "pgm": 35,
         "preset": "floppy disk lands",
-        "characters": [
+        "chars": [
             "fm",
             "lofi",
             "noise",
@@ -4433,7 +4433,7 @@
         "cc0": 31,
         "pgm": 39,
         "preset": "fm 2612",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -4443,7 +4443,7 @@
         "cc0": 31,
         "pgm": 74,
         "preset": "grandma's garden",
-        "characters": [
+        "chars": [
             "evolving",
             "layered",
             "lofi",
@@ -4456,7 +4456,7 @@
         "cc0": 31,
         "pgm": 75,
         "preset": "granu osc",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -4468,7 +4468,7 @@
         "cc0": 31,
         "pgm": 80,
         "preset": "hantpad",
-        "characters": [
+        "chars": [
             "dark"
         ]
     },
@@ -4478,7 +4478,7 @@
         "cc0": 31,
         "pgm": 98,
         "preset": "interkin",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4488,7 +4488,7 @@
         "cc0": 31,
         "pgm": 102,
         "preset": "jenny choir",
-        "characters": [
+        "chars": [
             "ensemble",
             "vocal"
         ]
@@ -4499,7 +4499,7 @@
         "cc0": 31,
         "pgm": 103,
         "preset": "jenny fm",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -4511,7 +4511,7 @@
         "cc0": 31,
         "pgm": 112,
         "preset": "jupipad",
-        "characters": [
+        "chars": [
             "analog",
             "intimate"
         ]
@@ -4522,7 +4522,7 @@
         "cc0": 32,
         "pgm": 10,
         "preset": "lampadaire",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -4533,7 +4533,7 @@
         "cc0": 32,
         "pgm": 11,
         "preset": "larekin",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -4544,7 +4544,7 @@
         "cc0": 32,
         "pgm": 12,
         "preset": "larekin 2",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4554,7 +4554,7 @@
         "cc0": 32,
         "pgm": 22,
         "preset": "living pad",
-        "characters": [
+        "chars": [
             "analog",
             "evolving",
             "lfo"
@@ -4566,7 +4566,7 @@
         "cc0": 32,
         "pgm": 26,
         "preset": "lost choir",
-        "characters": [
+        "chars": [
             "airy",
             "ensemble",
             "evolving",
@@ -4580,7 +4580,7 @@
         "cc0": 32,
         "pgm": 28,
         "preset": "lost operator",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -4590,7 +4590,7 @@
         "cc0": 32,
         "pgm": 33,
         "preset": "malgo",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -4600,7 +4600,7 @@
         "cc0": 32,
         "pgm": 46,
         "preset": "modowel",
-        "characters": [
+        "chars": [
             "soft",
             "stereo",
             "vocal"
@@ -4612,7 +4612,7 @@
         "cc0": 32,
         "pgm": 49,
         "preset": "moving slate",
-        "characters": [
+        "chars": [
             "stereo"
         ]
     },
@@ -4622,7 +4622,7 @@
         "cc0": 32,
         "pgm": 50,
         "preset": "munsplen",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4632,7 +4632,7 @@
         "cc0": 32,
         "pgm": 60,
         "preset": "nofiad",
-        "characters": [
+        "chars": [
             "evolving",
             "layered",
             "lofi"
@@ -4644,7 +4644,7 @@
         "cc0": 32,
         "pgm": 66,
         "preset": "notiseq",
-        "characters": [
+        "chars": [
             "chords",
             "fm",
             "lfo"
@@ -4656,7 +4656,7 @@
         "cc0": 32,
         "pgm": 68,
         "preset": "nynx",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -4668,7 +4668,7 @@
         "cc0": 32,
         "pgm": 69,
         "preset": "oblivion",
-        "characters": [
+        "chars": [
             "ensemble",
             "evolving",
             "layered",
@@ -4682,7 +4682,7 @@
         "cc0": 32,
         "pgm": 76,
         "preset": "op offset",
-        "characters": [
+        "chars": [
             "fm",
             "lfo",
             "stereo"
@@ -4694,7 +4694,7 @@
         "cc0": 32,
         "pgm": 93,
         "preset": "pad 101",
-        "characters": [
+        "chars": [
             "airy",
             "bright",
             "chords",
@@ -4712,7 +4712,7 @@
         "cc0": 32,
         "pgm": 94,
         "preset": "pad awan",
-        "characters": [
+        "chars": [
             "simple"
         ]
     },
@@ -4722,7 +4722,7 @@
         "cc0": 32,
         "pgm": 95,
         "preset": "padding time",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "ensemble",
@@ -4737,7 +4737,7 @@
         "cc0": 32,
         "pgm": 96,
         "preset": "padorama",
-        "characters": [
+        "chars": [
             "layered"
         ]
     },
@@ -4747,7 +4747,7 @@
         "cc0": 32,
         "pgm": 105,
         "preset": "perseus supernova",
-        "characters": [
+        "chars": [
             "analog",
             "big",
             "reverberant"
@@ -4759,7 +4759,7 @@
         "cc0": 32,
         "pgm": 107,
         "preset": "phase machine",
-        "characters": [
+        "chars": [
             "bright",
             "ensemble",
             "stereo"
@@ -4771,7 +4771,7 @@
         "cc0": 32,
         "pgm": 115,
         "preset": "plastigorien",
-        "characters": [
+        "chars": [
             "vocal"
         ]
     },
@@ -4781,7 +4781,7 @@
         "cc0": 33,
         "pgm": 1,
         "preset": "quiet carriers",
-        "characters": [
+        "chars": [
             "fm"
         ]
     },
@@ -4791,7 +4791,7 @@
         "cc0": 33,
         "pgm": 4,
         "preset": "rateanis",
-        "characters": [
+        "chars": [
             "analog",
             "stereo"
         ]
@@ -4802,7 +4802,7 @@
         "cc0": 33,
         "pgm": 9,
         "preset": "replicants dreams",
-        "characters": [
+        "chars": [
             "analog",
             "fm",
             "reverberant"
@@ -4814,7 +4814,7 @@
         "cc0": 33,
         "pgm": 11,
         "preset": "reso nable",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4824,7 +4824,7 @@
         "cc0": 33,
         "pgm": 13,
         "preset": "rewind time",
-        "characters": [
+        "chars": [
             "chords",
             "echo",
             "evolving",
@@ -4838,7 +4838,7 @@
         "cc0": 33,
         "pgm": 14,
         "preset": "ringad",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4848,7 +4848,7 @@
         "cc0": 33,
         "pgm": 17,
         "preset": "rising pad",
-        "characters": [
+        "chars": [
             "analog",
             "chords",
             "evolving",
@@ -4861,7 +4861,7 @@
         "cc0": 33,
         "pgm": 29,
         "preset": "shpad1",
-        "characters": [
+        "chars": [
             "analog",
             "fm",
             "lfo",
@@ -4875,7 +4875,7 @@
         "cc0": 33,
         "pgm": 37,
         "preset": "simple saw pad",
-        "characters": [
+        "chars": [
             "analog",
             "stereo"
         ]
@@ -4886,7 +4886,7 @@
         "cc0": 33,
         "pgm": 38,
         "preset": "simple square pad",
-        "characters": [
+        "chars": [
             "analog",
             "simple"
         ]
@@ -4897,7 +4897,7 @@
         "cc0": 33,
         "pgm": 43,
         "preset": "sinespray pad",
-        "characters": [
+        "chars": [
             "digital"
         ]
     },
@@ -4907,7 +4907,7 @@
         "cc0": 33,
         "pgm": 50,
         "preset": "solima",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -4917,7 +4917,7 @@
         "cc0": 33,
         "pgm": 55,
         "preset": "souvenirs",
-        "characters": [
+        "chars": [
             "evolving",
             "layered",
             "lofi",
@@ -4931,7 +4931,7 @@
         "cc0": 33,
         "pgm": 66,
         "preset": "stellaris",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "echo",
@@ -4944,7 +4944,7 @@
         "cc0": 33,
         "pgm": 71,
         "preset": "strings machine",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble",
             "stereo"
@@ -4956,7 +4956,7 @@
         "cc0": 33,
         "pgm": 72,
         "preset": "strings machine 2",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble",
             "stereo"
@@ -4968,7 +4968,7 @@
         "cc0": 33,
         "pgm": 85,
         "preset": "taste of june",
-        "characters": [
+        "chars": [
             "analog",
             "chords",
             "ensemble",
@@ -4983,7 +4983,7 @@
         "cc0": 33,
         "pgm": 94,
         "preset": "three waves",
-        "characters": [
+        "chars": [
             "big",
             "ensemble",
             "synthetic"
@@ -4995,7 +4995,7 @@
         "cc0": 33,
         "pgm": 105,
         "preset": "twobanks",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -5005,7 +5005,7 @@
         "cc0": 33,
         "pgm": 108,
         "preset": "under the weather",
-        "characters": [
+        "chars": [
             "dark",
             "distorted",
             "lofi"
@@ -5017,7 +5017,7 @@
         "cc0": 33,
         "pgm": 110,
         "preset": "unstable sum",
-        "characters": [
+        "chars": [
             "analog",
             "lofi",
             "noise"
@@ -5029,7 +5029,7 @@
         "cc0": 34,
         "pgm": 15,
         "preset": "zazipad",
-        "characters": [
+        "chars": [
             "airy",
             "echo",
             "ensemble",
@@ -5043,7 +5043,7 @@
         "cc0": 31,
         "pgm": 67,
         "preset": "ghabla",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5053,7 +5053,7 @@
         "cc0": 31,
         "pgm": 95,
         "preset": "hyoshigi",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal"
         ]
@@ -5064,7 +5064,7 @@
         "cc0": 31,
         "pgm": 99,
         "preset": "ishango bone",
-        "characters": [
+        "chars": [
             "atonal",
             "woody"
         ]
@@ -5075,7 +5075,7 @@
         "cc0": 31,
         "pgm": 114,
         "preset": "kaitof",
-        "characters": [
+        "chars": [
             "acoustic",
             "noise"
         ]
@@ -5086,7 +5086,7 @@
         "cc0": 31,
         "pgm": 118,
         "preset": "kick bass slide",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "portamento",
@@ -5099,7 +5099,7 @@
         "cc0": 32,
         "pgm": 35,
         "preset": "marlin perkins 1",
-        "characters": [
+        "chars": [
             "clean",
             "intimate",
             "woody"
@@ -5111,7 +5111,7 @@
         "cc0": 32,
         "pgm": 40,
         "preset": "metarmonix",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog",
             "metallic"
@@ -5123,7 +5123,7 @@
         "cc0": 32,
         "pgm": 73,
         "preset": "octalive drum",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "layered",
@@ -5136,7 +5136,7 @@
         "cc0": 32,
         "pgm": 103,
         "preset": "patacalbas",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5146,7 +5146,7 @@
         "cc0": 32,
         "pgm": 122,
         "preset": "potendu",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "woody"
@@ -5158,7 +5158,7 @@
         "cc0": 33,
         "pgm": 12,
         "preset": "resonant drum 1",
-        "characters": [
+        "chars": [
             "airy",
             "atonal",
             "noise",
@@ -5171,7 +5171,7 @@
         "cc0": 33,
         "pgm": 45,
         "preset": "slappinperc",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "woody"
@@ -5183,7 +5183,7 @@
         "cc0": 33,
         "pgm": 80,
         "preset": "tablast",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal"
         ]
@@ -5194,7 +5194,7 @@
         "cc0": 33,
         "pgm": 106,
         "preset": "twozing",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "metallic"
@@ -5206,7 +5206,7 @@
         "cc0": 34,
         "pgm": 0,
         "preset": "wardrum",
-        "characters": [
+        "chars": [
             "acoustic",
             "analog",
             "big"
@@ -5218,7 +5218,7 @@
         "cc0": 30,
         "pgm": 3,
         "preset": "acuitar",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -5229,7 +5229,7 @@
         "cc0": 30,
         "pgm": 17,
         "preset": "aplassian",
-        "characters": [
+        "chars": [
             "acoustic",
             "electric"
         ]
@@ -5240,7 +5240,7 @@
         "cc0": 30,
         "pgm": 27,
         "preset": "balloon from hanoi",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "strumming"
@@ -5252,7 +5252,7 @@
         "cc0": 30,
         "pgm": 29,
         "preset": "banjoy",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5263,7 +5263,7 @@
         "cc0": 30,
         "pgm": 34,
         "preset": "bazambar",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5274,7 +5274,7 @@
         "cc0": 30,
         "pgm": 41,
         "preset": "biquide harp",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "soft"
@@ -5286,7 +5286,7 @@
         "cc0": 30,
         "pgm": 61,
         "preset": "canyon steel",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "portamento",
@@ -5299,7 +5299,7 @@
         "cc0": 30,
         "pgm": 97,
         "preset": "crossynthar",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5309,7 +5309,7 @@
         "cc0": 30,
         "pgm": 115,
         "preset": "distortion guitar",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -5320,7 +5320,7 @@
         "cc0": 31,
         "pgm": 12,
         "preset": "ellis guitar",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5330,7 +5330,7 @@
         "cc0": 31,
         "pgm": 27,
         "preset": "expluck",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5341,7 +5341,7 @@
         "cc0": 31,
         "pgm": 58,
         "preset": "fruku",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5351,7 +5351,7 @@
         "cc0": 31,
         "pgm": 72,
         "preset": "grains pluck",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -5362,7 +5362,7 @@
         "cc0": 31,
         "pgm": 78,
         "preset": "gypsy kinetar",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5373,7 +5373,7 @@
         "cc0": 31,
         "pgm": 83,
         "preset": "harmolick",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic",
             "portamento"
@@ -5385,7 +5385,7 @@
         "cc0": 31,
         "pgm": 91,
         "preset": "hybrid harp",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm",
             "soft"
@@ -5397,7 +5397,7 @@
         "cc0": 31,
         "pgm": 116,
         "preset": "karkup",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5408,7 +5408,7 @@
         "cc0": 31,
         "pgm": 117,
         "preset": "karplus & modMan",
-        "characters": [
+        "chars": [
             "clean",
             "strumming",
             "warm"
@@ -5420,7 +5420,7 @@
         "cc0": 32,
         "pgm": 1,
         "preset": "kinetic soundboard",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic",
             "reverberant",
@@ -5434,7 +5434,7 @@
         "cc0": 32,
         "pgm": 3,
         "preset": "koto",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "intimate",
@@ -5447,7 +5447,7 @@
         "cc0": 32,
         "pgm": 21,
         "preset": "lips steel",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento"
         ]
@@ -5458,7 +5458,7 @@
         "cc0": 32,
         "pgm": 42,
         "preset": "mild kisses",
-        "characters": [
+        "chars": [
             "acoustic",
             "portamento",
             "soft"
@@ -5470,7 +5470,7 @@
         "cc0": 32,
         "pgm": 43,
         "preset": "minimando",
-        "characters": [
+        "chars": [
             "acoustic",
             "strumming"
         ]
@@ -5481,7 +5481,7 @@
         "cc0": 32,
         "pgm": 57,
         "preset": "ngoni",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "strumming"
@@ -5493,7 +5493,7 @@
         "cc0": 32,
         "pgm": 72,
         "preset": "ocherry",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -5504,7 +5504,7 @@
         "cc0": 32,
         "pgm": 102,
         "preset": "paris texas",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -5515,7 +5515,7 @@
         "cc0": 32,
         "pgm": 110,
         "preset": "pine strummer",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5526,7 +5526,7 @@
         "cc0": 32,
         "pgm": 127,
         "preset": "pusher",
-        "characters": [
+        "chars": [
             "synthetic"
         ]
     },
@@ -5536,7 +5536,7 @@
         "cc0": 33,
         "pgm": 10,
         "preset": "resizable guitar",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "portamento",
@@ -5549,7 +5549,7 @@
         "cc0": 33,
         "pgm": 44,
         "preset": "skoto",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -5559,7 +5559,7 @@
         "cc0": 33,
         "pgm": 56,
         "preset": "space flammenco",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5570,7 +5570,7 @@
         "cc0": 33,
         "pgm": 76,
         "preset": "sweethrice",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5581,7 +5581,7 @@
         "cc0": 33,
         "pgm": 81,
         "preset": "tales of feathers",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "bright",
@@ -5595,7 +5595,7 @@
         "cc0": 33,
         "pgm": 83,
         "preset": "tap sitar",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "reverberant"
@@ -5607,7 +5607,7 @@
         "cc0": 33,
         "pgm": 90,
         "preset": "the touch guitar",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "intimate",
@@ -5620,7 +5620,7 @@
         "cc0": 33,
         "pgm": 104,
         "preset": "twelve strings",
-        "characters": [
+        "chars": [
             "acoustic",
             "strumming"
         ]
@@ -5631,7 +5631,7 @@
         "cc0": 33,
         "pgm": 107,
         "preset": "uki pizz 1",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "intimate"
@@ -5643,7 +5643,7 @@
         "cc0": 34,
         "pgm": 9,
         "preset": "wopluk",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -5654,7 +5654,7 @@
         "cc0": 30,
         "pgm": 24,
         "preset": "bacteria",
-        "characters": [
+        "chars": [
             "airy",
             "atonal",
             "metallic",
@@ -5668,7 +5668,7 @@
         "cc0": 30,
         "pgm": 25,
         "preset": "badratios bell",
-        "characters": [
+        "chars": [
             "atonal",
             "fm"
         ]
@@ -5679,7 +5679,7 @@
         "cc0": 30,
         "pgm": 44,
         "preset": "bird whistler",
-        "characters": [
+        "chars": [
             "nature"
         ]
     },
@@ -5689,7 +5689,7 @@
         "cc0": 30,
         "pgm": 48,
         "preset": "blipkrieg",
-        "characters": [
+        "chars": [
             "atonal",
             "digital",
             "fm",
@@ -5702,7 +5702,7 @@
         "cc0": 30,
         "pgm": 65,
         "preset": "celestial basin",
-        "characters": [
+        "chars": [
             "airy",
             "atonal",
             "metallic",
@@ -5715,7 +5715,7 @@
         "cc0": 30,
         "pgm": 91,
         "preset": "cork the bottle",
-        "characters": [
+        "chars": [
             "atonal",
             "dry",
             "electric"
@@ -5727,7 +5727,7 @@
         "cc0": 30,
         "pgm": 94,
         "preset": "crackling things",
-        "characters": [
+        "chars": [
             "atonal"
         ]
     },
@@ -5737,7 +5737,7 @@
         "cc0": 30,
         "pgm": 95,
         "preset": "creaker",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "intimate",
@@ -5750,7 +5750,7 @@
         "cc0": 31,
         "pgm": 10,
         "preset": "electric wazoo",
-        "characters": [
+        "chars": [
             "atonal",
             "dry",
             "electric",
@@ -5763,7 +5763,7 @@
         "cc0": 31,
         "pgm": 17,
         "preset": "entanglement",
-        "characters": [
+        "chars": [
             "aggressive",
             "atonal",
             "big",
@@ -5778,7 +5778,7 @@
         "cc0": 31,
         "pgm": 30,
         "preset": "fdn crazyness",
-        "characters": [
+        "chars": [
             "aggressive",
             "atonal",
             "big",
@@ -5794,7 +5794,7 @@
         "cc0": 31,
         "pgm": 62,
         "preset": "futur engine",
-        "characters": [
+        "chars": [
             "digital"
         ]
     },
@@ -5804,7 +5804,7 @@
         "cc0": 31,
         "pgm": 66,
         "preset": "geiger insects",
-        "characters": [
+        "chars": [
             "atonal",
             "intimate",
             "lfo",
@@ -5818,7 +5818,7 @@
         "cc0": 31,
         "pgm": 89,
         "preset": "howling sines",
-        "characters": [
+        "chars": [
             "atonal",
             "dark"
         ]
@@ -5829,7 +5829,7 @@
         "cc0": 31,
         "pgm": 124,
         "preset": "kinetic bowed fdn",
-        "characters": [
+        "chars": [
             "atonal",
             "dark",
             "evolving",
@@ -5843,7 +5843,7 @@
         "cc0": 31,
         "pgm": 125,
         "preset": "kinetic dragon",
-        "characters": [
+        "chars": [
             "aggressive",
             "atonal",
             "distorted",
@@ -5856,7 +5856,7 @@
         "cc0": 31,
         "pgm": 126,
         "preset": "kinetic micromotor",
-        "characters": [
+        "chars": [
             "atonal",
             "echo",
             "lfo",
@@ -5869,7 +5869,7 @@
         "cc0": 31,
         "pgm": 127,
         "preset": "kinetic overtones",
-        "characters": [
+        "chars": [
             "aggressive",
             "atonal",
             "digital",
@@ -5885,7 +5885,7 @@
         "cc0": 32,
         "pgm": 23,
         "preset": "lonely data",
-        "characters": [
+        "chars": [
             "atonal",
             "digital",
             "intimate",
@@ -5899,7 +5899,7 @@
         "cc0": 32,
         "pgm": 34,
         "preset": "marie s birds",
-        "characters": [
+        "chars": [
             "acoustic",
             "fm"
         ]
@@ -5910,7 +5910,7 @@
         "cc0": 32,
         "pgm": 47,
         "preset": "mojo of fdn",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "echo",
@@ -5924,7 +5924,7 @@
         "cc0": 32,
         "pgm": 52,
         "preset": "mystaring",
-        "characters": [
+        "chars": [
             "atonal",
             "dark",
             "fm"
@@ -5936,7 +5936,7 @@
         "cc0": 32,
         "pgm": 53,
         "preset": "nails on metal",
-        "characters": [
+        "chars": [
             "acoustic",
             "shaking"
         ]
@@ -5947,7 +5947,7 @@
         "cc0": 32,
         "pgm": 119,
         "preset": "podracer",
-        "characters": [
+        "chars": [
             "digital",
             "portamento"
         ]
@@ -5958,7 +5958,7 @@
         "cc0": 32,
         "pgm": 124,
         "preset": "psy squelches",
-        "characters": [
+        "chars": [
             "aggressive",
             "atonal",
             "fm"
@@ -5970,7 +5970,7 @@
         "cc0": 33,
         "pgm": 2,
         "preset": "radioactive zone",
-        "characters": [
+        "chars": [
             "analog",
             "dark",
             "fm",
@@ -5983,7 +5983,7 @@
         "cc0": 33,
         "pgm": 3,
         "preset": "random trigger",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "echo",
@@ -5998,7 +5998,7 @@
         "cc0": 33,
         "pgm": 25,
         "preset": "scratching fdn",
-        "characters": [
+        "chars": [
             "acoustic",
             "atonal",
             "reverberant",
@@ -6011,7 +6011,7 @@
         "cc0": 33,
         "pgm": 51,
         "preset": "sonogram",
-        "characters": [
+        "chars": [
             "atonal",
             "lfo",
             "noise",
@@ -6024,7 +6024,7 @@
         "cc0": 33,
         "pgm": 54,
         "preset": "soundboard",
-        "characters": [
+        "chars": [
             "acoustic",
             "aggressive",
             "atonal",
@@ -6037,7 +6037,7 @@
         "cc0": 33,
         "pgm": 69,
         "preset": "stormy weather",
-        "characters": [
+        "chars": [
             "atonal",
             "noise"
         ]
@@ -6048,7 +6048,7 @@
         "cc0": 33,
         "pgm": 89,
         "preset": "th x",
-        "characters": [
+        "chars": [
             "ensemble",
             "stereo"
         ]
@@ -6059,7 +6059,7 @@
         "cc0": 33,
         "pgm": 91,
         "preset": "theo s bicycles",
-        "characters": [
+        "chars": [
             "metallic"
         ]
     },
@@ -6069,7 +6069,7 @@
         "cc0": 34,
         "pgm": 1,
         "preset": "waterphonie",
-        "characters": [
+        "chars": [
             "atonal",
             "bright",
             "metallic",
@@ -6082,7 +6082,7 @@
         "cc0": 34,
         "pgm": 2,
         "preset": "wet feeling",
-        "characters": [
+        "chars": [
             "atonal",
             "echo",
             "reverberant",
@@ -6095,7 +6095,7 @@
         "cc0": 34,
         "pgm": 14,
         "preset": "zapzap",
-        "characters": [
+        "chars": [
             "analog",
             "atonal",
             "lfo",
@@ -6108,7 +6108,7 @@
         "cc0": 34,
         "pgm": 43,
         "preset": "justik",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted",
@@ -6121,7 +6121,7 @@
         "cc0": 34,
         "pgm": 59,
         "preset": "rock robot",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted"
@@ -6133,7 +6133,7 @@
         "cc0": 34,
         "pgm": 79,
         "preset": "transistor pwm",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6144,7 +6144,7 @@
         "cc0": 34,
         "pgm": 85,
         "preset": "va bass 1",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6155,7 +6155,7 @@
         "cc0": 34,
         "pgm": 86,
         "preset": "va bass 2",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6166,7 +6166,7 @@
         "cc0": 34,
         "pgm": 92,
         "preset": "va pads 1",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6177,7 +6177,7 @@
         "cc0": 34,
         "pgm": 21,
         "preset": "bow tenor",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean"
         ]
@@ -6188,7 +6188,7 @@
         "cc0": 34,
         "pgm": 95,
         "preset": "violens",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "intimate"
@@ -6200,7 +6200,7 @@
         "cc0": 34,
         "pgm": 22,
         "preset": "brassick",
-        "characters": [
+        "chars": [
             "acoustic",
             "warm"
         ]
@@ -6211,7 +6211,7 @@
         "cc0": 34,
         "pgm": 53,
         "preset": "onereed alto",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "warm"
@@ -6223,7 +6223,7 @@
         "cc0": 34,
         "pgm": 54,
         "preset": "onereed tenor",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -6234,7 +6234,7 @@
         "cc0": 34,
         "pgm": 61,
         "preset": "saxalam",
-        "characters": [
+        "chars": [
             "acoustic"
         ]
     },
@@ -6244,7 +6244,7 @@
         "cc0": 34,
         "pgm": 62,
         "preset": "saxman",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -6255,7 +6255,7 @@
         "cc0": 34,
         "pgm": 87,
         "preset": "va brass 1",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6266,7 +6266,7 @@
         "cc0": 34,
         "pgm": 29,
         "preset": "dx magic",
-        "characters": [
+        "chars": [
             "digital",
             "electric",
             "fm"
@@ -6278,7 +6278,7 @@
         "cc0": 34,
         "pgm": 30,
         "preset": "eleclaf",
-        "characters": [
+        "chars": [
             "bright",
             "digital",
             "electric"
@@ -6290,7 +6290,7 @@
         "cc0": 34,
         "pgm": 68,
         "preset": "strikey",
-        "characters": [
+        "chars": [
             "bright",
             "electric"
         ]
@@ -6301,7 +6301,7 @@
         "cc0": 34,
         "pgm": 28,
         "preset": "dubby reeds",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "echo"
@@ -6313,7 +6313,7 @@
         "cc0": 34,
         "pgm": 17,
         "preset": "bitcrush keys",
-        "characters": [
+        "chars": [
             "lofi",
             "synthetic"
         ]
@@ -6324,7 +6324,7 @@
         "cc0": 34,
         "pgm": 18,
         "preset": "bitcrush mod",
-        "characters": [
+        "chars": [
             "echo",
             "lofi",
             "synthetic"
@@ -6336,7 +6336,7 @@
         "cc0": 34,
         "pgm": 41,
         "preset": "jenny sync",
-        "characters": [
+        "chars": [
             "aggressive",
             "lfo",
             "synthetic"
@@ -6348,7 +6348,7 @@
         "cc0": 34,
         "pgm": 44,
         "preset": "kaladia",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -6358,7 +6358,7 @@
         "cc0": 34,
         "pgm": 45,
         "preset": "kawaship",
-        "characters": [
+        "chars": [
             "analog",
             "bright",
             "clean",
@@ -6371,7 +6371,7 @@
         "cc0": 34,
         "pgm": 55,
         "preset": "op clav",
-        "characters": [
+        "chars": [
             "bright",
             "clean",
             "digital"
@@ -6383,7 +6383,7 @@
         "cc0": 34,
         "pgm": 69,
         "preset": "synky",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -6393,7 +6393,7 @@
         "cc0": 34,
         "pgm": 71,
         "preset": "tb keys",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted"
@@ -6405,7 +6405,7 @@
         "cc0": 34,
         "pgm": 72,
         "preset": "tb seq-2os",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "distorted"
@@ -6417,7 +6417,7 @@
         "cc0": 34,
         "pgm": 73,
         "preset": "tb seq-3os",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "lfo"
@@ -6429,7 +6429,7 @@
         "cc0": 34,
         "pgm": 78,
         "preset": "tinette",
-        "characters": [
+        "chars": [
             "distorted",
             "electric"
         ]
@@ -6440,7 +6440,7 @@
         "cc0": 34,
         "pgm": 80,
         "preset": "transitor shimmer keys",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "lfo"
@@ -6452,7 +6452,7 @@
         "cc0": 34,
         "pgm": 83,
         "preset": "udon",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6463,7 +6463,7 @@
         "cc0": 34,
         "pgm": 84,
         "preset": "udon v2",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6474,7 +6474,7 @@
         "cc0": 34,
         "pgm": 88,
         "preset": "va keys 1",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6485,7 +6485,7 @@
         "cc0": 34,
         "pgm": 89,
         "preset": "va keys 2",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6496,7 +6496,7 @@
         "cc0": 34,
         "pgm": 90,
         "preset": "va keys 3",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6507,7 +6507,7 @@
         "cc0": 34,
         "pgm": 26,
         "preset": "diode pwm lead",
-        "characters": [
+        "chars": [
             "analog",
             "portamento",
             "warm"
@@ -6519,7 +6519,7 @@
         "cc0": 34,
         "pgm": 40,
         "preset": "hide overload",
-        "characters": [
+        "chars": [
             "analog",
             "echo"
         ]
@@ -6530,7 +6530,7 @@
         "cc0": 34,
         "pgm": 47,
         "preset": "kobolid",
-        "characters": [
+        "chars": [
             "analog",
             "reverberant"
         ]
@@ -6541,7 +6541,7 @@
         "cc0": 34,
         "pgm": 67,
         "preset": "stacked osc",
-        "characters": [
+        "chars": [
             "aggressive",
             "analog",
             "ensemble"
@@ -6553,7 +6553,7 @@
         "cc0": 34,
         "pgm": 91,
         "preset": "va leads 1",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6564,7 +6564,7 @@
         "cc0": 34,
         "pgm": 34,
         "preset": "fragilkey",
-        "characters": [
+        "chars": [
             "lofi"
         ]
     },
@@ -6574,7 +6574,7 @@
         "cc0": 34,
         "pgm": 36,
         "preset": "glassilia",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "bright",
@@ -6588,7 +6588,7 @@
         "cc0": 34,
         "pgm": 46,
         "preset": "kinell",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright"
         ]
@@ -6599,7 +6599,7 @@
         "cc0": 34,
         "pgm": 48,
         "preset": "mafrila",
-        "characters": [
+        "chars": [
             "acoustic",
             "metallic"
         ]
@@ -6610,7 +6610,7 @@
         "cc0": 34,
         "pgm": 51,
         "preset": "metallet",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "metallic"
@@ -6622,7 +6622,7 @@
         "cc0": 34,
         "pgm": 64,
         "preset": "snowflakes",
-        "characters": [
+        "chars": [
             "acoustic",
             "airy",
             "metallic"
@@ -6634,7 +6634,7 @@
         "cc0": 34,
         "pgm": 82,
         "preset": "tribol",
-        "characters": [
+        "chars": [
             "acoustic",
             "bright",
             "metallic"
@@ -6646,7 +6646,7 @@
         "cc0": 34,
         "pgm": 24,
         "preset": "crush organ",
-        "characters": [
+        "chars": [
             "distorted",
             "lofi",
             "noise"
@@ -6658,7 +6658,7 @@
         "cc0": 34,
         "pgm": 19,
         "preset": "blide",
-        "characters": [
+        "chars": [
             "analog",
             "lofi"
         ]
@@ -6669,7 +6669,7 @@
         "cc0": 34,
         "pgm": 20,
         "preset": "bouncing pad",
-        "characters": [
+        "chars": [
             "lofi",
             "warm"
         ]
@@ -6680,7 +6680,7 @@
         "cc0": 34,
         "pgm": 23,
         "preset": "crush 2op",
-        "characters": [
+        "chars": [
             "lofi"
         ]
     },
@@ -6690,7 +6690,7 @@
         "cc0": 34,
         "pgm": 25,
         "preset": "dakota sunset",
-        "characters": [
+        "chars": [
             "analog",
             "distorted",
             "lofi",
@@ -6703,7 +6703,7 @@
         "cc0": 34,
         "pgm": 27,
         "preset": "diode pwm pad",
-        "characters": [
+        "chars": [
             "analog",
             "clean",
             "simple"
@@ -6715,7 +6715,7 @@
         "cc0": 34,
         "pgm": 31,
         "preset": "emilia",
-        "characters": [
+        "chars": [
             "analog",
             "bright",
             "simple"
@@ -6727,7 +6727,7 @@
         "cc0": 34,
         "pgm": 32,
         "preset": "epica",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6738,7 +6738,7 @@
         "cc0": 34,
         "pgm": 33,
         "preset": "fabulia",
-        "characters": [
+        "chars": [
             "lfo"
         ]
     },
@@ -6748,7 +6748,7 @@
         "cc0": 34,
         "pgm": 42,
         "preset": "jueno pad",
-        "characters": [
+        "chars": [
             "analog",
             "clean"
         ]
@@ -6759,7 +6759,7 @@
         "cc0": 34,
         "pgm": 50,
         "preset": "mascade",
-        "characters": [
+        "chars": [
             "analog",
             "lfo",
             "warm"
@@ -6771,7 +6771,7 @@
         "cc0": 34,
         "pgm": 52,
         "preset": "numana",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble"
         ]
@@ -6782,7 +6782,7 @@
         "cc0": 34,
         "pgm": 56,
         "preset": "paladia",
-        "characters": [
+        "chars": [
             "analog",
             "stereo",
             "warm"
@@ -6794,7 +6794,7 @@
         "cc0": 34,
         "pgm": 57,
         "preset": "photalia",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -6804,7 +6804,7 @@
         "cc0": 34,
         "pgm": 65,
         "preset": "solistrings",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble",
             "stereo"
@@ -6816,7 +6816,7 @@
         "cc0": 34,
         "pgm": 66,
         "preset": "soustitre",
-        "characters": [
+        "chars": [
             "analog"
         ]
     },
@@ -6826,7 +6826,7 @@
         "cc0": 34,
         "pgm": 70,
         "preset": "tabernak",
-        "characters": [
+        "chars": [
             "distorted",
             "lofi",
             "stereo"
@@ -6838,7 +6838,7 @@
         "cc0": 34,
         "pgm": 76,
         "preset": "the analog",
-        "characters": [
+        "chars": [
             "analog",
             "ensemble"
         ]
@@ -6849,7 +6849,7 @@
         "cc0": 34,
         "pgm": 93,
         "preset": "va pads 2",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6860,7 +6860,7 @@
         "cc0": 34,
         "pgm": 94,
         "preset": "va pads 3",
-        "characters": [
+        "chars": [
             "analog",
             "warm"
         ]
@@ -6871,7 +6871,7 @@
         "cc0": 34,
         "pgm": 96,
         "preset": "vorelso",
-        "characters": [
+        "chars": [
             "airy",
             "layered",
             "vocal"
@@ -6883,7 +6883,7 @@
         "cc0": 34,
         "pgm": 34,
         "preset": "feelgood resonator",
-        "characters": [
+        "chars": [
             "clean",
             "intimate"
         ]
@@ -6894,7 +6894,7 @@
         "cc0": 34,
         "pgm": 37,
         "preset": "guitararium",
-        "characters": [
+        "chars": [
             "aggressive",
             "distorted",
             "echo"
@@ -6906,7 +6906,7 @@
         "cc0": 34,
         "pgm": 38,
         "preset": "harplitude",
-        "characters": [
+        "chars": [
             "acoustic",
             "lofi",
             "metallic"
@@ -6918,7 +6918,7 @@
         "cc0": 34,
         "pgm": 39,
         "preset": "harpoke",
-        "characters": [
+        "chars": [
             "acoustic",
             "clean",
             "lfo"
@@ -6930,7 +6930,7 @@
         "cc0": 34,
         "pgm": 49,
         "preset": "marxophone",
-        "characters": [
+        "chars": [
             "acoustic",
             "lfo",
             "metallic"
@@ -6942,7 +6942,7 @@
         "cc0": 34,
         "pgm": 74,
         "preset": "telecasta",
-        "characters": [
+        "chars": [
             "acoustic",
             "electric"
         ]
@@ -6953,7 +6953,7 @@
         "cc0": 34,
         "pgm": 77,
         "preset": "the touch satur",
-        "characters": [
+        "chars": [
             "acoustic",
             "echo",
             "intimate",
@@ -6966,7 +6966,7 @@
         "cc0": 34,
         "pgm": 58,
         "preset": "pitchy place",
-        "characters": [
+        "chars": [
             "atonal",
             "echo"
         ]
@@ -6977,7 +6977,7 @@
         "cc0": 34,
         "pgm": 60,
         "preset": "rusty dissonance",
-        "characters": [
+        "chars": [
             "atonal",
             "metallic"
         ]
@@ -6988,7 +6988,7 @@
         "cc0": 34,
         "pgm": 63,
         "preset": "shifted wg",
-        "characters": [
+        "chars": [
             "acoustic",
             "aggressive",
             "distorted",
@@ -7002,7 +7002,7 @@
         "cc0": 34,
         "pgm": 75,
         "preset": "tesla pad",
-        "characters": [
+        "chars": [
             "noise",
             "stereo",
             "synthetic"
@@ -7014,7 +7014,7 @@
         "cc0": 34,
         "pgm": 81,
         "preset": "transmission",
-        "characters": [
+        "chars": [
             "atonal",
             "lofi",
             "noise"

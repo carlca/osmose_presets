@@ -15,7 +15,7 @@ class Preset:
    cc0: int
    pgm: int
    preset: str
-   characters: List[str] = field(default_factory=list)
+   chars: List[str] = field(default_factory=list)
 
    def get_field_widths(self) -> list[int]:
       result = []
@@ -62,7 +62,7 @@ class PresetData:
                cc0=preset_dict.get("cc0"),
                pgm=preset_dict.get("pgm"),
                preset=preset_dict.get("preset"),
-               characters=preset_dict.get("characters", []),
+               chars=preset_dict.get("chars", []),
             )
             loaded_presets.append(preset)
       return loaded_presets
@@ -134,7 +134,7 @@ class PresetData:
          return result
       unassigned_found = False
       for preset in PresetData.cached_presets:
-         for char in preset.characters:
+         for char in preset.chars:
             if char not in result:
                if char != "UNASSIGNED":
                   result.append(char)
