@@ -1,3 +1,4 @@
+from textual import log
 import json
 import os
 from dataclasses import dataclass, field, fields
@@ -77,8 +78,9 @@ class PresetData:
       for preset in PresetData.cached_presets:
          pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
          type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
+         char_filtered = not PresetData.char_filters or set(preset.chars) & set(PresetData.char_filters)
 
-         if pack_filtered and type_filtered:
+         if pack_filtered and type_filtered and char_filtered:
             result.append(preset)
       # if sort_criteria active and an non-empty results
       if PresetData.sort_criteria and result:
