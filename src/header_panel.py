@@ -1,13 +1,15 @@
 from textual.app import ComposeResult
-from textual.containers import HorizontalGroup
-from textual.widgets import Button, Static
+from textual.containers import Horizontal, Container
+from textual.widgets import Button, Static, Input
 from textual.events import Key
 from textual import log
 import mido
 from helper_functions import Helper
 
 
-class HeaderPanel(HorizontalGroup):
+class MidiPortSelector(Container):
+   """Left side container for MIDI port selection."""
+
    def __init__(self, **kwargs):
       super().__init__(**kwargs)
       self.ports = []
@@ -37,10 +39,11 @@ class HeaderPanel(HorizontalGroup):
 
    def compose(self) -> ComposeResult:
       self.border_title = "MIDI input port"
-      yield Button(" < ", classes="header-button bold-text", id="prev_port_button")
-      yield Button(" > ", classes="header-button bold-text", id="next_port_button")
-      self.port_display = Static(self.get_current_port_name(), classes="bold-text")
-      yield self.port_display
+      with Horizontal(classes="midi-port-controls"):
+         yield Button(" < ", classes="header-button bold-text", id="prev_port_button")
+         yield Button(" > ", classes="header-button bold-text", id="next_port_button")
+         self.port_display = Static(self.get_current_port_name(), classes="bold-text")
+         yield self.port_display
 
    def get_current_port_name(self) -> str:
       """Get the name of the currently selected port."""
@@ -65,8 +68,9 @@ class HeaderPanel(HorizontalGroup):
 
    def on_button_pressed(self, event: Button.Pressed) -> None:
       """Handle button presses for port navigation."""
-      # Only process port navigation if HeaderPanel is in focused state
-      if "focused" in self.classes:
+      # Only process port navigation if parent HeaderPanel is in focused state
+      parent = self.parent
+      if parent and "focused" in parent.classes:
          if event.button.id == "next_port_button":
             self.next_port()
          elif event.button.id == "prev_port_button":
@@ -89,9 +93,37 @@ class HeaderPanel(HorizontalGroup):
             self.save_selected_midi_port(self.get_current_port_name())
 
    def on_key(self, event: Key) -> None:
-      if event.character in ("<", ",", ">", "."):
-         if event.character in ("<", ","):
-            self.prev_port()
-         elif event.character in (">", "."):
-            self.next_port()
-         event.stop()
+      parent = self.parent
+      if parent and "focused" in parent.classes:
+         if event.character in ("<", ",", ">", "."):
+            if event.character in ("<", ","):
+               self.prev_port()
+            elif event.character in (">", "."):
+               self.next_port()
+            event.stop()
+
+
+class SearchBox(Container):
+   """Right side container for search functionality."""
+
+   def compose(self) -> ComposeResult:
+      self.border_title = "Search"
+      yield Input(placeholder="Enter search term...", id="search-input")
+
+
+class HeaderPanel(Horizontal):
+   """Main header panel containing both MIDI port selector and search box."""
+
+   def __init__(self, **kwargs):
+      super().__init__(**kwargs)
+      self.midi_selector = None
+
+   def compose(self) -> ComposeResult:
+      self.midi_selector = MidiPortSelector(id="midi-port-selector", classes="header-box")
+      yield self.midi_selector
+      yield SearchBox(id="search-box", classes="header-box")
+
+   def set_focus(self) -> None:
+      """Focus the midi port selector when header panel gets focus."""
+      if self.midi_selector:
+         self.midi_selector.set_focus()

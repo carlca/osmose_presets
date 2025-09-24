@@ -1,15 +1,38 @@
 #header-panel {
     height: 3;
     background: #1e1e1e;
-    align: left middle;
-    padding-left: 1;
     margin-bottom: 0;
-    border: round;
+    padding: 0;
+    border: none;
 }
 
-#header-panel.focused {
+/* Style for the two header boxes */
+.header-box {
+    width: 50%;
+    height: 3;
+    border: round;
+    align: left middle;
+    padding-left: 1;
+}
+
+#midi-port-selector.focused {
     border-title-color: yellow;
     border-title-style: bold;
+}
+
+#search-box {
+    margin-left: 1;
+}
+
+#search-box.focused {
+    border-title-color: yellow;
+    border-title-style: bold;
+}
+
+/* Controls within midi port selector */
+.midi-port-controls {
+    align: left middle;
+    height: 1;
 }
 
 .plain-text {
@@ -42,12 +65,25 @@
     background: transparent;
 }
 
-#header-panel.focused .header-button {
-    color: white;  /* bright white when HeaderPanel is focused */
+#midi-port-selector.focused .header-button {
+    color: white;  /* bright white when MIDI selector is focused */
 }
 
-#header-panel.focused .header-button:hover {
+#midi-port-selector.focused .header-button:hover {
     background: #606060;
+}
+
+/* Search input styling */
+#search-input {
+    width: 100%;
+    height: 1;
+    background: #2a2a2a;
+    border: none;
+    padding: 0 1;
+}
+
+#search-input:focus {
+    background: #3a3a3a;
 }
 
 #main-container {

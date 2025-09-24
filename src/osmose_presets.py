@@ -2,7 +2,6 @@ from textual.app import App, ComposeResult
 from textual.containers import Horizontal, Vertical, VerticalScroll
 from textual.widgets import Header, Footer
 from textual import on
-from textual.widgets import DataTable
 from textual import log
 from preset_grid import PresetGrid
 from header_panel import HeaderPanel
@@ -33,6 +32,7 @@ class OsmosePresetsApp(App):
       ("3", "focus_type_filter_selector", "type"),
       ("4", "focus_char_filter_selector", "character"),
       ("5", "focus_preset_grid", "presets"),
+      ("s", "focus_search_box", "Search"),
    ]
 
    def on_mount(self) -> None:
@@ -72,7 +72,7 @@ class OsmosePresetsApp(App):
 
    def action_focus_midi_input_port(self) -> None:
       self.remove_all_focused_border_titles()
-      self.set_focus_to_one_border_title("#header-panel")
+      self.set_focus_to_one_border_title("#midi-port-selector")
 
    def action_focus_pack_filter_selector(self) -> None:
       self.focus_filter_selector("#pack-container")
@@ -90,6 +90,15 @@ class OsmosePresetsApp(App):
    def action_focus_preset_grid(self) -> None:
       self.remove_all_focused_border_titles()
       self.set_focus_to_one_border_title("#preset-grid")
+
+   def action_focus_search_box(self) -> None:
+      self.remove_all_focused_border_titles()
+      search_box = self.query_one("#search-box")
+      if search_box:
+         search_box.add_class("focused")
+         search_input = search_box.query_one("#search-input")
+         if search_input:
+            search_input.focus()
 
 
 if __name__ == "__main__":

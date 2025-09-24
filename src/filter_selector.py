@@ -55,7 +55,10 @@ class FilterSelector(VerticalScroll):
             return []
 
    def compose(self) -> ComposeResult:
-      self.border_title = self.get_filter()
+      title = self.get_filter()
+      if title == "char":
+         title = "character"
+      self.border_title = title
       yield Checkbox("all", id="check_all", classes="compact bold-text", value=self.select_all)
       filter_names = self.get_filter_names()
       for f_name in filter_names:
