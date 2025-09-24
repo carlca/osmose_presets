@@ -36,19 +36,8 @@ class PresetData:
    pack_filters = []
    type_filters = []
    char_filters = []
-   sort_criteria = []  # e.g., [('pack', True), ('preset', False)]
+   search_term = ""
 
-   @staticmethod
-   def add_sort_criterion(field_name: str, ascending: bool = True):
-      PresetData.sort_criteria.append((field_name, ascending))
-
-   @staticmethod
-   def set_sort_criteria(criteria: List[tuple[str, bool]]):
-      PresetData.sort_criteria = list(criteria)
-
-   @staticmethod
-   def clear_sort_criteria():
-      PresetData.sort_criteria.clear()
 
    @staticmethod
    def load_from_json(file_path: str) -> List[Preset]:
@@ -72,32 +61,20 @@ class PresetData:
    def get_presets():
       result = []
       # only apply filters if both filters are active
+      log(bool(PresetData.search_term))
       if not PresetData.pack_filters or not PresetData.type_filters or not PresetData.char_filters:
          return result
       # build filtered list from cached list
+      log(PresetData.search_term)
       for preset in PresetData.cached_presets:
-         pack_filtered = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
-         type_filtered = not PresetData.type_filters or preset.type in PresetData.type_filters
-         char_filtered = not PresetData.char_filters or set(preset.chars) & set(PresetData.char_filters)
+         pack_ok = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
+         type_ok = not PresetData.type_filters or preset.type in PresetData.type_filters
+         char_ok = not PresetData.char_filters or set(preset.chars) & set(PresetData.char_filters)
+         search_ok = not PresetData.search_term or PresetData.search_term in preset.preset
 
-         if pack_filtered and type_filtered and char_filtered:
+         if pack_ok and type_ok and char_ok and search_ok:
             result.append(preset)
-      # if sort_criteria active and an non-empty results
-      if PresetData.sort_criteria and result:
-         # nested compare function used by sort
-         def compare_presets(p1: Preset, p2: Preset):
-            for field_name, ascending in PresetData.sort_criteria:
-               v1 = getattr(p1, field_name)
-               v2 = getattr(p2, field_name)
-               if v1 < v2:
-                  return -1 if ascending else 1
-               if v1 > v2:
-                  return 1 if ascending else -1
-            return 0
 
-         # apply the sort function
-         result.sort(key=functools.cmp_to_key(compare_presets))
-      # return fileterd and optionally sorted presets
       return result
 
    @staticmethod
@@ -146,6 +123,10 @@ class PresetData:
       if unassigned_found:
          result.append("UNASSIGNED")
       return result
+
+   @staticmethod
+   def set_search_filter(search_term):
+      PresetData.search_term = search_term
 
    @staticmethod
    def get_all_preset_names():

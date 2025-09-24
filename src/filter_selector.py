@@ -3,7 +3,6 @@ from textual.containers import VerticalScroll
 from textual.widgets import Checkbox
 from textual import events
 from textual.events import Key
-from textual import log
 from preset_data import PresetData
 from filters import Filters
 from messages import FilterSelectionChanged

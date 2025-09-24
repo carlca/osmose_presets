@@ -39,7 +39,11 @@ class PresetGrid(Vertical):
          case _:
             log("set_filter case not matched")
       self.table.add_rows(PresetData.get_presets_as_tuples())
-      log(PresetData.get_preset_max_widths())
+
+   def set_search_filter(self, search_term: str):
+      PresetData.set_search_filter(search_term)
+      self.table.clear(columns=False)
+      self.table.add_rows(PresetData.get_presets_as_tuples())
 
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
       self.app.remove_all_focused_border_titles()

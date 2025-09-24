@@ -7,7 +7,7 @@ from preset_grid import PresetGrid
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
-from messages import FilterSelectionChanged
+from messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus
 
 
 class Sidebar(VerticalScroll):
@@ -24,6 +24,10 @@ class OsmosePresetsApp(App):
    TITLE = "Osmose Presets"
 
    CSS_PATH = "osmose_presets.tcss"
+
+   def __init__(self):
+      super().__init__()
+      self.previous_focus_id = "#pack-container"
 
    BINDINGS = [
       ("q", "quit_app", "Quit"),
@@ -61,7 +65,10 @@ class OsmosePresetsApp(App):
       self.exit()
 
    def remove_all_focused_border_titles(self) -> None:
+      # Store the current focused widget ID before removing focus
       for widget in self.query(".focused"):
+         if widget.id and widget.id != "search-box":
+            self.previous_focus_id = f"#{widget.id}"
          widget.remove_class("focused")
 
    def set_focus_to_one_border_title(self, id: str) -> None:
@@ -92,6 +99,10 @@ class OsmosePresetsApp(App):
       self.set_focus_to_one_border_title("#preset-grid")
 
    def action_focus_search_box(self) -> None:
+      # Store current focus before switching to search
+      for widget in self.query(".focused"):
+         if widget.id and widget.id != "search-box":
+            self.previous_focus_id = f"#{widget.id}"
       self.remove_all_focused_border_titles()
       search_box = self.query_one("#search-box")
       if search_box:
@@ -99,6 +110,31 @@ class OsmosePresetsApp(App):
          search_input = search_box.query_one("#search-input")
          if search_input:
             search_input.focus()
+
+   @on(SearchSubmitted)
+   def handle_search_submitted(self, message: SearchSubmitted) -> None:
+      """Handle search submission from the search box."""
+      log(message.search_term)
+      preset_grid = self.app.query_one("#preset-grid", PresetGrid)
+      preset_grid.set_search_filter(message.search_term)
+
+   @on(RestorePreviousFocus)
+   def handle_restore_focus(self, message: RestorePreviousFocus) -> None:
+      """Handle request to restore focus to previous widget."""
+      self.restore_previous_focus()
+
+   def restore_previous_focus(self) -> None:
+      """Restore focus to the previously focused widget."""
+      self.remove_all_focused_border_titles()
+      if self.previous_focus_id:
+         try:
+            widget = self.query_one(self.previous_focus_id)
+            if widget:
+               widget.add_class("focused")
+               widget.set_focus()
+         except Exception:
+            # If the previous widget doesn't exist, default to pack filter
+            self.set_focus_to_one_border_title("#pack-container")
 
 
 if __name__ == "__main__":
