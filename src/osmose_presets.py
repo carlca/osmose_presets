@@ -7,7 +7,8 @@ from preset_grid import PresetGrid
 from header_panel import HeaderPanel
 from filter_selector import FilterSelector
 from filters import Filters
-from messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus
+from messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus, PresetSelected
+from midi_controller import MidiController
 
 
 class Sidebar(VerticalScroll):
@@ -114,9 +115,10 @@ class OsmosePresetsApp(App):
    @on(SearchSubmitted)
    def handle_search_submitted(self, message: SearchSubmitted) -> None:
       """Handle search submission from the search box."""
-      log(message.search_term)
       preset_grid = self.app.query_one("#preset-grid", PresetGrid)
       preset_grid.set_search_filter(message.search_term)
+      self.remove_all_focused_border_titles()
+      self.set_focus_to_one_border_title("#preset-grid")
 
    @on(RestorePreviousFocus)
    def handle_restore_focus(self, message: RestorePreviousFocus) -> None:
@@ -136,6 +138,12 @@ class OsmosePresetsApp(App):
             # If the previous widget doesn't exist, default to pack filter
             self.set_focus_to_one_border_title("#pack-container")
 
+   @on(PresetSelected)
+   def preset_selected(self, message: PresetSelected) -> None:
+      header_panel = self.app.query_one("#header-panel", HeaderPanel)
+      log(f"cc: {message.cc} pgm: {message.pgm}")
+      log(header_panel.midi_selector.midi_port_name)
+      MidiController.send_preset_change(header_panel.midi_selector.midi_port_name, message.cc, message.pgm)
 
 if __name__ == "__main__":
    app = OsmosePresetsApp()

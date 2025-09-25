@@ -16,6 +16,7 @@ class MidiPortSelector(Container):
       self.ports = []
       self.current_port_index = 0
       self.port_display = None
+      self.midi_port_name = ""
 
    def on_mount(self) -> None:
       """Load MIDI ports when component is mounted."""
@@ -49,7 +50,8 @@ class MidiPortSelector(Container):
    def get_current_port_name(self) -> str:
       """Get the name of the currently selected port."""
       if self.ports:
-         return self.ports[self.current_port_index]
+         self.midi_port_name = self.ports[self.current_port_index]
+         return self.midi_port_name
       return "No ports loaded"
 
    def read_config(self):
@@ -69,13 +71,13 @@ class MidiPortSelector(Container):
 
    def on_button_pressed(self, event: Button.Pressed) -> None:
       """Handle button presses for port navigation."""
-      # Only process port navigation if parent HeaderPanel is in focused state
-      parent = self.parent
-      if parent and "focused" in parent.classes:
+      # Only process port navigation if this widget is in focused state
+      if "focused" in self.classes:
          if event.button.id == "next_port_button":
             self.next_port()
          elif event.button.id == "prev_port_button":
             self.prev_port()
+         event.stop()
 
    def next_port(self) -> None:
       """Select the next MIDI port."""
@@ -94,8 +96,8 @@ class MidiPortSelector(Container):
             self.save_selected_midi_port(self.get_current_port_name())
 
    def on_key(self, event: Key) -> None:
-      parent = self.parent
-      if parent and "focused" in parent.classes:
+      """Handle key events for port navigation."""
+      if "focused" in self.classes:
          if event.character in ("<", ",", ">", "."):
             if event.character in ("<", ","):
                self.prev_port()
@@ -120,8 +122,11 @@ class SearchBox(Container):
    def on_key(self, event: Key) -> None:
       """Handle key events in the search box."""
       if event.key == "escape":
-         # Post message to restore previous focus
+         # Clear the search input field
+         search_input = self.query_one("#search-input", Input)
+         search_input.value = ""
          self.post_message(RestorePreviousFocus())
+         self.post_message(SearchSubmitted(""))
          event.stop()
 
 

@@ -2,9 +2,11 @@ from textual.app import ComposeResult
 from textual.containers import Vertical
 from textual import log
 from textual import events
+from textual.events import Key
 from aligned_data_table import AlignedDataTable
 from preset_data import PresetData, Preset
 from dataclasses import fields
+from messages import PresetSelected
 
 
 class PresetGrid(Vertical):
@@ -45,10 +47,22 @@ class PresetGrid(Vertical):
       self.table.clear(columns=False)
       self.table.add_rows(PresetData.get_presets_as_tuples())
 
+   # def on_key(self, event: Key) -> None:
+   #    """ handle key events in the preset grid """
+   #    if event.key == "enter":
+   #       self.post_message(PresetSelected())
+
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
       self.app.remove_all_focused_border_titles()
       self.add_class("focused")
       event.stop()
+
+   def on_data_table_row_selected(self, event: AlignedDataTable.RowSelected) -> None:
+      row = event.data_table.get_row(event.row_key)
+      cc = row[2]
+      pgm = row[3]
+      log(f"cc: {cc} pgm: {pgm}")
+      self.post_message(PresetSelected(cc, pgm))
 
    def set_focus(self) -> None:
       self.table.focus()
