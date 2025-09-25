@@ -3,7 +3,7 @@ import json
 import os
 from dataclasses import dataclass, field, fields
 from typing import List
-import functools
+
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PRESET_DATA = os.path.join(SCRIPT_DIR, "OsmosePresets.json")
@@ -38,7 +38,6 @@ class PresetData:
    char_filters = []
    search_term = ""
 
-
    @staticmethod
    def load_from_json(file_path: str) -> List[Preset]:
       loaded_presets = []
@@ -58,6 +57,17 @@ class PresetData:
       return loaded_presets
 
    @staticmethod
+   def evaluate_search(search_term, target_string):
+      # Split the search term by " OR " to handle the lowest precedence operator.
+      or_clauses = [clause.strip() for clause in search_term.split(" OR ")]
+      # Evaluate each "AND" clause independently.
+      # Using a generator expression for efficiency.
+      and_results = (all(term.strip() in target_string for term in clause.split(" AND ")) for clause in or_clauses)
+
+      # Step 3: The final result is TRUE if any of the "AND" clauses were a match.
+      return any(and_results)
+
+   @staticmethod
    def get_presets():
       result = []
       # only apply filters if both filters are active
@@ -70,7 +80,8 @@ class PresetData:
          pack_ok = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
          type_ok = not PresetData.type_filters or preset.type in PresetData.type_filters
          char_ok = not PresetData.char_filters or set(preset.chars) & set(PresetData.char_filters)
-         search_ok = not PresetData.search_term or PresetData.search_term in preset.preset
+         # search_ok = not PresetData.search_term or PresetData.search_term in preset.preset
+         search_ok = not PresetData.search_term or PresetData.evaluate_search(PresetData.search_term, preset.preset)
 
          if pack_ok and type_ok and char_ok and search_ok:
             result.append(preset)

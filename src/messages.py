@@ -20,4 +20,5 @@ class SearchSubmitted(Message):
 
 class RestorePreviousFocus(Message):
    """Posted when the user wants to restore focus to the previously focused widget."""
+
    pass

@@ -105,24 +105,24 @@ class MidiPortSelector(Container):
 
 
 class SearchBox(Container):
-    """Right side container for search functionality."""
+   """Right side container for search functionality."""
 
-    def compose(self) -> ComposeResult:
-        self.border_title = "Search"
-        yield Input(placeholder="Enter search term...", id="search-input")
+   def compose(self) -> ComposeResult:
+      self.border_title = "Search"
+      yield Input(placeholder="Enter search term...", id="search-input")
 
-    @on(Input.Submitted, "#search-input")
-    def on_search_input_submitted(self, event: Input.Submitted) -> None:
-        """Handle Enter key press in the search input."""
-        search_term = event.value
-        self.post_message(SearchSubmitted(search_term))
+   @on(Input.Submitted, "#search-input")
+   def on_search_input_submitted(self, event: Input.Submitted) -> None:
+      """Handle Enter key press in the search input."""
+      search_term = event.value
+      self.post_message(SearchSubmitted(search_term))
 
-    def on_key(self, event: Key) -> None:
-        """Handle key events in the search box."""
-        if event.key == "escape":
-            # Post message to restore previous focus
-            self.post_message(RestorePreviousFocus())
-            event.stop()
+   def on_key(self, event: Key) -> None:
+      """Handle key events in the search box."""
+      if event.key == "escape":
+         # Post message to restore previous focus
+         self.post_message(RestorePreviousFocus())
+         event.stop()
 
 
 class HeaderPanel(Horizontal):
