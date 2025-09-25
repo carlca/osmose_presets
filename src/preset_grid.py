@@ -61,7 +61,6 @@ class PresetGrid(Vertical):
       row = event.data_table.get_row(event.row_key)
       cc = row[2]
       pgm = row[3]
-      log(f"cc: {cc} pgm: {pgm}")
       self.post_message(PresetSelected(cc, pgm))
 
    def set_focus(self) -> None:

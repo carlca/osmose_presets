@@ -24,7 +24,6 @@ class MidiPortSelector(Container):
          self.ports = mido.get_input_names()
          if not self.ports:
             self.ports = ["No MIDI ports available"]
-         log(self.ports)
 
          # Load saved MIDI port selection
          config = self.read_config()
@@ -94,6 +93,15 @@ class MidiPortSelector(Container):
          if self.port_display:
             self.port_display.update(self.get_current_port_name())
             self.save_selected_midi_port(self.get_current_port_name())
+
+   def on_click(self, event) -> None:
+      """Handle click events to set focus state."""
+      # Remove all other focused classes and add focus to this widget
+      if self.app:
+         self.app.remove_all_focused_border_titles()
+         self.add_class("focused")
+         self.set_focus()
+      event.stop()
 
    def on_key(self, event: Key) -> None:
       """Handle key events for port navigation."""

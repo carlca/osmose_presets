@@ -71,11 +71,9 @@ class PresetData:
    def get_presets():
       result = []
       # only apply filters if both filters are active
-      log(bool(PresetData.search_term))
       if not PresetData.pack_filters or not PresetData.type_filters or not PresetData.char_filters:
          return result
       # build filtered list from cached list
-      log(PresetData.search_term)
       for preset in PresetData.cached_presets:
          pack_ok = not PresetData.pack_filters or preset.pack in PresetData.pack_filters
          type_ok = not PresetData.type_filters or preset.type in PresetData.type_filters
