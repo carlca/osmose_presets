@@ -1,5 +1,6 @@
 import mido
 import time
+from textual import log
 
 
 class MidiController:
@@ -12,13 +13,13 @@ class MidiController:
          return False
 
       cc_msg = mido.Message("control_change", channel=0, control=0, value=cc)
-      print(f"Sending CC message: {cc_msg.hex()}")
+      log(f"Sending CC message: {cc_msg.hex()}")
       output.send(cc_msg)
 
       time.sleep(0.4)
 
       pgm_msg = mido.Message("program_change", channel=0, program=pgm)
-      print(f"Sending PGM message: {pgm_msg.hex()}")
+      log(f"Sending PGM message: {pgm_msg.hex()}")
       output.send(pgm_msg)
 
       output.close()

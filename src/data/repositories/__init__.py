@@ -7,4 +7,4 @@ for accessing preset data from various sources.
 
 from .base import PresetRepository
 
-__all__ = ['PresetRepository']
+__all__ = ["PresetRepository"]

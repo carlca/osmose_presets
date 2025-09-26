@@ -28,6 +28,7 @@ class PresetGrid(Vertical):
       yield AlignedDataTable()
 
    def set_filter(self, filter_type: str, selected_filters: list[str]):
+      log(f"PresetGrid.set_filter: type={filter_type}, filters={selected_filters}")
       self.table.clear(columns=False)
       match filter_type:
          case "pack":
@@ -41,17 +42,16 @@ class PresetGrid(Vertical):
             PresetData.add_char_filter(selected_filters)
          case _:
             log("set_filter case not matched")
-      self.table.add_rows(PresetData.get_presets_as_tuples())
+      data = PresetData.get_presets_as_tuples()
+      log(f"PresetGrid.set_filter: Adding {len(data)} rows to table")
+      if data:
+         log(f"PresetGrid.set_filter: First row: {data[0]}")
+      self.table.add_rows(data)
 
    def set_search_filter(self, search_term: str):
       PresetData.set_search_filter(search_term)
       self.table.clear(columns=False)
       self.table.add_rows(PresetData.get_presets_as_tuples())
-
-   # def on_key(self, event: Key) -> None:
-   #    """ handle key events in the preset grid """
-   #    if event.key == "enter":
-   #       self.post_message(PresetSelected())
 
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
       self.app.remove_all_focused_border_titles()
@@ -60,8 +60,10 @@ class PresetGrid(Vertical):
 
    def on_data_table_row_selected(self, event: AlignedDataTable.RowSelected) -> None:
       row = event.data_table.get_row(event.row_key)
+      log(f"PresetGrid.on_row_selected: row={row}")
       cc = row[2]
       pgm = row[3]
+      log(f"PresetGrid.on_row_selected: Sending CC={cc}, PGM={pgm}")
       self.post_message(PresetSelected(cc, pgm))
 
    def set_focus(self) -> None:

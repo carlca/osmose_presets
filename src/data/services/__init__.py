@@ -9,4 +9,4 @@ and providing a clean interface to the presentation layer.
 from .preset_service import PresetService
 from .search_service import SearchService
 
-__all__ = ['PresetService', 'SearchService']
+__all__ = ["PresetService", "SearchService"]

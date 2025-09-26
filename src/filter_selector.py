@@ -15,6 +15,13 @@ class MockCheckboxChanged:
 
 
 class FilterSelector(VerticalScroll):
+   def __init__(self, filter, select_all=False, **kwargs):
+      super().__init__(**kwargs)
+      self.filter = filter
+      self.select_all = select_all
+      self.all_updating = False
+      self.current_index = 0
+
    def on_mount(self) -> None:
       # If select_all is True, simulate user checking all boxes
       if self.select_all:
@@ -23,13 +30,6 @@ class FilterSelector(VerticalScroll):
          # Manually trigger the change behavior
          self.all_checkbox_changed(MockCheckboxChanged(all_box, True))
          self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
-
-   def __init__(self, filter, select_all=False, **kwargs):
-      super().__init__(**kwargs)
-      self.filter = filter
-      self.select_all = select_all
-      self.all_updating = False
-      self.current_index = 0
 
    def get_filter(self) -> str:
       match self.filter:
@@ -75,6 +75,7 @@ class FilterSelector(VerticalScroll):
          if all_box_value != all(cb.value for cb in other_checkboxes):
             for checkbox in other_checkboxes:
                checkbox.value = all_box_value
+      # Don't update filter service here - let on_checkboxf.update_filter_service()
 
    def other_checkbox_changed(self, event: Checkbox.Changed) -> None:
       all_box = self.query_one("#check_all", Checkbox)
@@ -93,6 +94,13 @@ class FilterSelector(VerticalScroll):
 
    def filter_selection_changed(self, filter_type: str, selected_filters: list[str]) -> None:
       self.post_message(FilterSelectionChanged(filter_type, selected_filters))
+
+   def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
+      if event.checkbox.id == "check_all":
+         self.all_checkbox_changed(event)
+      else:
+         self.other_checkbox_changed(event)
+      self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
 
    def set_focus(self) -> None:
       checkboxes = self.query(Checkbox)
