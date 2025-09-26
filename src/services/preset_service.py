@@ -50,6 +50,14 @@ class PresetService:
           List of presets matching all active filters
       """
       state = self.filter_service.state
+      
+      log(f"get_filtered_presets - packs: {len(state.packs)}, types: {len(state.types)}, chars: {len(state.chars)}")
+
+      # Only show presets if ALL filter categories have selections
+      # If any category has nothing selected, return empty list
+      if not state.packs or not state.types or not state.chars:
+         log(f"No presets shown - empty filter(s): packs={bool(state.packs)}, types={bool(state.types)}, chars={bool(state.chars)}")
+         return []
 
       # Convert sets to None if empty (PresetDataManager expects None for no filter)
       packs = state.packs if state.packs else None
@@ -69,6 +77,14 @@ class PresetService:
           List of preset tuples ready for table display
       """
       state = self.filter_service.state
+      
+      log(f"get_filtered_preset_tuples - packs: {len(state.packs)}, types: {len(state.types)}, chars: {len(state.chars)}")
+
+      # Only show presets if ALL filter categories have selections
+      # If any category has nothing selected, return empty list
+      if not state.packs or not state.types or not state.chars:
+         log(f"No preset tuples - empty filter(s): packs={bool(state.packs)}, types={bool(state.types)}, chars={bool(state.chars)}")
+         return []
 
       # Convert sets to None if empty
       packs = state.packs if state.packs else None

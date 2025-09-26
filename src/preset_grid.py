@@ -4,7 +4,6 @@ from textual import log
 from textual import events
 from textual.events import Key
 from aligned_data_table import AlignedDataTable
-from preset_data_compat import PresetData
 from data.models.preset import Preset
 from dataclasses import fields
 from messages import PresetSelected
@@ -13,7 +12,8 @@ from messages import PresetSelected
 class PresetGrid(Vertical):
    def __init__(self, **kwargs):
       super().__init__(**kwargs)
-      # We'll get the preset service from the app when needed
+      self.preset_service = None
+      self.filter_service = None
 
    def on_mount(self) -> None:
       self.table = self.query_one(AlignedDataTable)
@@ -21,17 +21,28 @@ class PresetGrid(Vertical):
       self.table.cursor_type = "row"
       self.table.show_cursor = True
       self.table.cursor_blink = False
-      # Get preset service from app
-      preset_service = self.app.services.get_preset_service()
-      widths = preset_service.get_preset_field_widths()
+      # Get services from app
+      self.preset_service = self.app.services.get_preset_service()
+      self.filter_service = self.app.services.get_filter_service()
+      widths = self.preset_service.get_preset_field_widths()
       for i, f in enumerate(fields(Preset)):
          width = widths[i] if i < len(widths) else None
          name = f.name if f.name != "chars" else "character"
          self.table.add_column(name, justify="left" if f.type not in [int, float] else "right", width=width)
 
-      # Stage 2: Register as a listener to preset service
-      preset_service.add_listener(self.refresh_from_service)
-      log("PresetGrid registered as listener to PresetService")
+      # Register as a listener to preset service
+      self.preset_service.add_listener(self.refresh_from_service)
+
+      # Initialize with all filters selected
+      all_packs = set(self.preset_service.get_available_packs())
+      all_types = set(self.preset_service.get_available_types())
+      all_chars = set(self.preset_service.get_available_chars())
+      self.filter_service.set_pack_filter(all_packs)
+      self.filter_service.set_type_filter(all_types)
+      self.filter_service.set_char_filter(all_chars)
+
+      # Initial load
+      self.refresh_from_service()
 
    def compose(self) -> ComposeResult:
       self.border_title = "presets"
@@ -39,40 +50,35 @@ class PresetGrid(Vertical):
 
    def refresh_from_service(self) -> None:
       """Refresh display when preset service notifies us of changes."""
-      # Stage 2: Use PresetService for data but keep compatibility
-      preset_service = self.app.services.get_preset_service()
-      preset_tuples = preset_service.get_filtered_preset_tuples()
+      if not self.preset_service:
+         return
+
+      preset_tuples = self.preset_service.get_filtered_preset_tuples()
 
       self.table.clear(columns=False)
-      if preset_tuples:
-         self.table.add_rows(preset_tuples)
-         log(f"PresetGrid refreshed from service: {len(preset_tuples)} presets")
+      self.table.add_rows(preset_tuples)
+      log(f"PresetGrid refreshed: {len(preset_tuples)} presets")
 
    def set_filter(self, filter_type: str, selected_filters: list[str]):
-      log(f"PresetGrid.set_filter: type={filter_type}, filters={selected_filters}")
-      self.table.clear(columns=False)
+      # This method is now just a bridge to the service
+      if not self.filter_service:
+         return
+
+      selected = set(selected_filters)
+
       match filter_type:
          case "pack":
-            PresetData.clear_pack_filters()
-            PresetData.add_pack_filter(selected_filters)
+            self.filter_service.set_pack_filter(selected)
          case "type":
-            PresetData.clear_type_filters()
-            PresetData.add_type_filter(selected_filters)
+            self.filter_service.set_type_filter(selected)
          case "char":
-            PresetData.clear_char_filters()
-            PresetData.add_char_filter(selected_filters)
+            self.filter_service.set_char_filter(selected)
          case _:
             log("set_filter case not matched")
-      data = PresetData.get_presets_as_tuples()
-      log(f"PresetGrid.set_filter: Adding {len(data)} rows to table")
-      if data:
-         log(f"PresetGrid.set_filter: First row: {data[0]}")
-      self.table.add_rows(data)
 
    def set_search_filter(self, search_term: str):
-      PresetData.set_search_filter(search_term)
-      self.table.clear(columns=False)
-      self.table.add_rows(PresetData.get_presets_as_tuples())
+      if self.filter_service:
+         self.filter_service.set_search(search_term)
 
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
       self.app.remove_all_focused_border_titles()

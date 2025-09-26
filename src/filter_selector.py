@@ -4,7 +4,6 @@ from textual.widgets import Checkbox
 from textual import events
 from textual.events import Key
 from textual import log
-from preset_data_compat import PresetData
 from filters import Filters
 from messages import FilterSelectionChanged
 
@@ -22,8 +21,15 @@ class FilterSelector(VerticalScroll):
       self.select_all = select_all
       self.all_updating = False
       self.current_index = 0
+      self.filter_service = None
+      self.preset_service = None
 
    def on_mount(self) -> None:
+      # Get services from app (if not already set in compose)
+      if not self.filter_service:
+         self.filter_service = self.app.services.get_filter_service()
+      if not self.preset_service:
+         self.preset_service = self.app.services.get_preset_service()
       # If select_all is True, simulate user checking all boxes
       if self.select_all:
          # Create a mock event for the "all" checkbox
@@ -44,13 +50,18 @@ class FilterSelector(VerticalScroll):
             return "undefined"
 
    def get_filter_names(self) -> list[str]:
+      # Get service if not already available (compose runs before on_mount)
+      if not self.preset_service and hasattr(self, "app"):
+         self.preset_service = self.app.services.get_preset_service()
+      if not self.preset_service:
+         return []
       match self.filter:
          case Filters.PACK:
-            return PresetData.get_packs()
+            return self.preset_service.get_available_packs()
          case Filters.TYPE:
-            return PresetData.get_types()
+            return self.preset_service.get_available_types()
          case Filters.CHAR:
-            return PresetData.get_chars()
+            return self.preset_service.get_available_chars()
          case _:
             return []
 
@@ -93,7 +104,28 @@ class FilterSelector(VerticalScroll):
             selected.append(str(checkbox.label))
       return selected
 
+   def update_service_filters(self) -> None:
+      """Update the filter service based on current selections."""
+      if not self.filter_service:
+         return
+      
+      selected = set(self.get_selected_filters())
+      log(f"FilterSelector.update_service_filters - {self.get_filter()}: {len(selected)} items selected")
+      match self.filter:
+         case Filters.PACK:
+            self.filter_service.set_pack_filter(selected)
+            log(f"Updated pack filter with {selected}")
+         case Filters.TYPE:
+            self.filter_service.set_type_filter(selected)
+            log(f"Updated type filter with {selected}")
+         case Filters.CHAR:
+            self.filter_service.set_char_filter(selected)
+            log(f"Updated char filter with {selected}")
+
    def filter_selection_changed(self, filter_type: str, selected_filters: list[str]) -> None:
+      # Update the service
+      self.update_service_filters()
+      # Still send the message for compatibility
       self.post_message(FilterSelectionChanged(filter_type, selected_filters))
 
    def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
