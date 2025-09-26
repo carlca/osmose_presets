@@ -17,7 +17,7 @@ dependencies = [
 
 [tool.flet]
 org = "com.earlyspring"
-product = "osose_presets"
+product = "osmose_presets"
 company = "Early Spring"
 copyright = "Copyright (C) 2025 by Early Spring"
 
