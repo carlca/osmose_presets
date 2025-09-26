@@ -55,9 +55,8 @@ class TestDataIntegrity:
                 duplicate_report += f"    1. '{first.preset}' (pack: {first.pack}, type: {first.type})\n"
                 duplicate_report += f"    2. '{second.preset}' (pack: {second.pack}, type: {second.type})\n"
             
-            # This test is expected to fail with current data
-            # It documents the known issue
-            pytest.xfail(f"Known data issue: {duplicate_report}")
+            # Test should now pass since duplicates have been fixed
+            assert False, f"Duplicate CC0/PGM combinations found: {duplicate_report}"
     
     def test_midi_value_ranges(self):
         """Test that all MIDI values are within valid ranges."""
@@ -255,9 +254,8 @@ class TestDuplicateDetection:
         
         cls.presets = [Preset.from_dict(item) for item in cls.raw_data]
     
-    @pytest.mark.xfail(reason="Known duplicate: CC0=34, PGM=34 used by 'fragilkey' and 'feelgood resonator'")
     def test_no_duplicate_midi_identifiers(self):
-        """Test that there are no duplicate CC0/PGM combinations (expected to fail)."""
+        """Test that there are no duplicate CC0/PGM combinations."""
         midi_map = {}
         
         for preset in self.presets:
@@ -273,15 +271,15 @@ class TestDuplicateDetection:
                 assert False, duplicate_details
             midi_map[key] = preset
     
-    def test_suggested_fix_location_available(self):
-        """Test that the suggested fix location (CC0=34, PGM=35) is available."""
+    def test_duplicate_fix_applied(self):
+        """Test that the duplicate fix has been applied (CC0=34, PGM=35 is now in use)."""
         used_keys = {(preset.cc0, preset.pgm) for preset in self.presets}
         
-        # Check if suggested fix location is available
-        suggested_fix = (34, 35)
-        assert suggested_fix not in used_keys, f"Suggested fix location CC0={suggested_fix[0]}, PGM={suggested_fix[1]} is already in use"
+        # Check that the fix location is now being used (duplicate was fixed)
+        fixed_location = (34, 35)
+        assert fixed_location in used_keys, f"Expected CC0={fixed_location[0]}, PGM={fixed_location[1]} to be in use after fix"
         
-        print(f"\n✅ Suggested fix location CC0={suggested_fix[0]}, PGM={suggested_fix[1]} is available")
+        print(f"\n✅ Duplicate fix confirmed: CC0={fixed_location[0]}, PGM={fixed_location[1]} is now in use")
     
     def test_report_duplicate_details(self):
         """Generate a detailed report of any duplicates found."""

@@ -4,7 +4,8 @@ from textual import log
 from textual import events
 from textual.events import Key
 from aligned_data_table import AlignedDataTable
-from preset_data import PresetData, Preset
+from preset_data_compat import PresetData
+from data.models.preset import Preset
 from dataclasses import fields
 from messages import PresetSelected
 
