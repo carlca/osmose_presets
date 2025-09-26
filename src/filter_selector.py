@@ -113,13 +113,6 @@ class FilterSelector(VerticalScroll):
             checkboxes[0].focus()
             self.current_index = 0
 
-   def on_checkbox_changed(self, event: Checkbox.Changed) -> None:
-      if event.checkbox.id == "check_all":
-         self.all_checkbox_changed(event)
-      else:
-         self.other_checkbox_changed(event)
-      self.filter_selection_changed(self.get_filter(), self.get_selected_filters())
-
    def on_click(self, event: events.Click) -> None:
       self.app.remove_all_focused_border_titles()
       self.add_class("focused")
