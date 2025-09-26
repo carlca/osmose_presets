@@ -16,7 +16,6 @@ class MidiPortSelector(Container):
       self.ports = []
       self.current_port_index = 0
       self.port_display = None
-      self.midi_port_name = ""
 
    def on_mount(self) -> None:
       """Load MIDI ports when component is mounted."""
