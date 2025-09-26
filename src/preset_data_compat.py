@@ -18,14 +18,14 @@ _app_context: Optional[AppContext] = None
 
 
 def _get_context() -> AppContext:
-    """Get or create the global app context."""
-    global _app_context
-    if _app_context is None:
-        # Initialize with default file location
-        preset_file = Path(__file__).parent / "OsmosePresets.json"
-        _app_context = AppContext(preset_file)
-        log("Initialized compatibility app context")
-    return _app_context
+   """Get or create the global app context."""
+   global _app_context
+   if _app_context is None:
+      # Initialize with default file location
+      preset_file = Path(__file__).parent / "OsmosePresets.json"
+      _app_context = AppContext(preset_file)
+      log("Initialized compatibility app context")
+   return _app_context
 
 
 class PresetData:
@@ -289,10 +289,10 @@ class PresetData:
 # Initialize cached_presets on import for compatibility
 # Initialize with presets on import for backward compatibility
 if not PresetData.cached_presets:
-    try:
-        preset_file = Path(__file__).parent / "OsmosePresets.json"
-        PresetData.cached_presets = PresetData.load_from_json(str(preset_file))
-        log(f"Loaded {len(PresetData.cached_presets)} presets for compatibility")
-    except Exception as e:
-        log(f"Warning: Could not load presets on import: {e}")
-        PresetData.cached_presets = []
+   try:
+      preset_file = Path(__file__).parent / "OsmosePresets.json"
+      PresetData.cached_presets = PresetData.load_from_json(str(preset_file))
+      log(f"Loaded {len(PresetData.cached_presets)} presets for compatibility")
+   except Exception as e:
+      log(f"Warning: Could not load presets on import: {e}")
+      PresetData.cached_presets = []

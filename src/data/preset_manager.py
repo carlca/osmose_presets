@@ -54,10 +54,10 @@ class PresetDataManager:
             except Exception as e:
                log(f"Warning: Failed to load preset at index {i}: {e}")
                # Continue loading other presets
-                    
+
          self._loaded = True
          log(f"Loaded {len(self._presets)} presets from {self.file_path}")
-            
+
       except FileNotFoundError:
          log(f"Error: Preset file not found: {self.file_path}")
          self._presets = []

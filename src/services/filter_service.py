@@ -74,9 +74,9 @@ class FilterService:
           packs: Set of pack names to filter by
       """
       if self.state.packs != packs:
-          self.state.packs = packs.copy()
-          log(f"Pack filter updated: {len(packs)} packs selected")
-          self._notify_listeners()
+         self.state.packs = packs.copy()
+         log(f"Pack filter updated: {len(packs)} packs selected")
+         self._notify_listeners()
 
    def set_type_filter(self, types: Set[str]) -> None:
       """
@@ -86,9 +86,9 @@ class FilterService:
           types: Set of preset types to filter by
       """
       if self.state.types != types:
-          self.state.types = types.copy()
-          log(f"Type filter updated: {len(types)} types selected")
-          self._notify_listeners()
+         self.state.types = types.copy()
+         log(f"Type filter updated: {len(types)} types selected")
+         self._notify_listeners()
 
    def set_char_filter(self, chars: Set[str]) -> None:
       """
@@ -98,9 +98,9 @@ class FilterService:
           chars: Set of character tags to filter by
       """
       if self.state.chars != chars:
-          self.state.chars = chars.copy()
-          log(f"Character filter updated: {len(chars)} chars selected")
-          self._notify_listeners()
+         self.state.chars = chars.copy()
+         log(f"Character filter updated: {len(chars)} chars selected")
+         self._notify_listeners()
 
    def set_search(self, search_term: str) -> None:
       """
@@ -111,9 +111,9 @@ class FilterService:
       """
       normalized_term = search_term.strip()
       if self.state.search_term != normalized_term:
-          self.state.search_term = normalized_term
-          log(f"Search term updated: '{normalized_term}'")
-          self._notify_listeners()
+         self.state.search_term = normalized_term
+         log(f"Search term updated: '{normalized_term}'")
+         self._notify_listeners()
 
    def toggle_pack(self, pack: str) -> None:
       """
@@ -123,9 +123,9 @@ class FilterService:
           pack: Pack name to toggle
       """
       if pack in self.state.packs:
-          self.state.packs.remove(pack)
+         self.state.packs.remove(pack)
       else:
-          self.state.packs.add(pack)
+         self.state.packs.add(pack)
       log(f"Pack '{pack}' toggled")
       self._notify_listeners()
 
@@ -137,9 +137,9 @@ class FilterService:
           type_name: Type name to toggle
       """
       if type_name in self.state.types:
-          self.state.types.remove(type_name)
+         self.state.types.remove(type_name)
       else:
-          self.state.types.add(type_name)
+         self.state.types.add(type_name)
       log(f"Type '{type_name}' toggled")
       self._notify_listeners()
 
@@ -151,46 +151,46 @@ class FilterService:
           char: Character tag to toggle
       """
       if char in self.state.chars:
-          self.state.chars.remove(char)
+         self.state.chars.remove(char)
       else:
-          self.state.chars.add(char)
+         self.state.chars.add(char)
       log(f"Character '{char}' toggled")
       self._notify_listeners()
 
    def clear_filters(self) -> None:
       """Clear all filters."""
       if self.state.is_active():
-          self.state.clear()
-          log("All filters cleared")
-          self._notify_listeners()
+         self.state.clear()
+         log("All filters cleared")
+         self._notify_listeners()
 
    def clear_pack_filter(self) -> None:
       """Clear only the pack filter."""
       if self.state.packs:
-          self.state.packs.clear()
-          log("Pack filter cleared")
-          self._notify_listeners()
+         self.state.packs.clear()
+         log("Pack filter cleared")
+         self._notify_listeners()
 
    def clear_type_filter(self) -> None:
       """Clear only the type filter."""
       if self.state.types:
-          self.state.types.clear()
-          log("Type filter cleared")
-          self._notify_listeners()
+         self.state.types.clear()
+         log("Type filter cleared")
+         self._notify_listeners()
 
    def clear_char_filter(self) -> None:
       """Clear only the character filter."""
       if self.state.chars:
-          self.state.chars.clear()
-          log("Character filter cleared")
-          self._notify_listeners()
+         self.state.chars.clear()
+         log("Character filter cleared")
+         self._notify_listeners()
 
    def clear_search(self) -> None:
       """Clear only the search term."""
       if self.state.search_term:
-          self.state.search_term = ""
-          log("Search term cleared")
-          self._notify_listeners()
+         self.state.search_term = ""
+         log("Search term cleared")
+         self._notify_listeners()
 
    def add_listener(self, callback: Callable[[FilterState], None]) -> None:
       """
@@ -201,8 +201,8 @@ class FilterService:
                    Will receive the current FilterState as argument.
       """
       if callback not in self._listeners:
-          self._listeners.append(callback)
-          log(f"Filter listener added (total: {len(self._listeners)})")
+         self._listeners.append(callback)
+         log(f"Filter listener added (total: {len(self._listeners)})")
 
    def remove_listener(self, callback: Callable[[FilterState], None]) -> None:
       """
@@ -212,17 +212,17 @@ class FilterService:
           callback: The callback function to remove
       """
       if callback in self._listeners:
-          self._listeners.remove(callback)
-          log(f"Filter listener removed (remaining: {len(self._listeners)})")
+         self._listeners.remove(callback)
+         log(f"Filter listener removed (remaining: {len(self._listeners)})")
 
    def _notify_listeners(self) -> None:
       """Notify all listeners of filter change."""
       state_copy = self.state.copy()
       for callback in self._listeners:
          try:
-             callback(state_copy)
+            callback(state_copy)
          except Exception as e:
-             log(f"Error in filter listener: {e}")
+            log(f"Error in filter listener: {e}")
 
    def get_state_summary(self) -> str:
       """

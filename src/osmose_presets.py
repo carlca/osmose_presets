@@ -9,6 +9,7 @@ from filter_selector import FilterSelector
 from filters import Filters
 from messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus, PresetSelected
 from midi_controller import MidiController
+from services.app_services import AppServices
 
 
 class Sidebar(VerticalScroll):
@@ -29,6 +30,8 @@ class OsmosePresetsApp(App):
    def __init__(self):
       super().__init__()
       self.previous_focus_id = "#pack-container"
+      # Initialize services (Stage 1 - just create them, don't use them yet)
+      self.services = AppServices()
 
    BINDINGS = [
       ("q", "quit_app", "Quit"),

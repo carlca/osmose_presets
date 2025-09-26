@@ -39,8 +39,8 @@ class PresetService:
 
       # Listeners for preset changes
       self._listeners: List[Callable[[], None]] = []
-        
-        log("PresetService initialized")
+
+      log("PresetService initialized")
 
    def get_filtered_presets(self) -> List[Preset]:
       """
@@ -57,9 +57,9 @@ class PresetService:
       chars = state.chars if state.chars else None
 
       presets = self.preset_manager.get_filtered_presets(packs=packs, types=types, chars=chars, search_term=state.search_term)
-        
-        log(f"Filtered presets: {len(presets)} results")
-        return presets
+
+      log(f"Filtered presets: {len(presets)} results")
+      return presets
 
    def get_filtered_preset_tuples(self) -> List[tuple]:
       """
@@ -90,9 +90,9 @@ class PresetService:
       """
       preset = self.preset_manager.get_preset_by_midi(cc0, pgm)
       if preset:
-          log(f"Found preset: {preset.preset} (CC0={cc0}, PGM={pgm})")
+         log(f"Found preset: {preset.preset} (CC0={cc0}, PGM={pgm})")
       else:
-          log(f"No preset found for CC0={cc0}, PGM={pgm}")
+         log(f"No preset found for CC0={cc0}, PGM={pgm}")
       return preset
 
    def get_available_packs(self) -> List[str]:
@@ -228,9 +228,9 @@ class PresetService:
 
       with open(output_path, "w", encoding="utf-8") as f:
          json.dump(preset_dicts, f, indent=2)
-        
-        log(f"Exported {len(presets)} presets to {output_path}")
-        return len(presets)
+
+      log(f"Exported {len(presets)} presets to {output_path}")
+      return len(presets)
 
    def get_preset_field_widths(self) -> List[int]:
       """
