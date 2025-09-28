@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "osmose_presets"
-version = "0.1.0"
+version = "0.1.17"
 description = ""
 readme = "README.md"
 requires-python = ">=3.9"
@@ -33,7 +33,6 @@ target-version = "py310"
 [tool.ruff.format]
 indent-style = "space"
 # skip-magic-trailing-comma = true
-
 
 [tool.uv]
 dev-dependencies = [

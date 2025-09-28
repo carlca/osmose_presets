@@ -143,6 +143,9 @@ class OsmosePresetsApp(App):
       header_panel = self.app.query_one("#header-panel", HeaderPanel)
       MidiController.send_preset_change(header_panel.midi_selector.midi_port_name, message.cc, message.pgm)
 
-if __name__ == "__main__":
+def main():
    app = OsmosePresetsApp()
    app.run()
+
+if __name__ == "__main__":
+   main()
