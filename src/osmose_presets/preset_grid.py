@@ -1,12 +1,13 @@
+from dataclasses import fields
+
+from textual import events, log
 from textual.app import ComposeResult
 from textual.containers import Vertical
-from textual import log
-from textual import events
 from textual.events import Key
-from aligned_data_table import AlignedDataTable
-from preset_data import PresetData, Preset
-from dataclasses import fields
-from messages import PresetSelected
+
+from osmose_presets.aligned_data_table import AlignedDataTable
+from osmose_presets.messages import PresetSelected
+from osmose_presets.preset_data import Preset, PresetData
 
 
 class PresetGrid(Vertical):
