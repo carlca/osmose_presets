@@ -7,7 +7,12 @@ from osmose_presets.preset_grid import PresetGrid
 from osmose_presets.header_panel import HeaderPanel
 from osmose_presets.filter_selector import FilterSelector
 from osmose_presets.filters import Filters
-from osmose_presets.messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus, PresetSelected
+from osmose_presets.messages import (
+   FilterSelectionChanged,
+   SearchSubmitted,
+   RestorePreviousFocus,
+   PresetSelected,
+)
 from osmose_presets.midi_controller import MidiController
 
 
@@ -143,9 +148,11 @@ class OsmosePresetsApp(App):
       header_panel = self.app.query_one("#header-panel", HeaderPanel)
       MidiController.send_preset_change(header_panel.midi_selector.midi_port_name, message.cc, message.pgm)
 
+
 def main():
    app = OsmosePresetsApp()
    app.run()
+
 
 if __name__ == "__main__":
    main()

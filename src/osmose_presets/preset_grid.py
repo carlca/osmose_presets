@@ -20,7 +20,11 @@ class PresetGrid(Vertical):
       for i, f in enumerate(fields(Preset)):
          width = widths[i] if i < len(widths) else None
          name = f.name if f.name != "chars" else "character"
-         self.table.add_column(name, justify="left" if f.type not in [int, float] else "right", width=width)
+         self.table.add_column(
+            name,
+            justify="left" if f.type not in [int, float] else "right",
+            width=width,
+         )
 
    def compose(self) -> ComposeResult:
       self.border_title = "presets"

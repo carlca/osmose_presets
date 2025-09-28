@@ -1,5 +1,9 @@
 from textual.widgets import DataTable
-from textual.widgets._data_table import RowRenderables, default_cell_formatter, _EMPTY_TEXT
+from textual.widgets._data_table import (
+   RowRenderables,
+   default_cell_formatter,
+   _EMPTY_TEXT,
+)
 from textual.message import Message
 from textual.events import Click
 from textual.events import MouseDown
