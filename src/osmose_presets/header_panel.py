@@ -4,8 +4,8 @@ from textual.widgets import Button, Static, Input
 from textual.events import Key
 from textual import log, on
 import mido
-from helper_functions import Helper
-from messages import SearchSubmitted, RestorePreviousFocus
+from osmose_presets.helper_functions import Helper
+from osmose_presets.messages import SearchSubmitted, RestorePreviousFocus
 
 
 class MidiPortSelector(Container):

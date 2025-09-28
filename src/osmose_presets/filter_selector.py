@@ -3,9 +3,9 @@ from textual.containers import VerticalScroll
 from textual.widgets import Checkbox
 from textual import events
 from textual.events import Key
-from preset_data import PresetData
-from filters import Filters
-from messages import FilterSelectionChanged
+from osmose_presets.preset_data import PresetData
+from osmose_presets.filters import Filters
+from osmose_presets.messages import FilterSelectionChanged
 
 
 class MockCheckboxChanged:

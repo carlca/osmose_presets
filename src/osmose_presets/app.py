@@ -3,12 +3,12 @@ from textual.containers import Horizontal, Vertical, VerticalScroll
 from textual.widgets import Header, Footer
 from textual import on
 from textual import log
-from preset_grid import PresetGrid
-from header_panel import HeaderPanel
-from filter_selector import FilterSelector
-from filters import Filters
-from messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus, PresetSelected
-from midi_controller import MidiController
+from osmose_presets.preset_grid import PresetGrid
+from osmose_presets.header_panel import HeaderPanel
+from osmose_presets.filter_selector import FilterSelector
+from osmose_presets.filters import Filters
+from osmose_presets.messages import FilterSelectionChanged, SearchSubmitted, RestorePreviousFocus, PresetSelected
+from osmose_presets.midi_controller import MidiController
 
 
 class Sidebar(VerticalScroll):
