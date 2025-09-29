@@ -1,7 +1,6 @@
 [project]
 name = "osmose-presets"
-license = {file = "LICENSE.txt"}
-version = "0.2.5"
+version = "0.2.2"
 description = "Add your description here"
 readme = "README.md"
 authors = [

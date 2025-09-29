@@ -14,6 +14,7 @@ from osmose_presets.messages import (
    PresetSelected,
 )
 from osmose_presets.midi_controller import MidiController
+from importlib.metadata import version
 
 
 class Sidebar(VerticalScroll):
