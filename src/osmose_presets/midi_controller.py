@@ -13,8 +13,7 @@ class MidiController:
       try:
          # how I despise Windows :(
          if "MIDIIN2 (Osmose)" in port:
-            # port = "MIDIIN2 (Osmose)"
-            port = "MIDIIN2"
+            port = "MIDIIN2 (Osmose)"
 
          output = mido.open_output(port)
       except OSError as e:
