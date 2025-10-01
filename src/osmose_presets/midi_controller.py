@@ -11,6 +11,10 @@ class MidiController:
       log("Available input ports:", mido.get_input_names())
 
       try:
+         # how I despise Windows :(
+         if "MIDIIN2 (Osmose)" in port:
+            port = "MIDIIN2 (Osmose)"
+
          output = mido.open_output(port)
       except OSError as e:
          log(f"Error opening MIDI port '{port}': {e}")
