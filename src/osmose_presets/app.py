@@ -38,7 +38,7 @@ class OsmosePresetsApp(App):
 
    BINDINGS = [
       ("q", "quit_app", "Quit"),
-      ("1", "focus_midi_input_port", "MIDI port"),
+      ("1", "focus_midi_port", "MIDI port"),
       ("2", "focus_pack_filter_selector", "pack"),
       ("3", "focus_type_filter_selector", "type"),
       ("4", "focus_char_filter_selector", "character"),
