@@ -8,9 +8,11 @@ class MidiController:
    def send_preset_change(port: str, cc: int, pgm: int):
       log("Attempting to open port:", port)
       log("Available input ports:", mido.get_input_names())
+      log("Available output ports:", mido.get_output_names())
 
       try:
          output = mido.open_output(port)
+         log("Opened: ", port)
       except OSError as e:
          log(f"Error opening MIDI port '{port}': {e}")
          return False
