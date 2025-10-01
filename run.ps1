@@ -1,0 +1,1 @@
+textual run --dev src/osmose_presets/app.py

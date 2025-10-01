@@ -32,22 +32,32 @@ class MidiPortSelector(Container):
          # If there's a saved port and it exists in the current list of ports
          if saved_port and saved_port in self.ports:
             self.current_port_index = self.ports.index(saved_port)
-            if self.port_display:
-               self.port_display.update(self.get_current_port_name())
+
+         # Update the port display AFTER loading ports
+         if self.port_display:
+            self.port_display.update(self.get_current_port_name())
+
       except Exception as e:
          print(f"Error getting MIDI input ports: {e}")
          self.ports = ["Error loading MIDI ports"]
+         # Update display even on error
+         if self.port_display:
+            self.port_display.update("Error loading MIDI ports")
 
    def compose(self) -> ComposeResult:
       self.border_title = "MIDI input port"
       with Horizontal(classes="midi-port-controls"):
          yield Button(" < ", classes="header-button bold-text", id="prev_port_button")
          yield Button(" > ", classes="header-button bold-text", id="next_port_button")
-         self.port_display = Static(self.get_current_port_name(), classes="bold-text")
+         self.port_display = Static("", classes="bold-text")
          yield self.port_display
 
    def get_current_port_name(self) -> str:
       """Get the name of the currently selected port."""
+
+      log("Available input ports:", mido.get_input_names())
+      log("Available output ports:", mido.get_output_names())
+
       if self.ports:
          self.midi_port_name = self.ports[self.current_port_index]
          return self.midi_port_name
