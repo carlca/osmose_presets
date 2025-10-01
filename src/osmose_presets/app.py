@@ -38,7 +38,7 @@ class OsmosePresetsApp(App):
 
    BINDINGS = [
       ("q", "quit_app", "Quit"),
-      ("1", "focus_midi_input_port", "MIDI input port"),
+      ("1", "focus_midi_input_port", "MIDI port"),
       ("2", "focus_pack_filter_selector", "pack"),
       ("3", "focus_type_filter_selector", "type"),
       ("4", "focus_char_filter_selector", "character"),
@@ -84,7 +84,7 @@ class OsmosePresetsApp(App):
          widget.add_class("focused")
          widget.set_focus()
 
-   def action_focus_midi_input_port(self) -> None:
+   def action_focus_midi_port(self) -> None:
       self.remove_all_focused_border_titles()
       self.set_focus_to_one_border_title("#midi-port-selector")
 
