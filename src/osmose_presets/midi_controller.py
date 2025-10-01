@@ -6,6 +6,10 @@ from textual import log
 class MidiController:
    @staticmethod
    def send_preset_change(port: str, cc: int, pgm: int):
+
+      log("Attempting to open port:", port)
+      log("Available input ports:", mido.get_input_names())
+
       try:
          output = mido.open_output(port)
       except OSError as e:
