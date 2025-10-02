@@ -21,7 +21,6 @@ class MidiPortSelector(Container):
    def on_mount(self) -> None:
       """Load MIDI ports when component is mounted."""
       try:
-         # self.ports = mido.get_input_names()
          self.ports = mido.get_output_names()
          if not self.ports:
             self.ports = ["No MIDI ports available"]
@@ -33,6 +32,13 @@ class MidiPortSelector(Container):
          # If there's a saved port and it exists in the current list of ports
          if saved_port and saved_port in self.ports:
             self.current_port_index = self.ports.index(saved_port)
+         else:
+            # Clear invalid port name from config
+            if saved_port:
+               print(f"Invalid MIDI port '{saved_port}' found in config, clearing it.")
+               config["selected_midi_port"] = ""
+               Helper.write_config(config)
+            self.current_port_index = 0
 
          # Update the port display AFTER loading ports
          if self.port_display:
@@ -41,9 +47,40 @@ class MidiPortSelector(Container):
       except Exception as e:
          print(f"Error getting MIDI ports: {e}")
          self.ports = ["Error loading MIDI ports"]
+         # Clear port name from config on error
+         config = self.read_config()
+         config["selected_midi_port"] = ""
+         Helper.write_config(config)
          # Update display even on error
          if self.port_display:
             self.port_display.update("Error loading MIDI ports")
+
+   # def on_mount(self) -> None:
+   #    """Load MIDI ports when component is mounted."""
+   #    try:
+   #       # self.ports = mido.get_input_names()
+   #       self.ports = mido.get_output_names()
+   #       if not self.ports:
+   #          self.ports = ["No MIDI ports available"]
+
+   #       # Load saved MIDI port selection
+   #       config = self.read_config()
+   #       saved_port = config.get("selected_midi_port", "")
+
+   #       # If there's a saved port and it exists in the current list of ports
+   #       if saved_port and saved_port in self.ports:
+   #          self.current_port_index = self.ports.index(saved_port)
+
+   #       # Update the port display AFTER loading ports
+   #       if self.port_display:
+   #          self.port_display.update(self.get_current_port_name())
+
+   #    except Exception as e:
+   #       print(f"Error getting MIDI ports: {e}")
+   #       self.ports = ["Error loading MIDI ports"]
+   #       # Update display even on error
+   #       if self.port_display:
+   #          self.port_display.update("Error loading MIDI ports")
 
    def compose(self) -> ComposeResult:
       self.border_title = "MIDI port"
