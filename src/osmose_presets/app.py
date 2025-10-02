@@ -146,7 +146,9 @@ class OsmosePresetsApp(App):
 
    @on(PresetSelected)
    def preset_selected(self, message: PresetSelected) -> None:
-      MidiController.send_preset_change(message.port_name, message.cc, message.pgm)
+      header_panel = self.app.query_one("#header-panel", HeaderPanel)
+      port_name = header_panel.midi_selector.get_current_port_name()
+      MidiController.send_preset_change(port_name, message.cc, message.pgm)
 
 
 def main():

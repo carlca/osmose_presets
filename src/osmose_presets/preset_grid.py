@@ -66,7 +66,7 @@ class PresetGrid(Vertical):
       port_name = header_panel.midi_selector.midi_port_name
       # Only send the message if port name is valid
       if port_name:
-         self.post_message(PresetSelected(port_name, cc, pgm))
+         self.post_message(PresetSelected(cc, pgm))
       else:
          log("MIDI port name not available")
 
