@@ -4,11 +4,14 @@
       or
          for Windows running on an ARM64 chip
          https://www.python.org/ftp/python/3.12.7/python-3.12.7-arm64.exe
+      make sure that run as admin is checked
       make sure that the add to path option is checked
 
 2.    Create a suitable parent folder such as: C:\Python
 
-3.    Open: Powershell (run as administrator)
+3.    Open: Powershell
+
+4.    Expand the Powershell window to a decent size!
 
 4.    Navigate to: C:\Python
 
