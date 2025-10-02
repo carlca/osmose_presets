@@ -4,6 +4,7 @@
       or
          for Windows running on an ARM64 chip
          https://www.python.org/ftp/python/3.12.7/python-3.12.7-arm64.exe
+
       make sure that run as admin is checked
       make sure that the add to path option is checked
 
@@ -15,8 +16,22 @@
 
 4.    Navigate to: C:\Python
 
+      tip: try `cd /py` then press <tab>
+
 5.    run: git clone https://github.com/carlca/osmose_presets.git
 
 6.    run: cd .\osmose_presets
 
-7.    run:
+      tip: try `cd os` then press <tab>
+
+7.    run: ./install
+
+      There will be a flurry text whizzing by. This is is okay!
+
+8.    run: ./run
+
+      tip 1: make sure the first thing you do is press 1, the use the
+      comma or period/full stop keys to choose the correct port.
+      On Windows it will be something like `MIDIOUT2 (Osmose)`, possible with a 1 or 2 suffix.
+
+      tip 2: press 5, scroll to a preset and press <enter>... and play 😉
