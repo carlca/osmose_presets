@@ -1,0 +1,19 @@
+1.    Install `Python 3.12.7` -
+         for Windows running on an Intel chip
+         https://www.python.org/ftp/python/3.12.7/python-3.12.7-amd64.exe
+      or
+         for Windows running on an ARM64 chip
+         https://www.python.org/ftp/python/3.12.7/python-3.12.7-arm64.exe
+      make sure that the add to path option is checked
+
+2.    Create a suitable parent folder such as: C:\Python
+
+3.    Open: Powershell (run as administrator)
+
+4.    Navigate to: C:\Python
+
+5.    run: https://www.python.org/ftp/python/3.12.7/python-3.12.7-arm64.exe
+
+6.    run: cd .\osmose_presets
+
+7.    run: python -m venv .venv
