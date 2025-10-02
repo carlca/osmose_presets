@@ -27,8 +27,8 @@ class RestorePreviousFocus(Message):
 class PresetSelected(Message):
    """posted when the user pressed <ENTER> on the PresetGrid"""
 
-   def __init__(self, cc: int, pgm: int) -> None:
-      # self.port = port
+   def __init__(self, port_name: str, cc: int, pgm: int) -> None:
+      self.port_name = port_name
       self.cc = cc
       self.pgm = pgm
       super().__init__()

@@ -7,6 +7,7 @@ from dataclasses import fields
 from osmose_presets.aligned_data_table import AlignedDataTable
 from osmose_presets.preset_data import PresetData, Preset
 from osmose_presets.messages import PresetSelected
+from osmose_presets.header_panel import HeaderPanel
 
 
 class PresetGrid(Vertical):
@@ -51,11 +52,6 @@ class PresetGrid(Vertical):
       self.table.clear(columns=False)
       self.table.add_rows(PresetData.get_presets_as_tuples())
 
-   # def on_key(self, event: Key) -> None:
-   #    """ handle key events in the preset grid """
-   #    if event.key == "enter":
-   #       self.post_message(PresetSelected())
-
    def on_aligned_data_table_clicked(self, event: events.Event) -> None:
       self.app.remove_all_focused_border_titles()
       self.add_class("focused")
@@ -65,7 +61,14 @@ class PresetGrid(Vertical):
       row = event.data_table.get_row(event.row_key)
       cc = row[2]
       pgm = row[3]
-      self.post_message(PresetSelected(cc, pgm))
+      # Get the port name from the app's header panel
+      header_panel = self.app.query_one("#header-panel", HeaderPanel)
+      port_name = header_panel.midi_selector.midi_port_name
+      # Only send the message if port name is valid
+      if port_name:
+         self.post_message(PresetSelected(port_name, cc, pgm))
+      else:
+         log("MIDI port name not available")
 
    def set_focus(self) -> None:
       self.table.focus()
