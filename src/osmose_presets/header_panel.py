@@ -18,6 +18,7 @@ class MidiPortSelector(Container):
       self.port_display = None
       self.midi_port_name = ""
 
+   # Crashes first time, runs okay the second
    def on_mount(self) -> None:
       """Load MIDI ports when component is mounted."""
       try:
@@ -29,95 +30,36 @@ class MidiPortSelector(Container):
          config = self.read_config()
          saved_port = config.get("selected_midi_port", "")
 
-         # Only validate if we actually have ports loaded
-         if self.ports and len(self.ports) > 0 and self.ports[0] != "No MIDI ports available":
-            # If there's a saved port and it exists in the current list of ports
-            if saved_port and saved_port in self.ports:
-               self.current_port_index = self.ports.index(saved_port)
-            else:
-               # Clear invalid port name from config
-               if saved_port:
-                  print(f"Invalid MIDI port '{saved_port}' found in config, clearing it.")
-                  config["selected_midi_port"] = ""
-                  Helper.write_config(config)
-               self.current_port_index = 0
+         # If there's a saved port and it exists in the current list of ports
+         if saved_port and saved_port in self.ports:
+            self.current_port_index = self.ports.index(saved_port)
          else:
-            # If initial port list is empty/unavailable, don't clear valid saved ports
-            # Just use the saved selection as-is (validation happens later)
+            # Clear invalid port name from config
             if saved_port:
-               # Try to refresh port list to see if saved port is available now
-               all_ports = mido.get_output_names()
-               if saved_port in all_ports:
-                  self.current_port_index = all_ports.index(saved_port)
-                  self.ports = all_ports
-               else:
-                  self.current_port_index = 0
-                  self.ports = ["No MIDI ports available"]
-            else:
-               self.current_port_index = 0
+               print(f"Invalid MIDI port '{saved_port}' found in config, clearing it.")
+               config["selected_midi_port"] = ""
+               Helper.write_config(config)
+            self.current_port_index = 0
 
-         # Update the port display AFTER loading ports
-         current_port_name = self.get_current_port_name()
+         # CRITICAL: Refresh the current port name in the UI and save it
+         current_port_name = self.get_current_port_name()  # This updates self.midi_port_name
          if self.port_display:
             self.port_display.update(current_port_name)
 
-         # Save the current valid port name, but only if we have valid ports
-         if (current_port_name and
-             current_port_name != "No MIDI ports available" and
-             current_port_name != "No ports loaded" and
-             self.ports and
-             self.ports[0] != "No MIDI ports available"):
+         # Save the currently valid port name to ensure consistency
+         if current_port_name and current_port_name != "No MIDI ports available" and current_port_name != "No ports loaded":
             self.save_selected_midi_port(current_port_name)
 
       except Exception as e:
          print(f"Error getting MIDI ports: {e}")
          self.ports = ["Error loading MIDI ports"]
+         # Clear port name from config on error
+         config = self.read_config()
+         config["selected_midi_port"] = ""
+         Helper.write_config(config)
          # Update display even on error
          if self.port_display:
             self.port_display.update("Error loading MIDI ports")
-
-   # Crashes first time, runs okay the second
-   # def on_mount(self) -> None:
-   #    """Load MIDI ports when component is mounted."""
-   #    try:
-   #       self.ports = mido.get_output_names()
-   #       if not self.ports:
-   #          self.ports = ["No MIDI ports available"]
-
-   #       # Load saved MIDI port selection
-   #       config = self.read_config()
-   #       saved_port = config.get("selected_midi_port", "")
-
-   #       # If there's a saved port and it exists in the current list of ports
-   #       if saved_port and saved_port in self.ports:
-   #          self.current_port_index = self.ports.index(saved_port)
-   #       else:
-   #          # Clear invalid port name from config
-   #          if saved_port:
-   #             print(f"Invalid MIDI port '{saved_port}' found in config, clearing it.")
-   #             config["selected_midi_port"] = ""
-   #             Helper.write_config(config)
-   #          self.current_port_index = 0
-
-   #       # CRITICAL: Refresh the current port name in the UI and save it
-   #       current_port_name = self.get_current_port_name()  # This updates self.midi_port_name
-   #       if self.port_display:
-   #          self.port_display.update(current_port_name)
-
-   #       # Save the currently valid port name to ensure consistency
-   #       if current_port_name and current_port_name != "No MIDI ports available" and current_port_name != "No ports loaded":
-   #          self.save_selected_midi_port(current_port_name)
-
-   #    except Exception as e:
-   #       print(f"Error getting MIDI ports: {e}")
-   #       self.ports = ["Error loading MIDI ports"]
-   #       # Clear port name from config on error
-   #       config = self.read_config()
-   #       config["selected_midi_port"] = ""
-   #       Helper.write_config(config)
-   #       # Update display even on error
-   #       if self.port_display:
-   #          self.port_display.update("Error loading MIDI ports")
 
    def compose(self) -> ComposeResult:
       self.border_title = "MIDI port"

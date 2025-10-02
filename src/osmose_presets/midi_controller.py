@@ -18,7 +18,10 @@ class MidiController:
       output.send(cc_msg)
       log(f"Sent CC message: {cc_msg.hex()}")
 
-      time.sleep(0.4)
+      if "MIDIOUT" in port:
+         time.sleep(0.8)
+      else:
+         time.sleep(0.4)
 
       pgm_msg = mido.Message("program_change", channel=0, program=pgm)
       log(f"Sending PGM message: {pgm_msg.hex()}")
