@@ -12,7 +12,7 @@
 
 4.    Navigate to: C:\Python
 
-5.    run: https://www.python.org/ftp/python/3.12.7/python-3.12.7-arm64.exe
+5.    run: git clone https://github.com/carlca/osmose_presets.git
 
 6.    run: cd .\osmose_presets
 
