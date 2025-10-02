@@ -6,6 +6,7 @@ from textual import log
 class MidiController:
    @staticmethod
    def send_preset_change(port: str, cc: int, pgm: int):
+      time.sleep(0.1)  # Give Windows MIDI drivers a moment
       try:
          output = mido.open_output(port)
       except OSError as e:
