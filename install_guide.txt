@@ -16,4 +16,4 @@
 
 6.    run: cd .\osmose_presets
 
-7.    run: python -m venv .venv
+7.    run:
