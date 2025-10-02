@@ -9,13 +9,13 @@ class MidiController:
       try:
          output = mido.open_output(port)
          log(f"opened port: {port}")
-         time.sleep(0.2)
       except OSError as e:
          log(f"Error opening MIDI port '{port}': {e}")
          return False
 
       cc_msg = mido.Message("control_change", channel=0, control=0, value=cc)
       log(f"Sending CC message: {cc_msg.hex()}")
+      time.sleep(0.2)
       output.send(cc_msg)
       log(f"Sent CC message: {cc_msg.hex()}")
 
