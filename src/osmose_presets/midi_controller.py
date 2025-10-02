@@ -13,15 +13,13 @@ class MidiController:
          log(f"Error opening MIDI port '{port}': {e}")
          return False
 
+      log(output)
       cc_msg = mido.Message("control_change", channel=0, control=0, value=cc)
       log(f"Sending CC message: {cc_msg.hex()}")
       output.send(cc_msg)
       log(f"Sent CC message: {cc_msg.hex()}")
 
-      if "MIDIOUT" in port:
-         time.sleep(0.8)
-      else:
-         time.sleep(0.4)
+      time.sleep(0.4)
 
       pgm_msg = mido.Message("program_change", channel=0, program=pgm)
       log(f"Sending PGM message: {pgm_msg.hex()}")
