@@ -24,14 +24,20 @@
 
       tip: try `cd os` then press <tab>
 
-7.    run: ./install
+7.    run: ./win_install
 
       There will be a flurry text whizzing by. This is is okay!
 
-8.    run: ./run
+8.    run: ./win_run
 
       tip 1: make sure the first thing you do is press 1, the use the
       comma or period/full stop keys to choose the correct port.
       On Windows it will be something like `MIDIOUT2 (Osmose)`, possible with a 1 or 2 suffix.
 
-      tip 2: press 5, scroll to a preset and press <enter>... and play 😉
+9.    Exit the app using 'q'. This is an unfortunate, unavoidable step, require because the
+      MIDI routines in Windows are, shall we say, sub-optimal 😮
+
+10.   Step 9 does not always work 🤯 Help 🙏
+
+11.   run: ./win_run again. Check that `MIDIOUT2 (Osmose)` or simlar is still showing,
+      press '5', scroll to a preset and press <enter>... and play 😉

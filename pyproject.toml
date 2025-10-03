@@ -28,6 +28,6 @@ dev = [
 ]
 
 [tool.ruff]
-indent-width = 3
+indent-width = 4
 line-length = 160
 target-version = "py313"
