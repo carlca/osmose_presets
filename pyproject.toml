@@ -1,7 +1,7 @@
 [project]
 name = "osmose-presets"
 license = {file = "LICENSE.txt"}
-version = "0.2.5"
+version = "0.2.6"
 description = "Add your description here"
 readme = "README.md"
 authors = [
@@ -28,6 +28,6 @@ dev = [
 ]
 
 [tool.ruff]
-indent-width = 4
+indent-width = 3
 line-length = 160
 target-version = "py313"
