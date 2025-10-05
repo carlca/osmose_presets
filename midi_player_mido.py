@@ -1,10 +1,15 @@
 try:
    import mido
    import time
+   import platform
 
-   # Target the Osmose port directly
-   port_name = "MIDIOUT2 (Osmose) 2"
-   print(f"Targeting port: {port_name}")
+   # Set port name based on operating system
+   if platform.system() == "Darwin":  # macOS
+      port_name = "Osmose Port 2"
+   else:  # Windows and others
+      port_name = "MIDIOUT2 (Osmose) 2"
+   
+   print(f"Running on {platform.system()} - Targeting port: {port_name}")
    
    # Alternative approach: Open, close, then reopen for better initialization
    try:
