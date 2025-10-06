@@ -9,7 +9,7 @@ def get_port_name() -> str:
       port_name = "MIDIOUT2 (Osmose) 2"
    return port_name
 
-def open_midi_port(port_name: str, delay: float = 0.5):
+def open_midi_port(port_name: str, delay: float = 0.5) -> mido.ports.BaseOutput:
    try:
       midi_port = mido.open_output(port_name)
       print(f"Initially opened port: {port_name}")
@@ -31,7 +31,8 @@ def main():
    print(f"Running on {platform.system()} - Targeting port: {port_name}")
    
    midi_port = open_midi_port(port_name)
-      
+   print(type(midi_port))   
+
    # Define the sequence of MIDI notes to play
    notes = [
       (60, 64, 0.5),  # C4
