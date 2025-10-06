@@ -1,35 +1,37 @@
-try:
-   import mido
-   import time
-   import platform
+import mido
+import time
+import platform
 
-   # Set port name based on operating system
+def get_port_name() -> str:
    if platform.system() == "Darwin":  # macOS
       port_name = "Osmose Port 2"
    else:  # Windows and others
       port_name = "MIDIOUT2 (Osmose) 2"
-   
-   print(f"Running on {platform.system()} - Targeting port: {port_name}")
-   
-   # Alternative approach: Open, close, then reopen for better initialization
+   return port_name
+
+def open_midi_port(port_name: str, delay: float = 0.5):
    try:
-      # First open to establish connection
       midi_port = mido.open_output(port_name)
       print(f"Initially opened port: {port_name}")
       midi_port.close()
-      
       # Give it time to reset
-      time.sleep(1)
-      
-      # Reopen (this is the working alternative approach)
+      time.sleep(delay)
       midi_port = mido.open_output(port_name)
-      print(f"Reopened port with alternative approach: {port_name}")
-      time.sleep(0.5)
-      
+      print(f"Successfully opened port: {port_name}")
+      return midi_port
    except Exception as e:
       print(f"Error opening {port_name}: {e}")
       raise
+
+def main():
+
+   # Set port name based on operating system
+   port_name = get_port_name()
    
+   print(f"Running on {platform.system()} - Targeting port: {port_name}")
+   
+   midi_port = open_midi_port(port_name)
+      
    # Define the sequence of MIDI notes to play
    notes = [
       (60, 64, 0.5),  # C4
@@ -74,11 +76,5 @@ try:
    midi_port.close()
    print("MIDI port closed")
 
-except ImportError as e:
-   print("Error: mido module not found.")
-   print(f"Import error: {e}")
-   print("Install with: pip install mido python-rtmidi")
-
-except Exception as e:
-   print(f"Unexpected error: {e}")
-   print("Make sure the Osmose is connected and not used by other apps.")
+if __name__ == "__main__":
+   main()
