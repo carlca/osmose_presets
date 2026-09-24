@@ -14,24 +14,24 @@
 
 4.    Expand the Powershell window to a decent size!
 
-4.    Navigate to: C:\Python
+5.    Navigate to: C:\Python
 
       tip: try `cd /py` then press <tab>
 
-5.    Run: git clone https://github.com/carlca/osmose_presets.git
+6.    Run: git clone https://github.com/carlca/osmose_presets.git
 
-6.    run: cd .\osmose_presets
+7.    run: cd .\osmose_presets
 
       tip: try `cd os` then press <tab>
 
-7.    Run: ./win_install
+8.    Run: ./win_install
 
       There will be a flurry of text whizzing by. This is is okay!
 
-8.    Run: ./win_run
+9.    Run: ./win_run
 
       tip 1: make sure the first thing you do is press 1, then use the
       comma or period/full stop keys to choose the correct port.
       On Windows it will be something like `MIDIOUT2 (Osmose)`, possible with a 1 or 2 suffix.
 
-9.    Then press '5', scroll to a preset and press <enter>... and play 😉
+10.   Then press '5', scroll to a preset and press <enter>... and play 😉
