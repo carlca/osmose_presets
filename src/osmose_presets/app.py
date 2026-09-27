@@ -14,7 +14,8 @@ from osmose_presets.messages import (
    PresetSelected,
 )
 from osmose_presets.midi_controller import MidiController
-from importlib.metadata import version
+# from importlib.metadata import version
+import sys
 
 
 class Sidebar(VerticalScroll):
@@ -37,7 +38,6 @@ class OsmosePresetsApp(App):
       self.previous_focus_id = "#pack-container"
 
    BINDINGS = [
-      ("q", "quit_app", "Quit"),
       ("1", "focus_midi_port", "MIDI port"),
       ("2", "focus_pack_filter_selector", "pack"),
       ("3", "focus_type_filter_selector", "type"),
@@ -45,6 +45,9 @@ class OsmosePresetsApp(App):
       ("5", "focus_preset_grid", "presets"),
       ("s", "focus_search_box", "Search"),
    ]
+
+   if not getattr(sys, "frozen", False):
+      BINDINGS.insert(0, ("q", "quit_app", "Quit"))
 
    def on_mount(self) -> None:
       self.focus_filter_selector("#pack-container")

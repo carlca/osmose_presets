@@ -1,55 +1,44 @@
 import json
-import os
-import sys
 from pathlib import Path
+
+from platformdirs import user_config_dir
 
 
 class Helper:
    @staticmethod
    def get_config_path() -> Path:
-      if sys.platform == "darwin":
-         config_dir = (
-            Path.home()
-            / "Library"
-            / "Application Support"
-            / "OsmosePresets"
+      config_dir = Path(
+         user_config_dir(
+            appname="OsmosePresets",
+            appauthor=False,
          )
-
-      elif os.name == "nt":
-         config_dir = (
-            Path(os.environ.get("APPDATA", Path.home()))
-            / "OsmosePresets"
-         )
-
-      else:
-         config_dir = (
-            Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config"))
-            / "OsmosePresets"
-         )
+      )
 
       config_dir.mkdir(parents=True, exist_ok=True)
 
       return config_dir / "config.json"
 
    @staticmethod
-   def read_config():
+   def read_config() -> dict:
       config_path = Helper.get_config_path()
 
       try:
-         if config_path.exists():
-            with config_path.open("r", encoding="utf-8") as f:
-               return json.load(f)
-      except json.decoder.JSONDecodeError:
+         with config_path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+
+      except FileNotFoundError:
          return {}
 
-      return {}
+      except json.JSONDecodeError:
+         return {}
 
    @staticmethod
-   def write_config(config_data):
+   def write_config(config_data: dict) -> None:
       config_path = Helper.get_config_path()
 
       with config_path.open("w", encoding="utf-8") as f:
          json.dump(config_data, f, indent=2)
+
 
 # import os
 # import json
