@@ -53,7 +53,10 @@ class OsmosePresetsApp(App):
       self.focus_filter_selector("#pack-container")
 
    def compose(self) -> ComposeResult:
-      yield Header()
+      if not getattr(sys, "frozen", False):
+         yield Header()
+      else:
+         yield Header(icon="")
       yield Footer()
       # The top-level container stacks the header and main area vertically
       with Vertical():
